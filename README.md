@@ -71,15 +71,16 @@ make run
 
 # Ctrl-Alt-Elite
 
-+--------------------+----------------+-----------------------------------------+
-| Contributor        | Student Number | GitHub Profile                          |
-+--------------------+----------------+-----------------------------------------+
-| Tinotenda Chirozvi | 22547747       | https://github.com/tinothecreator        |
-| Lubabalo Tshikila  | u22644106      | https://github.com/ltshikila             |
-| Naazneen Khan      | u22527533      | https://github.com/NaazneenKhan          |
-| Oscar Motsepe      | u22598473      | https://github.com/ojmotsepe             |
-| Raymond Li         | u19194839      | https://github.com/Raymond324            |
-| Salome             | u19364742      | https://github.com/salomeboop            |
-| Orabile            | u21740012      | https://github.com/u21740012             |
-+--------------------+----------------+-----------------------------------------+
+## Contributors
+
+| Contributor         | Student Number | GitHub Profile                                      |
+|---------------------|----------------|-----------------------------------------------------|
+| Tinotenda Chirozvi  | 22547747       | [tinothecreator](https://github.com/tinothecreator)  |
+| Lubabalo Tshikila   | u22644106      | [ltshikila](https://github.com/ltshikila)            |
+| Naazneen Khan       | u22527533      | [NaazneenKhan](https://github.com/NaazneenKhan)      |
+| Oscar Motsepe       | u22598473      | [ojmotsepe](https://github.com/ojmotsepe)            |
+| Raymond Li          | u19194839      | [Raymond324](https://github.com/Raymond324)          |
+| Salome              | u19364742      | [salomeboop](https://github.com/salomeboop)          |
+| Orabile             | u21740012      | [u21740012](https://github.com/u21740012)            |
+
 
