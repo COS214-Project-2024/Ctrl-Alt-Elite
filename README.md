@@ -35,13 +35,6 @@ Collaborate effectively within a team, utilizing version control and best coding
 
 At the core of the simulation is the Engine, which manages the dynamic interactions between different city components. The engine will handle key events such as:
 
-# Construction
-
-Resource allocation
-Taxation
-Citizen needs and satisfaction
-The engine will operate in either real-time or turn-based mode, depending on the game design.
-
 # Getting Started
 
 Prerequisites
@@ -76,11 +69,11 @@ make run
 | Contributor         | Student Number | GitHub Profile                                      |
 |---------------------|----------------|-----------------------------------------------------|
 | Tinotenda Chirozvi  | 22547747       | [tinothecreator](https://github.com/tinothecreator)  |
-| Lubabalo Tshikila   | u22644106      | [ltshikila](https://github.com/ltshikila)            |
-| Naazneen Khan       | u22527533      | [NaazneenKhan](https://github.com/NaazneenKhan)      |
-| Oscar Motsepe       | u22598473      | [ojmotsepe](https://github.com/ojmotsepe)            |
-| Raymond Li          | u19194839      | [Raymond324](https://github.com/Raymond324)          |
-| Salome              | u19364742      | [salomeboop](https://github.com/salomeboop)          |
-| Orabile             | u21740012      | [u21740012](https://github.com/u21740012)            |
+| Lubabalo Tshikila   | 22644106      | [ltshikila](https://github.com/ltshikila)            |
+| Naazneen Khan       | 22527533      | [NaazneenKhan](https://github.com/NaazneenKhan)      |
+| Oscar Motsepe       | 22598473      | [ojmotsepe](https://github.com/ojmotsepe)            |
+| Raymond Li          | 19194839      | [Raymond324](https://github.com/Raymond324)          |
+| Salome              | 19364742      | [salomeboop](https://github.com/salomeboop)          |
+| Orabile             | 21740012      | [u21740012](https://github.com/u21740012)            |
 
 
