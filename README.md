@@ -31,10 +31,6 @@ Collaborate effectively within a team, utilizing version control and best coding
 ├── Report          # Project Reports
 └── README.md       # Readme for our project
 
-# Simulation Engine
-
-At the core of the simulation is the Engine, which manages the dynamic interactions between different city components. The engine will handle key events such as:
-
 # Getting Started
 
 Prerequisites
