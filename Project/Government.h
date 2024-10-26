@@ -1,25 +1,37 @@
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
-
+#include "Citizen.h"
+#include "Command.h"
+#include "City.h"
+#include <vector>
+#include <string>
+#include <algorithm> 
+#include <iostream>
 class Government {
 
 private:
-	vector<Citizen*> citizen;
-	string taxRate;
-	int currentPolicy;
-	vector<string> availableServices;
-	vector<Command*> commandList;
+	std::vector<Citizen*> citizen;
+	float taxRate;
+	City* city;
+	std::string currentPolicy;
+	std::vector<std::string> availableServices;
+	std::vector<Command*> commandList;
+
+protected:
+	std::string currentPolicy;
 
 public:
+	Government(City* city);
+
 	void addObserver(Citizen* observer);
 
 	void removeObserver(Citizen observer);
 
 	void notifyObservers();
 
-	void updateTaxes();
+	virtual void updateTaxes() = 0;
 
-	void implementPolicy();
+	virtual void implementPolicy() = 0;
 
 	void updatePublicServices();
 
@@ -27,13 +39,13 @@ public:
 
 	void executeCommands();
 
-	void manageCity();
+	virtual void manageCity() = 0;
 
 	float getTaxrate();
 
-	string getCurrentPolicy();
+	std::string getCurrentPolicy();
 
-	vector<string> getAvailableServices();
+	std::vector<std::string> getAvailableServices();
 };
 
 #endif

@@ -1,5 +1,6 @@
 #ifndef LAWENFORCMENT_H
 #define LAWENFORCMENT_H
+#include"PublicServicesDepartment.h"
 
 class LawEnforcment : PublicServicesDepartment {
 

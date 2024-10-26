@@ -1,5 +1,7 @@
 #ifndef PUBLICSERVICESDEPARTMENT_H
 #define PUBLICSERVICESDEPARTMENT_H
+#include"Government.h"
+#include"City.h"
 
 class PublicServicesDepartment : Government {
 
@@ -9,7 +11,7 @@ public:
 
 	void manageCity();
 
-	void updatePublicServices(vector<string> services);
+	void updatePublicServices(std::vector<std::string> services);
 
 public:
 	PublicServicesDepartment();

@@ -1,6 +1,7 @@
 #ifndef TAXATIONDEPARTMENT_H
 #define TAXATIONDEPARTMENT_H
-
+#include"Government.h"
+#include"City.h"
 class TaxationDepartment : Government {
 
 

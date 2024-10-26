@@ -1,5 +1,6 @@
 #ifndef POLICIESDEPARTMENT_H
 #define POLICIESDEPARTMENT_H
+#include"Government.h"
 
 class PoliciesDepartment : Government {
 
@@ -9,7 +10,7 @@ public:
 
 	void mangeCity();
 
-	void implementPolicy(string policy);
+	void implementPolicy(std::string policy);
 };
 
 #endif

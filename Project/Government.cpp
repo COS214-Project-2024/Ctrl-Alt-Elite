@@ -1,28 +1,28 @@
 #include "Government.h"
 
+Government::Government(City* city)
+{
+	this->city=city;
+}
+
 void Government::addObserver(Citizen* observer) {
-	// TODO - implement Government::addObserver
-	throw "Not yet implemented";
+	citizen.push_back(observer);
 }
 
 void Government::removeObserver(Citizen observer) {
-	// TODO - implement Government::removeObserver
-	throw "Not yet implemented";
+	auto it = std::find(citizen.begin(), citizen.end(), observer);
+        if (it != citizen.end()) {
+            citizen.erase(it);
+            std::cout << "Citizen removed from the vector." << std::endl;
+        } else {
+            std::cout << "Citizen not found in the vector." << std::endl;
+        }
 }
 
 void Government::notifyObservers() {
-	// TODO - implement Government::notifyObservers
-	throw "Not yet implemented";
-}
-
-void Government::updateTaxes() {
-	// TODO - implement Government::updateTaxes
-	throw "Not yet implemented";
-}
-
-void Government::implementPolicy() {
-	// TODO - implement Government::implementPolicy
-	throw "Not yet implemented";
+    for (Citizen* c:citizen) {
+        c->update();
+    }
 }
 
 void Government::updatePublicServices() {
@@ -31,30 +31,23 @@ void Government::updatePublicServices() {
 }
 
 void Government::addCommand(Command* command) {
-	// TODO - implement Government::addCommand
-	throw "Not yet implemented";
+	commandList.push_back(command);
 }
 
 void Government::executeCommands() {
-	// TODO - implement Government::executeCommands
-	throw "Not yet implemented";
-}
-
-void Government::manageCity() {
-	// TODO - implement Government::manageCity
-	throw "Not yet implemented";
+	for (Command* c:commandList){
+		c->execute();
+	}
 }
 
 float Government::getTaxrate() {
-	// TODO - implement Government::getTaxrate
-	throw "Not yet implemented";
+	return taxRate;
 }
 
-string Government::getCurrentPolicy() {
-	// TODO - implement Government::getCurrentPolicy
-	throw "Not yet implemented";
+std::string Government::getCurrentPolicy() {
+	return currentPolicy;
 }
 
-vector<string> Government::getAvailableServices() {
+std::vector<std::string> Government::getAvailableServices() {
 	return this->availableServices;
 }
