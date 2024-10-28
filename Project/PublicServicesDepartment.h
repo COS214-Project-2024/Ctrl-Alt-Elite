@@ -4,6 +4,8 @@
 #include"City.h"
 
 class PublicServicesDepartment : Government {
+private:
+	PublicServicesDepartment* successor;
 
 
 public:
@@ -13,10 +15,9 @@ public:
 
 	void updatePublicServices(std::vector<std::string> services);
 
-public:
 	PublicServicesDepartment();
 
-	void setNextHandler(PublicServiceDepartment* handler);
+	void setNextHandler(PublicServicesDepartment* handler);
 
 	void handleRequest(int requestType);
 };

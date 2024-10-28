@@ -1,5 +1,8 @@
 #include "Government.h"
 
+Government::Government()
+{}
+
 Government::Government(City* city)
 {
 	this->city=city;

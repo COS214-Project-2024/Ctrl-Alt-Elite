@@ -11,16 +11,17 @@ class Government {
 
 private:
 	std::vector<Citizen*> citizen;
-	float taxRate;
 	City* city;
-	std::string currentPolicy;
 	std::vector<std::string> availableServices;
 	std::vector<Command*> commandList;
 
 protected:
 	std::string currentPolicy;
+	float taxRate;
 
 public:
+	Government();
+
 	Government(City* city);
 
 	void addObserver(Citizen* observer);

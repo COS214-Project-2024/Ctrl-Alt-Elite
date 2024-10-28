@@ -11,6 +11,5 @@ void TaxationDepartment::manageCity() {
 }
 
 void TaxationDepartment::updateTaxes(float newTaxRate) {
-	// TODO - implement TaxationDepartment::updateTaxes
-	throw "Not yet implemented";
+	this->taxRate=newTaxRate;
 }
