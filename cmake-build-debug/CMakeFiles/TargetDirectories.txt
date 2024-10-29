@@ -1,3 +1,0 @@
-C:/COS214_Project/cmake-build-debug/CMakeFiles/COS214_Project.dir
-C:/COS214_Project/cmake-build-debug/CMakeFiles/edit_cache.dir
-C:/COS214_Project/cmake-build-debug/CMakeFiles/rebuild_cache.dir
