@@ -23,3 +23,7 @@ void Residential::calculateOccupancyRate() {
 Building* Residential::clone() const {
     return new Residential(*this);
 }
+
+int Residential::getNumResidents(){
+    return numResidents;
+}
