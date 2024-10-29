@@ -1,28 +1,53 @@
 #ifndef CITIZEN_H
 #define CITIZEN_H
+#include <iostream>
+#include <string>
+#include "TransportStrategy.h"
+// #include "PublicServicesDepartment.h"
+#include "TransportationState.h"
+#include <memory>
 
 class Citizen {
 
 private:
-	TransportStrategy* preferredModes;
-	string name;
-	float commuteTime;
-	string employmentStatus;
-	string currentEducation;
-	string healthcareAccess;
-	float satisfaction;
+    std::shared_ptr<TransportStrategy> preferredModes[3];
+    std::shared_ptr<TransportationState> currentState;
+    std::string name;
+    float satisfaction;
+    float commuteTime;
+
+	// TransportStrategy* preferredModes;
+	// std::string name;
+	// float commuteTime;
+	std::string employmentStatus;
+	std::string currentEducation;
+	std::string healthcareAccess;
+	// float satisfaction;
 	float taxRate;
-	string currentPolicy;
-	strng issueType;
-	PublicServiceDepartment* handler;
+	std::string currentPolicy;
+	std::string issueType;
+	// PublicServicesDepartment* handler;
 	int requestType;
 
 public:
-	void setTransportStrategy(TransportStrategy* strategy);
+
+	Citizen(const std::string& citizenName, std::shared_ptr<TransportationState> state= nullptr);
+
+	void setTransportStrategy(std::shared_ptr<TransportStrategy> strategy, int index);
 
 	bool canTravel();
 
 	void travel();
+
+	void displayInfo();
+
+	void updateSatisfaction(float value);
+
+	void setState(std::shared_ptr<TransportationState> state);
+
+	std::shared_ptr<TransportationState> getState();
+
+
 
 	void update();
 
