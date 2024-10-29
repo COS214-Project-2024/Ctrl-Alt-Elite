@@ -1,11 +1,33 @@
 #include "Government.h"
 
 Government::Government()
-{}
+{
+}
 
 Government::Government(City* city)
 {
 	this->city=city;
+	taxRate=18; 
+	allocatedBudget=100000;
+	currentPolicy="Be kind to one another";
+}
+
+void Government::Report(){
+	std::cout<<"==================================================="<<std::endl;
+	std::cout<<"Government Report"<<std::endl;
+	std::cout<<"Tax rate:\t"<<std::to_string(getTaxrate())<<"%"<<std::endl;
+	std::cout<<"City Budget:\tR "<<std::to_string(allocatedBudget)<<std::endl;
+	std::cout<<"Availible Public Services:";
+	for(std::string service:availableServices)
+	{
+		std::cout<<"\t"<<service<<std::endl;
+	}
+	std::cout<<" "<<std::endl;
+	std::cout<<"Current Policy:\t"<<currentPolicy<<std::endl;
+
+	std::cout<<"Updates made:"<<std::endl;
+	manageCity();
+	std::cout<<"==================================================="<<std::endl;
 }
 
 void Government::addObserver(Citizen* observer) {
@@ -49,3 +71,4 @@ std::string Government::getCurrentPolicy() {
 std::vector<std::string> Government::getAvailableServices() {
 	return this->availableServices;
 }
+
