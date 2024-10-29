@@ -11,7 +11,7 @@ public:
 
 	void mangeCity();
 
-	void executeCommands();
+	void allocateBudget(float budget);
 };
 
 #endif

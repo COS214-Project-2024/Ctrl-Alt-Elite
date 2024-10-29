@@ -1,7 +1,7 @@
 #include "HealthCare.h"
 
 void HealthCare::handleRequest(int requestType) {
-	if(services[requestType]=="Health")
+	if(getAvailableServices()[requestType]=="Health")
 	{
 		"Health care services have been provided to Citizen";
 	}

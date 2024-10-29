@@ -2,7 +2,7 @@
 #define LAWENFORCMENT_H
 #include"PublicServicesDepartment.h"
 
-class LawEnforcment : PublicServicesDepartment {
+class LawEnforcment : public PublicServicesDepartment {
 
 
 public:

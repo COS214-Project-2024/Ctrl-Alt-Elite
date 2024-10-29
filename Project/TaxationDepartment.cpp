@@ -3,8 +3,8 @@
 TaxationDepartment::TaxationDepartment(City* city):Government(city) {}
 
 void TaxationDepartment::manageCity() {
-	// TODO - implement TaxationDepartment::manageCity
-	throw "Not yet implemented";
+	std::cout<<"Taxes have been updated, notifying citizens..."<<std::endl;
+	notifyObservers();
 }
 
 void TaxationDepartment::updateTaxes(float newTaxRate) {

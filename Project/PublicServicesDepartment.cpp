@@ -3,12 +3,12 @@
 PublicServicesDepartment::PublicServicesDepartment(City* city):Government(city) {}
 
 void PublicServicesDepartment::manageCity() {
-	// TODO - implement PublicServicesDepartment::manageCity
-	throw "Not yet implemented";
+	std::cout<<"Availible Public Services have been updated, notifying citizens..."<<std::endl;
+	notifyObservers();
 }
 
 void PublicServicesDepartment::updatePublicServices(std::vector<std::string> services) {
-	
+	this->availableServices=services;
 }
 
 PublicServicesDepartment::PublicServicesDepartment() {}

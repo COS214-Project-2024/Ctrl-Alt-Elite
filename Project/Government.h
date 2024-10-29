@@ -12,17 +12,19 @@ class Government {
 private:
 	std::vector<Citizen*> citizen;
 	City* city;
-	std::vector<std::string> availableServices;
 	std::vector<Command*> commandList;
 
 protected:
 	std::string currentPolicy;
 	float taxRate;
-
+	float allocatedBudget;
+	std::vector<std::string> availableServices;
 public:
 	Government();
 
 	Government(City* city);
+
+	void Report();
 
 	void addObserver(Citizen* observer);
 
@@ -35,6 +37,8 @@ public:
 	virtual void implementPolicy() = 0;
 
 	virtual void updatePublicServices() = 0;
+
+	virtual void allocateBudget(float budget) = 0;
 
 	void addCommand(Command* command);
 

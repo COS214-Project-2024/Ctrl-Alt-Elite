@@ -3,8 +3,8 @@
 PoliciesDepartment::PoliciesDepartment(City* city): Government(city) {}
 
 void PoliciesDepartment::mangeCity() {
-	// TODO - implement PoliciesDepartment::mangeCity
-	throw "Not yet implemented";
+	std::cout<<"Government has implemented a new policy, notifying citizens..."<<std::endl;
+	notifyObservers();
 }
 
 void PoliciesDepartment::implementPolicy(std::string policy) {

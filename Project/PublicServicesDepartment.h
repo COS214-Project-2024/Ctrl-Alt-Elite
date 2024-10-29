@@ -3,12 +3,9 @@
 #include"Government.h"
 #include"City.h"
 
-class PublicServicesDepartment : Government {
+class PublicServicesDepartment : public Government {
 private:
 	PublicServicesDepartment* successor;
-
-protected:
-	std::vector<std::string> services;
 
 public:
 	PublicServicesDepartment(City* city);

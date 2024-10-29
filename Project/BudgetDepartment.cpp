@@ -1,16 +1,12 @@
 #include "BudgetDepartment.h"
 
-BudgetDepartment::BudgetDepartment(City* city) {
-	// TODO - implement BudgetDepartment::BudgetDepartment
-	throw "Not yet implemented";
-}
+BudgetDepartment::BudgetDepartment(City* city): Government(city) {}
 
 void BudgetDepartment::mangeCity() {
-	// TODO - implement BudgetDepartment::mangeCity
-	throw "Not yet implemented";
+	std::cout<<"City budget has been allocated, notifying citizens..."<<std::endl;
+	notifyObservers();
 }
 
-void BudgetDepartment::executeCommands() {
-	// TODO - implement BudgetDepartment::executeCommands
-	throw "Not yet implemented";
+void BudgetDepartment::allocateBudget(float budget) {
+	allocatedBudget=budget;
 }
