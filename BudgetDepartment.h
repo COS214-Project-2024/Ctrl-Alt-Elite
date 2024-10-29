@@ -1,17 +1,20 @@
+// BudgetDepartment.h
 #ifndef BUDGETDEPARTMENT_H
 #define BUDGETDEPARTMENT_H
-#include"Government.h"
-#include"City.h"
 
-class BudgetDepartment : Government {
+#include "Government.h"
 
-
+class BudgetDepartment : public Government {
 public:
-	BudgetDepartment(City* city);
+    BudgetDepartment(City* city);
 
-	void mangeCity();
+    void manageCity() override;
+    void allocateBudget(float budget) override;
 
-	void allocateBudget(float budget);
+    // Implementations for unused Government methods
+    void updateTaxes(float newTaxRate) override;
+    void implementPolicy(const std::string& policy) override {}
+    void updatePublicServices(const std::vector<std::string>& services) override {}
 };
 
-#endif
+#endif // BUDGETDEPARTMENT_H
