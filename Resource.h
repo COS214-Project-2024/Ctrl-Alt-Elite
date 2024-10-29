@@ -2,15 +2,17 @@
 #define RESOURCE_H
 
 class Resource {
-
-
-private:
-	void Resources();
+protected:
+    float baseCost;
 
 public:
-	void useResource(int amount);
+    Resource(float cost);
+    virtual ~Resource() = default;
 
-	int getAvailableResource();
+    virtual int getCapacity() const = 0;
+    virtual void consume(int amount) = 0;
+    virtual void replenish(int amount) = 0;
+    float getBaseCost() const;
 };
 
 #endif

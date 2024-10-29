@@ -1,23 +1,23 @@
 #ifndef UTILITIES_H
 #define UTILITIES_H
 
-class Utilities : Building {
+#include "Resource.h"
+#include "ResourceFactory.h"
+#include "Building.h"
 
-private:
-	Building* building;
-	float utilityCost;
-	Resource* resource;
-	ResourceFactory* resourceFactory;
-
-private:
-	Utilities(Building* city);
-
-	Utilities();
+class Utilities {
+protected:
+    Building* building;
+    float utilityCost;
+    Resource* resource;
+    ResourceFactory* resourceFactory;
 
 public:
-	virtual void applyUtility(Building* building) = 0;
+    Utilities(Building* bld, ResourceFactory* rf, float cost);
+    virtual ~Utilities() = default;
 
-	virtual float getUtilityCost() = 0;
+    virtual void applyUtility(Building* building) = 0;
+    float getUtilityCost() const;
 };
 
 #endif
