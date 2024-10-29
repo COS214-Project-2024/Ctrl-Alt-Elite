@@ -27,3 +27,7 @@ void Industrial::updatePollutionLevel() {
 Building* Industrial::clone() const {
     return new Industrial(*this);
 }
+
+int Industrial::getEmploymentRating(){
+    return employmentRating;
+}

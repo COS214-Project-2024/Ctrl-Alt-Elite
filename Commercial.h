@@ -18,6 +18,7 @@ public:
     void display() const override;
     void updateEmploymentRating();
     void updateEntertainmentRating();
+    int getEmploymentRating();
 
     Building* clone() const override;
 };

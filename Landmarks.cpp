@@ -23,3 +23,7 @@ void Landmarks::updateEntertainmentRating() {
 Building* Landmarks::clone() const {
     return new Landmarks(*this);
 }
+
+int getEntertainmentRating(){
+    return entertainmentRating;
+}
