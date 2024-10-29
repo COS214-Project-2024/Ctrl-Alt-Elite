@@ -16,6 +16,7 @@ public:
     void removeBuilding(Building* building) override;
     void display() const override;
     void updateEntertainmentRating();
+    int getEntertainmentRating();
 
     Building* clone() const override;
 };
