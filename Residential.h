@@ -16,6 +16,8 @@ public:
     void removeBuilding(Building* building) override;
     void display() const override;
     void calculateOccupancyRate();
+    int getNumResidents();
+    
 
     Building* clone() const override;
 };
