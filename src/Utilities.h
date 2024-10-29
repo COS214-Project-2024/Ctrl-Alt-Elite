@@ -1,9 +1,9 @@
 #ifndef UTILITIES_H
 #define UTILITIES_H
 
-#include "Building.h"
 #include "Resource.h"
 #include "ResourceFactory.h"
+#include "Building.h"
 
 class Utilities {
 protected:
@@ -13,9 +13,11 @@ protected:
     ResourceFactory* resourceFactory;
 
 public:
-    Utilities(Building* building, float cost, ResourceFactory* factory);
+    Utilities(Building* bld, ResourceFactory* rf, float cost);
+    virtual ~Utilities() = default;
+
     virtual void applyUtility(Building* building) = 0;
-    float getUtilityCost();
+    float getUtilityCost() const;
 };
 
-#endif // UTILITIES_H
+#endif

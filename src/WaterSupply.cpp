@@ -1,21 +1,24 @@
 #include "WaterSupply.h"
+#include "Water.h"
 
-WaterSupply::WaterSupply(Building* building, float cost, ResourceFactory* factory, int capacity)
-    : Utilities(building, cost, factory), waterCapacity(capacity), waterConsumed(0) {
+WaterSupply::WaterSupply(Building* bld, ResourceFactory* rf, float cost)
+    : Utilities(bld, rf, cost), waterCapacity(1000), waterConsumed(200) {
     resource = resourceFactory->getResource("Water");
 }
 
 void WaterSupply::applyUtility(Building* building) {
     if (checkWaterSupply()) {
+        dynamic_cast<Water*>(resource)->consume(waterConsumed);
         building->setHasWaterSupply(true);
-        waterConsumed += building->getWaterRequirement();
+    } else {
+        building->setHasWaterSupply(false);
     }
 }
 
-bool WaterSupply::checkWaterSupply() {
-    return waterCapacity >= waterConsumed;
+bool WaterSupply::checkWaterSupply() const {
+    return dynamic_cast<Water*>(resource)->getCapacity() >= waterConsumed;
 }
 
 void WaterSupply::updateWaterConsumption(int newUsage) {
-    waterConsumed += newUsage;
+    waterConsumed = newUsage;
 }

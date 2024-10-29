@@ -15,18 +15,18 @@ public:
     Building(float initialValue, float initialTaxRate);
 
     // Accessors
-    bool getElectricityStatus() const;
-    bool getWaterSupplyStatus() const;
-    bool getWasteCollectionStatus() const;
-    bool getSewageManagementStatus() const;
+    bool getHasElectricity() const;
+    bool getHasWaterSupply() const;
+    bool getWasteCollected() const;
+    bool getSewageManaged() const;
     float getValue() const;
     float getTaxRate() const;
 
     // Mutators
-    void setElectricityStatus(bool status);
-    void setWaterSupplyStatus(bool status);
-    void setWasteCollectionStatus(bool status);
-    void setSewageManagementStatus(bool status);
+    void setHasElectricity(bool status);
+    void setHasWaterSupply(bool status);
+    void setWasteCollected(bool status);
+    void setSewageManaged(bool status);
     void setValue(float newValue);
     void setTaxRate(float newRate);
 

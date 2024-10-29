@@ -9,10 +9,10 @@ private:
     int powerConsumed;
 
 public:
-    PowerPlants(Building* building, float cost, ResourceFactory* factory, int generated);
+    PowerPlants(Building* bld, ResourceFactory* rf, float cost);
     void applyUtility(Building* building) override;
-    bool checkPowerAvailability();
+    bool checkPowerAvailability() const;
     void updatePowerGeneration(int additionalPower);
 };
 
-#endif // POWER_PLANTS_H
+#endif

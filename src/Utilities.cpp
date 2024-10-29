@@ -1,8 +1,8 @@
 #include "Utilities.h"
 
-Utilities::Utilities(Building* building, float cost, ResourceFactory* factory)
-    : building(building), utilityCost(cost), resourceFactory(factory) {}
+Utilities::Utilities(Building* bld, ResourceFactory* rf, float cost)
+    : building(bld), resourceFactory(rf), utilityCost(cost), resource(nullptr) {}
 
-float Utilities::getUtilityCost() {
+float Utilities::getUtilityCost() const {
     return utilityCost;
 }

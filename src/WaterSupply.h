@@ -9,10 +9,10 @@ private:
     int waterConsumed;
 
 public:
-    WaterSupply(Building* building, float cost, ResourceFactory* factory, int capacity);
+    WaterSupply(Building* bld, ResourceFactory* rf, float cost);
     void applyUtility(Building* building) override;
-    bool checkWaterSupply();
+    bool checkWaterSupply() const;
     void updateWaterConsumption(int newUsage);
 };
 
-#endif // WATER_SUPPLY_H
+#endif
