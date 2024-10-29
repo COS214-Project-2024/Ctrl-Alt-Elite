@@ -10,7 +10,7 @@ void CulturalCenter::removeBuilding(Building* building) {
 	throw "Not yet implemented";
 }
 
-void CulturalCenter::display() {
+void CulturalCenter::display()const {
 	// TODO - implement CulturalCenter::display
 	throw "Not yet implemented";
 }

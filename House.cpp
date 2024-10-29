@@ -10,7 +10,7 @@ void House::removeBuilding(Building* building) {
 	throw "Not yet implemented";
 }
 
-void House::display() {
+void House::display() const {
 	// TODO - implement House::display
 	throw "Not yet implemented";
 }

@@ -1,19 +1,15 @@
 #ifndef OFFICE_H
 #define OFFICE_H
 
-class Office : Commercial {
+#include "Commercial.h"
 
-
+class Office : public Commercial {
 public:
-	void addBuilding(Building* building);
-
-	void removeBuilding(Building* building);
-
-	void display();
-
-	void updateEmploymentRating();
-
-	void updateEntertainmentRating();
+    void addBuilding(Building* building) override;
+    void removeBuilding(Building* building) override;
+    void display() const override;
+    void updateEmploymentRating();
+    void updateEntertainmentRating();
 };
 
 #endif

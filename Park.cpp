@@ -10,7 +10,7 @@ void Park::removeBuilding(Building* building) {
 	throw "Not yet implemented";
 }
 
-void Park::display() {
+void Park::display()const {
 	// TODO - implement Park::display
 	throw "Not yet implemented";
 }

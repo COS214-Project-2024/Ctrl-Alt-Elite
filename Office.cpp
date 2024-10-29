@@ -10,7 +10,7 @@ void Office::removeBuilding(Building* building) {
 	throw "Not yet implemented";
 }
 
-void Office::display() {
+void Office::display() const {
 	// TODO - implement Office::display
 	throw "Not yet implemented";
 }

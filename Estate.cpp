@@ -1,21 +1,18 @@
 #include "Estate.h"
+#include <iostream>
 
 void Estate::addBuilding(Building* building) {
-	// TODO - implement Estate::addBuilding
-	throw "Not yet implemented";
+    // Estates do not support adding buildings
 }
 
 void Estate::removeBuilding(Building* building) {
-	// TODO - implement Estate::removeBuilding
-	throw "Not yet implemented";
+    // Estates do not support removing buildings
 }
 
-void Estate::display() {
-	// TODO - implement Estate::display
-	throw "Not yet implemented";
+void Estate::display() const {
+    std::cout << "Displaying information about an estate.\n";
 }
 
 void Estate::calculateOccupancyRate() {
-	// TODO - implement Estate::calculateOccupancyRate
-	throw "Not yet implemented";
+    // Calculate and print the occupancy rate
 }

@@ -1,15 +1,16 @@
 #ifndef PARK_H
 #define PARK_H
 
-class Park : Landmarks {
+#include "Landmarks.h"
 
+class Park : public Landmarks {
 
 public:
-	void addBuilding(Building* building);
+	void addBuilding(Building* building) override;
 
-	void removeBuilding(Building* building);
+	void removeBuilding(Building* building) override;
 
-	void display();
+	void display() const override;
 
 	void updateEntertainmentRating();
 };

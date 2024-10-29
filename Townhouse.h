@@ -1,17 +1,14 @@
 #ifndef TOWNHOUSE_H
 #define TOWNHOUSE_H
 
-class Townhouse : Residential {
+#include "Residential.h"
 
-
+class Townhouse : public Residential {
 public:
-	void addBuilding(Building* building);
-
-	void removeBuilding(Building* building);
-
-	void display();
-
-	void calculateOccupancyRate();
+    void addBuilding(Building* building) override;
+    void removeBuilding(Building* building) override;
+    void display() const override;
+    void calculateOccupancyRate();
 };
 
 #endif

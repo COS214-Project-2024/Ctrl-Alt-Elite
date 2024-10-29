@@ -10,7 +10,7 @@ void Monument::removeBuilding(Building* building) {
 	throw "Not yet implemented";
 }
 
-void Monument::display() {
+void Monument::display()const {
 	// TODO - implement Monument::display
 	throw "Not yet implemented";
 }

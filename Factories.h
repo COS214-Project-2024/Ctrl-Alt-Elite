@@ -1,15 +1,18 @@
 #ifndef FACTORIES_H
 #define FACTORIES_H
 
-class Factories : Industrial {
+
+#include"Industrial.h"
+
+class Factories : public  Industrial {
 
 
 public:
-	void addBuilding(Building* building);
+	void addBuilding(Building* building) override;
 
-	void removeBuilding(Building* building);
+	void removeBuilding(Building* building) override;
 
-	void display();
+	void display() const override;
 
 	void updateEmploymentRating();
 
