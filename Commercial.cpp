@@ -27,3 +27,8 @@ void Commercial::updateEntertainmentRating() {
 Building* Commercial::clone() const {
     return new Commercial(*this);
 }
+
+int Commercial::getEmploymentRating(){
+    return employmentRating;
+}
+
