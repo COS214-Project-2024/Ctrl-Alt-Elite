@@ -1,7 +1,7 @@
 #include "Education.h"
 
 void Education::handleRequest(int requestType) {
-	if(requestType=1)
+	if(services[requestType]=="Education")
 	{
 		"Education services have been provided to Citizen";
 	}

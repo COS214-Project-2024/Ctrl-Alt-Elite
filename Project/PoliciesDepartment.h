@@ -4,7 +4,6 @@
 
 class PoliciesDepartment : Government {
 
-
 public:
 	PoliciesDepartment(City* city);
 

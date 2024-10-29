@@ -28,11 +28,6 @@ void Government::notifyObservers() {
     }
 }
 
-void Government::updatePublicServices() {
-	// TODO - implement Government::updatePublicServices
-	throw "Not yet implemented";
-}
-
 void Government::addCommand(Command* command) {
 	commandList.push_back(command);
 }

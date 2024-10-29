@@ -34,7 +34,7 @@ public:
 
 	virtual void implementPolicy() = 0;
 
-	void updatePublicServices();
+	virtual void updatePublicServices() = 0;
 
 	void addCommand(Command* command);
 

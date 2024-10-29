@@ -8,14 +8,10 @@ void PublicServicesDepartment::manageCity() {
 }
 
 void PublicServicesDepartment::updatePublicServices(std::vector<std::string> services) {
-	// TODO - implement PublicServicesDepartment::updatePublicServices
-	throw "Not yet implemented";
+	
 }
 
-PublicServicesDepartment::PublicServicesDepartment() {
-	// TODO - implement PublicServicesDepartment::PublicServicesDepartment
-	throw "Not yet implemented";
-}
+PublicServicesDepartment::PublicServicesDepartment() {}
 
 void PublicServicesDepartment::setNextHandler(PublicServicesDepartment* handler) {
 	this->successor=handler;

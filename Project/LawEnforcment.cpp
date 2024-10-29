@@ -1,7 +1,7 @@
 #include "LawEnforcment.h"
 
 void LawEnforcment::handleRequest(int requestType) {
-	if(requestType=2)
+	if(services[requestType]=="Law")
 	{
 		"Law Enforcement services have been provided to Citizen";
 	}

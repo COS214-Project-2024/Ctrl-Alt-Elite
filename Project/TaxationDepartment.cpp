@@ -1,9 +1,6 @@
 #include "TaxationDepartment.h"
 
-TaxationDepartment::TaxationDepartment(City* city) {
-	// TODO - implement TaxationDepartment::TaxationDepartment
-	throw "Not yet implemented";
-}
+TaxationDepartment::TaxationDepartment(City* city):Government(city) {}
 
 void TaxationDepartment::manageCity() {
 	// TODO - implement TaxationDepartment::manageCity

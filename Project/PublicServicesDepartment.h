@@ -7,6 +7,8 @@ class PublicServicesDepartment : Government {
 private:
 	PublicServicesDepartment* successor;
 
+protected:
+	std::vector<std::string> services;
 
 public:
 	PublicServicesDepartment(City* city);
