@@ -1,21 +1,15 @@
 #include "Park.h"
+#include <iostream>
 
-void Park::addBuilding(Building* building) {
-	// TODO - implement Park::addBuilding
-	throw "Not yet implemented";
-}
+Park::Park() : Landmarks() {}
 
-void Park::removeBuilding(Building* building) {
-	// TODO - implement Park::removeBuilding
-	throw "Not yet implemented";
-}
+Park::~Park() {}
 
-void Park::display()const {
-	// TODO - implement Park::display
-	throw "Not yet implemented";
+void Park::display() const {
+    std::cout << "Park - Entertainment Rating: " << entertainmentRating
+              << ", Maintenance Cost: " << maintenanceCost << "\n";
 }
 
 void Park::updateEntertainmentRating() {
-	// TODO - implement Park::updateEntertainmentRating
-	throw "Not yet implemented";
+    entertainmentRating += 4; // Specific increase for Park
 }

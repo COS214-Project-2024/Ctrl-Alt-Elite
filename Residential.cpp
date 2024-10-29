@@ -1,23 +1,20 @@
 #include "Residential.h"
 
-Residential::Residential() : numResidents(0), availableUnits(0) {}
+Residential::Residential() : numResidents(0), availableUnits(0), occupancyRate(0.0) {}
 
 Residential::~Residential() {}
 
-void Residential::addBuilding(Building* building) {
-    // Residential does not add sub-buildings
-}
-
-void Residential::removeBuilding(Building* building) {
-    // Residential does not remove sub-buildings
-}
-
 void Residential::display() const {
-    // Display residential building information
+    std::cout << "Residential Building - Occupancy Rate: " << occupancyRate << "%\n";
+  
 }
 
 void Residential::calculateOccupancyRate() {
-    // Logic to calculate occupancy rate
+    if (availableUnits > 0) {
+        occupancyRate = (static_cast<double>(numResidents) / availableUnits) * 100;
+    } else {
+        occupancyRate = 0.0;  // Handle edge case where availableUnits is 0
+    }
 }
 
 Building* Residential::clone() const {

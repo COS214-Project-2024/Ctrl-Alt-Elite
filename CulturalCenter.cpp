@@ -1,21 +1,15 @@
 #include "CulturalCenter.h"
+#include <iostream>
 
-void CulturalCenter::addBuilding(Building* building) {
-	// TODO - implement CulturalCenter::addBuilding
-	throw "Not yet implemented";
-}
+CulturalCenter::CulturalCenter() : Landmarks() {}
 
-void CulturalCenter::removeBuilding(Building* building) {
-	// TODO - implement CulturalCenter::removeBuilding
-	throw "Not yet implemented";
-}
+CulturalCenter::~CulturalCenter() {}
 
-void CulturalCenter::display()const {
-	// TODO - implement CulturalCenter::display
-	throw "Not yet implemented";
+void CulturalCenter::display() const {
+    std::cout << "Cultural Center - Entertainment Rating: " << entertainmentRating
+              << ", Maintenance Cost: " << maintenanceCost << "\n";
 }
 
 void CulturalCenter::updateEntertainmentRating() {
-	// TODO - implement CulturalCenter::updateEntertainmentRating
-	throw "Not yet implemented";
+    entertainmentRating += 7;
 }

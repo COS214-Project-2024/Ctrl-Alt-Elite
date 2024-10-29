@@ -5,11 +5,12 @@
 
 class Mall : public Commercial {
 public:
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
+    Mall();
+    ~Mall() override;
+
     void display() const override;
-    void updateEmploymentRating();
-    void updateEntertainmentRating();
+    void updateEmploymentRating() override;
+    void updateEntertainmentRating() override;
 };
 
 #endif

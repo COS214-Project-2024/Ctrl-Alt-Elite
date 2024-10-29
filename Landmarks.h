@@ -4,19 +4,17 @@
 #include "Building.h"
 
 class Landmarks : public Building {
-private:
+protected:
     int entertainmentRating;
     float maintenanceCost;
 
 public:
     Landmarks();
-    ~Landmarks();
+    virtual ~Landmarks();
 
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
     void display() const override;
-    void updateEntertainmentRating();
-    int getEntertainmentRating();
+    virtual void updateEntertainmentRating();
+    int getEntertainmentRating() const;
 
     Building* clone() const override;
 };

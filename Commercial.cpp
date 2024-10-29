@@ -1,34 +1,30 @@
 #include "Commercial.h"
+#include <iostream>
 
 Commercial::Commercial() : entertainmentRating(0), employmentRating(0), revenue(0.0f) {}
 
 Commercial::~Commercial() {}
 
-void Commercial::addBuilding(Building* building) {
-    // Commercial does not add sub-buildings
-}
-
-void Commercial::removeBuilding(Building* building) {
-    // Commercial does not remove sub-buildings
-}
-
 void Commercial::display() const {
-    // Display commercial building information
+    std::cout << "Commercial Building - Entertainment Rating: " << entertainmentRating
+              << ", Employment Rating: " << employmentRating
+              << ", Revenue: $" << revenue << "\n";
 }
 
 void Commercial::updateEmploymentRating() {
-    // Logic to update employment rating
+    // update employment rating
+    employmentRating += 1; 
 }
 
 void Commercial::updateEntertainmentRating() {
-    // Logic to update entertainment rating
+    // update entertainment rating
+    entertainmentRating += 1;
+}
+
+int Commercial::getEmploymentRating() const {
+    return employmentRating;
 }
 
 Building* Commercial::clone() const {
     return new Commercial(*this);
 }
-
-int Commercial::getEmploymentRating(){
-    return employmentRating;
-}
-

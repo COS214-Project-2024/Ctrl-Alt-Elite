@@ -25,13 +25,11 @@ protected:
 public:
     virtual ~Building() = default;
 
-    virtual void addBuilding(Building* building) = 0;
-    virtual void removeBuilding(Building* building) = 0;
     virtual void display() const = 0;
     virtual Building* clone() const = 0;
 
     void allocateResources(Resource* resource);
-    virtual Iterator<std::pair<std::string, int>>* createIterator();
+    
 };
 
 #endif

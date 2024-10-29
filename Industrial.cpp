@@ -1,33 +1,27 @@
 #include "Industrial.h"
+#include <iostream>
 
 Industrial::Industrial() : employmentRating(0), pollutionLevel(0.0f) {}
 
 Industrial::~Industrial() {}
 
-void Industrial::addBuilding(Building* building) {
-    // Industrial does not add sub-buildings
-}
-
-void Industrial::removeBuilding(Building* building) {
-    // Industrial does not remove sub-buildings
-}
-
 void Industrial::display() const {
-    // Display industrial building information
+    std::cout << "Industrial Building - Employment Rating: " << employmentRating
+              << ", Pollution Level: " << pollutionLevel << "\n";
 }
 
 void Industrial::updateEmploymentRating() {
-    // Logic to update employment rating
+    employmentRating += 1; 
 }
 
 void Industrial::updatePollutionLevel() {
-    // Logic to update pollution level
+    pollutionLevel += 0.5f; 
+}
+
+int Industrial::getEmploymentRating() const {
+    return employmentRating;
 }
 
 Building* Industrial::clone() const {
     return new Industrial(*this);
-}
-
-int Industrial::getEmploymentRating(){
-    return employmentRating;
 }

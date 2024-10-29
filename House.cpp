@@ -1,21 +1,14 @@
 #include "House.h"
 
-void House::addBuilding(Building* building) {
-	// TODO - implement House::addBuilding
-	throw "Not yet implemented";
-}
+House::House() : Residential() {}
 
-void House::removeBuilding(Building* building) {
-	// TODO - implement House::removeBuilding
-	throw "Not yet implemented";
-}
+House::~House() {}
+
 
 void House::display() const {
-	// TODO - implement House::display
-	throw "Not yet implemented";
+	std::cout << "Displaying House information.\n";
 }
 
 void House::calculateOccupancyRate() {
-	// TODO - implement House::calculateOccupancyRate
-	throw "Not yet implemented";
+	std::cout << "Calculating occupancy rate for House.\n";
 }

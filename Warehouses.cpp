@@ -1,26 +1,19 @@
 #include "Warehouses.h"
+#include <iostream>
 
-void Warehouses::addBuilding(Building* building) {
-	// TODO - implement Warehouses::addBuilding
-	throw "Not yet implemented";
-}
+Warehouses::Warehouses() : Industrial() {}
 
-void Warehouses::removeBuilding(Building* building) {
-	// TODO - implement Warehouses::removeBuilding
-	throw "Not yet implemented";
-}
+Warehouses::~Warehouses() {}
 
 void Warehouses::display() const {
-	// TODO - implement Warehouses::display
-	throw "Not yet implemented";
+    std::cout << "Warehouse - Employment Rating: " << employmentRating
+              << ", Pollution Level: " << pollutionLevel << "\n";
 }
 
 void Warehouses::updateEmploymentRating() {
-	// TODO - implement Warehouses::updateEmploymentRating
-	throw "Not yet implemented";
+    employmentRating += 1; 
 }
 
 void Warehouses::updatePollutionLevel() {
-	// TODO - implement Warehouses::updatePollutionLevel
-	throw "Not yet implemented";
+    pollutionLevel += 0.3f; 
 }

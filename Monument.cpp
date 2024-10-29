@@ -1,21 +1,15 @@
 #include "Monument.h"
+#include <iostream>
 
-void Monument::addBuilding(Building* building) {
-	// TODO - implement Monument::addBuilding
-	throw "Not yet implemented";
-}
+Monument::Monument() : Landmarks() {}
 
-void Monument::removeBuilding(Building* building) {
-	// TODO - implement Monument::removeBuilding
-	throw "Not yet implemented";
-}
+Monument::~Monument() {}
 
-void Monument::display()const {
-	// TODO - implement Monument::display
-	throw "Not yet implemented";
+void Monument::display() const {
+    std::cout << "Monument - Entertainment Rating: " << entertainmentRating
+              << ", Maintenance Cost: " << maintenanceCost << "\n";
 }
 
 void Monument::updateEntertainmentRating() {
-	// TODO - implement Monument::updateEntertainmentRating
-	throw "Not yet implemented";
+    entertainmentRating += 10; // Specific increase for Monument
 }

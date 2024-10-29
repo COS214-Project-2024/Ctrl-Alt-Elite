@@ -1,26 +1,20 @@
 #include "Mall.h"
+#include <iostream>
 
-void Mall::addBuilding(Building* building) {
-	// TODO - implement Mall::addBuilding
-	throw "Not yet implemented";
-}
+Mall::Mall() : Commercial() {}
 
-void Mall::removeBuilding(Building* building) {
-	// TODO - implement Mall::removeBuilding
-	throw "Not yet implemented";
-}
+Mall::~Mall() {}
 
 void Mall::display() const {
-	// TODO - implement Mall::display
-	throw "Not yet implemented";
+    std::cout << "Mall - Entertainment Rating: " << entertainmentRating
+              << ", Employment Rating: " << employmentRating
+              << ", Revenue: $" << revenue << "\n";
 }
 
 void Mall::updateEmploymentRating() {
-	// TODO - implement Mall::updateEmploymentRating
-	throw "Not yet implemented";
+    employmentRating += 5; 
 }
 
 void Mall::updateEntertainmentRating() {
-	// TODO - implement Mall::updateEntertainmentRating
-	throw "Not yet implemented";
+    entertainmentRating += 7; 
 }

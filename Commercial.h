@@ -4,21 +4,19 @@
 #include "Building.h"
 
 class Commercial : public Building {
-private:
+protected:
     int entertainmentRating;
     int employmentRating;
     float revenue;
 
 public:
     Commercial();
-    ~Commercial();
+    virtual ~Commercial();
 
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
-    void display() const override;
-    void updateEmploymentRating();
-    void updateEntertainmentRating();
-    int getEmploymentRating();
+    virtual void display() const override;
+    virtual void updateEmploymentRating();
+    virtual void updateEntertainmentRating();
+    int getEmploymentRating() const;
 
     Building* clone() const override;
 };

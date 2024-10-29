@@ -7,13 +7,12 @@ class Residential : public Building {
 private:
     int numResidents;
     int availableUnits;
-
+    double occupancyRate; 
+	
 public:
     Residential();
     ~Residential();
 
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
     void display() const override;
     void calculateOccupancyRate();
     int getNumResidents();

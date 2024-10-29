@@ -1,26 +1,20 @@
 #include "Office.h"
+#include <iostream>
 
-void Office::addBuilding(Building* building) {
-	// TODO - implement Office::addBuilding
-	throw "Not yet implemented";
-}
+Office::Office() : Commercial() {}
 
-void Office::removeBuilding(Building* building) {
-	// TODO - implement Office::removeBuilding
-	throw "Not yet implemented";
-}
+Office::~Office() {}
 
 void Office::display() const {
-	// TODO - implement Office::display
-	throw "Not yet implemented";
+    std::cout << "Office - Entertainment Rating: " << entertainmentRating
+              << ", Employment Rating: " << employmentRating
+              << ", Revenue: $" << revenue << "\n";
 }
 
 void Office::updateEmploymentRating() {
-	// TODO - implement Office::updateEmploymentRating
-	throw "Not yet implemented";
+    employmentRating += 4; 
 }
 
 void Office::updateEntertainmentRating() {
-	// TODO - implement Office::updateEntertainmentRating
-	throw "Not yet implemented";
+    entertainmentRating += 1; 
 }

@@ -1,26 +1,19 @@
 #include "Factories.h"
+#include <iostream>
 
-void Factories::addBuilding(Building* building) {
-	// TODO - implement Factories::addBuilding
-	throw "Not yet implemented";
-}
+Factories::Factories() : Industrial() {}
 
-void Factories::removeBuilding(Building* building) {
-	// TODO - implement Factories::removeBuilding
-	throw "Not yet implemented";
-}
+Factories::~Factories() {}
 
 void Factories::display() const {
-	// TODO - implement Factories::display
-	throw "Not yet implemented";
+    std::cout << "Factory - Employment Rating: " << employmentRating
+              << ", Pollution Level: " << pollutionLevel << "\n";
 }
 
 void Factories::updateEmploymentRating() {
-	// TODO - implement Factories::updateEmploymentRating
-	throw "Not yet implemented";
+    employmentRating += 3; 
 }
 
 void Factories::updatePollutionLevel() {
-	// TODO - implement Factories::updatePollutionLevel
-	throw "Not yet implemented";
+    pollutionLevel += 1.0f; 
 }

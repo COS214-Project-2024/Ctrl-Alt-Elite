@@ -5,8 +5,9 @@
 
 class House : public Residential {
 public:
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
+    House();
+	~House()override;
+
     void display() const override;
     void calculateOccupancyRate();
 };

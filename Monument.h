@@ -4,16 +4,12 @@
 #include "Landmarks.h"
 
 class Monument : public Landmarks {
-
 public:
-	void addBuilding(Building* building) override;
+    Monument();
+    ~Monument() override;
 
-	void removeBuilding(Building* building) override;
-
-	void display() const override;
-
-	void updateEntertainmentRating();
+    void display() const override;
+    void updateEntertainmentRating() override;
 };
 
 #endif
-

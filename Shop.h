@@ -5,11 +5,12 @@
 
 class Shop : public Commercial {
 public:
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
+    Shop();
+    ~Shop() override;
+
     void display() const override;
-    void updateEmploymentRating();
-    void updateEntertainmentRating();
+    void updateEmploymentRating() override;
+    void updateEntertainmentRating() override;
 };
 
 #endif

@@ -6,7 +6,7 @@
 
 class CompositeBuilding : public Building {
 private:
-    std::unordered_map<std::string, int> buildings;
+    std::vector<Building*> buildings;
     int population;
     int jobs;
 
@@ -14,8 +14,9 @@ public:
     CompositeBuilding();
     ~CompositeBuilding();
 
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
+    void addBuilding(Building* building) ;
+    void removeBuilding(Building* building) ;
+
     void display() const override;
     Building* clone() const override;
 
@@ -23,8 +24,15 @@ public:
     void increaseJobs(int amount);
     void expandUtilities();
     void displayCityState();
+	void manageCapacity();
+    void integrateUtilities();
+	//double calculateTax();
+	double calculateTaxRevenue() const;
+    void maintainBuildings();
+    void trackSatisfaction();
 
-    Iterator<std::pair<std::string, int>>* createIterator() override;
+   // std::vector<Building*>::iterator createIterator() override;
+
 };
 
 #endif

@@ -1,26 +1,21 @@
 #include "Shop.h"
+#include <iostream>
 
-void Shop::addBuilding(Building* building) {
-	// TODO - implement Shop::addBuilding
-	throw "Not yet implemented";
-}
+Shop::Shop() : Commercial() {}
 
-void Shop::removeBuilding(Building* building) {
-	// TODO - implement Shop::removeBuilding
-	throw "Not yet implemented";
-}
+Shop::~Shop() {}
 
 void Shop::display() const {
-	// TODO - implement Shop::display
-	throw "Not yet implemented";
+    std::cout << "Shop - Entertainment Rating: " << entertainmentRating
+              << ", Employment Rating: " << employmentRating
+              << ", Revenue: $" << revenue << "\n";
 }
 
 void Shop::updateEmploymentRating() {
-	// TODO - implement Shop::updateEmploymentRating
-	throw "Not yet implemented";
+    employmentRating += 2; 
 }
 
+
 void Shop::updateEntertainmentRating() {
-	// TODO - implement Shop::updateEntertainmentRating
-	throw "Not yet implemented";
+    entertainmentRating += 3; 
 }

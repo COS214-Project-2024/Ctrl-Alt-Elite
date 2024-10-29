@@ -1,18 +1,17 @@
 #include "Estate.h"
 #include <iostream>
 
-void Estate::addBuilding(Building* building) {
-    // Estates do not support adding buildings
-}
+Estate::Estate()  : Residential() {}
 
-void Estate::removeBuilding(Building* building) {
-    // Estates do not support removing buildings
-}
+Estate::~Estate() {}
+
 
 void Estate::display() const {
-    std::cout << "Displaying information about an estate.\n";
+    std::cout << "Displaying Estate details.\n";
+    // Additional display logic specific to Estate
 }
 
 void Estate::calculateOccupancyRate() {
-    // Calculate and print the occupancy rate
+     // Specific logic to calculate the occupancy rate for an Estate
+    std::cout << "Calculating occupancy rate for Estate.\n";
 }

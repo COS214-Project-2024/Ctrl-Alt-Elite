@@ -4,20 +4,18 @@
 #include "Building.h"
 
 class Industrial : public Building {
-private:
+protected:
     int employmentRating;
     float pollutionLevel;
 
 public:
     Industrial();
-    ~Industrial();
+    virtual ~Industrial();
 
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
-    void display() const override;
-    void updateEmploymentRating();
-    void updatePollutionLevel();
-    int getEmploymentRating();
+    virtual void display() const override;
+    virtual void updateEmploymentRating();
+    virtual void updatePollutionLevel();
+    int getEmploymentRating() const;
 
     Building* clone() const override;
 };

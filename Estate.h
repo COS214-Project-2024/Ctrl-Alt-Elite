@@ -5,8 +5,10 @@
 
 class Estate : public Residential {
 public:
-    void addBuilding(Building* building) override;
-    void removeBuilding(Building* building) override;
+
+	Estate();
+	~Estate();
+   
     void display() const override;
     void calculateOccupancyRate();
 };
