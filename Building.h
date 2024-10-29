@@ -5,33 +5,36 @@
 #include <vector>
 #include <string>
 #include <memory>
+#include <unordered_map>
 
 #include "Citizen.h"
 #include "Utilities.h"
 #include "Resource.h"
 #include "Iterator.h"
 
-class Building {
-protected:
-    std::vector<Citizen*> citizens;
-    Utilities* utilities;
-    bool hasElectricity;
-    bool hasWaterSupply;
-    bool wasteCollected;
-    bool sewageManaged;
-    bool underConstruction;
-    bool available;
+class Building 
+{
+    protected:
+        std::vector<Citizen*> citizens;
+        Utilities* utilities;
+        bool hasElectricity;
+        bool hasWaterSupply;
+        bool wasteCollected;
+        bool sewageManaged;
+        bool underConstruction;
+        bool available;
+        std::unordered_map<std::string, int> resources; // New addition for resources
 
-public:
-    virtual ~Building() = default;
+    public:
+        virtual ~Building() = default;
 
-    virtual void addBuilding(Building* building) = 0;
-    virtual void removeBuilding(Building* building) = 0;
-    virtual void display() const = 0;
-    virtual Building* clone() const = 0;
+        virtual void addBuilding(Building* building) = 0;
+        virtual void removeBuilding(Building* building) = 0;
+        virtual void display() const = 0;
+        virtual Building* clone() const = 0;
 
-    void allocateResources(Resource* resource);
-    virtual Iterator<std::pair<std::string, int>>* createIterator();
+        void allocateResources(Resource* resource);
+        virtual Iterator<std::pair<std::string, int>>* createIterator();
 };
 
 #endif

@@ -1,0 +1,85 @@
+prac6.out: Testing.o Apartment.o Building.o BuildingIterator.o Citizen.o Commercial.o CompositeBuidling.o CulturalCenter.o Estate.o Factories.o Government.o House.o Industrial.o Iterator.o Landmarks.o Mall.o Monument.o Office.o Park.o Plants.o Residential.o Shop.o Townhouse.o Utitlities.o Warehouse.o
+	g++ Testing.o Apartment.o Building.o BuildingIterator.o Citizen.o Commercial.o CompositeBuidling.o CulturalCenter.o Estate.o Factories.o Government.o House.o Industrial.o Iterator.o Landmarks.o Mall.o Monument.o Office.o Park.o Plants.o Residential.o Shop.o Townhouse.o Utitlities.o Warehouse.o-o prac2.out
+
+Testing.o: Testing.cpp
+	g++ -c Testing.cpp
+
+Apartment.o: Apartment.cpp
+	g++ -c Apartment.cpp
+
+Building.o: Building.cpp
+	g++ -c Building.cpp
+
+BuildingIterator.o: BuildingIterator.cpp
+	g++ -c BuildingIterator.cpp
+
+Citizen.o: Citizen.cpp
+	g++ -c Citizen.cpp
+
+Commercial.o: Commercial.cpp
+	g++ -c Commercial.cpp
+
+CompositeBuidling.o: CompositeBuidling.cpp
+	g++ -c CompositeBuidling.cpp
+
+CulturalCenter.o: CulturalCenter.cpp
+	g++ -c CulturalCenter.cpp
+
+Estate.o: Estate.cpp
+	g++ -c Estate.cpp
+
+Factories.o: Factories.cpp
+	g++ -c Factories.cpp
+
+Government.o: Government.cpp
+	g++ -c Government.cpp
+
+House.o: House.cpp
+	g++ -c House.cpp
+
+Industrial.o: Industrial.cpp
+	g++ -c Industrial.cpp
+
+Iterator.o: Iterator.cpp
+	g++ -c Iterator.cpp
+
+Landmarks.o: Landmarks.cpp
+	g++ -c Landmarks.cpp
+
+Mall.o: Mall.cpp
+	g++ -c Mall.cpp
+
+Monument.o: Monument.cpp
+	g++ -c Monument.cpp
+
+Office.o: Office.cpp
+	g++ -c Office.cpp
+
+Park.o: Park.cpp
+	g++ -c Park.cpp
+
+Plants.o: Plants.cpp
+	g++ -c Plants.cpp
+
+Residential.o: Residential.cpp
+	g++ -c Residential.cpp
+
+Shop.o: Shop.cpp
+	g++ -c Shop.cpp
+
+Townhouse.o: Townhouse.cpp
+	g++ -c Townhouse.cpp
+
+Utitlities.o: Utitlities.cpp
+	g++ -c Utitlities.cpp
+
+Warehouse.o: Warehouse.cpp
+	g++ -c Warehouse.cpp
+
+
+
+run:
+	./prac6.out
+
+clean:
+	rm *.o prac6.out
