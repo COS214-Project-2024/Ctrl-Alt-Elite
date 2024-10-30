@@ -1,73 +1,44 @@
-# Suppresses "Entering directory" and "Leaving directory" messages in recursive make calls
-MAKEFLAGS += --no-print-directory
+# Compiler
+CXX = g++
 
-# The cpp file where int main() exists
-main = TestingMain
+# Compiler flags
+CXXFLAGS = -Wall -g -fprofile-arcs -ftest-coverage
 
-# Compiles the code with the c++11 standard and automatically locates .cpp and .o files
-gpp_11_o = g++ -std=c++11 -c
-cpps = $(wildcard *.cpp)
-ofiles = $(cpps:.cpp=.o)
+# Executable names
+TEST_TARGET = TestMain
 
-# Prevents output from file
-.SILENT:
+# Source files for the test target
+TEST_SRCS = TestMain.cpp Government.cpp City.cpp Citizen.cpp Education.cpp LawEnforcment.cpp HealthCare.cpp PoliciesDepartment.cpp PublicServicesDepartment.cpp BudgetDepartment.cpp TaxationDepartment.cpp
+# Object files for the test target
+TEST_OBJS = $(TEST_SRCS:.cpp=.o)
 
-# Default rule to build the executable
-$(main): $(ofiles)
-	g++ $^ -o $@
+# Default target - runs the test program (this will be used for "make run")
+all: run
 
-# Rule to compile source files to object files
-%.o: %.cpp %.h
-	$(gpp_11_o) $< -o $@
+# Link object files to create the test executable
+$(TEST_TARGET): $(TEST_OBJS)
+	$(CXX) $(CXXFLAGS) -o $@ $^
 
-# Rule to run the program
-run: $(main)
-	./$(main)
-	rm -f  *.o *.gcda *.gcno *.gcov, $(main) #optional
+# Compile source files to object files
+%.o: %.cpp
+	$(CXX) $(CXXFLAGS) -c $< -o $@
 
-# Rule to clean up generated files, including those from coverage
+# Run the test program
+run: $(TEST_TARGET)
+	./$(TEST_TARGET)
+
+# Clean object files, executables, and coverage files
 clean:
-	rm -f *.o *.gcda *.gcno *.gcov *.gcov.json *.gcov.json.gz
-	rm -f debug $(main) coverage.info
-	rm -rf coverage_report
-#	clear
+	rm -f $(TEST_OBJS) $(TEST_TARGET) *.gcda *.gcno *.gcov
 
-# Creates a debug build which checks for breakpoints in VSC
-debug:
-	$(MAKE) run
-	g++ -std=c++11 -g3 -DDEBUG *.cpp -o debug
+# Valgrind memory check on test main
+valgrind: $(TEST_TARGET)
+	valgrind --leak-check=full --show-leak-kinds=all --track-origins=yes ./$(TEST_TARGET)
 
-# Shows which lines are executed when running the program
-coverage:
-	g++ -std=c++11 -g -fprofile-arcs -ftest-coverage $(cpps) -o $(main)
-	./$(main)
-	gcov $(cpps)
-#	if [ -f *.gcov.json ]; then gzip -f *.gcov.json; fi
-#	rm -f *.o *.gcda *.gcno *.gcov *.gcov.json.gz debug $(main) coverage.info
-#	rm -rf coverage_report
+# Code coverage analysis for test main
+coverage: $(TEST_TARGET)
+	./$(TEST_TARGET)
+	gcov $(TEST_SRCS)
 
-# Checks memory usage/leaks
-valgrind:
-	g++ -std=c++11 -g *.cpp -o $(main)
-	valgrind --leak-check=full ./$(main)
-	rm -f *.o *.gcda *.gcno *.gcov, debug $(main) #optional
-
-# Shortcut for 'run' target
-r:
-	$(MAKE) run
-
-# Shortcut for 'clean' target
-c:
-	$(MAKE) clean
-
-# Shortcut for 'debug' target
-d:
-	$(MAKE)	debug
-
-# Shortcut for 'coverage' target
-cv:
-	$(MAKE)	coverage
-
-# Shortcut for 'valgrind' target
-v:
-	$(MAKE)	valgrind
+# Phony targets
+.PHONY: all run demo_build demo clean valgrind coverage

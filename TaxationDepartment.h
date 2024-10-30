@@ -1,20 +1,16 @@
-// TaxationDepartment.h
 #ifndef TAXATIONDEPARTMENT_H
 #define TAXATIONDEPARTMENT_H
+#include"Government.h"
+#include"City.h"
+class TaxationDepartment :public Government {
 
-#include "Government.h"
 
-class TaxationDepartment : public Government {
 public:
-    TaxationDepartment(City* city);
+	TaxationDepartment(City* city);
 
-    void manageCity() override;
-    void updateTaxes(float newTaxRate) override;
+	void manageCity();
 
-    // Implementations for unused Government methods
-    void implementPolicy(const std::string& policy) override {}
-    void updatePublicServices(const std::vector<std::string>& services) override {}
-    void allocateBudget(float budget) override {}
+	void updateTaxes(float newTaxRate);
 };
 
-#endif // TAXATIONDEPARTMENT_H
+#endif
