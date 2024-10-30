@@ -2,7 +2,7 @@
 #include "Residential.h"
 #include "Commercial.h"
 #include "Industrial.h"
-#include "Landmark.h"
+#include "Landmarks.h"
 
 #include <iostream>
 using namespace std;
@@ -38,10 +38,12 @@ void Adapter::addIndustrialUnits(int units){
 
 void Adapter::addLandmarkUnits(int units){
     for (int i = 0; i < units; ++i) {
-        Landmark* landmarkBuilding = new Landmark();
+        Landmarks* landmarkBuilding = new Landmarks();
         adaptee->addBuilding(landmarkBuilding);
         // Increase CompositeBuilding's entertainment rating based on each landmark's rating
-        adaptee->expandUtilities(landmarkBuilding->getEntertainmentRating());
+        //adaptee->expandUtilities(landmarkBuilding->getEntertainmentRating());
+        adaptee->expandUtilities();
+        
     }
 }
 
