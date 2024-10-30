@@ -2,11 +2,18 @@
 
 Government::Government()
 {
+	city = nullptr;
+	citizen = {}; 
+	taxRate=18; 
+	allocatedBudget=100000;
+	currentPolicy="Be kind to one another";
+	availableServices={"Health", "Law", "Education"};
 }
 
 Government::Government(City* city)
 {
 	this->city=city;
+	citizen = {}; 
 	taxRate=18; 
 	allocatedBudget=100000;
 	currentPolicy="Be kind to one another";
@@ -32,7 +39,7 @@ void Government::Report(){
 	std::cout<<"==================================================="<<std::endl;
 }
 
-/*void Government::addObserver(Citizen* observer) {
+void Government::addObserver(Citizen* observer) {
 	citizen.push_back(observer);
 }
 
@@ -40,9 +47,9 @@ void Government::removeObserver(Citizen observer) {
 	auto it = std::find(citizen.begin(), citizen.end(), observer);
         if (it != citizen.end()) {
             citizen.erase(it);
-            std::cout << "Citizen removed from the vector." << std::endl;
+            std::cout << "Citizen removed from the list." << std::endl;
         } else {
-            std::cout << "Citizen not found in the vector." << std::endl;
+            std::cout << "Citizen not found in the list." << std::endl;
         }
 }
 
@@ -52,7 +59,7 @@ void Government::notifyObservers() {
     }
 }
 
-void Government::addCommand(Command* command) {
+/*void Government::addCommand(Command* command) {
 	commandList.push_back(command);
 }
 
