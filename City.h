@@ -5,6 +5,7 @@
 #include <iostream>
 #include <vector>
 #include "Building.h"
+#include "CompositeBuilding.h"
 #include "Utilities.h"
 #include "ResourceFactory.h"
 
@@ -22,6 +23,7 @@ public:
     // Constructors
     City(); // Default constructor
     City(const std::string& name, int pop, float budget, ResourceFactory* factory);
+    ~City();
 
     // Methods for handling various city-related commands
     void collectTaxes();
@@ -35,7 +37,7 @@ public:
     void reportStatus();
 
     // Methods for managing buildings and resources
-    void addBuilding(Building* building);
+    void addBuilding(CompositeBuilding* building);
     void allocateResources(const std::string& resourceType);
     void updateCitizenSatisfaction();
     void simulateGrowth();

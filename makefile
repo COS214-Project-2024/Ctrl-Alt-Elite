@@ -1,6 +1,6 @@
-OBJS = allocate_budget_command.o Apartment.o Bike.o BudgetDepartment.o Building.o BuildingTarget.o Bus.o BusyState.o Car.o Citizen.o City.o Commercial.o CompositeBuilding.o CulturalCenter.o Education.o Estate.o Factories.o Government.o HealthCare.o House.o Industrial.o Landmarks.o LawEnforcment.o Mall.o ModeOfTransport.o ModerateState.o Monument.o Office.o Park.o Plane.o Plants.o PoliciesDepartment.o policy_command.o PrivateBusyState.o PrivateModerateState.o PrivateQuietState.o PrivateTransport.o public_services_command.o PublicServicesDepartment.o PublicTransport.o PublicTransportState.o PrivateTransportState.o QuietState.o Residential.o Resource.o Shop.o tax_command.o TaxationDepartment.o Taxi.o testing.o Townhouse.o Train.o TransportationState.o Walk.o Warehouses.o
-SOURCE = allocate_budget_command.cpp Apartment.cpp Bike.cpp BudgetDepartment.cpp Building.cpp BuildingTarget.cpp Bus.cpp BusyState.cpp Car.cpp Citizen.cpp City.cpp Commercial.cpp CompositeBuilding.cpp CulturalCenter.cpp Education.cpp Estate.cpp Factories.cpp Government.cpp HealthCare.cpp House.cpp Industrial.cpp Landmarks.cpp LawEnforcment.cpp Mall.cpp ModeOfTransport.cpp ModerateState.cpp Monument.cpp Office.cpp Park.cpp Plane.cpp Plants.cpp PoliciesDepartment.cpp policy_command.cpp PrivateBusyState.cpp PrivateModerateState.cpp PrivateQuietState.cpp PrivateTransport.cpp public_services_command.cpp PublicServicesDepartment.cpp PublicTransport.cpp PublicTransportState.cpp PrivateTransportState.cpp QuietState.cpp Residential.cpp Resource.cpp Shop.cpp tax_command.cpp TaxationDepartment.cpp Taxi.cpp testing.cpp Townhouse.cpp Train.cpp TransportationState.cpp Walk.cpp Warehouses.cpp
-HEADER = Adapter.h allocate_budget_command.h Apartment.h Bike.h BudgetDepartment.h Building.h BuildingTarget.h Bus.h BusyState.h Car.h Citizen.h City.h command.h Commercial.h CompositeBuilding.h CulturalCenter.h departments.h Education.h Estate.h Factories.h Government.h HealthCare.h House.h Industrial.h Iterator.h Landmarks.h LawEnforcment.h Mall.h ModeOfTransport.h ModerateState.h Monument.h Office.h Park.h Plane.h Plants.h PoliciesDepartment.h policy_command.h PrivateBusyState.h PrivateModerateState.h PrivateQuietState.h PrivateTransport.h public_services_command.h PublicServicesDepartment.h PublicTransport.h PublicTransportState.h PrivateTransportState.h QuietState.h Residential.h Resource.h ResourceFactory.h Shop.h tax_command.h TaxationDeprtment.h Taxi.h Townhouse.h Train.h TransportationState.h TransportStrategy.h Utilities.h Walk.h Warehouses.h
+OBJS = allocate_budget_command.o Apartment.o Bike.o BudgetDepartment.o Building.o BuildingTarget.o Bus.o BusyState.o Car.o Citizen.o City.o Commercial.o CompositeBuilding.o CulturalCenter.o Education.o Estate.o Factories.o Government.o HealthCare.o House.o Industrial.o Landmarks.o LawEnforcment.o Mall.o ModeOfTransport.o ModerateState.o Monument.o Office.o Park.o Plane.o Plants.o PoliciesDepartment.o policy_command.o PrivateBusyState.o PrivateModerateState.o PrivateQuietState.o PrivateTransport.o public_services_command.o PublicServicesDepartment.o PublicTransport.o PublicTransportState.o PrivateTransportState.o QuietState.o Residential.o Resource.o Shop.o tax_command.o TaxationDepartment.o Taxi.o testing.o Townhouse.o Train.o TransportationState.o Walk.o Warehouses.o CityBuilder.o Director.o ResourceFactory.o Energy.o Water.o Materials.o Budget.o
+SOURCE = allocate_budget_command.cpp Apartment.cpp Bike.cpp BudgetDepartment.cpp Building.cpp BuildingTarget.cpp Bus.cpp BusyState.cpp Car.cpp Citizen.cpp City.cpp Commercial.cpp CompositeBuilding.cpp CulturalCenter.cpp Education.cpp Estate.cpp Factories.cpp Government.cpp HealthCare.cpp House.cpp Industrial.cpp Landmarks.cpp LawEnforcment.cpp Mall.cpp ModeOfTransport.cpp ModerateState.cpp Monument.cpp Office.cpp Park.cpp Plane.cpp Plants.cpp PoliciesDepartment.cpp policy_command.cpp PrivateBusyState.cpp PrivateModerateState.cpp PrivateQuietState.cpp PrivateTransport.cpp public_services_command.cpp PublicServicesDepartment.cpp PublicTransport.cpp PublicTransportState.cpp PrivateTransportState.cpp QuietState.cpp Residential.cpp Resource.cpp Shop.cpp tax_command.cpp TaxationDepartment.cpp Taxi.cpp testing.cpp Townhouse.cpp Train.cpp TransportationState.cpp Walk.cpp Warehouses.cpp CityBuilder.cpp Director.cpp ResourceFactory.cpp Energy.cpp Water.cpp Materials.cpp Budget.cpp
+HEADER = Adapter.h allocate_budget_command.h Apartment.h Bike.h BudgetDepartment.h Building.h BuildingTarget.h Bus.h BusyState.h Car.h Citizen.h City.h command.h Commercial.h CompositeBuilding.h CulturalCenter.h departments.h Education.h Estate.h Factories.h Government.h HealthCare.h House.h Industrial.h Iterator.h Landmarks.h LawEnforcment.h Mall.h ModeOfTransport.h ModerateState.h Monument.h Office.h Park.h Plane.h Plants.h PoliciesDepartment.h policy_command.h PrivateBusyState.h PrivateModerateState.h PrivateQuietState.h PrivateTransport.h public_services_command.h PublicServicesDepartment.h PublicTransport.h PublicTransportState.h PrivateTransportState.h QuietState.h Residential.h Resource.h ResourceFactory.h Shop.h tax_command.h TaxationDeprtment.h Taxi.h Townhouse.h Train.h TransportationState.h TransportStrategy.h Utilities.h Walk.h Warehouses.h Builder.h CityBuilder.h Energy.h Water.h Materials.h Budget.h
 OUT	= a.out
 FLAGS	= -g3 -c -Wall
 LFLAGS	= 
@@ -28,6 +28,9 @@ Building.o: Building.cpp
 
 BuildingTarget.o: BuildingTarget.cpp
 	$(CC) $(FLAGS) BuildingTarget.cpp -lcppunit
+
+CityBuilder.o: CityBuilder.cpp
+	$(CC) $(FLAGS) CityBuilder.cpp -lcppunit
 
 Bus.o: Bus.cpp
 	$(CC) $(FLAGS) Bus.cpp -lcppunit
@@ -175,6 +178,18 @@ Walk.o: Walk.cpp
 
 Warehouses.o: Warehouses.cpp
 	$(CC) $(FLAGS) Warehouses.cpp -lcppunit
+
+Energy.o: Energy.cpp
+	$(CC) $(FLAGS) Energy.cpp -lcppunit
+
+Water.o: Water.cpp
+	$(CC) $(FLAGS) Water.cpp -lcppunit
+
+Materials.o: Materials.cpp
+	$(CC) $(FLAGS) Materials.cpp -lcppunit
+
+Budget.o: Budget.cpp
+	$(CC) $(FLAGS) Budget.cpp -lcppunit	
 
 clean:
 	rm -f $(OBJS) $(OUT)

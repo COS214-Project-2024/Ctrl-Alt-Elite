@@ -15,65 +15,91 @@
 #include "Shop.h"
 #include "Mall.h"
 #include "Office.h"
+#include "Director.h"
+#include "CityBuilder.h"
+#include "CompositeBuilding.h"
 
 int main() {
-    // Create composite building
-    CompositeBuilding city;
 
-    // Create some residential buildings
-    Residential* house = new Residential();
-    Residential* townhouse = new Residential();
-    Residential* apartment = new Residential();
-    house->display();
-    townhouse->display();
-    apartment->display();
+    // Create a CityBuilder instance
+    CityBuilder* builder = new CityBuilder();
+    
+    // Create a Director instance, passing in the CityBuilder
+    Director* director = new Director(builder);
+    
+    // Use the Director to construct the city growth
+    director->constructCityGrowth();
+    
+    // Retrieve the composite building structure after construction
+    CompositeBuilding* cityComposite = builder->getCompositeBuilding();
+    
+    // Display information to verify the constructed city components
+    std::cout << "Testing City Construction:\n";
+    std::cout << "--------------------------------\n";
+    cityComposite->display();
+    
+    // Clean up
+    delete director;
+    delete builder;
+    
+    
+    // // Create composite building
+    // CompositeBuilding city;
 
-    // Create some commercial buildings
-    Commercial* shop = new Shop();
-    Commercial* mall = new Mall();
-    Commercial* office = new Office();
-    shop->display();
-    mall->display();
-    office->display();
+    // // Create some residential buildings
+    // Residential* house = new Residential();
+    // Residential* townhouse = new Residential();
+    // Residential* apartment = new Residential();
+    // house->display();
+    // townhouse->display();
+    // apartment->display();
 
-    // Create some industrial buildings
-    Industrial* factory = new Factories();
-    Industrial* plant = new Plants();
-    Industrial* warehouse = new Warehouses();
-    factory->display();
-    plant->display();
-    warehouse->display();
+    // // Create some commercial buildings
+    // Commercial* shop = new Shop();
+    // Commercial* mall = new Mall();
+    // Commercial* office = new Office();
+    // shop->display();
+    // mall->display();
+    // office->display();
 
-    // Create some landmarks
-    Landmarks* park = new Park();
-    Landmarks* culturalCenter = new CulturalCenter();
-    Landmarks* monument = new Monument();
-    park->display();
-    culturalCenter->display();
-    monument->display();
+    // // Create some industrial buildings
+    // Industrial* factory = new Factories();
+    // Industrial* plant = new Plants();
+    // Industrial* warehouse = new Warehouses();
+    // factory->display();
+    // plant->display();
+    // warehouse->display();
 
-    // Add buildings to the city
-    city.addBuilding(house);
-    city.addBuilding(townhouse);
-    city.addBuilding(apartment);
-    city.addBuilding(shop);
-    city.addBuilding(mall);
-    city.addBuilding(office);
-    city.addBuilding(factory);
-    city.addBuilding(plant);
-    city.addBuilding(warehouse);
-    city.addBuilding(park);
-    city.addBuilding(culturalCenter);
-    city.addBuilding(monument);
+    // // Create some landmarks
+    // Landmarks* park = new Park();
+    // Landmarks* culturalCenter = new CulturalCenter();
+    // Landmarks* monument = new Monument();
+    // park->display();
+    // culturalCenter->display();
+    // monument->display();
 
-    // Display the state of the city
-    std::cout << "City state after adding buildings:\n";
-    city.displayCityState();
+    // // Add buildings to the city
+    // city.addBuilding(house);
+    // city.addBuilding(townhouse);
+    // city.addBuilding(apartment);
+    // city.addBuilding(shop);
+    // city.addBuilding(mall);
+    // city.addBuilding(office);
+    // city.addBuilding(factory);
+    // city.addBuilding(plant);
+    // city.addBuilding(warehouse);
+    // city.addBuilding(park);
+    // city.addBuilding(culturalCenter);
+    // city.addBuilding(monument);
 
-    // Remove a building from the city
-    city.removeBuilding(warehouse);
-    std::cout << "\nCity state after removing the warehouse:\n";
-    city.displayCityState();
+    // // Display the state of the city
+    // std::cout << "City state after adding buildings:\n";
+    // city.displayCityState();
+
+    // // Remove a building from the city
+    // city.removeBuilding(warehouse);
+    // std::cout << "\nCity state after removing the warehouse:\n";
+    // city.displayCityState();
 
     // // Clean up dynamic memory (optional in simple test, but good practice)
     // delete house;
