@@ -50,12 +50,14 @@
 #include "WaterSupply.h"
 #include "SewageSystems.h"
 #include "PowerPlants.h"
+#include "Adapter.h"
+#include "BuildingTarget.h"
 
 
 
 void TestingComposite(){
     // Create composite building
-    CompositeBuilding city;
+    CompositeBuilding *city = new CompositeBuilding(30000, 15000);
 
     // Create some residential buildings
     Residential* house = new Residential();
@@ -90,29 +92,29 @@ void TestingComposite(){
     monument->display();
 
     // Add buildings to the city
-    city.addBuilding(house);
-    city.addBuilding(townhouse);
-    city.addBuilding(apartment);
-    city.addBuilding(shop);
-    city.addBuilding(mall);
-    city.addBuilding(office);
-    city.addBuilding(factory);
-    city.addBuilding(plant);
-    city.addBuilding(warehouse);
-    city.addBuilding(park);
-    city.addBuilding(culturalCenter);
-    city.addBuilding(monument);
+    city->addBuilding(house);
+    city->addBuilding(townhouse);
+    city->addBuilding(apartment);
+    city->addBuilding(shop);
+    city->addBuilding(mall);
+    city->addBuilding(office);
+    city->addBuilding(factory);
+    city->addBuilding(plant);
+    city->addBuilding(warehouse);
+    city->addBuilding(park);
+    city->addBuilding(culturalCenter);
+    city->addBuilding(monument);
 
     // Display the state of the city
     std::cout << "City state after adding buildings:\n";
-    city.displayCityState();
+    city->displayCityState();
 
     // Remove a building from the city
-    city.removeBuilding(warehouse);
+    city->removeBuilding(warehouse);
     std::cout << "\nCity state after removing the warehouse:\n";
-    city.displayCityState();
+    city->displayCityState();
 
-
+    delete city;
 }
 
 void TestingCommand(){
@@ -355,12 +357,51 @@ void TestingResourcesAndUtilities(){
     testCityUtilitiesIntegration();
 }
 
+void TestingAdapter(){
+    std::cout<<endl;
+    std::cout<<"=================Testing Adapter=================";
+    //creating a CompositeBuilding to represent the entire city
+    CompositeBuilding* city = new CompositeBuilding(318000, 15000);
+
+    //creating an Adapter to interact with different types of buildings
+    Adapter cityAdapter(city);
+
+    //adding different types of buildings to the city using the adapter
+    int residentialUnits = 15;
+    int commercialUnits = 11;
+    int industrialUnits = 7;
+    int landmarkUnits = 5;
+
+    std::cout<<"Adding Residential Units...\n";
+    cityAdapter.addResidentialUnits(residentialUnits);
+
+    std::cout<<"\nAdding Commercial Units...\n";
+    cityAdapter.addCommercialUnits(commercialUnits);
+
+    std::cout<<"\nAdding Industrial Units...\n";
+    cityAdapter.addIndustrialUnits(industrialUnits);
+
+    std::cout<<"\nAdding Landmark Units...\n";
+    cityAdapter.addLandmarkUnits(landmarkUnits);
+
+    std::cout<<"\nDisplaying City Status:\n";
+    cityAdapter.displayCityStatus();
+
+    delete city;
+}
+
+void TestingObserver(){
+
+}
+
 int main() {
     TestingComposite();
     TestingCommand();
     TestingStrategyAndState();
     TestingResourcesAndUtilities();
-    //salome - observer and adapter
+    TestingAdapter();
+    TestingObserver();
+    
     //orabile - template and chain of respon
     //oj - iterator
     return 0;

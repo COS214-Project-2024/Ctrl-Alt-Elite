@@ -19,25 +19,25 @@ void Government::Report() {
     std::cout << "===================================================" << std::endl;
 }
 
-//void Government::addObserver(Citizen* observer) {
-//    citizen.push_back(observer);
-//}
-//
-//void Government::removeObserver(Citizen* observer) {
-//    auto it = std::find(citizen.begin(), citizen.end(), observer);
-//    if (it != citizen.end()) {
-//        citizen.erase(it);
-//        std::cout << "Citizen removed from the vector." << std::endl;
-//    } else {
-//        std::cout << "Citizen not found in the vector." << std::endl;
-//    }
-//}
-//
-//void Government::notifyObservers() {
-//    for (Citizen* c : citizen) {
-//        c->update();
-//    }
-//}
+void Government::addObserver(Citizen* observer) {
+    citizen.push_back(observer);
+}
+
+void Government::removeObserver(Citizen* observer) {
+    auto it = std::find(citizen.begin(), citizen.end(), observer);
+    if (it != citizen.end()) {
+        citizen.erase(it);
+        std::cout << "Citizen removed from the list." << std::endl;
+    } else {
+        std::cout << "Citizen not found in the list." << std::endl;
+    }
+}
+
+void Government::notifyObservers() {
+    for (Citizen* c : citizen) {
+        c->update();
+    }
+}
 
 void Government::addCommand(Command* command) {
     commandList.push_back(command);

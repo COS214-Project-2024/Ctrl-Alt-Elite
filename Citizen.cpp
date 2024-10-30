@@ -72,8 +72,20 @@ std::shared_ptr<TransportationState> Citizen::getState()
 
 
 void Citizen::update() {
-	// TODO - implement Citizen::update
-	throw "Not yet implemented";
+	/*if (currentState) {
+        currentState->handle(currentTransport);  // Apply handle to transport
+
+        // Interpret transport condition for satisfaction adjustment
+        std::string condition = currentTransport->getCondition();
+        if (condition == "Busy") {
+            updateSatisfaction(-10);  // Busy reduces satisfaction
+        } else if (condition == "Quiet") {
+            updateSatisfaction(5);    // Quiet increases satisfaction
+        } else if (condition == "Moderate") {
+            updateSatisfaction(0);    // Neutral satisfaction change
+        }
+        std::cout << "Citizen " << name << " satisfaction updated to: " << satisfaction << "\n";
+    }*/
 }
 
 void Citizen::respondToGovernmentChanges() {

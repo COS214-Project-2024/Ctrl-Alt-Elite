@@ -2,7 +2,10 @@
 #include <iostream>
 #include <algorithm>
 
-CompositeBuilding::CompositeBuilding() : population(0), jobs(0) {}
+CompositeBuilding::CompositeBuilding(int population, int jobs){
+    this->population = population;
+    this->jobs = jobs;
+}
 
 CompositeBuilding::~CompositeBuilding() {
     for (Building* building : buildings) {
