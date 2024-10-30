@@ -1,16 +1,13 @@
 #ifndef ITERATOR_H
 #define ITERATOR_H
 
-class Iterator {
-
-
-private:
-	Iterator();
-
-public:
-	bool hasNext();
-
-	T next();
+template <typename T>
+class Iterator 
+{
+	public:
+		virtual ~Iterator() = default;
+		virtual bool hasNext() = 0;
+		virtual T next() = 0;
 };
 
-#endif
+#endif // ITERATOR_H

@@ -75,19 +75,19 @@ int main() {
     std::cout << "\nCity state after removing the warehouse:\n";
     city.displayCityState();
 
-    // Clean up dynamic memory (optional in simple test, but good practice)
-    delete house;
-    delete townhouse;
-    delete apartment;
-    delete shop;
-    delete mall;
-    delete office;
-    delete factory;
-    delete plant;
-    delete warehouse;  // Note: Removed from the city
-    delete park;
-    delete culturalCenter;
-    delete monument;
+    // // Clean up dynamic memory (optional in simple test, but good practice)
+    // delete house;
+    // delete townhouse;
+    // delete apartment;
+    // delete shop;
+    // delete mall;
+    // delete office;
+    // delete factory;
+    // delete plant;
+    // delete warehouse;  // Note: Removed from the city
+    // delete park;
+    // delete culturalCenter;
+    // delete monument;
 
     return 0;
 }
