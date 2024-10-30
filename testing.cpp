@@ -1,119 +1,124 @@
+#include "CompositeBuilding.h"
+#include <gtest/gtest.h>
 #include <iostream>
-#include <vector>
-#include "Building.h"
-#include "CompositeBuilding.h"
-#include "Residential.h"
-#include "Commercial.h"
-#include "Industrial.h"
-#include "Landmarks.h"
-#include "CulturalCenter.h"
-#include "Monument.h"
-#include "Park.h"
-#include "Factories.h"
-#include "Plants.h"
-#include "Warehouses.h"
-#include "Shop.h"
-#include "Mall.h"
-#include "Office.h"
-#include "Director.h"
-#include "CityBuilder.h"
-#include "CompositeBuilding.h"
 
-int main() {
+// Mock building class for testing
+class MockBuilding : public Building {
+public:
+    void display() const override {
+        std::cout << "MockBuilding Displayed\n";
+    }
+    Building* clone() const override {
+        return new MockBuilding(*this);
+    }
+    double calculateTax() const override {
+        return 100.0; // Fixed tax for testing
+    }
+};
 
-    // Create a CityBuilder instance
-    CityBuilder* builder = new CityBuilder();
-    
-    // Create a Director instance, passing in the CityBuilder
-    Director* director = new Director(builder);
-    
-    // Use the Director to construct the city growth
-    director->constructCityGrowth();
-    
-    // Retrieve the composite building structure after construction
-    CompositeBuilding* cityComposite = builder->getCompositeBuilding();
-    
-    // Display information to verify the constructed city components
-    std::cout << "Testing City Construction:\n";
-    std::cout << "--------------------------------\n";
-    cityComposite->display();
-    
-    // Clean up
-    delete director;
-    delete builder;
-    
-    
-    // // Create composite building
-    // CompositeBuilding city;
+// Fixture for CompositeBuilding tests
+class CompositeBuildingTest : public ::testing::Test {
+protected:
+    CompositeBuilding composite;
+    MockBuilding* building1;
+    MockBuilding* building2;
 
-    // // Create some residential buildings
-    // Residential* house = new Residential();
-    // Residential* townhouse = new Residential();
-    // Residential* apartment = new Residential();
-    // house->display();
-    // townhouse->display();
-    // apartment->display();
+    void SetUp() override {
+        building1 = new MockBuilding();
+        building2 = new MockBuilding();
+    }
 
-    // // Create some commercial buildings
-    // Commercial* shop = new Shop();
-    // Commercial* mall = new Mall();
-    // Commercial* office = new Office();
-    // shop->display();
-    // mall->display();
-    // office->display();
+    void TearDown() override {
+        delete building1;
+        delete building2;
+    }
+};
 
-    // // Create some industrial buildings
-    // Industrial* factory = new Factories();
-    // Industrial* plant = new Plants();
-    // Industrial* warehouse = new Warehouses();
-    // factory->display();
-    // plant->display();
-    // warehouse->display();
+TEST_F(CompositeBuildingTest, AddBuildingTest) {
+    composite.addBuilding(building1);
+    EXPECT_EQ(composite.getBuildingsCount(), 1);
+}
 
-    // // Create some landmarks
-    // Landmarks* park = new Park();
-    // Landmarks* culturalCenter = new CulturalCenter();
-    // Landmarks* monument = new Monument();
-    // park->display();
-    // culturalCenter->display();
-    // monument->display();
+TEST_F(CompositeBuildingTest, RemoveBuildingTest) {
+    composite.addBuilding(building1);
+    composite.addBuilding(building2);
+    composite.removeBuilding(building1);
+    EXPECT_EQ(composite.getBuildingsCount(), 1);
+}
 
-    // // Add buildings to the city
-    // city.addBuilding(house);
-    // city.addBuilding(townhouse);
-    // city.addBuilding(apartment);
-    // city.addBuilding(shop);
-    // city.addBuilding(mall);
-    // city.addBuilding(office);
-    // city.addBuilding(factory);
-    // city.addBuilding(plant);
-    // city.addBuilding(warehouse);
-    // city.addBuilding(park);
-    // city.addBuilding(culturalCenter);
-    // city.addBuilding(monument);
+TEST_F(CompositeBuildingTest, DisplayTest) {
+    composite.addBuilding(building1);
+    composite.addBuilding(building2);
+    testing::internal::CaptureStdout();
+    composite.display();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("MockBuilding Displayed"), std::string::npos);
+}
 
-    // // Display the state of the city
-    // std::cout << "City state after adding buildings:\n";
-    // city.displayCityState();
+TEST_F(CompositeBuildingTest, CloneTest) {
+    composite.addBuilding(building1);
+    Building* clonedComposite = composite.clone();
+    EXPECT_NE(clonedComposite, nullptr);
+    delete clonedComposite;
+}
 
-    // // Remove a building from the city
-    // city.removeBuilding(warehouse);
-    // std::cout << "\nCity state after removing the warehouse:\n";
-    // city.displayCityState();
+TEST_F(CompositeBuildingTest, IncreasePopulationTest) {
+    composite.increasePopulation(50);
+    EXPECT_EQ(composite.getPopulation(), 50);
+    composite.increasePopulation(20);
+    EXPECT_EQ(composite.getPopulation(), 70);
+}
 
-    // // Clean up dynamic memory (optional in simple test, but good practice)
-    // delete house;
-    // delete townhouse;
-    // delete apartment;
-    // delete shop;
-    // delete mall;
-    // delete office;
-    // delete factory;
-    // delete plant;
-    // delete warehouse;  // Note: Removed from the city
-    // delete park;
-    // delete culturalCenter;
-    // delete monument;
+TEST_F(CompositeBuildingTest, IncreaseJobsTest) {
+    composite.increaseJobs(30);
+    EXPECT_EQ(composite.getJobs(), 30);
+    composite.increaseJobs(15);
+    EXPECT_EQ(composite.getJobs(), 45);
+}
 
-    return 0;
+TEST_F(CompositeBuildingTest, ExpandUtilitiesTest) {
+    testing::internal::CaptureStdout();
+    composite.expandUtilities();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Expanding utilities for CompositeBuilding"), std::string::npos);
+}
+
+TEST_F(CompositeBuildingTest, DisplayCityStateTest) {
+    composite.increasePopulation(200);
+    composite.increaseJobs(80);
+    testing::internal::CaptureStdout();
+    composite.displayCityState();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Total Population: 200"), std::string::npos);
+    EXPECT_NE(output.find("Total Jobs: 80"), std::string::npos);
+}
+
+TEST_F(CompositeBuildingTest, MaintainBuildingsTest) {
+    composite.addBuilding(building1);
+    composite.addBuilding(building2);
+    testing::internal::CaptureStdout();
+    composite.maintainBuildings();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Performing maintenance for each building"), std::string::npos);
+}
+
+TEST_F(CompositeBuildingTest, TrackSatisfactionTest) {
+    composite.addBuilding(building1);
+    composite.addBuilding(building2);
+    testing::internal::CaptureStdout();
+    composite.trackSatisfaction();
+    std::string output = testing::internal::GetCapturedStdout();
+    EXPECT_NE(output.find("Tracking building satisfaction"), std::string::npos);
+}
+
+TEST_F(CompositeBuildingTest, CalculateTaxRevenueTest) {
+    composite.addBuilding(building1);
+    composite.addBuilding(building2);
+    double totalTax = composite.calculateTaxRevenue();
+    EXPECT_EQ(totalTax, 200.0);  // Assuming each building tax is fixed at 100.0
+}
+
+int main(int argc, char **argv) {
+    ::testing::InitGoogleTest(&argc, argv);
+    return RUN_ALL_TESTS();
 }
