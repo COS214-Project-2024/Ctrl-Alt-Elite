@@ -4,7 +4,7 @@ TaxationDepartment::TaxationDepartment(City* city):Government(city) {}
 
 void TaxationDepartment::manageCity() {
 	std::cout<<"Taxes have been updated, notifying citizens..."<<std::endl;
-	notifyObservers();
+	//notifyObservers();
 }
 
 void TaxationDepartment::updateTaxes(float newTaxRate) {

@@ -2,9 +2,9 @@
 
 PoliciesDepartment::PoliciesDepartment(City* city): Government(city) {}
 
-void PoliciesDepartment::mangeCity() {
+void PoliciesDepartment::manageCity() {
 	std::cout<<"Government has implemented a new policy, notifying citizens..."<<std::endl;
-	notifyObservers();
+	//notifyObservers();
 }
 
 void PoliciesDepartment::implementPolicy(std::string policy) {

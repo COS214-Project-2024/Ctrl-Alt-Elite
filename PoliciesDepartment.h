@@ -2,12 +2,12 @@
 #define POLICIESDEPARTMENT_H
 #include"Government.h"
 
-class PoliciesDepartment : Government {
+class PoliciesDepartment :public Government {
 
 public:
 	PoliciesDepartment(City* city);
 
-	void mangeCity();
+	void manageCity() override;
 
 	void implementPolicy(std::string policy);
 };

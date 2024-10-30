@@ -1,11 +1,17 @@
 #ifndef PUBLICSERVICESDEPARTMENT_H
 #define PUBLICSERVICESDEPARTMENT_H
-#include"Government.h"
-#include"City.h"
+#include "Government.h"
+#include "Command.h"
+#include "City.h"
+#include <vector>
+#include <string>
+#include <algorithm> 
+#include <iostream>
 
-class PublicServicesDepartment : public Government {
-private:
-	PublicServicesDepartment* successor;
+class PublicServicesDepartment : public Government{
+
+protected:
+	PublicServicesDepartment* handler;
 
 public:
 	PublicServicesDepartment(City* city);
@@ -18,7 +24,7 @@ public:
 
 	void setNextHandler(PublicServicesDepartment* handler);
 
-	void handleRequest(int requestType);
+	virtual void handleRequest(int requestType);
 };
 
 #endif
