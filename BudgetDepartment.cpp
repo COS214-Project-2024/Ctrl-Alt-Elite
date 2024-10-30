@@ -2,7 +2,7 @@
 
 BudgetDepartment::BudgetDepartment(City* city): Government(city) {}
 
-void BudgetDepartment::mangeCity() {
+void BudgetDepartment::manageCity() {
 	std::cout<<"City budget has been allocated, notifying citizens..."<<std::endl;
 	//notifyObservers();
 }

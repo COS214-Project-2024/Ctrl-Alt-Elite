@@ -1,7 +1,7 @@
 #ifndef PUBLICSERVICESDEPARTMENT_H
 #define PUBLICSERVICESDEPARTMENT_H
 #include "Government.h"
-#include "Command.h"
+//#include "Command.h"
 #include "City.h"
 #include <vector>
 #include <string>

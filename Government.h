@@ -1,7 +1,7 @@
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
 #include "Citizen.h"
-#include "Command.h"
+//#include "Command.h"
 #include "City.h"
 #include <vector>
 #include <string>
