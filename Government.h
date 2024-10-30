@@ -10,7 +10,7 @@
 class Government {
 
 private:
-	//std::vector<Citizen*> citizen;
+	std::vector<Citizen*> citizen;
 	City* city;
 	//std::vector<Command*> commandList;
 
@@ -26,11 +26,11 @@ public:
 
 	void Report();
 
-	//void addObserver(Citizen* observer);
+	void addObserver(Citizen* observer);
 
-	//void removeObserver(Citizen observer);
+	void removeObserver(Citizen observer);
 
-	//void notifyObservers();
+	void notifyObservers();
 
 	//void addCommand(Command* command);
 
