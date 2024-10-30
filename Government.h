@@ -2,7 +2,7 @@
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
 
-#include "Citizen.h"
+//#include "Citizen.h"
 #include "command.h"
 #include "City.h"
 #include <vector>
@@ -12,7 +12,7 @@
 
 class Government {
 private:
-    std::vector<Citizen*> citizen;
+//    std::vector<Citizen*> citizen;
     City* city;
     std::vector<Command*> commandList;
 
@@ -27,9 +27,9 @@ public:
     Government(City* city);
 
     void Report();
-    void addObserver(Citizen* observer);
-    void removeObserver(Citizen* observer);
-    void notifyObservers();
+//    void addObserver(Citizen* observer);
+//    void removeObserver(Citizen* observer);
+//    void notifyObservers();
 
     virtual void updateTaxes(float newTaxRate) = 0;
     virtual void implementPolicy(const std::string& policy) = 0;
