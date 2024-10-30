@@ -7,6 +7,7 @@
 #include "Building.h"
 #include "Utilities.h"
 #include "ResourceFactory.h"
+#include "Resource.h"
 
 class City {
 private:
