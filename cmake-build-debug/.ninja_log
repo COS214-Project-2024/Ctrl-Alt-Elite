@@ -1,0 +1,13 @@
+# ninja log v5
+46	2341	7519979645658794	CMakeFiles/COS214_Project.dir/City.cpp.obj	d95b386bb411e99c
+166	2493	7519979647689451	CMakeFiles/COS214_Project.dir/allocate_budget_command.cpp.obj	aa79930031a60493
+193	2546	7519979648230708	CMakeFiles/COS214_Project.dir/tax_command.cpp.obj	40569816af4b0035
+1	2751	7519979649033463	CMakeFiles/COS214_Project.dir/main.cpp.obj	a5f6bb062ada180b
+117	2919	7519979649334035	CMakeFiles/COS214_Project.dir/policy_command.cpp.obj	4ad1dd21223f6bde
+79	2923	7519979650566610	CMakeFiles/COS214_Project.dir/public_services_command.cpp.obj	99ab25c3318a1b76
+377	2933	7519979652108539	CMakeFiles/COS214_Project.dir/PoliciesDepartment.cpp.obj	8f0dcc8802220793
+330	2936	7519979652527295	CMakeFiles/COS214_Project.dir/TaxationDepartment.cpp.obj	d0e72c44b506932a
+230	2939	7519979652338546	CMakeFiles/COS214_Project.dir/PublicServicesDepartment.cpp.obj	5cda9ca18767ce2d
+267	3093	7519979653753427	CMakeFiles/COS214_Project.dir/Government.cpp.obj	e64855327495b0cd
+2360	3736	7519979660706253	CMakeFiles/COS214_Project.dir/BudgetDepartment.cpp.obj	16e1a2864e563a45
+3737	4560	7519979666299027	COS214_Project.exe	9bcfd3c2699c7eac

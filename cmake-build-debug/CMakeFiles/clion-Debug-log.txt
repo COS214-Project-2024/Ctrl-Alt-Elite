@@ -1,4 +1,16 @@
-C:\Users\jinfe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.8660.186\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\COS214_Project -B C:\COS214_Project\cmake-build-debug
--- Configuring done (0.2s)
--- Generating done (0.0s)
--- Build files have been written to: C:/COS214_Project/cmake-build-debug
+C:\Users\jinfe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.8660.186\bin\cmake\win\x64\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -DCMAKE_MAKE_PROGRAM=C:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/ninja/win/x64/ninja.exe -G Ninja -S C:\Ctrl-Alt-Elite -B C:\Ctrl-Alt-Elite\cmake-build-debug
+-- The C compiler identification is GNU 13.1.0
+-- The CXX compiler identification is GNU 13.1.0
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/mingw/bin/gcc.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/mingw/bin/g++.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Configuring done (9.4s)
+-- Generating done (0.2s)
+-- Build files have been written to: C:/Ctrl-Alt-Elite/cmake-build-debug
