@@ -32,7 +32,7 @@ private:
 
 public:
 
-	Citizen(const std::string& citizenName, std::shared_ptr<TransportationState> state= nullptr);
+	Citizen(const std::string& citizenName, std::shared_ptr<TransportationState> state, PublicServicesDepartment* services);
 
 	void setTransportStrategy(std::shared_ptr<TransportStrategy> strategy, int index);
 
