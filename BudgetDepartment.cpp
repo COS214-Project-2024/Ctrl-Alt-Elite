@@ -10,3 +10,7 @@ void BudgetDepartment::manageCity() {
 void BudgetDepartment::allocateBudget(float budget) {
 	allocatedBudget=budget;
 }
+
+float PublicServicesDepartment::getTaxrate() {
+    return taxRate;
+}
