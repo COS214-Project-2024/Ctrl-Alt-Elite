@@ -1,12 +1,13 @@
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
-#include "Citizen.h"
+//#include "Citizen.h"
 //#include "Command.h"
 #include "City.h"
 #include <vector>
 #include <string>
 #include <algorithm> 
 #include <iostream>
+class Citizen;
 class Government {
 
 private:
