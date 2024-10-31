@@ -10,3 +10,7 @@ void TaxationDepartment::manageCity() {
 void TaxationDepartment::updateTaxes(float newTaxRate) {
 	this->taxRate=newTaxRate;
 }
+
+float PublicServicesDepartment::getTaxrate() {
+    return taxRate;
+}
