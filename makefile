@@ -192,16 +192,47 @@ Budget.o: Budget.cpp
 	$(CC) $(FLAGS) Budget.cpp -lcppunit	
 
 clean:
-	rm -f $(OBJS) $(OUT)
+	rm -f *.o *.gcda *.gcno *.gcov *.gcov.json *.gcov.json.gz
+	rm -f debug $(main) coverage.info
+	rm -rf coverage_report
+#	clear
 
-run: a.out
-	./a.out
+# Creates a debug build which checks for breakpoints in VSC
+debug:
+	$(MAKE) run
+	g++ -std=c++11 -g3 -DDEBUG *.cpp -o debug
 
-valgrind: a.out
-	valgrind a.out
+# Shows which lines are executed when running the program
+coverage:
+	g++ -std=c++11 -g -fprofile-arcs -ftest-coverage $(cpps) -o $(main)
+	./$(main)
+	gcov $(cpps)
+#	if [ -f *.gcov.json ]; then gzip -f *.gcov.json; fi
+#	rm -f *.o *.gcda *.gcno *.gcov *.gcov.json.gz debug $(main) coverage.info
+#	rm -rf coverage_report
 
-valgrind_leakcheck: a.out
-	valgrind --leak-check=full a.out
+# Checks memory usage/leaks
+valgrind:
+	g++ -std=c++11 -g *.cpp -o $(main)
+	valgrind --leak-check=full ./$(main)
+	rm -f *.o *.gcda *.gcno *.gcov, debug $(main) #optional
 
-valgrind_extreme: a.out
-	valgrind --leak-check=full --show-leak-kinds=all --leak-resolution=high --track-origins=yes --vgdb=yes a.out
+# Shortcut for 'run' target
+r:
+	$(MAKE) run
+
+# Shortcut for 'clean' target
+c:
+	$(MAKE) clean
+
+# Shortcut for 'debug' target
+d:
+	$(MAKE)	debug
+
+# Shortcut for 'coverage' target
+cv:
+	$(MAKE)	coverage
+
+# Shortcut for 'valgrind' target
+v:
+	$(MAKE)	valgrind

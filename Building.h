@@ -5,15 +5,18 @@
 #include <vector>
 #include <string>
 #include <memory>
+
 #include "Citizen.h"
 #include "Utilities.h"
 #include "Resource.h"
 #include "Iterator.h"
 
+class Utilities;
+
 class Building {
 protected:
     std::vector<Citizen*> citizens; // List of citizens associated with the building
-    Utilities* utilities;           // Utilities associated with the building
+    std::vector<Utilities*> utilities;           // Utilities associated with the building
     bool hasElectricity;            // Indicates electricity availability
     bool hasWaterSupply;            // Indicates if water is supplied to the building
     bool wasteCollected;            // Indicates if waste is properly collected
@@ -25,6 +28,7 @@ protected:
 
 public:
     virtual ~Building() = default;
+    //Building(float initialValue, float initialTaxRate);
 
     // Abstract methods for building management
     virtual void display() const = 0;

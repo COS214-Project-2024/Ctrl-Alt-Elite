@@ -1,6 +1,11 @@
 #include "Building.h"
 
-void Building::allocateResources(Resource* resource) {
+// Building::Building(float initialValue, float initialTaxRate)
+// {
+// }
+
+void Building::allocateResources(Resource *resource)
+{
     // bablo -resources
 }
 

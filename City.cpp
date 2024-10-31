@@ -54,12 +54,12 @@ void City::addBuilding(CompositeBuilding* building) {
 }
 
 void City::allocateResources(const std::string& resourceType) {
-    Resource* resource = resourceFactory->getResource(resourceType);
+    // Resource* resource = resourceFactory->getResource(resourceType);
 
-    // Additional logic for allocating the retrieved resource to city components, if needed
-    if (resource) {
-        resources.push_back(resource); // Store the allocated resource
-    }
+    // // Additional logic for allocating the retrieved resource to city components, if needed
+    // if (resource) {
+    //     resources.push_back(resource); // Store the allocated resource
+    // }
 }
 
 void City::updateCitizenSatisfaction() {

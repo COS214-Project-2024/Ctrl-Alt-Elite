@@ -11,7 +11,7 @@ private:
     int jobs;
 
 public:
-    CompositeBuilding();
+    CompositeBuilding(int population, int jobs);
     ~CompositeBuilding();
 
     void addBuilding(Building* building) ;
