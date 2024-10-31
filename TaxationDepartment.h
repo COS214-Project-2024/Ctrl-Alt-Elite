@@ -11,6 +11,8 @@ public:
 	void manageCity();
 
 	void updateTaxes(float newTaxRate);
+
+	float getTaxrate();
 };
 
 #endif
