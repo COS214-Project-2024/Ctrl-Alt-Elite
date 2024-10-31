@@ -25,6 +25,8 @@ public:
 	void setNextHandler(PublicServicesDepartment* handler);
 
 	virtual void handleRequest(int requestType);
+
+	float getTaxrate();
 };
 
 #endif
