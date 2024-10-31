@@ -29,3 +29,7 @@ void PublicServicesDepartment::handleRequest(int requestType) {
 	}
 	
 }
+
+float PublicServicesDepartment::getTaxrate() {
+    return taxRate;
+}
