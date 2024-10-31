@@ -69,10 +69,6 @@ void Government::executeCommands() {
 	}
 }*/
 
-float Government::getTaxrate() {
-	return taxRate;
-}
-
 std::string Government::getCurrentPolicy() {
 	return currentPolicy;
 }
