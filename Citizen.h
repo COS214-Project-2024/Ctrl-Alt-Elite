@@ -3,18 +3,19 @@
 #include <iostream>
 #include <string>
 #include "TransportStrategy.h"
-// #include "PublicServicesDepartment.h"
+#include "PublicServicesDepartment.h"
 #include "TransportationState.h"
 #include <memory>
 
 class Citizen {
 
 private:
-    std::shared_ptr<TransportStrategy> preferredModes[3];
-    std::shared_ptr<TransportationState> currentState;
-    std::string name;
-    float satisfaction;
-    float commuteTime;
+	std::shared_ptr<TransportStrategy> preferredModes[3];
+	std::shared_ptr<TransportationState> currentState;
+	PublicServicesDepartment *services;
+	std::string name;
+	float satisfaction;
+	float commuteTime;
 
 	// TransportStrategy* preferredModes;
 	// std::string name;
