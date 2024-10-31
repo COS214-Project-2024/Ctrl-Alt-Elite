@@ -38,7 +38,7 @@ public:
 
 	virtual void manageCity() = 0;
 
-	float getTaxrate();
+	virtual float getTaxrate() = 0;
 
 	std::string getCurrentPolicy();
 
