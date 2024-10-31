@@ -2,9 +2,10 @@
 #include <memory>
 #include <iostream>
 
-Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state ) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
+Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state, PublicServicesDepartment* services) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
 {
 	for (int i = 0; i < 3; ++i) preferredModes[i] = nullptr;
+	this->services = services;
 }
 
 void Citizen::setTransportStrategy(std::shared_ptr<TransportStrategy>strategy, int index)
@@ -72,8 +73,39 @@ std::shared_ptr<TransportationState> Citizen::getState()
 
 
 void Citizen::update() {
-	
+    //check for changes in services, tax rates, and policies
+    if (services) {
+        //adjust satisfaction based on available services
+        float serviceImpact = 0.0;
+		const auto& availableServices = services->getAvailableServices();
+		for (size_t i = 0; i < availableServices.size(); ++i) {
+			const auto& service = availableServices[i];
+			if (service == "Healthcare") {
+				serviceImpact += 10.0;  //example increase for essential services
+			} else if (service == "Education") {
+				serviceImpact += 5.0;
+			} else {
+				serviceImpact += 2.0;  //lesser impact for other services
+			}
+		}
+
+
+        //adjust satisfaction based on tax rate
+        float taxImpact = services->getTaxrate() * 2.0;  //decrease satisfaction by tax rate factor
+
+        //adjust satisfaction based on policies
+        if (currentPolicy == "Economic Reform") {
+            serviceImpact += 3.0;
+        } else if (currentPolicy == "Environmental Policy") {
+            serviceImpact -= 1.0;
+        }
+
+        //update citizen satisfaction and display updated information
+        satisfaction += serviceImpact - taxImpact;
+        std::cout << "Citizen " << name << "'s satisfaction updated to: " << satisfaction << "\n";
+    }
 }
+
 
 void Citizen::respondToGovernmentChanges() {
 	// TODO - implement Citizen::respondToGovernmentChanges
