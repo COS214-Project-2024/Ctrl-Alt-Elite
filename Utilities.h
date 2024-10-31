@@ -5,6 +5,8 @@
 #include "ResourceFactory.h"
 #include "Building.h"
 
+class Building;
+
 class Utilities {
 protected:
     Building* building;

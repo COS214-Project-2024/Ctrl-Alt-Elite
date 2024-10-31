@@ -1,9 +1,13 @@
 #include "Building.h"
 
-// Constructor
-Building::Building(float initialValue, float initialTaxRate)
-    : value(initialValue), taxRate(initialTaxRate), hasElectricity(false), 
-      hasWaterSupply(false), wasteCollected(false), sewageManaged(false) {}
+// Building::Building(float initialValue, float initialTaxRate)
+// {
+// }
+
+void Building::allocateResources(Resource *resource)
+{
+    // bablo -resources
+}
 
 // Accessors
 bool Building::getHasElectricity() const { return hasElectricity; }
@@ -31,3 +35,6 @@ void Building::payPropertyTax(float amount) {
 void Building::updateBuildingTaxRate(float newRate) {
     taxRate = newRate;
 }
+// Iterator<std::pair<std::string, int>>* Building::createIterator() {
+//     // OJ - iterator 
+// }
