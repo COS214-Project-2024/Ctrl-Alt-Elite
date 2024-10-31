@@ -15,6 +15,8 @@ public:
     void updateTaxes(float newTaxRate) ;//override;
     void implementPolicy(const std::string& policy) ;// override {}
     void updatePublicServices(const std::vector<std::string>& services);// override {}
+
+    float getTaxrate();
 };
 
 #endif // BUDGETDEPARTMENT_H
