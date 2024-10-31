@@ -10,6 +10,8 @@ public:
 	void manageCity() override;
 
 	void implementPolicy(std::string policy);
+
+	float getTaxrate();
 };
 
 #endif
