@@ -1,11 +1,12 @@
+// command.h
 #ifndef COMMAND_H
 #define COMMAND_H
 
+// Command Interface
 class Command {
-
-
 public:
-	virtual void execute() = 0;
+    virtual void execute() = 0;
+    virtual ~Command() = default;
 };
 
-#endif
+#endif // COMMAND_H

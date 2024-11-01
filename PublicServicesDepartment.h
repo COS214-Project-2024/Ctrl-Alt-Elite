@@ -1,30 +1,26 @@
+// PublicServicesDepartment.h
 #ifndef PUBLICSERVICESDEPARTMENT_H
 #define PUBLICSERVICESDEPARTMENT_H
+#include <sstream>
 #include "Government.h"
-#include "Command.h"
-#include "City.h"
-#include <vector>
-#include <string>
-#include <algorithm> 
-#include <iostream>
 
-class PublicServicesDepartment : public Government{
-
-protected:
-	PublicServicesDepartment* handler;
+class PublicServicesDepartment : public Government {
+private:
+    PublicServicesDepartment* handler;
 
 public:
-	PublicServicesDepartment(City* city);
+    PublicServicesDepartment(City* city);
 
-	void manageCity();
+    void manageCity() override;
+    void updatePublicServices(const std::vector<std::string>& services) override;
 
-	void updatePublicServices(std::vector<std::string> services);
+    void setNextHandler(PublicServicesDepartment* handler);
+    virtual void handleRequest(int requestType);
 
-	PublicServicesDepartment();
-
-	void setNextHandler(PublicServicesDepartment* handler);
-
-	virtual void handleRequest(int requestType);
+    // Implementations for unused Government methods
+    void updateTaxes(float newTaxRate) override;
+    void implementPolicy(const std::string& policy) override {}
+    void allocateBudget(float budget) override {}
 };
 
-#endif
+#endif // PUBLICSERVICESDEPARTMENT_H
