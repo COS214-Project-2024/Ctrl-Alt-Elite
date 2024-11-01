@@ -1,8 +1,9 @@
 #include "Citizen.h"
 #include <memory>
+#include <random>
 #include <iostream>
 
-Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state, PublicServicesDepartment* services) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
+Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state, std::shared_ptr<PublicServicesDepartment> services) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
 {
 	for (int i = 0; i < 3; ++i) preferredModes[i] = nullptr;
 	this->services = services;
@@ -73,36 +74,36 @@ std::shared_ptr<TransportationState> Citizen::getState()
 
 
 void Citizen::update() {
-    //check for changes in services, tax rates, and policies
     if (services) {
-        //adjust satisfaction based on available services
+        std::random_device rd;
+        std::mt19937 generator(rd());
+        std::uniform_int_distribution<int> distribution(1, 10);
+
         float serviceImpact = 0.0;
-		const auto& availableServices = services->getAvailableServices();
-		for (size_t i = 0; i < availableServices.size(); ++i) {
-			const auto& service = availableServices[i];
-			if (service == "Healthcare") {
-				serviceImpact += 10.0;  //example increase for essential services
-			} else if (service == "Education") {
-				serviceImpact += 5.0;
-			} else {
-				serviceImpact += 2.0;  //lesser impact for other services
-			}
-		}
-
-
-        //adjust satisfaction based on tax rate
-        float taxImpact = services->getTaxrate() * 2.0;  //decrease satisfaction by tax rate factor
-
-        //adjust satisfaction based on policies
-        if (currentPolicy == "Economic Reform") {
-            serviceImpact += 3.0;
-        } else if (currentPolicy == "Environmental Policy") {
-            serviceImpact -= 1.0;
+        const auto& availableServices = services->getAvailableServices();
+        for (const auto& service : availableServices) {
+            if (service == "HealthCare") {
+                serviceImpact += distribution(generator);
+            } else if (service == "Education") {
+                serviceImpact += distribution(generator);
+            } else {
+                serviceImpact += distribution(generator);
+            }
         }
 
-        //update citizen satisfaction and display updated information
+        float taxImpact = services->getTaxrate() + 0.04f;
+
+        if (currentPolicy == "Environmental Protection") {
+            serviceImpact += distribution(generator);
+        } else if (currentPolicy == "Smack bad people") {
+            serviceImpact -= distribution(generator);
+        }
+		else if(currentPolicy == "Be kind to one another"){
+			serviceImpact += distribution(generator);
+		}
+
         satisfaction += serviceImpact - taxImpact;
-        std::cout << "Citizen " << name << "'s satisfaction updated to: " << satisfaction << "\n";
+        //std::cout << name << "'s satisfaction updated to: " << satisfaction << "\n";
     }
 }
 

@@ -1,4 +1,5 @@
 #include "Government.h"
+#include "City.h"
 
 Government::Government()
 {
@@ -43,7 +44,7 @@ void Government::addObserver(Citizen* observer) {
 	citizen.push_back(observer);
 }
 
-void Government::removeObserver(Citizen observer) {
+void Government::removeObserver(Citizen* observer) {
 	auto it = std::find(citizen.begin(), citizen.end(), observer);
         if (it != citizen.end()) {
             citizen.erase(it);

@@ -11,6 +11,6 @@ void PoliciesDepartment::implementPolicy(std::string policy) {
 	this->currentPolicy=policy;
 }
 
-float PublicServicesDepartment::getTaxrate() {
+float PoliciesDepartment::getTaxrate() {
     return taxRate;
 }

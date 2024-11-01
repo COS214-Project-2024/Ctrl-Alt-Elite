@@ -2,12 +2,15 @@
 #define GOVERNMENT_H
 //#include "Citizen.h"
 //#include "Command.h"
-#include "City.h"
+//#include "City.h"
 #include <vector>
 #include <string>
 #include <algorithm> 
 #include <iostream>
+using namespace std;
 class Citizen;
+class City;
+//class PublicServicesDepartment;
 class Government {
 
 private:
@@ -29,7 +32,7 @@ public:
 
 	void addObserver(Citizen* observer);
 
-	void removeObserver(Citizen observer);
+	void removeObserver(Citizen* observer);
 
 	void notifyObservers();
 

@@ -1,6 +1,7 @@
 #include "PublicServicesDepartment.h"
+#include "City.h"
 
-PublicServicesDepartment::PublicServicesDepartment(City* city):Government(city) {
+PublicServicesDepartment::PublicServicesDepartment(City* city) : Government(city) {
 	this->handler=nullptr;
 }
 
@@ -11,6 +12,9 @@ void PublicServicesDepartment::manageCity() {
 
 void PublicServicesDepartment::updatePublicServices(std::vector<std::string> services) {
 	this->availableServices=services;
+	for (const auto& service : availableServices) {
+        std::cout << service << " service added." << std::endl;
+    }
 }
 
 PublicServicesDepartment::PublicServicesDepartment() {}

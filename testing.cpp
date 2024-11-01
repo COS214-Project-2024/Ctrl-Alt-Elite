@@ -380,6 +380,7 @@ void TestingResourcesAndUtilities(){
 void TestingAdapter(){
     std::cout<<endl;
     std::cout<<"=================Testing Adapter=================";
+    std::cout<<endl;
     //creating a CompositeBuilding to represent the entire city
     CompositeBuilding* city = new CompositeBuilding(318000, 15000);
 
@@ -411,7 +412,54 @@ void TestingAdapter(){
 }
 
 void TestingObserver(){
+    std::cout<<std::endl;
+    std::cout<<"=================Testing Observer=================";
+    std::cout<<std::endl;
+    
+    City* city = new City();
 
+    std::shared_ptr<PublicServicesDepartment> publicServicesDept = std::make_shared<PublicServicesDepartment>(city);
+
+    std::vector<Citizen*> citizens;
+    for (int i = 0; i < 27; ++i) {
+        std::string name = "Citizen" + std::to_string(i + 1);
+        Citizen* citizen = new Citizen(name, nullptr, publicServicesDept);
+        citizens.push_back(citizen);
+    }
+
+    std::cout << "Registering citizens as observers...\n";
+    for (Citizen* citizen : citizens) {
+        publicServicesDept->addObserver(citizen);
+    }
+
+    std::cout << "\nUpdating available public services...\n";
+    std::vector<std::string> updatedServices = {"HealthCare", "Education", "LawEnforcement"};
+    publicServicesDept->updatePublicServices(updatedServices);
+
+    std::cout << "\nNotifying citizens about the updates...\n";
+    publicServicesDept->notifyObservers();
+
+    std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
+    for (Citizen* citizen : citizens) {
+        citizen->displayInfo();
+        std::cout<<std::endl;
+    }
+
+    std::cout << "\nRemoving a few citizens as observers...\n";
+    for (int i = 0; i < 5; ++i) {
+        publicServicesDept->removeObserver(citizens[i]);
+    }
+
+    std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
+    for (int i = 5; i < citizens.size(); ++i) {
+        citizens[i]->displayInfo();
+        std::cout<<std::endl;
+    }
+
+    for (Citizen* citizen : citizens) {
+        delete citizen;
+    }
+    delete city;
 }
 
 void testTemplate(){

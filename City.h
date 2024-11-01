@@ -9,6 +9,10 @@
 #include "ResourceFactory.h"
 #include "Resource.h"
 
+class Building;
+class Utilities;
+class Government;
+class PublicServicesDepartment;
 class City {
 private:
     std::string cityName;        // Name of the city

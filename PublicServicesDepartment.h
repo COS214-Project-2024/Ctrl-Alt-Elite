@@ -1,14 +1,15 @@
 #ifndef PUBLICSERVICESDEPARTMENT_H
 #define PUBLICSERVICESDEPARTMENT_H
-#include "Government.h"
-//#include "Command.h"
-#include "City.h"
+
 #include <vector>
 #include <string>
 #include <algorithm> 
 #include <iostream>
-
-class PublicServicesDepartment : public Government{
+#include "Government.h"
+class City;
+class Citizen;
+class PublicServicesDepartment : public Government
+{
 
 protected:
 	PublicServicesDepartment* handler;

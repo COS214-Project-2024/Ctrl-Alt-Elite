@@ -11,6 +11,6 @@ void TaxationDepartment::updateTaxes(float newTaxRate) {
 	this->taxRate=newTaxRate;
 }
 
-float PublicServicesDepartment::getTaxrate() {
+float TaxationDepartment::getTaxrate() {
     return taxRate;
 }

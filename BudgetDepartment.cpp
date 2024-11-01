@@ -11,6 +11,6 @@ void BudgetDepartment::allocateBudget(float budget) {
 	allocatedBudget=budget;
 }
 
-float PublicServicesDepartment::getTaxrate() {
+float BudgetDepartment::getTaxrate() {
     return taxRate;
 }
