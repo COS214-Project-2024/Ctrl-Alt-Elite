@@ -11,7 +11,7 @@ public:
 
 	// TransportStrategy() = default;	
 	// virtual ~TransportStrategy() = default;
-	virtual float calculateCommuteTime() = 0;
+	virtual float calculateCommuteTime(float distance, float speed, const std::string& mode) = 0;
 	virtual bool isAvailable() = 0;
 
 

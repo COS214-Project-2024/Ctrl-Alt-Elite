@@ -1,3 +1,4 @@
+
 // #ifndef TRANSPORTSELECTOR_H
 // #define TRANSPORTSELECTOR_H
 
@@ -17,11 +18,12 @@
 
 // class TransportSelector {
 // private:
-//     std::unique_ptr<TransportStrategy> selectedTransport;
-//     std::unique_ptr<TransportationState> currentState;
+//     std::shared_ptr<TransportStrategy> selectedTransport;
+//     std::shared_ptr<TransportationState> currentState;
 //     Citizen citizen{"John Doe"};  // Test Citizen
 
 // public:
+
 //     void runTests() {
 //         int action;
 //         do {
@@ -67,7 +69,7 @@
 //         std::cout << "Assign transport to which slot (0-2) in citizen’s preferred modes? ";
 //         std::cin >> index;
 //         if (index >= 0 && index < 3) {
-//             citizen.setTransportStrategy(selectedTransport.get(), index);
+//             citizen.setTransportStrategy(selectedTransport, index);
 //         } else {
 //             std::cout << "Invalid slot.\n";
 //         }
@@ -80,16 +82,16 @@
 
 //         switch (option) {
 //             case 1:
-//                 selectedTransport = std::make_unique<Bus>(50, 10, 1.5, currentState.get());
+//                 selectedTransport = std::make_shared<Bus>(50, 10, 1.5, currentState);
 //                 break;
 //             case 2:
-//                 selectedTransport = std::make_unique<Train>(100, 5, 20.0, currentState.get());
+//                 selectedTransport = std::make_shared<Train>(100, 5, 20.0, currentState);
 //                 break;
 //             case 3:
-//                 selectedTransport = std::make_unique<Taxi>(4, 0, 2.5, currentState.get());
+//                 selectedTransport = std::make_shared<Taxi>(4, 0, 2.5, currentState);
 //                 break;
 //             case 4:
-//                 selectedTransport = std::make_unique<Plane>(200, 2, 150.0, currentState.get());
+//                 selectedTransport = std::make_shared<Plane>(200, 2, 150.0, currentState);
 //                 break;
 //             default:
 //                 std::cout << "Invalid public transport selection.\n";
@@ -105,13 +107,13 @@
 
 //         switch (option) {
 //             case 1:
-//                 selectedTransport = std::make_unique<Car>(5, 0.7, currentState.get());
+//                 selectedTransport = std::make_shared<Car>(5, 0.7, currentState);
 //                 break;
 //             case 2:
-//                 selectedTransport = std::make_unique<Bike>(1, currentState.get());
+//                 selectedTransport = std::make_shared<Bike>(1, currentState);
 //                 break;
 //             case 3:
-//                 selectedTransport = std::make_unique<Walk>(currentState.get());
+//                 selectedTransport = std::make_shared<Walk>(currentState);
 //                 break;
 //             default:
 //                 std::cout << "Invalid private transport selection.\n";
@@ -127,15 +129,15 @@
 
 //         switch (stateOption) {
 //             case 1:
-//                 currentState = std::make_unique<BusyState>();
+//                 currentState = std::make_shared<BusyState>();
 //                 std::cout << "State set to Busy.\n";
 //                 break;
 //             case 2:
-//                 currentState = std::make_unique<QuietState>();
+//                 currentState = std::make_shared<QuietState>();
 //                 std::cout << "State set to Quiet.\n";
 //                 break;
 //             case 3:
-//                 currentState = std::make_unique<ModerateState>();
+//                 currentState = std::make_shared<ModerateState>();
 //                 std::cout << "State set to Moderate.\n";
 //                 break;
 //             default:
@@ -144,14 +146,25 @@
 //         }
 
 //         if (selectedTransport) {
-//             selectedTransport->setState(currentState.get());
+//             selectedTransport->setState(currentState);
 //         }
 //     }
 
 //     void testCommuteTime() {
+//         // if (selectedTransport) {
+//         //     float time = selectedTransport->calculateCommuteTime();
+//         //     std::cout << "Calculated commute time: " << time << " units.\n";
+//         // } else {
+//         //     std::cout << "No transport selected.\n";
+//         // }
 //         if (selectedTransport) {
-//             float time = selectedTransport->calculateCommuteTime();
-//             std::cout << "Calculated commute time: " << time << " units.\n";
+//             float distance;
+//             std::cout << "Enter commute distance: ";
+//             std::cin >> distance;
+
+//             // Use the calculateCommuteTime method of the selected transport
+//             float time = selectedTransport->calculateCommuteTime(distance);
+//             // std::cout << "Estimated commute time: " << time << " minutes\n";
 //         } else {
 //             std::cout << "No transport selected.\n";
 //         }
@@ -179,6 +192,13 @@
 //         std::cin >> updateValue;
 //         citizen.updateSatisfaction(updateValue);
 //     }
+
+
+
+
+
+
+    
 // };
 
 // #endif
@@ -187,6 +207,7 @@
 
 #include <iostream>
 #include <memory>
+#include <string>
 #include "Bus.h"
 #include "Train.h"
 #include "Taxi.h"
@@ -206,6 +227,7 @@ private:
     Citizen citizen{"John Doe"};  // Test Citizen
 
 public:
+
     void runTests() {
         int action;
         do {
@@ -334,8 +356,24 @@ public:
 
     void testCommuteTime() {
         if (selectedTransport) {
-            float time = selectedTransport->calculateCommuteTime();
-            std::cout << "Calculated commute time: " << time << " units.\n";
+            float distance;
+            std::cout << "Enter travel distance in km: ";
+            std::cin >> distance;
+
+            // Determine mode type to pass to calculateCommuteTime
+            std::string mode;
+            if (std::dynamic_pointer_cast<Walk>(selectedTransport)) mode = "walk";
+            else if (std::dynamic_pointer_cast<Bike>(selectedTransport)) mode = "bike";
+            else if (std::dynamic_pointer_cast<Car>(selectedTransport)) mode = "car";
+            else if (std::dynamic_pointer_cast<Bus>(selectedTransport)) mode = "bus";
+            else if (std::dynamic_pointer_cast<Train>(selectedTransport)) mode = "train";
+            else if (std::dynamic_pointer_cast<Taxi>(selectedTransport)) mode = "taxi";
+            else if (std::dynamic_pointer_cast<Plane>(selectedTransport)) mode = "plane";
+            else mode = "default";
+
+            // Calculate and print commute time
+            float time = selectedTransport->calculateCommuteTime(distance, -1, mode);
+            std::cout << "Calculated commute time: " << time << " hours.\n";
         } else {
             std::cout << "No transport selected.\n";
         }

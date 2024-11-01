@@ -163,30 +163,37 @@ void testTransportModes() {
     auto bus = std::make_shared<Bus>(50, 10, 1.5, std::make_shared<QuietState>());
     std::cout << "Bus: ";
     bus->travel();
+    std::cout<<std::endl;
 
     auto train = std::make_shared<Train>(100, 5, 20.0, std::make_shared<ModerateState>());
     std::cout << "Train: ";
     train->travel();
+    std::cout<<std::endl;
 
-    auto taxi = std::make_shared<Taxi>(4, 0, 2.5, std::make_shared<BusyState>());
+    auto taxi = std::make_shared<Taxi>(4, 0, 2.5, std::make_shared<QuietState>());
     std::cout << "Taxi: ";
     taxi->travel();
+    std::cout<<std::endl;
 
     auto plane = std::make_shared<Plane>(200, 2, 150.0, std::make_shared<QuietState>());
     std::cout << "Plane: ";
     plane->travel();
+    std::cout<<std::endl;
 
     auto car = std::make_shared<Car>(5, 0.7, std::make_shared<PrivateQuietState>());
     std::cout << "Car: ";
     car->travel();
+    std::cout<<std::endl;
 
     auto bike = std::make_shared<Bike>(1, std::make_shared<PrivateModerateState>());
     std::cout << "Bike: ";
     bike->travel();
+    std::cout<<std::endl;
 
     auto walk = std::make_shared<Walk>(std::make_shared<PrivateQuietState>());
     std::cout << "Walk: ";
     walk->travel();
+    std::cout<<std::endl;
 }
 
 void testStates() {
