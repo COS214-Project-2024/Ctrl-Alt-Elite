@@ -10,27 +10,29 @@ Government::Government(City* city)
 	taxRate=18; 
 	allocatedBudget=100000;
 	currentPolicy="Be kind to one another";
+	availableServices={"Health", "Law", "Education"};
 }
 
 void Government::Report(){
 	std::cout<<"==================================================="<<std::endl;
 	std::cout<<"Government Report"<<std::endl;
-	std::cout<<"Tax rate:\t"<<std::to_string(getTaxrate())<<"%"<<std::endl;
-	std::cout<<"City Budget:\tR "<<std::to_string(allocatedBudget)<<std::endl;
+	std::cout<<"Tax rate:\t           \t"<<std::to_string(getTaxrate())<<"%"<<std::endl;
+	std::cout<<"City Budget:\t          \tR "<<std::to_string(allocatedBudget)<<std::endl;
 	std::cout<<"Availible Public Services:";
 	for(std::string service:availableServices)
 	{
-		std::cout<<"\t"<<service<<std::endl;
+		std::cout<<" \t"<<service<<std::endl;
+		std::cout<<"                          ";
 	}
 	std::cout<<" "<<std::endl;
-	std::cout<<"Current Policy:\t"<<currentPolicy<<std::endl;
+	std::cout<<"Current Policy:\t            \t"<<currentPolicy<<std::endl;
 
 	std::cout<<"Updates made:"<<std::endl;
 	manageCity();
 	std::cout<<"==================================================="<<std::endl;
 }
 
-void Government::addObserver(Citizen* observer) {
+/*void Government::addObserver(Citizen* observer) {
 	citizen.push_back(observer);
 }
 
@@ -58,7 +60,7 @@ void Government::executeCommands() {
 	for (Command* c:commandList){
 		c->execute();
 	}
-}
+}*/
 
 float Government::getTaxrate() {
 	return taxRate;

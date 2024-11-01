@@ -1,10 +1,12 @@
 #include "PublicServicesDepartment.h"
 
-PublicServicesDepartment::PublicServicesDepartment(City* city):Government(city) {}
+PublicServicesDepartment::PublicServicesDepartment(City* city):Government(city) {
+	this->handler=nullptr;
+}
 
 void PublicServicesDepartment::manageCity() {
 	std::cout<<"Availible Public Services have been updated, notifying citizens..."<<std::endl;
-	notifyObservers();
+	//notifyObservers();
 }
 
 void PublicServicesDepartment::updatePublicServices(std::vector<std::string> services) {
@@ -14,16 +16,16 @@ void PublicServicesDepartment::updatePublicServices(std::vector<std::string> ser
 PublicServicesDepartment::PublicServicesDepartment() {}
 
 void PublicServicesDepartment::setNextHandler(PublicServicesDepartment* handler) {
-	this->successor=handler;
+	this->handler=handler;
 }
 
 void PublicServicesDepartment::handleRequest(int requestType) {
-	if(successor)
-	{
-		successor->handleRequest(requestType);
+	if(this->handler){
+		this->handler->handleRequest(requestType);
 	}
-	else
+	else if(this->handler==nullptr)
 	{
-		std::cout<<"failed to handle request"<<std::endl;
+		std::cout<<"Failed to handle request"<<std::endl;
 	}
+	
 }

@@ -2,7 +2,7 @@
 #define TAXATIONDEPARTMENT_H
 #include"Government.h"
 #include"City.h"
-class TaxationDepartment : Government {
+class TaxationDepartment :public Government {
 
 
 public:

@@ -2,11 +2,12 @@
 #define HEALTHCARE_H
 #include "PublicServicesDepartment.h"
 
-class HealthCare : PublicServicesDepartment {
+class HealthCare :public PublicServicesDepartment {
 
 
 public:
-	void handleRequest(int requestType);
+	HealthCare(City* city);
+	virtual void handleRequest(int requestType) override;
 };
 
 #endif

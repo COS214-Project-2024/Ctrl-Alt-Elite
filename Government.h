@@ -10,9 +10,9 @@
 class Government {
 
 private:
-	std::vector<Citizen*> citizen;
+	//std::vector<Citizen*> citizen;
 	City* city;
-	std::vector<Command*> commandList;
+	//std::vector<Command*> commandList;
 
 protected:
 	std::string currentPolicy;
@@ -26,23 +26,15 @@ public:
 
 	void Report();
 
-	void addObserver(Citizen* observer);
+	//void addObserver(Citizen* observer);
 
-	void removeObserver(Citizen observer);
+	//void removeObserver(Citizen observer);
 
-	void notifyObservers();
+	//void notifyObservers();
 
-	virtual void updateTaxes() = 0;
+	//void addCommand(Command* command);
 
-	virtual void implementPolicy() = 0;
-
-	virtual void updatePublicServices() = 0;
-
-	virtual void allocateBudget(float budget) = 0;
-
-	void addCommand(Command* command);
-
-	void executeCommands();
+	//void executeCommands();
 
 	virtual void manageCity() = 0;
 
