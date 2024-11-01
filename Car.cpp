@@ -5,6 +5,12 @@
 void Car::travel() {
 	if (isAvailable()) {
             std::cout << "Car is traveling with a fuel cost of R" << petrolPrice << " per km.\n";
+            std::cout << "        _______\n";
+            std::cout << "       //  ||\\ \\ \n";
+            std::cout << " _____//___||_\\ \\___\n";
+            std::cout << " )  _          _    \\\n";
+            std::cout << " |_/ \\________/ \\___|\n";
+            std::cout << "___\\_/________\\_/______\n";
         } else {
             std::cout << "Car is currently unavailable.\n";
         }

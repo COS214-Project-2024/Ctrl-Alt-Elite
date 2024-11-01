@@ -15,7 +15,7 @@ public:
 	void stopAtStation();
 
 	bool isAvailable() override;
-	float calculateCommuteTime() override;
+	float calculateCommuteTime(float distance, float speed, const std::string& mode) override;
 
 	// virtual ~PublicTransport() = default;
 	// virtual ~PublicTransport(); 

@@ -10,7 +10,7 @@ public:
 
 	void travel() override;
 	bool isAvailable() override;
-	float calculateCommuteTime() override;
+	float calculateCommuteTime(float distance, float speed, const std::string& mode) override;
 	PrivateTransport(float cost, std::shared_ptr<TransportationState> state = nullptr);
 
 	// virtual ~PrivateTransport() = default;

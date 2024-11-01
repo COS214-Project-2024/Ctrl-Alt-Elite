@@ -5,6 +5,8 @@
 void Plane::travel() {
 	if (isAvailable()) {
             std::cout << "Plane is flying with a ticket cost of R" << ticketCost << "\n";
+            std::cout << "      __|__" << std::endl;
+            std::cout << "*---o--(_)--o---*" << std::endl;
         } else {
             std::cout << "Plane is currently unavailable.\n";
         }
