@@ -13,6 +13,10 @@ public:
     void applyUtility(Building* building) override;
     bool checkWaterSupply() const;
     void updateWaterConsumption(int newUsage);
+
+    // Getters
+    int getWaterCapacity() const { return waterCapacity; }
+    int getWaterConsumed() const { return waterConsumed; }
 };
 
 #endif

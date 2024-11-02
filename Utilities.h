@@ -20,6 +20,10 @@ public:
 
     virtual void applyUtility(Building* building) = 0;
     float getUtilityCost() const;
+
+    // Getters
+    Building* getBuilding() const { return building; }
+    ResourceFactory* getResourceFactory() const { return resourceFactory; }
 };
 
 #endif
