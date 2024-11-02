@@ -2,11 +2,12 @@
 #define EDUCATION_H
 #include "PublicServicesDepartment.h"
 
-class Education : PublicServicesDepartment {
+class Education : public PublicServicesDepartment {
 
 
 public:
-	void handleRequest(int requestType);
+	Education(City* city);
+	virtual void handleRequest(int requestType) override;
 };
 
 #endif

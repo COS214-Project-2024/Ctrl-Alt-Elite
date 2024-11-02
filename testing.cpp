@@ -52,44 +52,39 @@
 #include "PowerPlants.h"
 #include "Adapter.h"
 #include "BuildingTarget.h"
+#include "Government.h"
+#include "TaxationDepartment.h"
+#include"BudgetDepartment.h"
+#include "PoliciesDepartment.h"
+#include "PublicServicesDepartment.h"
+#include "Education.h"
+#include "LawEnforcment.h"
+#include "HealthCare.h"
+#include "City.h"
 
 
 
-void TestingComposite(){
-    // Create composite building
-    CompositeBuilding *city = new CompositeBuilding(30000, 15000);
+void TestingComposite() {
+    // Create composite building with initial population and job values
+    CompositeBuilding* city = new CompositeBuilding(30000, 15000);
 
-    // Create some residential buildings
+    // Create residential, commercial, and industrial buildings
     Residential* house = new Residential();
     Residential* townhouse = new Residential();
     Residential* apartment = new Residential();
-    house->display();
-    townhouse->display();
-    apartment->display();
 
-    // Create some commercial buildings
     Commercial* shop = new Shop();
     Commercial* mall = new Mall();
     Commercial* office = new Office();
-    shop->display();
-    mall->display();
-    office->display();
 
-    // Create some industrial buildings
     Industrial* factory = new Factories();
     Industrial* plant = new Plants();
     Industrial* warehouse = new Warehouses();
-    factory->display();
-    plant->display();
-    warehouse->display();
 
-    // Create some landmarks
+    // Create landmarks
     Landmarks* park = new Park();
     Landmarks* culturalCenter = new CulturalCenter();
     Landmarks* monument = new Monument();
-    park->display();
-    culturalCenter->display();
-    monument->display();
 
     // Add buildings to the city
     city->addBuilding(house);
@@ -105,15 +100,40 @@ void TestingComposite(){
     city->addBuilding(culturalCenter);
     city->addBuilding(monument);
 
-    // Display the state of the city
-    std::cout << "City state after adding buildings:\n";
+    // Display initial state of the city
+    std::cout << "\nInitial City State:\n";
     city->displayCityState();
 
-    // Remove a building from the city
+    // Test population and job increase
+    city->increasePopulation(5000);  // Test increasing population
+    city->increaseJobs(2000);        // Test increasing jobs
+
+    // Display state after population and job adjustments
+    std::cout << "\nCity State after Population and Job Adjustments:\n";
+    city->displayCityState();
+
+    // Test utility expansion
+    std::cout << "\nExpanding Utilities:\n";
+    city->expandUtilities();
+
+    // Test building maintenance
+    std::cout << "\nPerforming Maintenance:\n";
+    city->maintainBuildings();
+
+    // Test satisfaction tracking
+    std::cout << "\nTracking Satisfaction:\n";
+    city->trackSatisfaction();
+
+    // Calculate and display tax revenue
+    double taxRevenue = city->calculateTaxRevenue();
+    std::cout << "\nTotal Tax Revenue: $" << taxRevenue << "\n";
+
+    // Remove a building and display city state afterward
     city->removeBuilding(warehouse);
-    std::cout << "\nCity state after removing the warehouse:\n";
+    std::cout << "\nCity State after Removing the Warehouse:\n";
     city->displayCityState();
 
+    // Clean up
     delete city;
 }
 
@@ -394,6 +414,42 @@ void TestingObserver(){
 
 }
 
+void testTemplate(){
+    City *city= new City();
+    PoliciesDepartment* pol = new PoliciesDepartment(city);
+    pol->implementPolicy("Smack bad people");
+    pol->Report();
+
+    TaxationDepartment* tax =new TaxationDepartment(city);
+    tax->updateTaxes(20);
+    tax->Report();
+
+    BudgetDepartment* bud = new BudgetDepartment(city);
+    bud->allocateBudget(50000);
+    bud->Report();
+
+    PublicServicesDepartment* pub = new PublicServicesDepartment(city);
+
+    // Define a list of new public services
+    std::vector<std::string> newServices = {"Healthcare", "Education", "Law Enforcement","Unemployment"};
+
+    // Update public services
+    pub->updatePublicServices(newServices);
+    pub->Report();
+}
+
+void testChain(){
+    City *city= new City();
+    PublicServicesDepartment* publicServe = new PublicServicesDepartment(city);
+    PublicServicesDepartment* health = new HealthCare(city);
+    PublicServicesDepartment* law = new LawEnforcment(city);
+    PublicServicesDepartment* education = new Education(city);
+    law->setNextHandler(education);
+    health->setNextHandler(law);
+    publicServe->setNextHandler(health);
+    publicServe->handleRequest(1);
+}
+
 int main() {
     TestingComposite();
     TestingCommand();
@@ -401,6 +457,8 @@ int main() {
     TestingResourcesAndUtilities();
     TestingAdapter();
     TestingObserver();
+    testTemplate();
+    testChain();
     
     //orabile - template and chain of respon
     //oj - iterator
