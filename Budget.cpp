@@ -1,15 +1,19 @@
 #include "Budget.h"
 
-Budget::Budget(float amount, float cost) : Resource(cost), budgetAmount(amount) {}
+// cost is 0 because making a budget is not expense
+Budget::Budget(float amount) : Resource(0), budget(amount) {}
 
 int Budget::getCapacity() const {
-    return budgetAmount;
+    return budget;
 }
 
 void Budget::consume(int amount) {
-    if (amount <= budgetAmount) budgetAmount -= amount;
+    if (amount <= budget) {
+        budget -= amount;
+    }
+    else std::cout << "Amount/Cost is above current budget" << std::endl;
 }
 
 void Budget::replenish(int amount) {
-    budgetAmount += amount;
+    budget += amount;
 }

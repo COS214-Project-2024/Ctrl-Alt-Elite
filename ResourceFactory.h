@@ -10,6 +10,7 @@ private:
     std::unordered_map<std::string, Resource*> resourcePool;
 
 public:
+    ResourceFactory(float energyAmount, float waterAmount, float materialsAmount, float budgetAmount);
     ~ResourceFactory();
     Resource* getResource(const std::string& resourceType);
     void replenishResource(const std::string& resourceType, int amount);

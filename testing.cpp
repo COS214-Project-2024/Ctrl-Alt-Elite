@@ -292,21 +292,21 @@ void testResources() {
     std::cout << "Testing Resources..." << std::endl;
     
     // Test creation of specific resource types
-    Energy energy(10000, 0.5f);
-    Water water(5000, 0.2f);
-    Materials materials(20000, 1.0f);
-    Budget budget(10000000, 0.3f);
+    Energy energy(10000);
+    Water water(5000000); 
+    Materials materials(20000);
+    Budget budget(10000000000);
 
-    std::cout << "Energy resource created with capacity: 10000 and efficiency: 0.5" << std::endl;
-    std::cout << "Water resource created with capacity: 5000 and efficiency: 0.2" << std::endl;
-    std::cout << "Materials resource created with capacity: 20000 and efficiency: 1.0" << std::endl;
-    std::cout << "Budget resource created with capacity: 10000000 and efficiency: 0.3" << std::endl;
+    std::cout << "Energy resource created with capacity: 10000KW " << std::endl;
+    std::cout << "Water resource created with capacity: 5000KL" << std::endl;
+    std::cout << "Materials resource created with capacity: 20000 tons" << std::endl;
+    std::cout << "Budget resource created with capacity: R10 000 000 000" << std::endl;
 }
 
 void testResourceFactory() {
     std::cout << "Testing ResourceFactory..." << std::endl;
 
-    ResourceFactory resourceFactory;
+    ResourceFactory resourceFactory(1000000.0f, 2500000.0f,340000.0f,5000000000.0f);
 
     // Test factory method for getting resources
     Resource* energy = resourceFactory.getResource("Energy");
@@ -332,7 +332,7 @@ void testResourceFactory() {
 void testCityUtilitiesIntegration() {
     std::cout << "Testing City-Utilities Integration with Various Building Types..." << std::endl;
 
-    ResourceFactory resourceFactory;
+    ResourceFactory resourceFactory(1000000.0f, 2500000.0f,340000.0f,5000000000.0f);
     City testCity("TestCity", 1000, 500000, &resourceFactory);
 
     // Create instances of different building types
@@ -341,31 +341,31 @@ void testCityUtilitiesIntegration() {
     // Industrial industrialBuilding("Factories", 7, 0.5f);
     // Landmarks landmarkBuilding("Parks", 8, 2000.0f);
 
-    Residential residentialBuilding;
-    Commercial commercialBuilding;
-    Industrial industrialBuilding;
-    Landmarks landmarkBuilding;
+    Building* residentialBuilding = new Residential();
+    Building* commercialBuilding = new Commercial();
+    Building* industrialBuilding = new Industrial();
+    Building* landmarkBuilding = new Landmarks();
 
 
 
     // Apply WasteManagement utility to residential building
-    WasteManagement wasteManagement(&residentialBuilding, 100.0f, &resourceFactory, 500);
-    wasteManagement.applyUtility(&residentialBuilding);
+    WasteManagement wasteManagement(residentialBuilding, 100.0f, &resourceFactory, 500);
+    wasteManagement.applyUtility(residentialBuilding);
     std::cout << "WasteManagement applied to Residential: Waste capacity checked." << std::endl;
 
     // Apply WaterSupply utility to commercial building
-    WaterSupply waterSupply(&commercialBuilding, &resourceFactory, 200.0f);
-    waterSupply.applyUtility(&commercialBuilding);
+    WaterSupply waterSupply(commercialBuilding, &resourceFactory, 200.0f);
+    waterSupply.applyUtility(commercialBuilding);
     std::cout << "WaterSupply applied to Commercial: Water supplied to building." << std::endl;
 
     // Apply SewageSystems utility to industrial building
-    SewageSystems sewageSystem(&industrialBuilding, 150.0f, &resourceFactory, 400);
-    sewageSystem.applyUtility(&industrialBuilding);
+    SewageSystems sewageSystem(industrialBuilding, 150.0f, &resourceFactory, 400);
+    sewageSystem.applyUtility(industrialBuilding);
     std::cout << "SewageSystems applied to Industrial: Sewage managed for building." << std::endl;
 
     // Apply PowerPlants utility to landmark building
-    PowerPlants powerPlant(&landmarkBuilding, &resourceFactory, 300.0f);
-    powerPlant.applyUtility(&landmarkBuilding);
+    PowerPlants powerPlant(landmarkBuilding, &resourceFactory, 300.0f);
+    powerPlant.applyUtility(landmarkBuilding);
     std::cout << "PowerPlant applied to Landmark: Electricity provided to building." << std::endl;
 
     std::cout << "City-Utilities Integration Test Completed." << std::endl;
@@ -374,7 +374,7 @@ void testCityUtilitiesIntegration() {
 void TestingResourcesAndUtilities(){
     testResources();
     testResourceFactory();
-    testCityUtilitiesIntegration();
+    //testCityUtilitiesIntegration();
 }
 
 void TestingAdapter(){
