@@ -49,3 +49,8 @@ void Residential::performMaintenance()
     std::cout << "Performing general residential maintenance.\n";
     calculateOccupancyRate();
 }
+
+void Residential::setNumResident(int num)
+{
+    this->numResidents = num;
+}

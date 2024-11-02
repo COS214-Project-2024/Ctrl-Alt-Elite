@@ -19,6 +19,7 @@ public:
     virtual double getOccupancyRate() const;
     virtual int getNumResidents();
     virtual void performMaintenance();
+    virtual void setNumResident(int ) ;
     
 
     Building* clone() const override;

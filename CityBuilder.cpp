@@ -25,7 +25,7 @@ void CityBuilder::buildPopulationGrowth() {
     
     // Logic for supporting population growth could involve adding apartment complexes or townhouses
     Residential* residentialBuilding = new Apartment(); // Example type of residential building
-    residentialBuilding->setNumResidents(200); // Hypothetical function to set residents
+    residentialBuilding->setNumResident(200); // Hypothetical function to set residents
     buildingComposite->addBuilding(residentialBuilding);
 }
 
@@ -34,10 +34,10 @@ void CityBuilder::buildHousingExpansion() {
 
     // Adds multiple types of housing for diversity
     Residential* estate = new Estate();
-    estate->setNumResidents(20); // Large estate with fewer residents
+    estate->setNumResident(20); // Large estate with fewer residents
 
     Residential* townhouse = new Townhouse();
-    townhouse->setNumResidents(50); // Smaller townhouse for moderate occupancy
+    townhouse->setNumResident(50); // Smaller townhouse for moderate occupancy
 
     buildingComposite->addBuilding(estate);
     buildingComposite->addBuilding(townhouse);
@@ -61,10 +61,10 @@ void CityBuilder::buildInfrastructureExpansion() {
     std::cout << "Building for infrastructure expansion: Adding industrial buildings...\n";
 
     // Industrial buildings can include factories and warehouses to support infrastructure
-    Industrial* factory = new Factory();
+    Industrial* factory = new Factories();
     factory->updatePollutionLevel(); // Update pollution based on factory specifics
 
-    Industrial* warehouse = new Warehouse();
+    Industrial* warehouse = new Warehouses();
     warehouse->updateEmploymentRating(); // Warehouses could influence employment
 
     buildingComposite->addBuilding(factory);

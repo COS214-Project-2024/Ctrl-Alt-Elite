@@ -27,3 +27,8 @@ int Apartment::getNumResidents(){
 void Apartment::performMaintenance() {
     std::cout << "Maintaining Apartment: Checking occupancy, repairing shared facilities.\n";
 }
+
+void Apartment::setNumResident(int num)
+{
+	this->numResidents = num;
+}

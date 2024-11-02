@@ -27,3 +27,7 @@ int Estate::getNumResidents(){
  void Estate::performMaintenance()  {
     std::cout << "Maintaining Estate: Inspecting landscaping, security checks.\n";
 }
+
+void Estate::setNumResident(int num)
+{ this->numResidents = num;
+}

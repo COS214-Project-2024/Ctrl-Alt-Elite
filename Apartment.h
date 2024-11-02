@@ -12,6 +12,7 @@ public:
     void calculateOccupancyRate();
     int getNumResidents()override;
     void performMaintenance() override;
+    void setNumResident(int ) override;
 };
 
 #endif

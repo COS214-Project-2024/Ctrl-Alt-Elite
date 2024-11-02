@@ -72,7 +72,7 @@
 
 void TestingComposite() {
    // Create a CompositeBuilding (city) to manage all buildings
-    CompositeBuilding cityComposite;
+    //CompositeBuilding cityComposite;
 
     // Create a CityBuilder and Director to construct the city
     CityBuilder cityBuilder;
@@ -127,8 +127,11 @@ void TestingComposite() {
     std::cout << "\nUpdated city layout after removing a building:\n";
     city->display();
 
+
+    //std::cout << "here\n";
     // Cleanup
-    delete city;
+    //delete city;
+    //std::cout << "its a destructor\n";
 
    
 }

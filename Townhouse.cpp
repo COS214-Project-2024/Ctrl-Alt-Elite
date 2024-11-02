@@ -27,3 +27,8 @@ int Townhouse::getNumResidents(){
 void Townhouse::performMaintenance() {
 	std::cout << "Maintaining Townhouse: Checking shared walls, garden upkeep.\n";
 }
+
+void Townhouse::setNumResident(int num)
+{
+	this->numResidents = num;
+}

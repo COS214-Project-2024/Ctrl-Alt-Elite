@@ -28,3 +28,8 @@ int House::getNumResidents(){
 void House::performMaintenance() {
     std::cout << "Maintaining House: General upkeep and inspections.\n";
 }
+
+void House::setNumResident(int num)
+{
+	this->numResidents  = num;
+}
