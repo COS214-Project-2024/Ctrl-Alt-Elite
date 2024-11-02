@@ -170,6 +170,16 @@ void TestingCommand(){
     // Generate Government Report
     std::cout << "\n===== Government Report =====" << std::endl;
     policyDept.Report();
+
+    std::cout << "\n===== Public Service Department request handling =====" << std::endl;
+    PublicServicesDepartment* publicServe = new PublicServicesDepartment(&city);
+    PublicServicesDepartment* health = new HealthCare(&city);
+    PublicServicesDepartment* law = new LawEnforcment(&city);
+    PublicServicesDepartment* education = new Education(&city);
+    law->setNextHandler(education);
+    health->setNextHandler(law);
+    publicServe->setNextHandler(health);
+    publicServe->handleRequest(1);
 }
 
 

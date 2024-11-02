@@ -6,7 +6,7 @@ PublicServicesDepartment::PublicServicesDepartment(City* city) : Government(city
 }
 
 void PublicServicesDepartment::manageCity() {
-	std::cout<<"Availible Public Services have been updated, notifying citizens..."<<std::endl;
+	std::cout<<"Available Public Services have been updated, notifying citizens..."<<std::endl;
 	//notifyObservers();
 }
 
@@ -24,14 +24,15 @@ void PublicServicesDepartment::setNextHandler(PublicServicesDepartment* handler)
 }
 
 void PublicServicesDepartment::handleRequest(int requestType) {
-	if(this->handler){
+	std::cout<<"Public Service Department is handling a request..."<<std::endl;
+    if(this->handler){
+        std::cout<<"Request sent to next service department to handle"<<std::endl;
 		this->handler->handleRequest(requestType);
 	}
 	else if(this->handler==nullptr)
 	{
 		std::cout<<"Failed to handle request"<<std::endl;
 	}
-	
 }
 
 float PublicServicesDepartment::getTaxrate() {
