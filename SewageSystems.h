@@ -13,6 +13,10 @@ public:
     void applyUtility(Building* building) override;
     bool checkSewageCapacity();
     void updateSewageCapacity(int newCapacity);
+
+    // Getters
+    int getSewageCapacity() const { return sewageCapacity; }
+    int getSewageGenerated() const { return sewageGenerated; }
 };
 
 #endif // SEWAGE_SYSTEMS_H

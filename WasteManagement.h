@@ -13,6 +13,10 @@ public:
     void applyUtility(Building* building) override;
     void increaseRecyclingRate(float rate);
     bool checkWasteCapacity();
+
+    // Getters
+    int getWasteCapacity() const { return wasteCapacity; }
+    int getWasteGenerated() const { return wasteGenerated; }
 };
 
 #endif // WASTE_MANAGEMENT_H

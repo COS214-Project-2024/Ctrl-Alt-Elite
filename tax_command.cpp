@@ -6,5 +6,6 @@ TaxCommand::TaxCommand(TaxationDepartment* dept, float rate)
 
 void TaxCommand::execute() {
     taxationDepartment->updateTaxes(newTaxRate);
+    taxationDepartment->setTaxRate(newTaxRate);
     taxationDepartment->manageCity();
 }
