@@ -15,6 +15,9 @@
 #include "Shop.h"
 #include "Mall.h"
 #include "Office.h"
+#include "House.h"
+#include "Townhouse.h"
+#include "Apartment.h"
 #include "City.h"
 #include "TaxationDepartment.h"
 #include "BudgetDepartment.h"
@@ -61,80 +64,73 @@
 #include "LawEnforcment.h"
 #include "HealthCare.h"
 #include "City.h"
+#include "Builder.h"
+#include "CityBuilder.h"
+#include "Director.h"
 
 
 
 void TestingComposite() {
-    // Create composite building with initial population and job values
-    CompositeBuilding* city = new CompositeBuilding(30000, 15000);
+   // Create a CompositeBuilding (city) to manage all buildings
+    CompositeBuilding cityComposite;
 
-    // Create residential, commercial, and industrial buildings
-    Residential* house = new Residential();
-    Residential* townhouse = new Residential();
-    Residential* apartment = new Residential();
+    // Create a CityBuilder and Director to construct the city
+    CityBuilder cityBuilder;
+    Director cityDirector(&cityBuilder);
 
-    Commercial* shop = new Shop();
-    Commercial* mall = new Mall();
-    Commercial* office = new Office();
+    // Step 1: Construct the city with population growth, housing, economic development, and infrastructure
+    std::cout << "Constructing city...\n";
+    cityDirector.constructCityGrowth();
+    CompositeBuilding* city = cityBuilder.getCompositeBuilding();
 
-    Industrial* factory = new Factories();
-    Industrial* plant = new Plants();
-    Industrial* warehouse = new Warehouses();
+    // Step 2: Add various types of buildings to the city
+    std::cout << "\nAdding buildings to the city...\n";
+    Residential* residentialBuilding = new Residential();
+    Commercial* commercialBuilding = new Commercial();
+    Industrial* industrialBuilding = new Industrial();
 
-    // Create landmarks
-    Landmarks* park = new Park();
-    Landmarks* culturalCenter = new CulturalCenter();
-    Landmarks* monument = new Monument();
+    city->addBuilding(residentialBuilding);
+    city->addBuilding(commercialBuilding);
+    city->addBuilding(industrialBuilding);
 
-    // Add buildings to the city
-    city->addBuilding(house);
-    city->addBuilding(townhouse);
-    city->addBuilding(apartment);
-    city->addBuilding(shop);
-    city->addBuilding(mall);
-    city->addBuilding(office);
-    city->addBuilding(factory);
-    city->addBuilding(plant);
-    city->addBuilding(warehouse);
-    city->addBuilding(park);
-    city->addBuilding(culturalCenter);
-    city->addBuilding(monument);
+    // Display the city layout with all buildings
+    std::cout << "\nDisplaying city layout:\n";
+    city->display();
 
-    // Display initial state of the city
-    std::cout << "\nInitial City State:\n";
-    city->displayCityState();
+    // Step 3: Test population and job expansion
+    city->increasePopulation(1000);
+    city->increaseJobs(500);
 
-    // Test population and job increase
-    city->increasePopulation(5000);  // Test increasing population
-    city->increaseJobs(2000);        // Test increasing jobs
+    // Step 4: Manage capacity to ensure building occupancy is within limits
+    std::cout << "\nManaging capacity...\n";
+    city->manageCapacity();
 
-    // Display state after population and job adjustments
-    std::cout << "\nCity State after Population and Job Adjustments:\n";
-    city->displayCityState();
+    // Step 5: Perform maintenance on all buildings in the city
+    std::cout << "\nPerforming maintenance...\n";
+    city->performMaintenance();
 
-    // Test utility expansion
-    std::cout << "\nExpanding Utilities:\n";
+    // Step 6: Expand utilities across all buildings
+    std::cout << "\nExpanding utilities...\n";
     city->expandUtilities();
 
-    // Test building maintenance
-    std::cout << "\nPerforming Maintenance:\n";
-    city->maintainBuildings();
-
-    // Test satisfaction tracking
-    std::cout << "\nTracking Satisfaction:\n";
-    city->trackSatisfaction();
-
-    // Calculate and display tax revenue
-    double taxRevenue = city->calculateTaxRevenue();
-    std::cout << "\nTotal Tax Revenue: $" << taxRevenue << "\n";
-
-    // Remove a building and display city state afterward
-    city->removeBuilding(warehouse);
-    std::cout << "\nCity State after Removing the Warehouse:\n";
+    // Step 7: Display the overall state of the city
+    std::cout << "\nDisplaying overall city state:\n";
     city->displayCityState();
 
-    // Clean up
+    // Step 8: Track citizen satisfaction (hypothetical tracking)
+    std::cout << "\nTracking citizen satisfaction:\n";
+    city->trackSatisfaction();
+
+    // Step 9: Remove a building and display the updated city layout
+    std::cout << "\nRemoving a building...\n";
+    city->removeBuilding(residentialBuilding);
+    std::cout << "\nUpdated city layout after removing a building:\n";
+    city->display();
+
+    // Cleanup
     delete city;
+
+   
 }
 
 void TestingCommand(){
@@ -439,13 +435,13 @@ void testChain(){
 
 int main() {
     TestingComposite();
-    TestingCommand();
-    TestingStrategyAndState();
-    TestingResourcesAndUtilities();
-    TestingAdapter();
-    TestingObserver();
-    testTemplate();
-    testChain();
+    // TestingCommand();
+    // TestingStrategyAndState();
+    // TestingResourcesAndUtilities();
+    // TestingAdapter();
+    // TestingObserver();
+    // testTemplate();
+    // testChain();
     
     //orabile - template and chain of respon
     //oj - iterator

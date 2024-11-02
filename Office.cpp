@@ -5,16 +5,32 @@ Office::Office() : Commercial() {}
 
 Office::~Office() {}
 
-void Office::display() const {
+void Office::display() {
     std::cout << "Office - Entertainment Rating: " << entertainmentRating
-              << ", Employment Rating: " << employmentRating
-              << ", Revenue: $" << revenue << "\n";
+              << ", Employment Rating: " << employmentRating << "\n";
+    std::cout << "************\n";
+    std::cout << "*          *\n";
+    std::cout << "*  OFFICE  *\n";
+    std::cout << "*          *\n";
+    std::cout << "************\n";
 }
 
-void Office::updateEmploymentRating() {
-    employmentRating += 4; 
+void Office::IncEmploymentRating() {
+    employmentRating += 4;
 }
 
-void Office::updateEntertainmentRating() {
-    entertainmentRating += 1; 
+void Office::DecEmploymentRating() {
+    employmentRating -= 1;
 }
+
+void Office::IncEntertainmentRating() {
+    entertainmentRating += 1;
+}
+
+void Office::DecEntertainmentRating() {
+    entertainmentRating -= 1;
+}
+
+void Office::performMaintenance() {
+        std::cout << "Maintaining Shop: Checking lighting, restocking, cleaning.\n";
+    }

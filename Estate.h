@@ -6,11 +6,13 @@
 class Estate : public Residential {
 public:
 
-	Estate();
+	Estate(int numResidents = 0, int availableUnits = 1);
 	~Estate();
    
-    void display() const override;
-    void calculateOccupancyRate();
+    void display() override;
+    void calculateOccupancyRate() override;
+    int getNumResidents()override;
+    void performMaintenance() override;
 };
 
 #endif

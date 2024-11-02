@@ -28,7 +28,7 @@ public:
 
 	void addObserver(Citizen* observer);
 
-	void removeObserver(Citizen observer);
+	void removeObserver(Citizen* observer);
 
 	void notifyObservers();
 

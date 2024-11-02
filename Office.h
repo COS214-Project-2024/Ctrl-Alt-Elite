@@ -8,9 +8,12 @@ public:
     Office();
     ~Office() override;
 
-    void display() const override;
-    void updateEmploymentRating() override;
-    void updateEntertainmentRating() override;
+    void display() override;
+    void IncEmploymentRating() override;
+    void DecEmploymentRating() override;
+    void IncEntertainmentRating() override;
+    void DecEntertainmentRating() override;
+    void performMaintenance()override;
 };
 
 #endif

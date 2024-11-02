@@ -2,7 +2,8 @@
 #define COMPOSITEBUILDING_H
 
 #include "Building.h"
-#include <unordered_map>
+#include "BuildingIterator.h"
+#include <vector>
 
 class CompositeBuilding : public Building {
 private:
@@ -11,14 +12,17 @@ private:
     int jobs;
 
 public:
+    CompositeBuilding();
     CompositeBuilding(int population, int jobs);
     ~CompositeBuilding();
 
     void addBuilding(Building* building) ;
     void removeBuilding(Building* building) ;
 
-    void display() const override;
+    void display()  override;
     Building* clone() const override;
+
+    void performMaintenance();
 
     void increasePopulation(int amount);
     void increaseJobs(int amount);
@@ -31,8 +35,7 @@ public:
     void maintainBuildings();
     void trackSatisfaction();
 
-   // std::vector<Building*>::iterator createIterator() override;
-
+    BuildingIterator createIterator();
 };
 
 #endif

@@ -35,6 +35,4 @@ void Building::payPropertyTax(float amount) {
 void Building::updateBuildingTaxRate(float newRate) {
     taxRate = newRate;
 }
-// Iterator<std::pair<std::string, int>>* Building::createIterator() {
-//     // OJ - iterator 
-// }
+
