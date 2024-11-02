@@ -8,10 +8,22 @@
 ResourceFactory::ResourceFactory(float energyAmount, float waterAmount, float materialsAmount, float budgetAmount) {
     // Initialize the resource pool with specified amounts
     resourcePool["Energy"] = new Energy(energyAmount);
+    std::cout << std::fixed << std::setprecision(0);
+    std::cout << "Energy resource initialized with capacity: " << energyAmount << "KW" << std::endl;
+
     resourcePool["Water"] = new Water(waterAmount);
+    std::cout << std::fixed << std::setprecision(0);
+    std::cout << "Water resource initialized with capacity: " << waterAmount << "KL" << std::endl;
+
     resourcePool["Materials"] = new Materials(materialsAmount);
+    std::cout << std::fixed << std::setprecision(0);
+    std::cout << "Materials resource initialized with capacity: " << materialsAmount << "tons" << std::endl;
+
     resourcePool["Budget"] = new Budget(budgetAmount);
+    std::cout << std::fixed << std::setprecision(0);
+    std::cout << "Budget resource initialized with capacity: R" << budgetAmount << std::endl;
 }
+
 
 ResourceFactory::~ResourceFactory()
 {
@@ -64,6 +76,24 @@ Resource *ResourceFactory::getResource(const std::string &resourceType)
         }
     }
     return resourcePool[resourceType];
+}
+#include <iostream>
+#include <iomanip>
+
+void ResourceFactory::displayResourceStatus() {
+    std::cout << std::fixed << std::setprecision(0); // Ensure no scientific notation and no decimal points
+    if (resourcePool.find("Energy") != resourcePool.end()) {
+        std::cout << "Energy capacity: " << resourcePool.at("Energy")->getCapacity() << "KW" << std::endl;
+    }
+    if (resourcePool.find("Water") != resourcePool.end()) {
+        std::cout << "Water capacity: " << resourcePool.at("Water")->getCapacity() << "KL" << std::endl;
+    }
+    if (resourcePool.find("Materials") != resourcePool.end()) {
+        std::cout << "Materials capacity: " << resourcePool.at("Materials")->getCapacity() << " tons" <<std::endl;
+    }
+    if (resourcePool.find("Budget") != resourcePool.end()) {
+        std::cout << "Budget capacity: R" << resourcePool.at("Budget")->getCapacity() << std::endl;
+    }
 }
 
 void ResourceFactory::replenishResource(const std::string &resourceType, int amount)

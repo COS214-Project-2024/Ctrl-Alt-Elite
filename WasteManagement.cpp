@@ -1,5 +1,6 @@
 #include "WasteManagement.h"
 #include "Budget.h"
+
 WasteManagement::WasteManagement(Building* building, float cost, ResourceFactory* factory, int capacity)
     : Utilities(building, factory, cost), wasteCapacity(capacity), wasteGenerated(0) {
 

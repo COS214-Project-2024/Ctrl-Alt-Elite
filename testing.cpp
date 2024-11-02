@@ -288,58 +288,15 @@ void TestingStrategyAndState(){
 
 
 
-void testResources() {
-    std::cout << "Testing Resources..." << std::endl;
-    
-    // Test creation of specific resource types
-    Energy energy(10000);
-    Water water(5000000); 
-    Materials materials(20000);
-    Budget budget(10000000000);
 
-    std::cout << "Energy resource created with capacity: 10000KW " << std::endl;
-    std::cout << "Water resource created with capacity: 5000KL" << std::endl;
-    std::cout << "Materials resource created with capacity: 20000 tons" << std::endl;
-    std::cout << "Budget resource created with capacity: R10 000 000 000" << std::endl;
-}
-
-void testResourceFactory() {
-    std::cout << "Testing ResourceFactory..." << std::endl;
-
-    ResourceFactory resourceFactory(1000000.0f, 2500000.0f,340000.0f,5000000000.0f);
-
-    // Test factory method for getting resources
-    Resource* energy = resourceFactory.getResource("Energy");
-    Resource* water = resourceFactory.getResource("Water");
-    Resource* materials = resourceFactory.getResource("Materials");
-    Resource* budget = resourceFactory.getResource("Budget");
-
-    std::cout << "Energy resource obtained from factory." << std::endl;
-    std::cout << "Water resource obtained from factory." << std::endl;
-    std::cout << "Materials resource obtained from factory." << std::endl;
-    std::cout << "Budget resource obtained from factory." << std::endl;
-
-    // Verify resource allocation works
-    City testCity("TestCity", 1000, 500000, &resourceFactory);
-    testCity.allocateResources("Energy");
-    testCity.allocateResources("Water");
-    testCity.allocateResources("Materials");
-    testCity.allocateResources("Budget");
-
-    std::cout << "Resources allocated to city." << std::endl;
-}
 
 void testCityUtilitiesIntegration() {
-    std::cout << "Testing City-Utilities Integration with Various Building Types..." << std::endl;
+    std::cout << "Testing City-Utilities Integration with Various Building Types...\n" << std::endl;
 
-    ResourceFactory resourceFactory(1000000.0f, 2500000.0f,340000.0f,5000000000.0f);
-    City testCity("TestCity", 1000, 500000, &resourceFactory);
-
-    // Create instances of different building types
-    // Residential residentialBuilding("Townhouses", 50, 10);
-    // Commercial commercialBuilding("Shops", 5, 8, 10000.0f);
-    // Industrial industrialBuilding("Factories", 7, 0.5f);
-    // Landmarks landmarkBuilding("Parks", 8, 2000.0f);
+    ResourceFactory* factory = new ResourceFactory(1000000.0f, 2500000.0f,340000.0f,5000000.0f);
+    std::cout << "\nInitial Resource Capacities:" << std::endl;
+    factory->displayResourceStatus();
+    City testCity("TestCity", 1000, 500000, factory);
 
     Building* residentialBuilding = new Residential();
     Building* commercialBuilding = new Commercial();
@@ -349,32 +306,160 @@ void testCityUtilitiesIntegration() {
 
 
     // Apply WasteManagement utility to residential building
-    WasteManagement wasteManagement(residentialBuilding, 100.0f, &resourceFactory, 500);
+    std::cout << R"(                  
+                          ██████████████████████████████████████████████                 
+                          █  ███   ███████   ██████    ███████  ███████ ████             
+                          █  ███   ███████   ██████    ███████   ████████   ██           
+                          █  ███   ███████   ██████    ███████   ███████████  ██         
+                          █  ███   ███████   ██████    ███████    █    ██████  ██        
+                          █  ███   ███████   ██████    ███████    █████ ███████ ██       
+              █████████████  ███   ███████   ██████    ███████     █████████████ ██      
+             ██         ███  ███   ███████   ██████    ███████     ██████████████ ██     
+            ███████████ ███  ███   ███████   ██████    ███████      █████████████ ██     
+           ████      ██ ███  ███   ███████   ██████    ███████      ██████████████ ██    
+          ████       ██ ███  ███   ███████   ██████    ███████       █████████████  ██   
+         ████        ██ ███  ███   ███████   ██████    ███████       ██████████████  █   
+         █  ██████████  ███  ███   ███████   ██████    ███████        █████████████████  
+        ██           ███████ ███   ███████  ████████   ███████        ██████████████████ 
+        █       ██████████████████████████████████████████████████████ ██████████████████
+        █     ████████████████████████████████████████████████████████ ██████████████████
+        █    ███████    █████████████████████████████████████████████████████████████████
+        ██████████         ██████████████████      ███████       ██████ █████████████████
+        █████████  ██████  ████████████████   ████   ████  █████   ████                  
+        █████████  ██████   ███████████████  ██████  ███   ██████  ████                  
+                █    ███   ██            ██   █████  ████  █████   █                     
+                ███      ███              ██        ██  ██       ███                     
+                   ██████                   ████████     █████████                                                                                                                                                                                                          
+    )" << std::endl;
+    WasteManagement wasteManagement(residentialBuilding, 10000.0f, factory, 500);
     wasteManagement.applyUtility(residentialBuilding);
-    std::cout << "WasteManagement applied to Residential: Waste capacity checked." << std::endl;
+    std::cout << "\nWasteManagement applied to Residential: Waste capacity checked." << std::endl;
 
     // Apply WaterSupply utility to commercial building
-    WaterSupply waterSupply(commercialBuilding, &resourceFactory, 200.0f);
+    // Apply SewageSystems utility to industrial building
+    std::cout << R"(                  
+                                ██████████████████████████                   
+                                ██       ███   ███       ██                  
+                                ████████████   ████████████                  
+                                █████████  ██████  ████████                  
+                                           ██████                            
+                                            ██████                            
+                                            ████████        ███████████████     
+                                            ██  ██████ ██   ███      ██████████   
+                                        ██████████████  ██          █████████  
+                                        █████████████████████           █████████ 
+                    ██████████████████████████████████  ████████████    █████████
+                ██████                   █████           ██       ███    ████████
+            ███       ███████████████████████          █████████████   ████████
+            ██    ████████████████████████████           ██       ███  █████████
+            ██   ██████       ████████████████          ███       ██████████████
+            ██   ████ ███████████████████████████████████████████████████████████
+            ██   ███ █████████████████████████          █████████████████████████
+            ██  ███  █████              ████████████████  ██████████████████████ 
+            ███  ███  █████                                 ████████████████████    
+            ███  ███ ███████                                    ████████████      
+            ████████████████                                                      
+            ███████████████                                                       
+                ████████                                                      
+                    ██                                                           
+                    ███                                                           
+                  ███████                                                          
+                 ██ ██████                                                         
+                ██  ███████                                                        
+                ██  ████████                                                      
+                ██  █████████                                                     
+                ███  ████████                                                     
+                ████ ███████                                                      
+                    ██████                                                        
+                                                                                                                                                                                                             
+    )" << std::endl;
+    WaterSupply waterSupply(commercialBuilding, factory, 20000.0f);
     waterSupply.applyUtility(commercialBuilding);
-    std::cout << "WaterSupply applied to Commercial: Water supplied to building." << std::endl;
+    std::cout << "\nWaterSupply applied to Commercial: Water supplied to building." << std::endl;
 
     // Apply SewageSystems utility to industrial building
-    SewageSystems sewageSystem(industrialBuilding, 150.0f, &resourceFactory, 400);
+    std::cout << R"(                  
+                              ████████████████                                         
+                           ██         █        ██                                      
+                         ██   ██████   ██        █████████████████████                 
+                        ██  ██      ██   █         █                  ██               
+                       █   █          █   █         █                   █              
+                      ██  █          █ ██  █        ██                   █             
+                      █  ██         █   █  █         █                    █            
+                     ██  █         ██   ██  █        ██                   █            
+                     █  ██         █     █  █         █                   █            
+                     █  ██         █     █  █         █                    █                  
+                     █  ██         █     █  █         █                   █            
+                     ██  █         ██   ██  █        ██                   █            
+                      █  ████████████████  █         █                    █            
+                      ███   ████████████   █        ██                   █             
+                       ██ ██   ████████   █         █                   █              
+                        █ █  █      ██   █         █                  ██               
+                        █ █ █  █████   ██        ████████████████████                  
+                        █ █ █  █      █        ██                                      
+                        █ █ █  ███████████████                                                                                               
+                        █ █ █  █                                                       
+           ███         ██████  █      █████                                            
+              ██     ██      ███   ██      ██                                          
+                 ███            ██            █                                        
+                                                                                       
+             ██       ██    ██      ██    ██                                           
+               ██████         ██████         ██                                                                                                                                                               
+    )" << std::endl;
+    SewageSystems sewageSystem(industrialBuilding, 15000.0f, factory, 400);
     sewageSystem.applyUtility(industrialBuilding);
-    std::cout << "SewageSystems applied to Industrial: Sewage managed for building." << std::endl;
+    std::cout << "\nSewageSystems applied to Industrial: Sewage managed for building." << std::endl;
 
+
+    // ASCII art displayed before PowerPlant construction
+    std::cout << R"(                                                                                
+                                                ███████████                     
+                                              ██          ██                    
+                                        ███████           ██                    
+                                      ██                ██                      
+                                    ███                ██                       
+                                 ███                 ███                        
+                                ██                ███                           
+                                █████████████████████                           
+                               ██                  ██                           
+                               ██                   █                           
+                               █                    █                           
+                        █████████████████           ██                          
+                        █               █           ██                          
+                       ██               ██          ██████                      
+                       ██               ██████████████   █                      
+                       ██               ██           █████                      
+                       ██               ██████████████████                      
+                       █                ██           █████                      
+                       █                ███          █████████                  
+                      ██                 ██           ████████                  
+                      █                   ██           ███████                  
+                     █                     ██           ██   █                  
+                ████████████████████████████████████████████████                
+               ██████████████████████████████████████████████████               
+                                                                                                                    
+    )" << std::endl;
     // Apply PowerPlants utility to landmark building
-    PowerPlants powerPlant(landmarkBuilding, &resourceFactory, 300.0f);
+    PowerPlants powerPlant(landmarkBuilding, factory, 300.0f);
     powerPlant.applyUtility(landmarkBuilding);
-    std::cout << "PowerPlant applied to Landmark: Electricity provided to building." << std::endl;
+    std::cout << "\nPowerPlant applied to Landmark: Electricity provided to building." << std::endl;
 
-    std::cout << "City-Utilities Integration Test Completed." << std::endl;
+    // Display the remaining resource capacities
+    std::cout << "\nFinal Resource Capacities:" << std::endl;
+    factory->displayResourceStatus();
+
+    std::cout << "\nCity-Utilities Integration Test Completed." << std::endl;
+
+    // Clean up dynamically allocated resources
+    delete residentialBuilding;
+    delete commercialBuilding;
+    delete industrialBuilding;
+    delete landmarkBuilding;
+    delete factory;
 }
 
 void TestingResourcesAndUtilities(){
-    testResources();
-    testResourceFactory();
-    //testCityUtilitiesIntegration();
+    testCityUtilitiesIntegration();
 }
 
 void TestingAdapter(){
