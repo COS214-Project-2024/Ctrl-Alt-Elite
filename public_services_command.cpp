@@ -6,5 +6,6 @@ PublicServicesCommand::PublicServicesCommand(PublicServicesDepartment* dept, con
 
 void PublicServicesCommand::execute() {
     publicServicesDepartment->updatePublicServices(services);
+    publicServicesDepartment->setAvailableServices(services);
     publicServicesDepartment->manageCity();
 }

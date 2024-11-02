@@ -26,6 +26,8 @@ public:
 
 	void Report();
 
+    virtual void manageCity() = 0;
+
 	//void addObserver(Citizen* observer);
 
 	//void removeObserver(Citizen observer);
@@ -36,13 +38,19 @@ public:
 
 	//void executeCommands();
 
-	virtual void manageCity() = 0;
+    //Getters
 
-	float getTaxrate();
+    float getTaxRate() const { return taxRate; }
+    void setTaxRate(float rate) { taxRate = rate; }
 
-	std::string getCurrentPolicy();
+    std::string getCurrentPolicy() const { return currentPolicy; }
+    void setCurrentPolicy(const std::string& policy) { currentPolicy = policy; }
 
-	std::vector<std::string> getAvailableServices();
+    float getAllocatedBudget() const { return allocatedBudget; }
+    void setAllocatedBudget(float budget) { allocatedBudget = budget; }
+
+    std::vector<std::string> getAvailableServices() const { return availableServices; }
+    void setAvailableServices(const std::vector<std::string>& services) { availableServices = services; }
 };
 
 #endif

@@ -6,5 +6,6 @@ AllocateBudgetCommand::AllocateBudgetCommand(BudgetDepartment* dept, float amt)
 
 void AllocateBudgetCommand::execute() {
     budgetDepartment->allocateBudget(amount);
+    budgetDepartment->setAllocatedBudget(amount);
     budgetDepartment->manageCity();
 }

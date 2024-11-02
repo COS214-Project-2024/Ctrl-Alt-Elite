@@ -16,8 +16,8 @@ Government::Government(City* city)
 void Government::Report(){
 	std::cout<<"==================================================="<<std::endl;
 	std::cout<<"Government Report"<<std::endl;
-	std::cout<<"Tax rate:\t           \t"<<std::to_string(getTaxrate())<<"%"<<std::endl;
-	std::cout<<"City Budget:\t          \tR "<<std::to_string(allocatedBudget)<<std::endl;
+	std::cout<<"Tax rate:\t           \t"<<getTaxRate()<<"%"<<std::endl;
+	std::cout<<"City Budget:\t          \tR "<<allocatedBudget<<std::endl;
 	std::cout<<"Availible Public Services:";
 	for(std::string service:availableServices)
 	{
@@ -62,14 +62,3 @@ void Government::executeCommands() {
 	}
 }*/
 
-float Government::getTaxrate() {
-	return taxRate;
-}
-
-std::string Government::getCurrentPolicy() {
-	return currentPolicy;
-}
-
-std::vector<std::string> Government::getAvailableServices() {
-	return this->availableServices;
-}

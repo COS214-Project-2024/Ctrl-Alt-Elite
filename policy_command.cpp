@@ -6,5 +6,6 @@ PolicyCommand::PolicyCommand(PoliciesDepartment* dept, const std::string& policy
 
 void PolicyCommand::execute() {
     policiesDepartment->implementPolicy(newPolicy);
+    policiesDepartment->setCurrentPolicy(newPolicy);
     policiesDepartment->manageCity();
 }
