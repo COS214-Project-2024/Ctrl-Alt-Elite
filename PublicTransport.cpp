@@ -37,6 +37,7 @@ void PublicTransport::stopAtStation() {
 bool PublicTransport::isAvailable()
 {
     return currentState && currentState->isAvailable();
+    // return getState() && getState()->isAvailable();
 }
 
 float PublicTransport::calculateCommuteTime(float distance, float speed, const std::string& mode )
@@ -71,7 +72,7 @@ float PublicTransport::calculateCommuteTime(float distance, float speed, const s
         
         // Separate hours and the decimal portion for minutes calculation
         int hours = static_cast<int>(timeInHours);               // Whole number of hours
-        int minutes = /*std::round*/((timeInHours - hours) * 60);    // Decimal portion converted to minutes
+        int minutes = std::round((timeInHours - hours) * 60);    // Decimal portion converted to minutes
 
         // Handle case where rounding minutes gives us 60 minutes
         if (minutes == 60) {
@@ -84,6 +85,26 @@ float PublicTransport::calculateCommuteTime(float distance, float speed, const s
                   << hours << " hours and " << minutes << " minutes.\n";
         
         return timeInHours;  
+}
+
+int PublicTransport::getCapacity() const
+{
+    return capacity;
+}
+
+void PublicTransport::setCapacity(int cap)
+{
+    capacity = cap;
+}
+
+int PublicTransport::getRoutesAvailable() const
+{
+    return routesAvailable;
+}
+
+void PublicTransport::setRoutesAvailable(int routes)
+{
+    routesAvailable = routes;
 }
 
 // PublicTransport::~PublicTransport() = default;

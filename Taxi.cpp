@@ -17,3 +17,13 @@ void Taxi::travel() {
 }
 
 Taxi::Taxi(int cap, int routes, float fare, std::shared_ptr<TransportationState> state = nullptr) : PublicTransport(cap, routes, state), farePerKM(fare) {}
+
+float Taxi::getFarePerKM() const
+{
+    return farePerKM;
+}
+
+void Taxi::setFarePerKM(float newFare)
+{
+    farePerKM = newFare;
+}

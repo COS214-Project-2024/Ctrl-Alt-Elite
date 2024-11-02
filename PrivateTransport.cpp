@@ -14,6 +14,7 @@ void PrivateTransport::travel() {
 bool PrivateTransport::isAvailable()
 {
     return currentState && currentState->isAvailable();
+    // return getState() && getState()->isAvailable();
 }
 
 float PrivateTransport::calculateCommuteTime(float distance, float speed, const std::string& mode)
@@ -49,7 +50,7 @@ float PrivateTransport::calculateCommuteTime(float distance, float speed, const 
         
         // Separate hours and the decimal portion for minutes calculation
         int hours = static_cast<int>(timeInHours);               // Whole number of hours
-        int minutes = /*std::round*/((timeInHours - hours) * 60);    // Decimal portion converted to minutes
+        int minutes = std::round((timeInHours - hours) * 60);    // Decimal portion converted to minutes
 
         // Handle case where rounding minutes gives us 60 minutes
         if (minutes == 60) {
@@ -67,6 +68,16 @@ float PrivateTransport::calculateCommuteTime(float distance, float speed, const 
 
 PrivateTransport::PrivateTransport(float cost, std::shared_ptr<TransportationState> state ) : ModeOfTransport(state), maintenanceCost(cost)
 {
+}
+
+float PrivateTransport::getMaintenanceCost() const
+{
+    return maintenanceCost;
+}
+
+void PrivateTransport::setMaintenanceCost(float cost)
+{
+    maintenanceCost = cost;
 }
 
 // PrivateTransport::~PrivateTransport() = default;

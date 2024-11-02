@@ -1,6 +1,7 @@
 #include "ModerateState.h"
 #include <iostream>
 #include <memory>
+#include "BusyState.h"
 ModerateState::ModerateState() : PublicTransportState("Moderate")
 {
 }
@@ -12,6 +13,10 @@ void ModerateState::handle(std::shared_ptr<ModeOfTransport> transport)
 
 void ModerateState::changeState(std::shared_ptr<ModeOfTransport> transport)
 {
-	state = "Busy";  // Transition back to Busy state
+	if (transport) {
+        transport->setState(std::make_shared<BusyState>());  // Transition to Busy state
         std::cout << "State changed to Busy.\n";
+    } else {
+        std::cout << "Transport is null.\n";
+    }
 }

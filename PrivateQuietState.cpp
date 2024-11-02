@@ -1,4 +1,5 @@
 #include "PrivateQuietState.h"
+#include "PrivateModerateState.h"
 #include <iostream>
 #include <memory>
 
@@ -13,6 +14,10 @@ void PrivateQuietState::handle(std::shared_ptr<ModeOfTransport> transport)
 
 void PrivateQuietState::changeState(std::shared_ptr<ModeOfTransport> transport)
 {
-	state = "Moderate";  // Transition to Moderate state
+if (transport) {
+        transport->setState(std::make_shared<PrivateModerateState>());  // Transition to Moderate state
         std::cout << "State changed to Moderate.\n";
+    } else {
+        std::cout << "Transport is null.\n";
+    }
 }

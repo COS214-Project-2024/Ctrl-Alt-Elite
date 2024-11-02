@@ -22,3 +22,13 @@ void Train::travel() {
 Train::Train(int cap, int routes, float price, std::shared_ptr<TransportationState> state = nullptr): PublicTransport(cap, routes, state), ticketPrice(price)
 {
 }
+
+float Train::getTicketPrice() const
+{
+    return ticketPrice;
+}
+
+void Train::setTicketPrice(float newPrice)
+{
+    ticketPrice = newPrice;
+}

@@ -16,6 +16,7 @@ public:
 public:
 	virtual void changeState(std::shared_ptr<ModeOfTransport> transport) = 0;
 	virtual bool isAvailable() const = 0;
+	virtual std::string getState() const = 0;
 	// virtual ~TransportationState() = default;
 };
 

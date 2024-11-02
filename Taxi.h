@@ -4,13 +4,15 @@
 #include <memory>
 class Taxi : public PublicTransport {
 
-public:
+private:
 	float farePerKM;
-
+public:
 	void travel() override;
 
 	Taxi(int cap, int routes, float fare, std::shared_ptr<TransportationState> state);
 // ~Taxi() override = default;
+float getFarePerKM() const;
+    void setFarePerKM(float newFare);
 };
 
 #endif

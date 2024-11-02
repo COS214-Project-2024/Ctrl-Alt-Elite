@@ -5,8 +5,9 @@
 #include <memory>
 class PublicTransportState : public TransportationState {
 
-public:
+private: 
 std::string state;
+public:
 	PublicTransportState(const std::string& initialState);
 	
 
@@ -17,6 +18,8 @@ std::string state;
 
 	// virtual ~PublicTransportState() = default;
 	// virtual ~PublicTransportState();
+	    std::string getState() const;
+    void setState(const std::string& newState);
 };
 
 #endif
