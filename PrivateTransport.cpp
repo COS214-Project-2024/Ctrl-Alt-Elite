@@ -1,6 +1,8 @@
 #include "PrivateTransport.h"
 #include <iostream>
 #include <memory>
+#include <cmath>
+
 void PrivateTransport::travel() {
 	if (isAvailable()) {
         std::cout << "Private transport is traveling.\n";
@@ -50,7 +52,7 @@ float PrivateTransport::calculateCommuteTime(float distance, float speed, const 
         
         // Separate hours and the decimal portion for minutes calculation
         int hours = static_cast<int>(timeInHours);               // Whole number of hours
-        int minutes = std::round((timeInHours - hours) * 60);    // Decimal portion converted to minutes
+        int minutes = round((timeInHours - hours) * 60);    // Decimal portion converted to minutes
 
         // Handle case where rounding minutes gives us 60 minutes
         if (minutes == 60) {

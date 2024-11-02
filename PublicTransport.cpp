@@ -1,6 +1,8 @@
 #include "PublicTransport.h"
 #include <iostream>
 #include <memory>
+#include <cmath>
+
 
 PublicTransport::PublicTransport(int cap, int routes, std::shared_ptr<TransportationState> state ) : ModeOfTransport(state), capacity(cap), routesAvailable(routes){}
 
@@ -72,7 +74,7 @@ float PublicTransport::calculateCommuteTime(float distance, float speed, const s
         
         // Separate hours and the decimal portion for minutes calculation
         int hours = static_cast<int>(timeInHours);               // Whole number of hours
-        int minutes = std::round((timeInHours - hours) * 60);    // Decimal portion converted to minutes
+        int minutes = round((timeInHours - hours) * 60);    // Decimal portion converted to minutes
 
         // Handle case where rounding minutes gives us 60 minutes
         if (minutes == 60) {
