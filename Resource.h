@@ -5,6 +5,11 @@ class Resource {
 protected:
     float baseCost;
 
+    //cost factors
+    //Water = 15.5
+    //Energy = 20.0
+    //Materials = 5.0
+    //Budget resource has no cost
 public:
     Resource(float cost);
     virtual ~Resource() = default;
@@ -12,7 +17,7 @@ public:
     virtual int getCapacity() const = 0;
     virtual void consume(int amount) = 0;
     virtual void replenish(int amount) = 0;
-    float getBaseCost() const;
+    float getCost() const;
 };
 
 #endif

@@ -1,24 +1,79 @@
 #include "WaterSupply.h"
 #include "Water.h"
+#include "Budget.h"
 
-WaterSupply::WaterSupply(Building* bld, ResourceFactory* rf, float cost)
-    : Utilities(bld, rf, cost), waterCapacity(1000), waterConsumed(200) {
-    resource = resourceFactory->getResource("Water");
-}
+WaterSupply::WaterSupply(Building *bld, ResourceFactory *rf, float cost)
+    : Utilities(bld, rf, cost), waterCapacity(100), waterConsumed(10)
+{
 
-void WaterSupply::applyUtility(Building* building) {
-    if (checkWaterSupply()) {
-        dynamic_cast<Water*>(resource)->consume(waterConsumed);
-        building->setHasWaterSupply(true);
-    } else {
-        building->setHasWaterSupply(false);
+    resource = nullptr; // Default to nullptr until successful construction
+
+    if (rf)
+    {
+        Budget *budgetResource = dynamic_cast<Budget *>(rf->getResource("Budget"));
+        Resource *materialsResource = rf->getResource("Materials");
+
+        float materialCostFactor = 5.0f; // Cost factor for materials
+        float materialRequirement = cost / materialCostFactor;
+
+        if (budgetResource && materialsResource)
+        {
+            // Check if sufficient budget and materials exist
+            if (budgetResource->getCapacity() >= cost && materialsResource->getCapacity() >= materialRequirement)
+            {
+                budgetResource->consume(cost);                   // Deduct from budget
+                materialsResource->consume(materialRequirement); // Deduct materials based on requirement
+                resource = rf->getResource("Water");             // Only assign resource if deductions are successful
+                std::cout << "WaterSupply constructed using $" << cost << " from budget and "
+                          << materialRequirement << " units of Materials." << std::endl;
+            }
+            else
+            {
+                std::cout << "Insufficient Budget or Materials to construct WaterSupply." << std::endl;
+            }
+        }
+        else
+        {
+            std::cout << "Budget or Materials resource is missing from factory." << std::endl;
+        }
     }
 }
 
-bool WaterSupply::checkWaterSupply() const {
-    return dynamic_cast<Water*>(resource)->getCapacity() >= waterConsumed;
+void WaterSupply::applyUtility(Building *building)
+{
+    if (checkWaterSupply())
+    {
+        Water *waterResource = dynamic_cast<Water *>(resource);
+
+        if (waterResource && waterResource->getCapacity() >= waterConsumed)
+        {
+            waterResource->consume(waterConsumed);
+            building->setHasWaterSupply(true);
+            std::cout << "WaterSupply: Successfully supplied " << waterConsumed
+                      << " units of water to the building." << std::endl;
+        }
+        else
+        {
+            building->setHasWaterSupply(false);
+            std::cout << "WaterSupply: Insufficient water available. Only "
+                      << (waterResource ? waterResource->getCapacity() : 0)
+                      << " units remain, but " << waterConsumed
+                      << " units are required." << std::endl;
+        }
+    }
+    else
+    {
+        building->setHasWaterSupply(false);
+        std::cout << "WaterSupply: Unable to provide water due to insufficient supply." << std::endl;
+    }
 }
 
-void WaterSupply::updateWaterConsumption(int newUsage) {
+bool WaterSupply::checkWaterSupply() const
+{
+    return dynamic_cast<Water *>(resource)->getCapacity() >= waterConsumed;
+}
+
+void WaterSupply::updateWaterConsumption(int newUsage)
+{
     waterConsumed = newUsage;
 }
