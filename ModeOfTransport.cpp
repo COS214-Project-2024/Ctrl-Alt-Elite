@@ -4,8 +4,14 @@
 
 ModeOfTransport::ModeOfTransport(std::shared_ptr<TransportationState> state ) : currentState(state) {}
 
-void ModeOfTransport::setState(std::shared_ptr<TransportationState> state) {
-	// if (currentState) delete currentState;
+std::shared_ptr<TransportationState> ModeOfTransport::getState() const
+{
+    return currentState;
+}
+
+void ModeOfTransport::setState(std::shared_ptr<TransportationState> state)
+{
+    // if (currentState) delete currentState;
     currentState = state;
 }
 

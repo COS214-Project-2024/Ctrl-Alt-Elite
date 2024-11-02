@@ -15,3 +15,13 @@ void Plane::travel() {
 Plane::Plane(int cap, int routes, float cost, std::shared_ptr<TransportationState> state ) : PublicTransport(cap, routes, state), ticketCost(cost)
 {
 }
+
+float Plane::getTicketCost() const
+{
+    return ticketCost;
+}
+
+void Plane::setTicketCost(float newCost)
+{
+    ticketCost = newCost;
+}

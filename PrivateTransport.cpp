@@ -14,6 +14,7 @@ void PrivateTransport::travel() {
 bool PrivateTransport::isAvailable()
 {
     return currentState && currentState->isAvailable();
+    // return getState() && getState()->isAvailable();
 }
 
 float PrivateTransport::calculateCommuteTime(float distance, float speed, const std::string& mode)
@@ -67,6 +68,16 @@ float PrivateTransport::calculateCommuteTime(float distance, float speed, const 
 
 PrivateTransport::PrivateTransport(float cost, std::shared_ptr<TransportationState> state ) : ModeOfTransport(state), maintenanceCost(cost)
 {
+}
+
+float PrivateTransport::getMaintenanceCost() const
+{
+    return maintenanceCost;
+}
+
+void PrivateTransport::setMaintenanceCost(float cost)
+{
+    maintenanceCost = cost;
 }
 
 // PrivateTransport::~PrivateTransport() = default;

@@ -4,12 +4,15 @@
 #include <memory>
 class Car : public PrivateTransport {
 
-public:
+private:
 	float petrolPrice;
-
+public:
 	void travel() override;
 
 	Car(int cap, float fuelCost, std::shared_ptr<TransportationState> state= nullptr );
+
+	float getPetrolPrice() const;
+    void setPetrolPrice(float price);
 
 	// ~Car() override = default;
 };

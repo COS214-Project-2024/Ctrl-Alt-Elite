@@ -17,6 +17,12 @@ public:
 	bool isAvailable() override;
 	float calculateCommuteTime(float distance, float speed, const std::string& mode) override;
 
+
+int getCapacity() const;
+    void setCapacity(int cap);
+
+    int getRoutesAvailable() const;
+    void setRoutesAvailable(int routes);
 	// virtual ~PublicTransport() = default;
 	// virtual ~PublicTransport(); 
 };

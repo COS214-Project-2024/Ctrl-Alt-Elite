@@ -4,13 +4,16 @@
 #include <memory>
 class Bus : public PublicTransport {
 
-public:
+private:
 	float fare;
-
+public:
 	void travel() override;
 
 	Bus(int cap, int routes, float busFare, std::shared_ptr<TransportationState> state= nullptr);
 	// ~Bus() override = default;
+
+	float getFare() const;
+    void setFare(float newFare);
 };
 
 #endif

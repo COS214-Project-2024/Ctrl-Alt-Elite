@@ -7,11 +7,13 @@
 #include "TransportationState.h"
 #include <memory>
 
+// class PublicServicesDepartment;
 class Citizen {
 
 private:
     std::shared_ptr<TransportStrategy> preferredModes[3];
     std::shared_ptr<TransportationState> currentState;
+	// std::shared_ptr<PublicServicesDepartment> services;
     std::string name;
     float satisfaction;
     float commuteTime;

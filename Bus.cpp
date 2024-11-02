@@ -19,3 +19,13 @@ void Bus::travel() {
 Bus::Bus(int cap, int routes, float busFare, std::shared_ptr<TransportationState> state ): PublicTransport(cap, routes, state), fare(busFare)
 {
 }
+
+float Bus::getFare() const
+{
+    return fare;
+}
+
+void Bus::setFare(float newFare)
+{
+    fare = newFare;
+}

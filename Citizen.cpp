@@ -1,10 +1,12 @@
 #include "Citizen.h"
 #include <memory>
 #include <iostream>
+#include <random>
 
-Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state ) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
+Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
 {
 	for (int i = 0; i < 3; ++i) preferredModes[i] = nullptr;
+	// this->services = services;
 }
 
 void Citizen::setTransportStrategy(std::shared_ptr<TransportStrategy>strategy, int index)
@@ -95,8 +97,33 @@ std::shared_ptr<TransportationState> Citizen::getState()
 
 
 void Citizen::update() {
-	// TODO - implement Citizen::update
-	throw "Not yet implemented";
+	//  if (services) {
+    //     std::random_device rd;
+    //     std::mt19937 generator(rd());
+    //     std::uniform_int_distribution<int> distribution(1, 10);
+    //     float serviceImpact = 0.0;
+    //     const auto& availableServices = services->getAvailableServices();
+    //     for (const auto& service : availableServices) {
+    //         if (service == "HealthCare") {
+    //             serviceImpact += distribution(generator);
+    //         } else if (service == "Education") {
+    //             serviceImpact += distribution(generator);
+    //         } else {
+    //             serviceImpact += distribution(generator);
+    //         }
+    //     }
+    //     float taxImpact = services->getTaxrate() + 0.04f;
+    //     if (currentPolicy == "Environmental Protection") {
+    //         serviceImpact += distribution(generator);
+    //     } else if (currentPolicy == "Smack bad people") {
+    //         serviceImpact -= distribution(generator);
+    //     }
+	// 	else if(currentPolicy == "Be kind to one another"){
+	// 		serviceImpact += distribution(generator);
+	// 	}
+    //     satisfaction += serviceImpact - taxImpact;
+    //     //std::cout << name << "'s satisfaction updated to: " << satisfaction << "\n";
+    // }
 }
 
 void Citizen::respondToGovernmentChanges() {

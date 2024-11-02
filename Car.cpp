@@ -19,3 +19,13 @@ void Car::travel() {
 Car::Car(int cap, float fuelCost, std::shared_ptr<TransportationState> state ): PrivateTransport(cap, state), petrolPrice(fuelCost)
 {
 }
+
+float Car::getPetrolPrice() const
+{
+    return petrolPrice;
+}
+
+void Car::setPetrolPrice(float price)
+{
+    petrolPrice = price;
+}
