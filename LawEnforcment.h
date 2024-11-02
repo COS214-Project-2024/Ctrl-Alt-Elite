@@ -6,7 +6,8 @@ class LawEnforcment : public PublicServicesDepartment {
 
 
 public:
-	void handleRequest(int requestType);
+	LawEnforcment(City* city);
+	virtual void handleRequest(int requestType) override;
 };
 
 #endif

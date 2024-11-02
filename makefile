@@ -2,7 +2,7 @@
 MAKEFLAGS += --no-print-directory
 
 # The cpp file where int main() exists
-main = TestingMain
+main = testing
 
 # Compiles the code with the c++11 standard and automatically locates .cpp and .o files
 gpp_11_o = g++ -std=c++11 -c
