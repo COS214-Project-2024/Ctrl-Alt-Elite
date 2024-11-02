@@ -1,13 +1,34 @@
 #include "Apartment.h"
+#include <iostream>
 
-Apartment::Apartment() : Residential() {}
+Apartment::Apartment(int numResidents, int availableUnits) 
+    : Residential(numResidents, availableUnits) {}
 
 Apartment::~Apartment() {}
 
-void Apartment::display() const {
-	std::cout << "Displaying Apartment information.\n";
+void Apartment::display()  {
+	calculateOccupancyRate();
+
+    std::cout << "Apartment - Occupancy Rate: " << occupancyRate << "%\n";
+    std::cout << " _______ \n";
+    std::cout << "|       |\n";
+    std::cout <<"|APARTMENT|\n";
+    std::cout << "|_______|\n";
 }
 
 void Apartment::calculateOccupancyRate() {
-	std::cout << "Calculating occupancy rate for Apartment.\n";
+    Residential::calculateOccupancyRate();
+}
+
+int Apartment::getNumResidents(){
+    return numResidents;
+}
+
+void Apartment::performMaintenance() {
+    std::cout << "Maintaining Apartment: Checking occupancy, repairing shared facilities.\n";
+}
+
+void Apartment::setNumResident(int num)
+{
+	this->numResidents = num;
 }

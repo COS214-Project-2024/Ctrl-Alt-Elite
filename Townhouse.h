@@ -5,11 +5,14 @@
 
 class Townhouse : public Residential {
 public:
-   Townhouse();
+   Townhouse(int numResidents = 0, int availableUnits = 1);
    ~Townhouse() override;
 
-    void display() const override;
-    void calculateOccupancyRate();
+    void display() override;
+    void calculateOccupancyRate() override;
+    int getNumResidents()override;
+    void performMaintenance() override;
+    void setNumResident(int ) override;
 };
 
 #endif

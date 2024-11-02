@@ -54,6 +54,7 @@ void Government::removeObserver(Citizen* observer) {
         }
 }
 
+
 void Government::notifyObservers() {
     for (Citizen* c:citizen) {
         c->update();

@@ -1,10 +1,39 @@
 #include "CompositeBuilding.h"
+#include "Residential.h"
 #include <iostream>
 #include <algorithm>
 
-CompositeBuilding::CompositeBuilding(int population, int jobs){
+CompositeBuilding::CompositeBuilding()
+{
+    this->population =0;
+    this->jobs =0;
+    std::cout<< "Creating City\n";
+    std::cout << "                      .|\n";
+    std::cout << "                       | |\n";
+    std::cout << "                       |'|            ._____\n";
+    std::cout << "               ___    |  |            |.   |' .---\"|\n";
+    std::cout << "       _    .-'   '-. |  |     .--'|  ||   | _|    |\n";
+    std::cout << "    .-'|  _.|  |    ||   '-__  |   |  |    ||      |\n";
+    std::cout << "    |' | |.    |    ||       | |   |  |    ||      |\n";
+    std::cout << " ___|  '-'     '    \"\"       '-'   '-.'    '`      |____\n";
+    std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
+}
+
+
+CompositeBuilding::CompositeBuilding(int population, int jobs)
+{
     this->population = population;
     this->jobs = jobs;
+    std::cout<< "Creating City\n";
+    std::cout << "                      .|\n";
+    std::cout << "                       | |\n";
+    std::cout << "                       |'|            ._____\n";
+    std::cout << "               ___    |  |            |.   |' .---\"|\n";
+    std::cout << "       _    .-'   '-. |  |     .--'|  ||   | _|    |\n";
+    std::cout << "    .-'|  _.|  |    ||   '-__  |   |  |    ||      |\n";
+    std::cout << "    |' | |.    |    ||       | |   |  |    ||      |\n";
+    std::cout << " ___|  '-'     '    \"\"       '-'   '-.'    '`      |____\n";
+    std::cout << "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n";
 }
 
 CompositeBuilding::~CompositeBuilding() {
@@ -16,7 +45,11 @@ CompositeBuilding::~CompositeBuilding() {
 
 void CompositeBuilding::addBuilding(Building* building) {
     buildings.push_back(building);
-    std::cout << "Building added to CompositeBuilding.\n";
+    std::cout << "Adding building to City.\n";
+    
+    std::cout << "      /\\-\\\\" << std::endl; // Use double backslashes for escaping
+    std::cout << "     _||\"|_" << std::endl;
+    std::cout << "    ~^~^~^~^" << std::endl;
 }
 
 void CompositeBuilding::removeBuilding(Building* building) {
@@ -28,15 +61,21 @@ void CompositeBuilding::removeBuilding(Building* building) {
     }
 }
 
-void CompositeBuilding::display() const {
-    std::cout << "Displaying Composite Building:\n";
-    for (const Building* building : buildings) {
+void CompositeBuilding::display()  {
+    std::cout << "City Layout:\n";
+    for ( Building* building : buildings) {
         building->display();
+        std::cout << "-------------------\n";  
     }
 }
 
+
 Building* CompositeBuilding::clone() const {
     return new CompositeBuilding(*this);
+}
+
+void CompositeBuilding::performMaintenance(){
+    maintainBuildings();
 }
 
 void CompositeBuilding::increasePopulation(int amount) {
@@ -62,11 +101,31 @@ void CompositeBuilding::displayCityState() {
 }
 
 void CompositeBuilding::manageCapacity() {
-    // Loop through buildings and enforce maximum capacity limits
+    std::cout << "Managing capacity for each building.\n";
     for (Building* building : buildings) {
-        // Call hypothetical occupancy tracking for each building
+        Residential* residentialBuilding = dynamic_cast<Residential*>(building);
+        if (residentialBuilding) {
+            residentialBuilding->calculateOccupancyRate();
+            double occupancyRate = residentialBuilding->getOccupancyRate();
+            
+            if (occupancyRate > 100) {
+                std::cout << "Warning: Building over capacity!\n";
+            } else if (occupancyRate < 80) {
+                std::cout << "Building has available capacity.\n";
+            }
+        }
     }
 }
+
+void CompositeBuilding::maintainBuildings() {
+    std::cout << "Performing maintenance on each building.\n";
+    for (Building* building : buildings) {
+        building->performMaintenance();
+        std::cout << "Maintenance completed for building.\n";
+    }
+}
+
+
 
 void CompositeBuilding::integrateUtilities() {
     // Adjust building functionalities based on utilities availability
@@ -90,20 +149,29 @@ double CompositeBuilding::calculateTaxRevenue() const {
     return totalTaxRevenue;
 }
 
-void CompositeBuilding::maintainBuildings() {
-    std::cout << "Performing maintenance for each building.\n";
-    for (Building* building : buildings) {
-        // Hypothetical maintenance operation
-    }
-}
+
 
 void CompositeBuilding::trackSatisfaction() {
-    std::cout << "Tracking building satisfaction and impact on quality of life.\n";
-    for (Building* building : buildings) {
-        // Hypothetical tracking based on conditions and satisfaction ratings
-    }
+    // std::cout << "Tracking satisfaction levels across all buildings.\n";
+    // double totalSatisfaction = 0.0;
+    // int numBuildings = 0;
+
+    // for (Building* building : buildings) {
+    //     double satisfactionRating = building->getSatisfactionRating();
+    //     totalSatisfaction += satisfactionRating;
+    //     numBuildings++;
+    // }
+
+    // if (numBuildings > 0) {
+    //     double averageSatisfaction = totalSatisfaction / numBuildings;
+    //     std::cout << "Overall city satisfaction rating: " << averageSatisfaction << "\n";
+    // } else {
+    //     std::cout << "No buildings to track satisfaction.\n";
+    // }
 }
 
-// std::vector<Building*>::iterator CompositeBuilding::createIterator() {
-//     return buildings.begin();
-// }
+
+BuildingIterator CompositeBuilding::createIterator() 
+{
+    return BuildingIterator(buildings.begin(), buildings.end());
+}

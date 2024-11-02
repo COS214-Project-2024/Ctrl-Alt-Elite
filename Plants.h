@@ -8,9 +8,10 @@ public:
     Plants();
     ~Plants() override;
 
-    void display() const override;
+    void display() override;
     void updateEmploymentRating() override;
     void updatePollutionLevel() override;
+    void performMaintenance() override;
 };
 
 #endif

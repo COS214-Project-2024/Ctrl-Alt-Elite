@@ -1,17 +1,33 @@
 #include "Estate.h"
 #include <iostream>
 
-Estate::Estate()  : Residential() {}
+Estate::Estate(int numResidents, int availableUnits) 
+    : Residential(numResidents, availableUnits) {}
 
 Estate::~Estate() {}
 
+void Estate::display()  {
+    calculateOccupancyRate();
 
-void Estate::display() const {
-    std::cout << "Displaying Estate details.\n";
-    // Additional display logic specific to Estate
+    std::cout << "Estate - Occupancy Rate: " << occupancyRate << "%\n";
+    std::cout << "   /\\   \n";
+    std::cout << "  /  \\  \n";
+    std::cout << " /____\\ \n";
+    std::cout << "|      |\n";
 }
 
 void Estate::calculateOccupancyRate() {
-     // Specific logic to calculate the occupancy rate for an Estate
-    std::cout << "Calculating occupancy rate for Estate.\n";
+    Residential::calculateOccupancyRate();
+}
+
+int Estate::getNumResidents(){
+    return numResidents;
+}
+
+ void Estate::performMaintenance()  {
+    std::cout << "Maintaining Estate: Inspecting landscaping, security checks.\n";
+}
+
+void Estate::setNumResident(int num)
+{ this->numResidents = num;
 }

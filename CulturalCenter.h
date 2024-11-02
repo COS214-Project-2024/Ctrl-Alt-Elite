@@ -8,8 +8,9 @@ public:
     CulturalCenter();
     ~CulturalCenter() override;
 
-    void display() const override;
+    void display() override;
     void updateEntertainmentRating() override;
+    void performMaintenance()override;
 };
 
 #endif

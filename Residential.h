@@ -4,18 +4,22 @@
 #include "Building.h"
 
 class Residential : public Building {
-private:
+protected:
     int numResidents;
     int availableUnits;
     double occupancyRate; 
 	
 public:
     Residential();
-    ~Residential();
+    Residential(int numResidents, int avaiableUnits);
+    virtual ~Residential();
 
-    void display() const override;
-    void calculateOccupancyRate();
-    int getNumResidents();
+    virtual void display() override;
+    virtual void calculateOccupancyRate();
+    virtual double getOccupancyRate() const;
+    virtual int getNumResidents();
+    virtual void performMaintenance();
+    virtual void setNumResident(int ) ;
     
 
     Building* clone() const override;

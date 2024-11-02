@@ -9,6 +9,14 @@ City::City() {
 City::City(const std::string& name, int pop, float budget, ResourceFactory* factory)
     : cityName(name), population(pop), cityBudget(budget), resourceFactory(factory) {}
 
+City::~City() {
+    delete buildings;
+    delete utilities;
+    for (auto resource : resources) {
+        delete resource;
+    }
+}
+
 // City management methods
 void City::collectTaxes() {
     std::cout << "City: Collecting taxes from citizens and businesses." << std::endl;
@@ -41,8 +49,8 @@ void City::reportStatus() {
 }
 
 // Building management methods
-void City::addBuilding(Building* building) {
-    // Implementation for adding a building
+void City::addBuilding(CompositeBuilding* building) {
+    building->addBuilding(building);
 }
 
 void City::allocateResources(const std::string& resourceType) {

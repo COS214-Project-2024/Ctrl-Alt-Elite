@@ -31,8 +31,9 @@ public:
     //Building(float initialValue, float initialTaxRate);
 
     // Abstract methods for building management
-    virtual void display() const = 0;
+    virtual void display() = 0;
     virtual Building* clone() const = 0;
+    virtual void performMaintenance() = 0;
 
     // Resource allocation method
     void allocateResources(Resource* resource);

@@ -7,18 +7,21 @@ class Commercial : public Building {
 protected:
     int entertainmentRating;
     int employmentRating;
-    float revenue;
 
 public:
     Commercial();
     virtual ~Commercial();
 
-    virtual void display() const override;
-    virtual void updateEmploymentRating();
-    virtual void updateEntertainmentRating();
-    int getEmploymentRating() const;
+    virtual void display()  override;
+    virtual void IncEmploymentRating();
+    virtual void DecEmploymentRating();
+    virtual void IncEntertainmentRating();
+    virtual void DecEntertainmentRating();
+    
+    virtual int getEmploymentRating() const;
 
     Building* clone() const override;
+    virtual void performMaintenance();
 };
 
 #endif

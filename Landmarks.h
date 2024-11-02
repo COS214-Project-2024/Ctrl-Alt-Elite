@@ -12,11 +12,12 @@ public:
     Landmarks();
     virtual ~Landmarks();
 
-    void display() const override;
+    void display() override;
     virtual void updateEntertainmentRating();
     int getEntertainmentRating() const;
 
     Building* clone() const override;
+    virtual void performMaintenance();
 };
 
 #endif
