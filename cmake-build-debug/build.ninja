@@ -11,7 +11,7 @@
 # =============================================================================
 
 # =============================================================================
-# Project: COS214_Project
+# Project: Ctrl_Alt_Elite_Bablo
 # Configurations: Debug
 # =============================================================================
 
@@ -39,129 +39,644 @@ include CMakeFiles/rules.ninja
 #############################################
 # Logical path to working directory; prefix for absolute paths.
 
-cmake_ninja_workdir = C$:/Ctrl-Alt-Elite/cmake-build-debug/
+cmake_ninja_workdir = C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/cmake-build-debug/
 # =============================================================================
-# Object build statements for EXECUTABLE target COS214_Project
+# Object build statements for EXECUTABLE target Ctrl_Alt_Elite_Bablo
 
 
 #############################################
-# Order-only phony target for COS214_Project
+# Order-only phony target for Ctrl_Alt_Elite_Bablo
 
-build cmake_object_order_depends_target_COS214_Project: phony || CMakeFiles/COS214_Project.dir
+build cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo: phony || CMakeFiles/Ctrl_Alt_Elite_Bablo.dir
 
-build CMakeFiles/COS214_Project.dir/main.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/main.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\main.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Adapter.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Adapter.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Adapter.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/City.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/City.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\City.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/allocate_budget_command.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/allocate_budget_command.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\allocate_budget_command.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/tax_command.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/tax_command.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\tax_command.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Apartment.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Apartment.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Apartment.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/allocate_budget_command.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/allocate_budget_command.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\allocate_budget_command.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Bike.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Bike.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Bike.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/policy_command.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/policy_command.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\policy_command.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Budget.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Budget.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Budget.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/public_services_command.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/public_services_command.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\public_services_command.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/BudgetDepartment.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/BudgetDepartment.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\BudgetDepartment.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/Government.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/Government.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\Government.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Building.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Building.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Building.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/TaxationDepartment.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/TaxationDepartment.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\TaxationDepartment.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/BuildingTarget.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/BuildingTarget.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\BuildingTarget.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/PublicServicesDepartment.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/PublicServicesDepartment.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\PublicServicesDepartment.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Bus.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Bus.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Bus.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/PoliciesDepartment.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/PoliciesDepartment.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\PoliciesDepartment.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/BusyState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/BusyState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\BusyState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
-build CMakeFiles/COS214_Project.dir/BudgetDepartment.cpp.obj: CXX_COMPILER__COS214_Project_unscanned_Debug C$:/Ctrl-Alt-Elite/BudgetDepartment.cpp || cmake_object_order_depends_target_COS214_Project
-  DEP_FILE = CMakeFiles\COS214_Project.dir\BudgetDepartment.cpp.obj.d
-  FLAGS = -g -fdiagnostics-color=always
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
-  OBJECT_FILE_DIR = CMakeFiles\COS214_Project.dir
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_PDB = COS214_Project.pdb
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Car.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Car.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Car.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Citizen.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Citizen.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Citizen.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/City.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/City.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\City.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Commercial.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Commercial.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Commercial.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/CompositeBuilding.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/CompositeBuilding.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\CompositeBuilding.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/CulturalCenter.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/CulturalCenter.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\CulturalCenter.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Education.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Education.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Education.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Energy.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Energy.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Energy.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Estate.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Estate.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Estate.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Factories.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Factories.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Factories.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Government.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Government.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Government.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/HealthCare.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/HealthCare.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\HealthCare.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/House.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/House.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\House.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Industrial.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Industrial.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Industrial.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Landmarks.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Landmarks.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Landmarks.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/LawEnforcment.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/LawEnforcment.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\LawEnforcment.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Mall.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Mall.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Mall.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Materials.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Materials.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Materials.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/ModeOfTransport.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/ModeOfTransport.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\ModeOfTransport.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/ModerateState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/ModerateState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\ModerateState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Monument.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Monument.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Monument.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Office.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Office.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Office.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Park.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Park.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Park.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Plane.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Plane.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Plane.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Plants.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Plants.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Plants.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PoliciesDepartment.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PoliciesDepartment.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PoliciesDepartment.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/policy_command.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/policy_command.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\policy_command.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PowerPlants.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PowerPlants.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PowerPlants.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateBusyState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PrivateBusyState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PrivateBusyState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateModerateState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PrivateModerateState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PrivateModerateState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateQuietState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PrivateQuietState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PrivateQuietState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateTransport.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PrivateTransport.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PrivateTransport.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateTransportState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PrivateTransportState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PrivateTransportState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/public_services_command.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/public_services_command.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\public_services_command.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PublicServicesDepartment.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PublicServicesDepartment.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PublicServicesDepartment.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PublicTransport.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PublicTransport.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PublicTransport.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PublicTransportState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/PublicTransportState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\PublicTransportState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/QuietState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/QuietState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\QuietState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Residential.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Residential.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Residential.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Resource.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Resource.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Resource.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/ResourceFactory.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/ResourceFactory.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\ResourceFactory.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/SewageSystems.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/SewageSystems.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\SewageSystems.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Shop.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Shop.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Shop.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/tax_command.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/tax_command.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\tax_command.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/TaxationDepartment.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/TaxationDepartment.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\TaxationDepartment.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Taxi.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Taxi.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Taxi.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/testing.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/testing.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\testing.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Townhouse.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Townhouse.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Townhouse.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Train.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Train.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Train.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/TransportationState.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/TransportationState.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\TransportationState.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/TransportStrategy.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/TransportStrategy.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\TransportStrategy.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Utilities.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Utilities.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Utilities.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Walk.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Walk.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Walk.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Warehouses.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Warehouses.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Warehouses.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/WasteManagement.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/WasteManagement.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\WasteManagement.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Water.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/Water.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\Water.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
+
+build CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/WaterSupply.cpp.obj: CXX_COMPILER__Ctrl_Alt_Elite_Bablo_unscanned_Debug C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/WaterSupply.cpp || cmake_object_order_depends_target_Ctrl_Alt_Elite_Bablo
+  DEP_FILE = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\WaterSupply.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -I"C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/."
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  OBJECT_FILE_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
 
 # =============================================================================
-# Link build statements for EXECUTABLE target COS214_Project
+# Link build statements for EXECUTABLE target Ctrl_Alt_Elite_Bablo
 
 
 #############################################
-# Link the executable COS214_Project.exe
+# Link the executable Ctrl_Alt_Elite_Bablo.exe
 
-build COS214_Project.exe: CXX_EXECUTABLE_LINKER__COS214_Project_Debug CMakeFiles/COS214_Project.dir/main.cpp.obj CMakeFiles/COS214_Project.dir/City.cpp.obj CMakeFiles/COS214_Project.dir/tax_command.cpp.obj CMakeFiles/COS214_Project.dir/allocate_budget_command.cpp.obj CMakeFiles/COS214_Project.dir/policy_command.cpp.obj CMakeFiles/COS214_Project.dir/public_services_command.cpp.obj CMakeFiles/COS214_Project.dir/Government.cpp.obj CMakeFiles/COS214_Project.dir/TaxationDepartment.cpp.obj CMakeFiles/COS214_Project.dir/PublicServicesDepartment.cpp.obj CMakeFiles/COS214_Project.dir/PoliciesDepartment.cpp.obj CMakeFiles/COS214_Project.dir/BudgetDepartment.cpp.obj
+build Ctrl_Alt_Elite_Bablo.exe: CXX_EXECUTABLE_LINKER__Ctrl_Alt_Elite_Bablo_Debug CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Adapter.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/allocate_budget_command.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Apartment.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Bike.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Budget.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/BudgetDepartment.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Building.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/BuildingTarget.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Bus.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/BusyState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Car.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Citizen.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/City.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Commercial.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/CompositeBuilding.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/CulturalCenter.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Education.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Energy.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Estate.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Factories.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Government.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/HealthCare.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/House.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Industrial.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Landmarks.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/LawEnforcment.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Mall.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Materials.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/ModeOfTransport.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/ModerateState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Monument.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Office.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Park.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Plane.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Plants.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PoliciesDepartment.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/policy_command.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PowerPlants.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateBusyState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateModerateState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateQuietState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateTransport.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PrivateTransportState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/public_services_command.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PublicServicesDepartment.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PublicTransport.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/PublicTransportState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/QuietState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Residential.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Resource.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/ResourceFactory.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/SewageSystems.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Shop.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/tax_command.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/TaxationDepartment.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Taxi.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/testing.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Townhouse.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Train.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/TransportationState.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/TransportStrategy.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Utilities.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Walk.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Warehouses.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/WasteManagement.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/Water.cpp.obj CMakeFiles/Ctrl_Alt_Elite_Bablo.dir/WaterSupply.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
-  OBJECT_DIR = CMakeFiles\COS214_Project.dir
+  OBJECT_DIR = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir
   POST_BUILD = cd .
   PRE_LINK = cd .
-  TARGET_COMPILE_PDB = CMakeFiles\COS214_Project.dir\
-  TARGET_FILE = COS214_Project.exe
-  TARGET_IMPLIB = libCOS214_Project.dll.a
-  TARGET_PDB = COS214_Project.pdb
+  TARGET_COMPILE_PDB = CMakeFiles\Ctrl_Alt_Elite_Bablo.dir\
+  TARGET_FILE = Ctrl_Alt_Elite_Bablo.exe
+  TARGET_IMPLIB = libCtrl_Alt_Elite_Bablo.dll.a
+  TARGET_PDB = Ctrl_Alt_Elite_Bablo.pdb
 
 
 #############################################
 # Utility command for edit_cache
 
 build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Ctrl-Alt-Elite\cmake-build-debug && C:\Users\jinfe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.8660.186\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jinfe\Downloads\Ctrl-Alt-Elite-Bablo (2)\Ctrl-Alt-Elite-Bablo\cmake-build-debug" && C:\Users\jinfe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.8660.186\bin\cmake\win\x64\bin\cmake.exe -E echo "No interactive CMake dialog available.""
   DESC = No interactive CMake dialog available...
   restat = 1
 
@@ -172,7 +687,7 @@ build edit_cache: phony CMakeFiles/edit_cache.util
 # Utility command for rebuild_cache
 
 build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
-  COMMAND = cmd.exe /C "cd /D C:\Ctrl-Alt-Elite\cmake-build-debug && C:\Users\jinfe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.8660.186\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -SC:\Ctrl-Alt-Elite -BC:\Ctrl-Alt-Elite\cmake-build-debug"
+  COMMAND = cmd.exe /C "cd /D "C:\Users\jinfe\Downloads\Ctrl-Alt-Elite-Bablo (2)\Ctrl-Alt-Elite-Bablo\cmake-build-debug" && C:\Users\jinfe\AppData\Local\JetBrains\Toolbox\apps\CLion\ch-0\232.8660.186\bin\cmake\win\x64\bin\cmake.exe --regenerate-during-build -S"C:\Users\jinfe\Downloads\Ctrl-Alt-Elite-Bablo (2)\Ctrl-Alt-Elite-Bablo" -B"C:\Users\jinfe\Downloads\Ctrl-Alt-Elite-Bablo (2)\Ctrl-Alt-Elite-Bablo\cmake-build-debug""
   DESC = Running CMake to regenerate build system...
   pool = console
   restat = 1
@@ -182,7 +697,7 @@ build rebuild_cache: phony CMakeFiles/rebuild_cache.util
 # =============================================================================
 # Target aliases.
 
-build COS214_Project: phony COS214_Project.exe
+build Ctrl_Alt_Elite_Bablo: phony Ctrl_Alt_Elite_Bablo.exe
 
 # =============================================================================
 # Folder targets.
@@ -190,9 +705,9 @@ build COS214_Project: phony COS214_Project.exe
 # =============================================================================
 
 #############################################
-# Folder: C:/Ctrl-Alt-Elite/cmake-build-debug
+# Folder: C:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo (2)/Ctrl-Alt-Elite-Bablo/cmake-build-debug
 
-build all: phony COS214_Project.exe
+build all: phony Ctrl_Alt_Elite_Bablo.exe
 
 # =============================================================================
 # Built-in targets
@@ -201,14 +716,14 @@ build all: phony COS214_Project.exe
 #############################################
 # Re-run CMake if any of its inputs changed.
 
-build build.ninja: RERUN_CMAKE | C$:/Ctrl-Alt-Elite/CMakeLists.txt C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
+build build.ninja: RERUN_CMAKE | C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake
   pool = console
 
 
 #############################################
 # A missing CMake input file is not an error.
 
-build C$:/Ctrl-Alt-Elite/CMakeLists.txt C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
+build C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCCompilerABI.c C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXCompilerABI.cpp C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeCompilerIdDetection.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompileFeatures.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineCompilerId.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeDetermineSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeFindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitIncludeInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseImplicitLinkInfo.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeParseLibraryArchitecture.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCCompiler.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeRCInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystem.cmake.in C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCXXCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestCompilerCommon.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/CMakeTestRCCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ADSP-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMCC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/ARMClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/AppleClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Borland-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Bruce-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Clang-DetermineCompilerInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Comeau-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Compaq-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Cray-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Embarcadero-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Fujitsu-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/FujitsuClang-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GHS-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU-FindBinUtils.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/HP-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IAR-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-C-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMCPP-CXX-DetermineVersionInternal.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IBMClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Intel-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/IntelLLVM-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/LCC-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/MSVC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVHPC-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/NVIDIA-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/OpenWatcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PGI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/PathScale-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SCO-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SDCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/SunPro-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TI-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Tasking-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/TinyCC-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/VisualAge-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/Watcom-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XL-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/XLClang-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-C-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Compiler/zOS-CXX-DetermineCompiler.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Internal/FeatureTesting.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-Determine-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-C.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX-ABI.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU-CXX.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-GNU.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows-windres.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/Windows.cmake C$:/Users/jinfe/AppData/Local/JetBrains/Toolbox/apps/CLion/ch-0/232.8660.186/bin/cmake/win/x64/share/cmake-3.26/Modules/Platform/WindowsPaths.cmake C$:/Users/jinfe/Downloads/Ctrl-Alt-Elite-Bablo$ (2)/Ctrl-Alt-Elite-Bablo/CMakeLists.txt CMakeCache.txt CMakeFiles/3.26.4/CMakeCCompiler.cmake CMakeFiles/3.26.4/CMakeCXXCompiler.cmake CMakeFiles/3.26.4/CMakeRCCompiler.cmake CMakeFiles/3.26.4/CMakeSystem.cmake: phony
 
 
 #############################################
