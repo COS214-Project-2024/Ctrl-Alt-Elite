@@ -3,7 +3,7 @@
 #include <random>
 #include <iostream>
 
-Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state, std::shared_ptr<PublicServicesDepartment> services) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
+Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state, std::shared_ptr<PublicServicesDepartment> services) :  name(citizenName), satisfaction(0.0f), commuteTime(0.0f), currentState(state)
 {
 	for (int i = 0; i < 3; ++i) preferredModes[i] = nullptr;
 	this->services = services;
@@ -83,9 +83,9 @@ void Citizen::update() {
         const auto& availableServices = services->getAvailableServices();
         for (const auto& service : availableServices) {
             if (service == "HealthCare") {
-                serviceImpact += distribution(generator);
+                serviceImpact += 15;
             } else if (service == "Education") {
-                serviceImpact += distribution(generator);
+                serviceImpact += 10;
             } else {
                 serviceImpact += distribution(generator);
             }
@@ -105,6 +105,10 @@ void Citizen::update() {
         satisfaction += serviceImpact - taxImpact;
         //std::cout << name << "'s satisfaction updated to: " << satisfaction << "\n";
     }
+}
+
+float Citizen::getSatisfaction(){
+	return satisfaction;
 }
 
 

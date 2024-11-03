@@ -63,6 +63,8 @@ public:
 	void makeRequest();
 
 	int getRequestType();
+
+	float getSatisfaction();
 };
 
 #endif

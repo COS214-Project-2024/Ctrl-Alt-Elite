@@ -60,6 +60,10 @@ void Government::notifyObservers() {
     }
 }
 
+std::vector<Citizen*> Government::getCitizens(){
+	return citizen;
+}
+
 /*void Government::addCommand(Command* command) {
 	commandList.push_back(command);
 }

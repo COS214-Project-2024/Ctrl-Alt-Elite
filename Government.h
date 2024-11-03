@@ -47,6 +47,8 @@ public:
 	std::string getCurrentPolicy();
 
 	std::vector<std::string> getAvailableServices();
+
+	std::vector<Citizen*> getCitizens();
 };
 
 #endif
