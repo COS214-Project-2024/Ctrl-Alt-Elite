@@ -8,3 +8,7 @@ void TaxCommand::execute() {
     taxationDepartment->updateTaxes(newTaxRate);
     taxationDepartment->manageCity();
 }
+
+float TaxCommand::getTaxRate(){
+    return newTaxRate;
+}

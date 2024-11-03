@@ -8,3 +8,7 @@ void PublicServicesCommand::execute() {
     publicServicesDepartment->updatePublicServices(services);
     publicServicesDepartment->manageCity();
 }
+
+std::vector<std::string> PublicServicesCommand::getServices(){
+    return services;
+}

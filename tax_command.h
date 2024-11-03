@@ -14,6 +14,7 @@ private:
 public:
     TaxCommand(TaxationDepartment* dept, float rate);
     void execute() override;
+    float getTaxRate();
 };
 
 #endif // TAX_COMMAND_H

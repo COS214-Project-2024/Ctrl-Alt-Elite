@@ -13,6 +13,7 @@ private:
 public:
     PolicyCommand(PoliciesDepartment* dept, const std::string& policy);
     void execute() override;
+    std::string getPolicy();
 };
 
 #endif // POLICY_COMMAND_H

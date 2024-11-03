@@ -8,3 +8,7 @@ void PolicyCommand::execute() {
     policiesDepartment->implementPolicy(newPolicy);
     policiesDepartment->manageCity();
 }
+
+std::string PolicyCommand::getPolicy(){
+    return newPolicy;
+}

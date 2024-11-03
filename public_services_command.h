@@ -13,6 +13,7 @@ private:
 public:
     PublicServicesCommand(PublicServicesDepartment* dept, const std::vector<std::string>& svc);
     void execute() override;
+    std::vector<std::string> getServices();
 };
 
 #endif // PUBLIC_SERVICES_COMMAND_H

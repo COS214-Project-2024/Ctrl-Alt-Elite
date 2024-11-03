@@ -133,10 +133,8 @@ static void TestingComposite() {
 }
 
 TEST_CASE("Testing Composite Pattern") {
-    // Create composite building with initial population and job values
     CompositeBuilding* city = new CompositeBuilding(30000, 15000);
 
-    // Create residential, commercial, and industrial buildings
     Residential* house = new Residential();
     Residential* townhouse = new Residential();
     Residential* apartment = new Residential();
@@ -149,12 +147,10 @@ TEST_CASE("Testing Composite Pattern") {
     Industrial* plant = new Plants();
     Industrial* warehouse = new Warehouses();
 
-    // Create landmarks
     Landmarks* park = new Park();
     Landmarks* culturalCenter = new CulturalCenter();
     Landmarks* monument = new Monument();
 
-    // Add buildings to the city
     city->addBuilding(house);
     city->addBuilding(townhouse);
     city->addBuilding(apartment);
@@ -168,42 +164,40 @@ TEST_CASE("Testing Composite Pattern") {
     city->addBuilding(culturalCenter);
     city->addBuilding(monument);
 
-    // Display initial state of the city
+    CHECK(city->getBuildings().size() == 12);
+
     std::cout << "\nInitial City State:\n";
     city->displayCityState();
 
-    // Test population and job increase
-    city->increasePopulation(5000);  // Test increasing population
-    city->increaseJobs(2000);        // Test increasing jobs
+    city->increasePopulation(5000); 
+    CHECK(city->getPopulation() == 35000);
 
-    // Display state after population and job adjustments
+    city->increaseJobs(2000);
+    CHECK(city->getJobs() == 17000);
+
     std::cout << "\nCity State after Population and Job Adjustments:\n";
     city->displayCityState();
 
-    // Test utility expansion
     std::cout << "\nExpanding Utilities:\n";
     city->expandUtilities();
 
-    // Test building maintenance
     std::cout << "\nPerforming Maintenance:\n";
     city->maintainBuildings();
 
-    // Test satisfaction tracking
     std::cout << "\nTracking Satisfaction:\n";
     city->trackSatisfaction();
 
-    // Calculate and display tax revenue
     double taxRevenue = city->calculateTaxRevenue();
     std::cout << "\nTotal Tax Revenue: $" << taxRevenue << "\n";
 
-    // Remove a building and display city state afterward
     city->removeBuilding(warehouse);
+    CHECK(city->getBuildings().size() == 11);
     std::cout << "\nCity State after Removing the Warehouse:\n";
     city->displayCityState();
 
-    // Clean up
     delete city;
 }
+
 
 static void TestingCommand(){
     // Create City instance
@@ -241,36 +235,32 @@ static void TestingCommand(){
 }
 
 TEST_CASE("Command Pattern Test") {
-    // Create City instance
     City city;
 
-    // Create government department instances
     TaxationDepartment taxDept(&city);
     BudgetDepartment budgetDept(&city);
     PoliciesDepartment policyDept(&city);
     PublicServicesDepartment publicServiceDept(&city);
 
-    // Set initial commands and test basic functionality
     std::cout << "===== Initial Commands Test =====" << std::endl;
 
-    // Test TaxCommand
-    TaxCommand taxCommand(&taxDept, 20.0); // Set tax rate to 20%
+    TaxCommand taxCommand(&taxDept, 20.0);
+    CHECK(taxCommand.getTaxRate() == 20.0);
     taxCommand.execute();
 
-    // Test AllocateBudgetCommand
-    AllocateBudgetCommand budgetCommand(&budgetDept, 50000); // Allocate $50,000 to the budget
+    AllocateBudgetCommand budgetCommand(&budgetDept, 50000);
+    CHECK(budgetCommand.getAllocatedBudget() == 50000);
     budgetCommand.execute();
 
-    // Test PolicyCommand
-    PolicyCommand policyCommand(&policyDept, "Environmental Protection"); // Set policy to Environmental Protection
+    PolicyCommand policyCommand(&policyDept, "Environmental Protection");
+    CHECK(policyCommand.getPolicy() == "Environmental Protection");
     policyCommand.execute();
 
-    // Test PublicServicesCommand
     std::vector<std::string> services = {"Healthcare", "Education", "Law Enforcement"};
     PublicServicesCommand publicServiceCommand(&publicServiceDept, services);
+    CHECK(publicServiceCommand.getServices().size() != 0);
     publicServiceCommand.execute();
 
-    // Generate Government Report
     std::cout << "\n===== Government Report =====" << std::endl;
     policyDept.Report();
 }
