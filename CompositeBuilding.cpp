@@ -107,3 +107,15 @@ void CompositeBuilding::trackSatisfaction() {
 // std::vector<Building*>::iterator CompositeBuilding::createIterator() {
 //     return buildings.begin();
 // }
+
+int CompositeBuilding::getPopulation(){
+    return population;
+}
+
+int CompositeBuilding::getJobs(){
+    return jobs;
+}
+
+std::vector<Building*> CompositeBuilding::getBuildings(){
+    return buildings;
+}

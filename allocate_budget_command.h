@@ -14,6 +14,7 @@ private:
 public:
     AllocateBudgetCommand(BudgetDepartment* dept, float amt);
     void execute() override;
+    float getAllocatedBudget();
 };
 
 #endif // ALLOCATE_BUDGET_COMMAND_H

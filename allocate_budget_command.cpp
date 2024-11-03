@@ -8,3 +8,7 @@ void AllocateBudgetCommand::execute() {
     budgetDepartment->allocateBudget(amount);
     budgetDepartment->manageCity();
 }
+
+float AllocateBudgetCommand::getAllocatedBudget(){
+    return amount;
+}

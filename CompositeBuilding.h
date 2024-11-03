@@ -31,6 +31,11 @@ public:
     void maintainBuildings();
     void trackSatisfaction();
 
+    int getPopulation();
+    int getJobs();
+    std::vector<Building*> getBuildings();
+
+
    // std::vector<Building*>::iterator createIterator() override;
 
 };
