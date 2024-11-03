@@ -1,15 +1,34 @@
 #include "Player.h"
 
-Player::Player() : city(0, 0) {
+Player::Player() : city(0, 0), builder() {
     std::cout << "Welcome, Mayor! You are now in control of the city.\n";
 }
 
 void Player::addResidentialBuilding() {
-   //todo 
+   builder.buildPopulationGrowth();
+   city = *builder.getCompositeBuilding();
+}
+
+void Player::ExpandEconomy(){
+    builder.buildEconomicDevelopment();
+    city= *builder.getCompositeBuilding();
+}
+
+void Player::ExpandInfrustructure(){
+    builder.buildInfrastructureExpansion();
+    city = *builder.getCompositeBuilding();
 }
 
 void Player::removeBuilding() {
-   //todo
+   BuildingIterator cityIt= city.createIterator();
+   Building* curr = nullptr;
+   if(cityIt.hasNext())
+    while (cityIt.hasNext())
+    {
+        curr=cityIt.next();
+    }
+    city.removeBuilding(curr);
+    
 }
 
 void Player::increasePopulation(int amount) {

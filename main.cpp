@@ -8,7 +8,7 @@ int main() {
     while (choice != 7) {
         std::cout << "\nCity Simulation:\n";
         std::cout << "1. Create City\n";
-        std::cout<< "2. Use Transport"
+        std::cout<< "2. Use Transport\n";
         std::cout << "2. Remove a Building\n";
         std::cout << "3. Increase Population\n";
         std::cout << "4. Increase Jobs\n";
