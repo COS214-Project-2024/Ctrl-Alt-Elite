@@ -134,7 +134,8 @@ static void TestingComposite() {
 
 TEST_CASE("Testing Composite Pattern") {
     CompositeBuilding* city = new CompositeBuilding(30000, 15000);
-
+    CHECK(city->getPopulation() == 30000);
+    CHECK(city->getJobs() == 15000);
     Residential* house = new Residential();
     Residential* townhouse = new Residential();
     Residential* apartment = new Residential();
@@ -471,13 +472,11 @@ static void TestingAdapter(){
     std::cout<<endl;
     std::cout<<"=================Testing Adapter=================";
     std::cout<<endl;
-    //creating a CompositeBuilding to represent the entire city
+    
     CompositeBuilding* city = new CompositeBuilding(30000, 15000);
 
-    //creating an Adapter to interact with different types of buildings
     Adapter cityAdapter(city);
 
-    //adding different types of buildings to the city using the adapter
     int residentialUnits = 15;
     int commercialUnits = 11;
     int industrialUnits = 7;
@@ -505,17 +504,18 @@ TEST_CASE("Adapter Pattern Test") {
     std::cout << std::endl;
     std::cout << "================= Testing Adapter =================" << std::endl;
 
-    // Creating a CompositeBuilding to represent the entire city
-    CompositeBuilding* city = new CompositeBuilding(318000, 15000);
+    CompositeBuilding* city = new CompositeBuilding(30000, 15000);
+    CHECK(city->getJobs() == 15000);
+    CHECK(city->getPopulation() == 30000);
+    
 
-    // Creating an Adapter to interact with different types of buildings
     Adapter cityAdapter(city);
 
-    // Adding different types of buildings to the city using the adapter
     int residentialUnits = 15;
     int commercialUnits = 11;
     int industrialUnits = 7;
     int landmarkUnits = 5;
+    int totalUnits = residentialUnits + commercialUnits + industrialUnits + landmarkUnits;
 
     std::cout << "Adding Residential Units...\n";
     cityAdapter.addResidentialUnits(residentialUnits);
@@ -528,16 +528,67 @@ TEST_CASE("Adapter Pattern Test") {
 
     std::cout << "\nAdding Landmark Units...\n";
     cityAdapter.addLandmarkUnits(landmarkUnits);
+    
+    CHECK(city->getBuildings().size() == totalUnits);
 
     std::cout << "\nDisplaying City Status:\n";
     cityAdapter.displayCityStatus();
 
-    // Clean up
     delete city;
 }
 
 
 static void TestingObserver(){
+    std::cout << std::endl;
+    std::cout << "================= Testing Observer =================" << std::endl;
+
+    City* city = new City();
+
+    std::shared_ptr<PublicServicesDepartment> publicServicesDept = std::make_shared<PublicServicesDepartment>(city);
+
+    std::vector<Citizen*> citizens;
+    for (int i = 0; i < 27; ++i) {
+        std::string name = "Citizen" + std::to_string(i + 1);
+        Citizen* citizen = new Citizen(name, nullptr, publicServicesDept);
+        citizens.push_back(citizen);
+    }
+
+    std::cout << "Registering citizens as observers...\n";
+    for (Citizen* citizen : citizens) {
+        publicServicesDept->addObserver(citizen);
+    }
+
+    std::cout << "\nUpdating available public services...\n";
+    std::vector<std::string> updatedServices = {"HealthCare", "Education", "LawEnforcement"};
+    publicServicesDept->updatePublicServices(updatedServices);
+
+    std::cout << "\nNotifying citizens about the updates...\n";
+    publicServicesDept->notifyObservers();
+
+    std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
+    for (Citizen* citizen : citizens) {
+        citizen->displayInfo();
+        std::cout << std::endl;
+    }
+
+    std::cout << "\nRemoving a few citizens as observers...\n";
+    for (int i = 0; i < 5; ++i) {
+        publicServicesDept->removeObserver(citizens[i]);
+    }
+
+    std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
+    for (int i = 5; i < citizens.size(); ++i) {
+        citizens[i]->displayInfo();
+        std::cout << std::endl;
+    }
+
+    for (Citizen* citizen : citizens) {
+        delete citizen;
+    }
+    delete city;
+}
+
+TEST_CASE("Observer Pattern Test") {
     std::cout<<std::endl;
     std::cout<<"=================Testing Observer=================";
     std::cout<<std::endl;
@@ -556,14 +607,23 @@ static void TestingObserver(){
     std::cout << "Registering citizens as observers...\n";
     for (Citizen* citizen : citizens) {
         publicServicesDept->addObserver(citizen);
+        CHECK(citizen->getSatisfaction() == 0.0f);
     }
+    CHECK(publicServicesDept->getCitizens().size() == 27);
 
     std::cout << "\nUpdating available public services...\n";
     std::vector<std::string> updatedServices = {"HealthCare", "Education", "LawEnforcement"};
     publicServicesDept->updatePublicServices(updatedServices);
+    CHECK(publicServicesDept->getAvailableServices().size() == 3);
 
     std::cout << "\nNotifying citizens about the updates...\n";
     publicServicesDept->notifyObservers();
+
+    // Iterate through each citizen and check if their satisfaction level has increased
+    for (size_t i = 0; i < publicServicesDept->getCitizens().size(); ++i) {
+        CHECK(publicServicesDept->getCitizens()[i]->getSatisfaction() >= 0.0); // Check if satisfaction level is greater than 0
+    }
+
 
     std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
     for (Citizen* citizen : citizens) {
@@ -575,6 +635,8 @@ static void TestingObserver(){
     for (int i = 0; i < 5; ++i) {
         publicServicesDept->removeObserver(citizens[i]);
     }
+    CHECK(publicServicesDept->getCitizens().size() == 22);
+
 
     std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
     for (int i = 5; i < citizens.size(); ++i) {
@@ -582,63 +644,6 @@ static void TestingObserver(){
         std::cout<<std::endl;
     }
 
-    for (Citizen* citizen : citizens) {
-        delete citizen;
-    }
-    delete city;
-}
-
-TEST_CASE("Observer Pattern Test") {
-    std::cout << std::endl;
-    std::cout << "================= Testing Observer =================" << std::endl;
-
-    // Creating a City instance
-    City* city = new City();
-
-    // Creating a shared PublicServicesDepartment
-    std::shared_ptr<PublicServicesDepartment> publicServicesDept = std::make_shared<PublicServicesDepartment>(city);
-
-    // Creating citizens and registering them as observers
-    std::vector<Citizen*> citizens;
-    for (int i = 0; i < 27; ++i) {
-        std::string name = "Citizen" + std::to_string(i + 1);
-        Citizen* citizen = new Citizen(name, nullptr, publicServicesDept);
-        citizens.push_back(citizen);
-    }
-
-    std::cout << "Registering citizens as observers...\n";
-    for (Citizen* citizen : citizens) {
-        publicServicesDept->addObserver(citizen);
-    }
-
-    // Updating public services and notifying observers
-    std::cout << "\nUpdating available public services...\n";
-    std::vector<std::string> updatedServices = {"HealthCare", "Education", "LawEnforcement"};
-    publicServicesDept->updatePublicServices(updatedServices);
-
-    std::cout << "\nNotifying citizens about the updates...\n";
-    publicServicesDept->notifyObservers();
-
-    // Displaying updated satisfaction levels for all citizens
-    std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
-    for (Citizen* citizen : citizens) {
-        citizen->displayInfo();
-        std::cout << std::endl;
-    }
-
-    // Removing some citizens as observers and displaying the updates
-    std::cout << "\nRemoving a few citizens as observers...\n";
-    for (int i = 0; i < 5; ++i) {
-        publicServicesDept->removeObserver(citizens[i]);
-    }
-
-    std::cout << "\nDisplaying updated citizen satisfaction levels...\n";
-    for (int i = 5; i < citizens.size(); ++i) {
-        citizens[i]->displayInfo();
-        std::cout << std::endl;
-    }
-
-    // Cleaning up resources
     for (Citizen* citizen : citizens) {
         delete citizen;
     }
@@ -646,17 +651,6 @@ TEST_CASE("Observer Pattern Test") {
 }
 
 static void testTemplate(){
-    City *city= new City();
-    PoliciesDepartment* pol = new PoliciesDepartment(city);
-    pol->implementPolicy("Smack bad people");
-    pol->Report();
-
-    TaxationDepartment* tax =new TaxationDepartment(city);
-    tax->updateTaxes(20);
-    tax->Report();
-}
-
-TEST_CASE("Template Pattern Test") {
     std::cout << std::endl;
     std::cout << "================= Testing Template Pattern =================" << std::endl;
 
@@ -677,6 +671,20 @@ TEST_CASE("Template Pattern Test") {
     delete pol;
     delete tax;
     delete city;
+}
+
+
+TEST_CASE("Template Pattern Test") {
+    City *city= new City();
+    PoliciesDepartment* pol = new PoliciesDepartment(city);
+    pol->implementPolicy("Smack bad people");
+    CHECK(pol->getCurrentPolicy() == "Smack bad people");
+    pol->Report();
+
+    TaxationDepartment* tax =new TaxationDepartment(city);
+    tax->updateTaxes(20);
+    CHECK(tax->getTaxrate() == 20);
+    tax->Report();
 }
 
 
