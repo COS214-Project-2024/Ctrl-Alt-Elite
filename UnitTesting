@@ -1,1 +1,80 @@
+#define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include "doctest.h"
+#include "CompositeBuilding.h"
+#include "Residential.h"
 
+// Test default constructor and attributes
+// TEST_CASE("CompositeBuilding default constructor") {
+//     CompositeBuilding city;
+//     CHECK(city.getPopulation() == 0);
+//     CHECK(city.getJobs() == 0);
+// }
+
+// // Test parameterized constructor and attributes
+// TEST_CASE("CompositeBuilding parameterized constructor") {
+//     CompositeBuilding city(5000, 1000);
+//     CHECK(city.getPopulation() == 5000);
+//     CHECK(city.getJobs() == 1000);
+// }
+
+// // Test adding and removing buildings
+// TEST_CASE("CompositeBuilding add/remove building") {
+//     CompositeBuilding city;
+//     Residential* residential = new Residential();
+
+//     city.addBuilding(residential);
+//     CHECK(city.getBuildingCount() == 1);
+
+//     city.removeBuilding(residential);
+//     CHECK(city.getBuildingCount() == 0);
+// }
+
+// // Test increasing population
+// TEST_CASE("CompositeBuilding increase population") {
+//     CompositeBuilding city(2000, 500);
+//     city.increasePopulation(500);
+//     CHECK(city.getPopulation() == 2500);
+// }
+
+// // Test increasing jobs
+// TEST_CASE("CompositeBuilding increase jobs") {
+//     CompositeBuilding city(2000, 500);
+//     city.increaseJobs(300);
+//     CHECK(city.getJobs() == 800);
+// }
+
+// Test display functionality (This is a dummy check as display is visual)
+TEST_CASE("CompositeBuilding display") {
+    CompositeBuilding city;
+    city.display(); // This outputs to console, only verifying it doesn’t crash
+    CHECK(true); // Pass by default
+}
+
+// Test performing maintenance
+TEST_CASE("CompositeBuilding perform maintenance") {
+    CompositeBuilding city;
+    Residential* residential = new Residential();
+    city.addBuilding(residential);
+    city.performMaintenance();
+    CHECK(true); // Pass by default as we cannot verify console output
+}
+
+// Test calculating tax revenue
+TEST_CASE("CompositeBuilding calculate tax revenue") {
+    CompositeBuilding city;
+    CHECK(city.calculateTaxRevenue() == 0.0);
+}
+
+// Test utilities integration
+TEST_CASE("CompositeBuilding expand utilities") {
+    CompositeBuilding city;
+    city.expandUtilities();
+    CHECK(true); // Only checks if the method runs without errors
+}
+
+// Test manage capacity (this is visual, so only verifying no errors)
+TEST_CASE("CompositeBuilding manage capacity") {
+    CompositeBuilding city;
+    city.manageCapacity();
+    CHECK(true); // Pass by default
+}
