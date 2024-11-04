@@ -7,10 +7,18 @@
 #include <iostream>
 using namespace std;
 
+/**
+ * @brief Adapter constructor initializing with a CompositeBuilding pointer.
+ * @param cb Pointer to a CompositeBuilding instance.
+ */
 Adapter::Adapter(CompositeBuilding* cb){
     adaptee = cb;
 }
 
+/**
+ * @brief Adds residential units to the CompositeBuilding and increases the population accordingly.
+ * @param units Number of residential units to add.
+ */
 void Adapter::addResidentialUnits(int units){
     for (int i = 0; i < units; i++) {
         Residential* resBuilding = new Residential();
@@ -20,6 +28,10 @@ void Adapter::addResidentialUnits(int units){
     }
 }
 
+/**
+ * @brief Adds commercial units to the CompositeBuilding and increases job availability.
+ * @param units Number of commercial units to add.
+ */
 void Adapter::addCommercialUnits(int units){
     for (int i = 0; i < units; i++) {
         Commercial* comBuilding = new Commercial();
@@ -28,6 +40,10 @@ void Adapter::addCommercialUnits(int units){
     }
 }
 
+/**
+ * @brief Adds industrial units to the CompositeBuilding and increases job availability.
+ * @param units Number of industrial units to add.
+ */
 void Adapter::addIndustrialUnits(int units){
     for (int i = 0; i < units; ++i) {
         Industrial* indBuilding = new Industrial();
@@ -36,17 +52,22 @@ void Adapter::addIndustrialUnits(int units){
     }
 }
 
+/**
+ * @brief Adds landmark units to the CompositeBuilding and expands utilities.
+ * @param units Number of landmark units to add.
+ */
 void Adapter::addLandmarkUnits(int units){
     for (int i = 0; i < units; ++i) {
         Landmarks* landmarkBuilding = new Landmarks();
         adaptee->addBuilding(landmarkBuilding);
-        // Increase CompositeBuilding's entertainment rating based on each landmark's rating
-        //adaptee->expandUtilities(landmarkBuilding->getEntertainmentRating());
+        // Expand the city's utilities based on landmark requirements
         adaptee->expandUtilities();
-        
     }
 }
 
+/**
+ * @brief Displays the city status by calling the CompositeBuilding's display function.
+ */
 void Adapter::displayCityStatus(){
     adaptee->displayCityState();
 }
