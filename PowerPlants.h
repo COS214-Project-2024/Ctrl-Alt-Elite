@@ -23,7 +23,7 @@ public:
      * @param rf Pointer to the ResourceFactory for managing resources.
      * @param cost Cost required to construct the power plant.
      */
-    PowerPlants(Building* bld, ResourceFactory* rf, float cost);
+    PowerPlants(Building *bld, ResourceFactory *rf, float cost, int capacity);
 
     /**
      * @brief Applies the utility of the power plant to the specified building.

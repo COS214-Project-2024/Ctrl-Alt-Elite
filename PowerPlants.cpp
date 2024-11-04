@@ -1,10 +1,10 @@
 #include "PowerPlants.h"
 #include "Energy.h"
 #include "Budget.h"
-PowerPlants::PowerPlants(Building* bld, ResourceFactory* rf, float cost)
-    : Utilities(bld, rf, cost), powerGenerated(1000), powerConsumed(50) {
+PowerPlants::PowerPlants(Building *bld, ResourceFactory *rf, float cost, int capacity)
+    : Utilities(bld, rf, cost), powerGenerated(capacity), powerConsumed(50) {
     
-    resource = nullptr;  // Default to nullptr until successful construction
+    //resource = nullptr;  // Default to nullptr until successful construction
 
     if (rf) {
         Budget* budgetResource = dynamic_cast<Budget*>(rf->getResource("Budget"));

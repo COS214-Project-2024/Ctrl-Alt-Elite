@@ -2,11 +2,11 @@
 #include "Water.h"
 #include "Budget.h"
 
-WaterSupply::WaterSupply(Building *bld, ResourceFactory *rf, float cost)
-    : Utilities(bld, rf, cost), waterCapacity(100), waterConsumed(10)
+WaterSupply::WaterSupply(Building *bld, ResourceFactory *rf, float cost, int capacity)
+    : Utilities(bld, rf, cost), waterCapacity(capacity), waterConsumed(10)
 {
 
-    resource = nullptr; // Default to nullptr until successful construction
+    //resource = nullptr; // Default to nullptr until successful construction
 
     if (rf)
     {

@@ -26,7 +26,7 @@ public:
      * @param rf Pointer to the ResourceFactory object managing resources.
      * @param cost The cost required for constructing the water supply utility.
      */
-    WaterSupply(Building* bld, ResourceFactory* rf, float cost);
+    WaterSupply(Building *bld, ResourceFactory *rf, float cost, int capacity);
 
     /**
      * @brief Applies the water supply utility to a specified building.
