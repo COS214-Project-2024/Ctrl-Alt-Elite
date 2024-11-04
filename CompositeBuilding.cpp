@@ -61,6 +61,11 @@ void CompositeBuilding::removeBuilding(Building* building) {
     }
 }
 
+vector<Building *> CompositeBuilding::getbuildings()
+{
+    return this->buildings;
+}
+
 void CompositeBuilding::display()  {
     std::cout << "City Layout:\n";
     for ( Building* building : buildings) {

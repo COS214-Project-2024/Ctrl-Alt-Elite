@@ -20,14 +20,20 @@ CityBuilder::~CityBuilder() {
     delete buildingComposite;
 }
 
-void CityBuilder::buildPopulationGrowth() {
+void CityBuilder::buildPopulationGrowth(int amount) {
     std::cout << "Building for population growth: Adding residential building...\n";
     
     // Logic for supporting population growth could involve adding apartment complexes or townhouses
     Residential* residentialBuilding = new Apartment(); // Example type of residential building
-    residentialBuilding->setNumResident(200); // Hypothetical function to set residents
+    residentialBuilding->setNumResident(amount); // Hypothetical function to set residents
     buildingComposite->addBuilding(residentialBuilding);
 }
+
+void CityBuilder::buildJobGrowth(int amount) {
+    std::cout << "Building job growth of " << amount << ".\n";
+    buildingComposite->increaseJobs(amount);
+}
+
 
 void CityBuilder::buildHousingExpansion() {
     std::cout << "Building for housing expansion: Adding diverse residential units...\n";

@@ -6,7 +6,8 @@
 class Builder {
 public:
     virtual ~Builder() = default;
-    virtual void buildPopulationGrowth() = 0;
+    virtual void buildPopulationGrowth(int amount) = 0;
+    virtual void buildJobGrowth(int amount) = 0; 
     virtual void buildHousingExpansion() = 0;
     virtual void buildEconomicDevelopment() = 0;
     virtual void buildInfrastructureExpansion() = 0;

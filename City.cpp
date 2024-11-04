@@ -6,8 +6,8 @@ City::City() {
 }
 
 // Constructor with parameters
-City::City(const std::string& name, int pop, float budget, ResourceFactory* factory)
-    : cityName(name), population(pop), cityBudget(budget), resourceFactory(factory) {}
+City::City(const std::string& name, int pop, float budget)
+    : cityName(name), population(pop), cityBudget(budget) {}
 
 City::~City() {
     delete buildings;

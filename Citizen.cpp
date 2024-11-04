@@ -3,7 +3,11 @@
 #include <iostream>
 #include <random>
 
-Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state, std::shared_ptr<PublicServicesDepartment> services) :  name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
+Citizen::Citizen()
+{
+}
+
+Citizen::Citizen(const std::string &citizenName, std::shared_ptr<TransportationState> state, std::shared_ptr<PublicServicesDepartment> services) : name(citizenName), satisfaction(100.0f), commuteTime(0.0f), currentState(state)
 {
 	for (int i = 0; i < 3; ++i) preferredModes[i] = nullptr;
 	this->services = services;

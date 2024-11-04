@@ -12,7 +12,8 @@ public:
     CityBuilder();
     ~CityBuilder();
 
-    void buildPopulationGrowth() override;
+    void buildPopulationGrowth(int amount ) override;
+    void buildJobGrowth(int amount) override; 
     void buildHousingExpansion() override;
     void buildEconomicDevelopment() override;
     void buildInfrastructureExpansion() override;

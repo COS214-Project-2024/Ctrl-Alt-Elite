@@ -1,5 +1,6 @@
 {
     "files.associations": {
+        "*.dart": "dart",
         "*.embeddedhtml": "html",
         "vector": "cpp",
         "array": "cpp",
@@ -75,6 +76,8 @@
         "mutex": "cpp",
         "semaphore": "cpp",
         "stop_token": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "optional": "cpp",
+        "xtree": "cpp"
     }
 }
