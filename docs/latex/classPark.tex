@@ -1,0 +1,112 @@
+\hypertarget{classPark}{}\doxysection{Park Class Reference}
+\label{classPark}\index{Park@{Park}}
+
+
+Represents a park, which is a type of landmark.  
+
+
+
+
+{\ttfamily \#include $<$Park.\+h$>$}
+
+
+
+Inheritance diagram for Park\+:
+% FIG 0
+
+
+Collaboration diagram for Park\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPark_a56d1f4a8bbab72856a17a8de83898f1a}{Park}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classPark}{Park}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPark_adde4e1f6814acd7dcb719a0d9714a4ae}{$\sim$\+Park}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classPark}{Park}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPark_a2a0f2d52d84fc2f707cef56b147c8459}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the details of the park. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPark_aa0db51e79ff4bac3c31f71b770a8c4e3}{update\+Entertainment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Updates the entertainment rating of the park. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPark_aff47c5d83f3da9bd5090e22a66cbdb31}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance on the park. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a park, which is a type of landmark. 
+
+The \mbox{\hyperlink{classPark}{Park}} class extends the \mbox{\hyperlink{classLandmarks}{Landmarks}} class, providing specific functionalities related to parks, including management of entertainment ratings and maintenance operations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPark_a56d1f4a8bbab72856a17a8de83898f1a}\label{classPark_a56d1f4a8bbab72856a17a8de83898f1a}} 
+\index{Park@{Park}!Park@{Park}}
+\index{Park@{Park}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{Park()}{Park()}}
+{\footnotesize\ttfamily Park\+::\+Park (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classPark}{Park}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classPark}{Park}} class, setting up its properties as defined in the base \mbox{\hyperlink{classLandmarks}{Landmarks}} class. \mbox{\Hypertarget{classPark_adde4e1f6814acd7dcb719a0d9714a4ae}\label{classPark_adde4e1f6814acd7dcb719a0d9714a4ae}} 
+\index{Park@{Park}!````~Park@{$\sim$Park}}
+\index{````~Park@{$\sim$Park}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{$\sim$Park()}{~Park()}}
+{\footnotesize\ttfamily Park\+::$\sim$\+Park (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classPark}{Park}} class. 
+
+Cleans up any resources used by the \mbox{\hyperlink{classPark}{Park}} instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPark_a2a0f2d52d84fc2f707cef56b147c8459}\label{classPark_a2a0f2d52d84fc2f707cef56b147c8459}} 
+\index{Park@{Park}!display@{display}}
+\index{display@{display}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Park\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the details of the park. 
+
+Outputs the entertainment rating and maintenance cost to the console, along with a visual representation of the park. 
+
+Reimplemented from \mbox{\hyperlink{classLandmarks_ad0aa3364ecf42d787d091d7559246060}{Landmarks}}.
+
+\mbox{\Hypertarget{classPark_aff47c5d83f3da9bd5090e22a66cbdb31}\label{classPark_aff47c5d83f3da9bd5090e22a66cbdb31}} 
+\index{Park@{Park}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Park\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs maintenance on the park. 
+
+Outputs maintenance tasks specific to parks, such as landscaping and playground inspections. 
+
+Reimplemented from \mbox{\hyperlink{classLandmarks_a38569739bfce571fa0501c0c80a6fcd2}{Landmarks}}.
+
+\mbox{\Hypertarget{classPark_aa0db51e79ff4bac3c31f71b770a8c4e3}\label{classPark_aa0db51e79ff4bac3c31f71b770a8c4e3}} 
+\index{Park@{Park}!updateEntertainmentRating@{updateEntertainmentRating}}
+\index{updateEntertainmentRating@{updateEntertainmentRating}!Park@{Park}}
+\doxysubsubsection{\texorpdfstring{updateEntertainmentRating()}{updateEntertainmentRating()}}
+{\footnotesize\ttfamily void Park\+::update\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the entertainment rating of the park. 
+
+Increases the entertainment rating by a fixed amount (4). 
+
+Reimplemented from \mbox{\hyperlink{classLandmarks_a58a69f429670f3ca454e4df2f9dab614}{Landmarks}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Park.\+h\item 
+Park.\+cpp\end{DoxyCompactItemize}

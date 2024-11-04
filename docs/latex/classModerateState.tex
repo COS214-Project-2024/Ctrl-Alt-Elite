@@ -1,0 +1,97 @@
+\hypertarget{classModerateState}{}\doxysection{Moderate\+State Class Reference}
+\label{classModerateState}\index{ModerateState@{ModerateState}}
+
+
+Represents a moderate state of public transport.  
+
+
+
+
+{\ttfamily \#include $<$Moderate\+State.\+h$>$}
+
+
+
+Inheritance diagram for Moderate\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Moderate\+State\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModerateState_a234c27f55c9fc14cb16fb4d0d98b75de}{Moderate\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classModerateState}{Moderate\+State}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModerateState_a003a56bb88d3f122515c10cfdebb1843}{handle}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Handles the behavior of the transport in the moderate state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModerateState_aee05441172170c19d08a729a6771b9a5}{change\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Changes the state of the transport to a different state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a moderate state of public transport. 
+
+This class extends the \mbox{\hyperlink{classPublicTransportState}{Public\+Transport\+State}} and implements handling for a moderate level of passenger traffic. It defines how the mode of transport should behave when in this state. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModerateState_a234c27f55c9fc14cb16fb4d0d98b75de}\label{classModerateState_a234c27f55c9fc14cb16fb4d0d98b75de}} 
+\index{ModerateState@{ModerateState}!ModerateState@{ModerateState}}
+\index{ModerateState@{ModerateState}!ModerateState@{ModerateState}}
+\doxysubsubsection{\texorpdfstring{ModerateState()}{ModerateState()}}
+{\footnotesize\ttfamily Moderate\+State\+::\+Moderate\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classModerateState}{Moderate\+State}} class. 
+
+Initializes the moderate state with the appropriate state name. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModerateState_aee05441172170c19d08a729a6771b9a5}\label{classModerateState_aee05441172170c19d08a729a6771b9a5}} 
+\index{ModerateState@{ModerateState}!changeState@{changeState}}
+\index{changeState@{changeState}!ModerateState@{ModerateState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Moderate\+State\+::change\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Changes the state of the transport to a different state. 
+
+This method transitions the mode of transport from the moderate state to the busy state, allowing for adjustments in handling passenger traffic.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the mode of transport that is changing states. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicTransportState_a45a809475c2c076b22b4d94684a64674}{Public\+Transport\+State}}.
+
+\mbox{\Hypertarget{classModerateState_a003a56bb88d3f122515c10cfdebb1843}\label{classModerateState_a003a56bb88d3f122515c10cfdebb1843}} 
+\index{ModerateState@{ModerateState}!handle@{handle}}
+\index{handle@{handle}!ModerateState@{ModerateState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Moderate\+State\+::handle (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles the behavior of the transport in the moderate state. 
+
+This method defines the actions to be taken when the transport is in a moderate state, such as managing a regular number of passengers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the mode of transport that is currently in this state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicTransportState_a6a4f6bc3c7ad67eb1f4b6eddefaf2f70}{Public\+Transport\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Moderate\+State.\+h\item 
+Moderate\+State.\+cpp\end{DoxyCompactItemize}

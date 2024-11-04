@@ -1,0 +1,205 @@
+\hypertarget{classCitizen}{}\doxysection{Citizen Class Reference}
+\label{classCitizen}\index{Citizen@{Citizen}}
+
+
+Represents a citizen with preferences, satisfaction level, and interactions with public services.  
+
+
+
+
+{\ttfamily \#include $<$Citizen.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCitizen_a3951355c9f2d7260debedd29b163dbe6}\label{classCitizen_a3951355c9f2d7260debedd29b163dbe6}} 
+\mbox{\hyperlink{classCitizen_a3951355c9f2d7260debedd29b163dbe6}{Citizen}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for a \mbox{\hyperlink{classCitizen}{Citizen}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCitizen_a4c9ff8feddd058751d90895580a28c8b}{Citizen}} (const std\+::string \&citizen\+Name, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} $>$ services=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classCitizen}{Citizen}} with a name, initial transportation state, and associated public services. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCitizen_a6664799b42f345f7d8c400aa97f3b626}{set\+Transport\+Strategy}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportStrategy}{Transport\+Strategy}} $>$ strategy, int index)
+\begin{DoxyCompactList}\small\item\em Sets a preferred transport strategy at a given index. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classCitizen_a28edea9e5c5c58a32ade46ccf4623b61}{can\+Travel}} ()
+\begin{DoxyCompactList}\small\item\em Checks if the citizen can travel using any preferred transport mode. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizen_a0db1c3f18023ec9c1c1a517f35108edb}\label{classCitizen_a0db1c3f18023ec9c1c1a517f35108edb}} 
+void \mbox{\hyperlink{classCitizen_a0db1c3f18023ec9c1c1a517f35108edb}{travel}} ()
+\begin{DoxyCompactList}\small\item\em Initiates travel using the first available transport mode in preferred modes. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizen_a4a0421313d0e6c2aa10f0404f6c9c9b4}\label{classCitizen_a4a0421313d0e6c2aa10f0404f6c9c9b4}} 
+void \mbox{\hyperlink{classCitizen_a4a0421313d0e6c2aa10f0404f6c9c9b4}{display\+Info}} ()
+\begin{DoxyCompactList}\small\item\em Displays information about the citizen, including name and satisfaction level. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCitizen_a29062ec3cfa528d089d5e36f77128e0f}{update\+Satisfaction}} (float value)
+\begin{DoxyCompactList}\small\item\em Updates the satisfaction level of the citizen. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCitizen_af8218c36903d9d1e80cf14a902a16e85}{set\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state)
+\begin{DoxyCompactList}\small\item\em Sets the current transportation state of the citizen. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ \mbox{\hyperlink{classCitizen_a888fb9e26faab7fa0c1d70a45dc67916}{get\+State}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current transportation state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizen_a55c275a9918380cee5eb02e9097792d6}\label{classCitizen_a55c275a9918380cee5eb02e9097792d6}} 
+void \mbox{\hyperlink{classCitizen_a55c275a9918380cee5eb02e9097792d6}{update}} ()
+\begin{DoxyCompactList}\small\item\em Updates the citizen\textquotesingle{}s satisfaction based on available public services and policies. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizen_a693de42a43a6f717dafdb5526bb9147c}\label{classCitizen_a693de42a43a6f717dafdb5526bb9147c}} 
+void \mbox{\hyperlink{classCitizen_a693de42a43a6f717dafdb5526bb9147c}{respond\+To\+Government\+Changes}} ()
+\begin{DoxyCompactList}\small\item\em Responds to government changes affecting the citizen (unimplemented). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizen_ac99b843590af55d8ffda10d8848d78fa}\label{classCitizen_ac99b843590af55d8ffda10d8848d78fa}} 
+void \mbox{\hyperlink{classCitizen_ac99b843590af55d8ffda10d8848d78fa}{raise\+Issue}} ()
+\begin{DoxyCompactList}\small\item\em Raises an issue or concern to the government (unimplemented). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCitizen_a7548e8cb2776fa12ea9b029e719b515b}{pay\+Income\+Tax}} (float amount)
+\begin{DoxyCompactList}\small\item\em Pays income tax based on specified amount (unimplemented). \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCitizen_a6623ef86444a75ad13c7575b2076bc07}{adjust\+Satisfaction}} (float tax\+Impact)
+\begin{DoxyCompactList}\small\item\em Adjusts satisfaction based on tax impact (unimplemented). \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCitizen_a0b320b3f7d5fcf9753ae32198ccc8ce7}\label{classCitizen_a0b320b3f7d5fcf9753ae32198ccc8ce7}} 
+void \mbox{\hyperlink{classCitizen_a0b320b3f7d5fcf9753ae32198ccc8ce7}{make\+Request}} ()
+\begin{DoxyCompactList}\small\item\em Makes a formal request to the government (unimplemented). \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classCitizen_ad96935102246eeefbcb5b70e6d5ef322}{get\+Request\+Type}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current request type. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a citizen with preferences, satisfaction level, and interactions with public services. 
+
+The \mbox{\hyperlink{classCitizen}{Citizen}} class includes attributes related to transportation preferences, state, and personal details, and provides functionality for managing transport, satisfaction, and service interactions. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCitizen_a4c9ff8feddd058751d90895580a28c8b}\label{classCitizen_a4c9ff8feddd058751d90895580a28c8b}} 
+\index{Citizen@{Citizen}!Citizen@{Citizen}}
+\index{Citizen@{Citizen}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{Citizen()}{Citizen()}}
+{\footnotesize\ttfamily Citizen\+::\+Citizen (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{citizen\+Name,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr},  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} $>$}]{services = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classCitizen}{Citizen}} with a name, initial transportation state, and associated public services. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em citizen\+Name} & Name of the citizen. \\
+\hline
+{\em state} & Initial transportation state (optional). \\
+\hline
+{\em services} & Associated public services department (optional). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCitizen_a6623ef86444a75ad13c7575b2076bc07}\label{classCitizen_a6623ef86444a75ad13c7575b2076bc07}} 
+\index{Citizen@{Citizen}!adjustSatisfaction@{adjustSatisfaction}}
+\index{adjustSatisfaction@{adjustSatisfaction}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{adjustSatisfaction()}{adjustSatisfaction()}}
+{\footnotesize\ttfamily void Citizen\+::adjust\+Satisfaction (\begin{DoxyParamCaption}\item[{float}]{tax\+Impact }\end{DoxyParamCaption})}
+
+
+
+Adjusts satisfaction based on tax impact (unimplemented). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em tax\+Impact} & Amount to adjust satisfaction by. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCitizen_a28edea9e5c5c58a32ade46ccf4623b61}\label{classCitizen_a28edea9e5c5c58a32ade46ccf4623b61}} 
+\index{Citizen@{Citizen}!canTravel@{canTravel}}
+\index{canTravel@{canTravel}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{canTravel()}{canTravel()}}
+{\footnotesize\ttfamily bool Citizen\+::can\+Travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if the citizen can travel using any preferred transport mode. 
+
+\begin{DoxyReturn}{Returns}
+True if at least one preferred mode is available; otherwise, false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCitizen_ad96935102246eeefbcb5b70e6d5ef322}\label{classCitizen_ad96935102246eeefbcb5b70e6d5ef322}} 
+\index{Citizen@{Citizen}!getRequestType@{getRequestType}}
+\index{getRequestType@{getRequestType}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{getRequestType()}{getRequestType()}}
+{\footnotesize\ttfamily int Citizen\+::get\+Request\+Type (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current request type. 
+
+\begin{DoxyReturn}{Returns}
+Request type as an integer. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCitizen_a888fb9e26faab7fa0c1d70a45dc67916}\label{classCitizen_a888fb9e26faab7fa0c1d70a45dc67916}} 
+\index{Citizen@{Citizen}!getState@{getState}}
+\index{getState@{getState}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ Citizen\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current transportation state. 
+
+\begin{DoxyReturn}{Returns}
+Current transportation state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCitizen_a7548e8cb2776fa12ea9b029e719b515b}\label{classCitizen_a7548e8cb2776fa12ea9b029e719b515b}} 
+\index{Citizen@{Citizen}!payIncomeTax@{payIncomeTax}}
+\index{payIncomeTax@{payIncomeTax}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{payIncomeTax()}{payIncomeTax()}}
+{\footnotesize\ttfamily void Citizen\+::pay\+Income\+Tax (\begin{DoxyParamCaption}\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Pays income tax based on specified amount (unimplemented). 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of income tax to pay. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCitizen_af8218c36903d9d1e80cf14a902a16e85}\label{classCitizen_af8218c36903d9d1e80cf14a902a16e85}} 
+\index{Citizen@{Citizen}!setState@{setState}}
+\index{setState@{setState}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Citizen\+::set\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state }\end{DoxyParamCaption})}
+
+
+
+Sets the current transportation state of the citizen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & The new transportation state. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCitizen_a6664799b42f345f7d8c400aa97f3b626}\label{classCitizen_a6664799b42f345f7d8c400aa97f3b626}} 
+\index{Citizen@{Citizen}!setTransportStrategy@{setTransportStrategy}}
+\index{setTransportStrategy@{setTransportStrategy}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{setTransportStrategy()}{setTransportStrategy()}}
+{\footnotesize\ttfamily void Citizen\+::set\+Transport\+Strategy (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportStrategy}{Transport\+Strategy}} $>$}]{strategy,  }\item[{int}]{index }\end{DoxyParamCaption})}
+
+
+
+Sets a preferred transport strategy at a given index. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em strategy} & The transport strategy to set. \\
+\hline
+{\em index} & The index to set the strategy in (0, 1, or 2). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCitizen_a29062ec3cfa528d089d5e36f77128e0f}\label{classCitizen_a29062ec3cfa528d089d5e36f77128e0f}} 
+\index{Citizen@{Citizen}!updateSatisfaction@{updateSatisfaction}}
+\index{updateSatisfaction@{updateSatisfaction}!Citizen@{Citizen}}
+\doxysubsubsection{\texorpdfstring{updateSatisfaction()}{updateSatisfaction()}}
+{\footnotesize\ttfamily void Citizen\+::update\+Satisfaction (\begin{DoxyParamCaption}\item[{float}]{value }\end{DoxyParamCaption})}
+
+
+
+Updates the satisfaction level of the citizen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & Amount to adjust satisfaction by. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Citizen.\+h\item 
+Citizen.\+cpp\end{DoxyCompactItemize}

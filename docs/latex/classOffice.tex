@@ -1,0 +1,160 @@
+\hypertarget{classOffice}{}\doxysection{Office Class Reference}
+\label{classOffice}\index{Office@{Office}}
+
+
+Represents an office building, which is a type of commercial property.  
+
+
+
+
+{\ttfamily \#include $<$Office.\+h$>$}
+
+
+
+Inheritance diagram for Office\+:
+% FIG 0
+
+
+Collaboration diagram for Office\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classOffice_ae799d600814e4b8282c00cfb0b882305}{Office}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classOffice}{Office}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classOffice_aa81634eb7579c349d08d4fb265488265}{$\sim$\+Office}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classOffice}{Office}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOffice_ab6d54c581e849bacea12962e07175dc3}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the details of the office. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOffice_ab8004328399cb88a986e65b888705588}{Inc\+Employment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Increases the employment rating of the office. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOffice_a5787bfcb4d9814b005214312bd7363dc}{Dec\+Employment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the employment rating of the office. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOffice_ab5d7fe1de356fe8a8647b94e5b3dcdfd}{Inc\+Entertainment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Increases the entertainment rating of the office. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOffice_a2960b02ee8309fefd7f77e70b3636444}{Dec\+Entertainment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the entertainment rating of the office. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classOffice_a1cfe477d2612b97dbd8eb6d4e6cb62df}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance on the office. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents an office building, which is a type of commercial property. 
+
+The \mbox{\hyperlink{classOffice}{Office}} class extends the \mbox{\hyperlink{classCommercial}{Commercial}} class, providing specific functionalities related to offices, including management of entertainment and employment ratings, as well as maintenance operations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classOffice_ae799d600814e4b8282c00cfb0b882305}\label{classOffice_ae799d600814e4b8282c00cfb0b882305}} 
+\index{Office@{Office}!Office@{Office}}
+\index{Office@{Office}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{Office()}{Office()}}
+{\footnotesize\ttfamily Office\+::\+Office (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classOffice}{Office}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classOffice}{Office}} class, setting up its properties as defined in the base \mbox{\hyperlink{classCommercial}{Commercial}} class. \mbox{\Hypertarget{classOffice_aa81634eb7579c349d08d4fb265488265}\label{classOffice_aa81634eb7579c349d08d4fb265488265}} 
+\index{Office@{Office}!````~Office@{$\sim$Office}}
+\index{````~Office@{$\sim$Office}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{$\sim$Office()}{~Office()}}
+{\footnotesize\ttfamily Office\+::$\sim$\+Office (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classOffice}{Office}} class. 
+
+Cleans up any resources used by the \mbox{\hyperlink{classOffice}{Office}} instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classOffice_a5787bfcb4d9814b005214312bd7363dc}\label{classOffice_a5787bfcb4d9814b005214312bd7363dc}} 
+\index{Office@{Office}!DecEmploymentRating@{DecEmploymentRating}}
+\index{DecEmploymentRating@{DecEmploymentRating}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{DecEmploymentRating()}{DecEmploymentRating()}}
+{\footnotesize\ttfamily void Office\+::\+Dec\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the employment rating of the office. 
+
+Decrements the employment rating by a fixed amount (1). 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a61771c67fc0307a96511bb8e61d322a8}{Commercial}}.
+
+\mbox{\Hypertarget{classOffice_a2960b02ee8309fefd7f77e70b3636444}\label{classOffice_a2960b02ee8309fefd7f77e70b3636444}} 
+\index{Office@{Office}!DecEntertainmentRating@{DecEntertainmentRating}}
+\index{DecEntertainmentRating@{DecEntertainmentRating}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{DecEntertainmentRating()}{DecEntertainmentRating()}}
+{\footnotesize\ttfamily void Office\+::\+Dec\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the entertainment rating of the office. 
+
+Decrements the entertainment rating by a fixed amount (1). 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_ab9c0418b2859001ad01c7bcc965c40ce}{Commercial}}.
+
+\mbox{\Hypertarget{classOffice_ab6d54c581e849bacea12962e07175dc3}\label{classOffice_ab6d54c581e849bacea12962e07175dc3}} 
+\index{Office@{Office}!display@{display}}
+\index{display@{display}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Office\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the details of the office. 
+
+Outputs the entertainment rating and employment rating to the console, along with a visual representation of the office. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a5c908f178fbfca8d7b32b40013ea5e1c}{Commercial}}.
+
+\mbox{\Hypertarget{classOffice_ab8004328399cb88a986e65b888705588}\label{classOffice_ab8004328399cb88a986e65b888705588}} 
+\index{Office@{Office}!IncEmploymentRating@{IncEmploymentRating}}
+\index{IncEmploymentRating@{IncEmploymentRating}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{IncEmploymentRating()}{IncEmploymentRating()}}
+{\footnotesize\ttfamily void Office\+::\+Inc\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the employment rating of the office. 
+
+Increments the employment rating by a fixed amount (4). 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_afd5c0db279e48cd7d58f66e553299f0c}{Commercial}}.
+
+\mbox{\Hypertarget{classOffice_ab5d7fe1de356fe8a8647b94e5b3dcdfd}\label{classOffice_ab5d7fe1de356fe8a8647b94e5b3dcdfd}} 
+\index{Office@{Office}!IncEntertainmentRating@{IncEntertainmentRating}}
+\index{IncEntertainmentRating@{IncEntertainmentRating}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{IncEntertainmentRating()}{IncEntertainmentRating()}}
+{\footnotesize\ttfamily void Office\+::\+Inc\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the entertainment rating of the office. 
+
+Increments the entertainment rating by a fixed amount (1). 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a50826ec4d712ffa75fef0d3552a07c01}{Commercial}}.
+
+\mbox{\Hypertarget{classOffice_a1cfe477d2612b97dbd8eb6d4e6cb62df}\label{classOffice_a1cfe477d2612b97dbd8eb6d4e6cb62df}} 
+\index{Office@{Office}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Office@{Office}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Office\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs maintenance on the office. 
+
+Outputs maintenance tasks specific to offices, such as checking lighting, restocking supplies, and cleaning. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a9fb97fce02c9d6d7315869dbdd03685c}{Commercial}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Office.\+h\item 
+Office.\+cpp\end{DoxyCompactItemize}

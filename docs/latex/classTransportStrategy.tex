@@ -1,0 +1,115 @@
+\hypertarget{classTransportStrategy}{}\doxysection{Transport\+Strategy Class Reference}
+\label{classTransportStrategy}\index{TransportStrategy@{TransportStrategy}}
+
+
+Abstract base class for defining transport strategies.  
+
+
+
+
+{\ttfamily \#include $<$Transport\+Strategy.\+h$>$}
+
+
+
+Inheritance diagram for Transport\+Strategy\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classTransportStrategy_af0a7ee7ce71877201f5871d04f49c73c}{travel}} ()=0
+\begin{DoxyCompactList}\small\item\em Initiates the travel process for the transport strategy. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classTransportStrategy_a7297dc96311051b5ba6e5ace84751a35}{calculate\+Commute\+Time}} (float distance, float speed, const std\+::string \&mode)=0
+\begin{DoxyCompactList}\small\item\em Calculates the estimated commute time based on distance and speed. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTransportStrategy_a8131bea2c205e3bc11ffeb9671ca038f}{is\+Available}} ()=0
+\begin{DoxyCompactList}\small\item\em Checks if the transport strategy is available for use. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTransportStrategy_a039981f9e58674e71b830348ee96d812}{set\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state)=0
+\begin{DoxyCompactList}\small\item\em Sets the current state of the transportation strategy. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class for defining transport strategies. 
+
+This class provides an interface for implementing various transport strategies, allowing different modes of transport to define their behavior for traveling and calculating commute times. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransportStrategy_a7297dc96311051b5ba6e5ace84751a35}\label{classTransportStrategy_a7297dc96311051b5ba6e5ace84751a35}} 
+\index{TransportStrategy@{TransportStrategy}!calculateCommuteTime@{calculateCommuteTime}}
+\index{calculateCommuteTime@{calculateCommuteTime}!TransportStrategy@{TransportStrategy}}
+\doxysubsubsection{\texorpdfstring{calculateCommuteTime()}{calculateCommuteTime()}}
+{\footnotesize\ttfamily virtual float Transport\+Strategy\+::calculate\+Commute\+Time (\begin{DoxyParamCaption}\item[{float}]{distance,  }\item[{float}]{speed,  }\item[{const std\+::string \&}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Calculates the estimated commute time based on distance and speed. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & The distance to travel in kilometers. \\
+\hline
+{\em speed} & The average speed of travel in kilometers per hour. \\
+\hline
+{\em mode} & A string representing the mode of transport (e.\+g., \char`\"{}car\char`\"{}, \char`\"{}bus\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The estimated commute time in hours. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPublicTransport_a4265c82c8cd846ee01da039d7bd102c3}{Public\+Transport}}, and \mbox{\hyperlink{classPrivateTransport_a20aa07393c7b0d0668a67a15da344b43}{Private\+Transport}}.
+
+\mbox{\Hypertarget{classTransportStrategy_a8131bea2c205e3bc11ffeb9671ca038f}\label{classTransportStrategy_a8131bea2c205e3bc11ffeb9671ca038f}} 
+\index{TransportStrategy@{TransportStrategy}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!TransportStrategy@{TransportStrategy}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily virtual bool Transport\+Strategy\+::is\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if the transport strategy is available for use. 
+
+\begin{DoxyReturn}{Returns}
+True if the transport strategy is available, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPublicTransport_a9d7be4f4275a93158377a83f9d8faff4}{Public\+Transport}}, and \mbox{\hyperlink{classPrivateTransport_a706378590976280b5b8b4ac61d1fce1a}{Private\+Transport}}.
+
+\mbox{\Hypertarget{classTransportStrategy_a039981f9e58674e71b830348ee96d812}\label{classTransportStrategy_a039981f9e58674e71b830348ee96d812}} 
+\index{TransportStrategy@{TransportStrategy}!setState@{setState}}
+\index{setState@{setState}!TransportStrategy@{TransportStrategy}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily virtual void Transport\+Strategy\+::set\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Sets the current state of the transportation strategy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & A shared pointer to the transportation state to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classModeOfTransport_a440802b5b2cfcb4643e74f1a1087eda7}{Mode\+Of\+Transport}}.
+
+\mbox{\Hypertarget{classTransportStrategy_af0a7ee7ce71877201f5871d04f49c73c}\label{classTransportStrategy_af0a7ee7ce71877201f5871d04f49c73c}} 
+\index{TransportStrategy@{TransportStrategy}!travel@{travel}}
+\index{travel@{travel}!TransportStrategy@{TransportStrategy}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily virtual void Transport\+Strategy\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Initiates the travel process for the transport strategy. 
+
+This method must be implemented by derived classes to define how the transport travels. 
+
+Implemented in \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{Mode\+Of\+Transport}}, \mbox{\hyperlink{classWalk_a025c3bbd94264ac3c8618e9b43a6c29d}{Walk}}, \mbox{\hyperlink{classTrain_a253d52130d9bf308c5b513e4c1afecd4}{Train}}, \mbox{\hyperlink{classTaxi_ac5e3901b39759d37db39cb4f19073708}{Taxi}}, \mbox{\hyperlink{classPublicTransport_aea344d5b086fabdb1cb82225c10bae9b}{Public\+Transport}}, \mbox{\hyperlink{classPrivateTransport_af9516cc3bcd18605e4612c4ccd6e4cd1}{Private\+Transport}}, \mbox{\hyperlink{classPlane_a7bfcad787c5babe98c796b3adeb8897f}{Plane}}, \mbox{\hyperlink{classCar_a6cd110d42feb621c85bab3372d102e6e}{Car}}, \mbox{\hyperlink{classBus_aa5bedace947b50f8d8d9e026b0ed197f}{Bus}}, and \mbox{\hyperlink{classBike_ac9e7e933e91c911354c3fafb28f5c01e}{Bike}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Transport\+Strategy.\+h\end{DoxyCompactItemize}

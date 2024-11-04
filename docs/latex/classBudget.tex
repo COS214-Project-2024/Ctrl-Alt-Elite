@@ -1,0 +1,130 @@
+\hypertarget{classBudget}{}\doxysection{Budget Class Reference}
+\label{classBudget}\index{Budget@{Budget}}
+
+
+Manages the financial resources allocated for various city functions.  
+
+
+
+
+{\ttfamily \#include $<$Budget.\+h$>$}
+
+
+
+Inheritance diagram for Budget\+:
+% FIG 0
+
+
+Collaboration diagram for Budget\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBudget_a84d0b06ba5769c9687364473926d3df3}{Budget}} (float amount)
+\begin{DoxyCompactList}\small\item\em Initializes the \mbox{\hyperlink{classBudget}{Budget}} with a specified amount. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classBudget_a44eb974d69f95155ea8c69f986ad3ac8}{get\+Capacity}} () const override
+\begin{DoxyCompactList}\small\item\em Returns the current available budget. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudget_a0f4d54918204f14c4db7fbf8a61bfc27}{consume}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Decreases the budget by a specified amount if sufficient funds are available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudget_a36da8818feada024fb72a8576500857d}{replenish}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Increases the budget by a specified amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Manages the financial resources allocated for various city functions. 
+
+The \mbox{\hyperlink{classBudget}{Budget}} class, inheriting from \mbox{\hyperlink{classResource}{Resource}}, tracks the city\textquotesingle{}s budget, allowing for consumption and replenishment. It also allows querying the available budget. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBudget_a84d0b06ba5769c9687364473926d3df3}\label{classBudget_a84d0b06ba5769c9687364473926d3df3}} 
+\index{Budget@{Budget}!Budget@{Budget}}
+\index{Budget@{Budget}!Budget@{Budget}}
+\doxysubsubsection{\texorpdfstring{Budget()}{Budget()}}
+{\footnotesize\ttfamily Budget\+::\+Budget (\begin{DoxyParamCaption}\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Initializes the \mbox{\hyperlink{classBudget}{Budget}} with a specified amount. 
+
+Constructs a \mbox{\hyperlink{classBudget}{Budget}} with the given initial amount.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & Initial budget allocation.\\
+\hline
+{\em amount} & The initial budget allocation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBudget_a0f4d54918204f14c4db7fbf8a61bfc27}\label{classBudget_a0f4d54918204f14c4db7fbf8a61bfc27}} 
+\index{Budget@{Budget}!consume@{consume}}
+\index{consume@{consume}!Budget@{Budget}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily void Budget\+::consume (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the budget by a specified amount if sufficient funds are available. 
+
+Consumes a specified amount from the budget if there are sufficient funds.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to consume from the budget.\\
+\hline
+{\em amount} & Amount to be deducted from the budget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResource_af173631c9b94c8601999974e1ab04a7e}{Resource}}.
+
+\mbox{\Hypertarget{classBudget_a44eb974d69f95155ea8c69f986ad3ac8}\label{classBudget_a44eb974d69f95155ea8c69f986ad3ac8}} 
+\index{Budget@{Budget}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Budget@{Budget}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Budget\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Returns the current available budget. 
+
+Returns the current budget amount.
+
+\begin{DoxyReturn}{Returns}
+The current budget as an integer. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResource_aa54b7fb57467a4ad6b3eef325253ff58}{Resource}}.
+
+\mbox{\Hypertarget{classBudget_a36da8818feada024fb72a8576500857d}\label{classBudget_a36da8818feada024fb72a8576500857d}} 
+\index{Budget@{Budget}!replenish@{replenish}}
+\index{replenish@{replenish}!Budget@{Budget}}
+\doxysubsubsection{\texorpdfstring{replenish()}{replenish()}}
+{\footnotesize\ttfamily void Budget\+::replenish (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the budget by a specified amount. 
+
+Replenishes the budget by the specified amount.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to add to the budget. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResource_aabf3eed794d33daaceb5e688b005e3ba}{Resource}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Budget.\+h\item 
+Budget.\+cpp\end{DoxyCompactItemize}

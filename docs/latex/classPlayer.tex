@@ -1,0 +1,309 @@
+\hypertarget{classPlayer}{}\doxysection{Player Class Reference}
+\label{classPlayer}\index{Player@{Player}}
+
+
+Represents a player managing a city in the simulation.  
+
+
+
+
+{\ttfamily \#include $<$Player.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}{Player}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classPlayer}{Player}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a5ad0a9e5e10dfaf0b5576ccbbafd395f}{create\+City}} ()
+\begin{DoxyCompactList}\small\item\em Creates a new city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a9756c5b5272e5a10e1dd679b07b034fa}{add\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Adds a building to the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aadb8cb6145dbd89672910325ec00840f}{add\+Citizens}} ()
+\begin{DoxyCompactList}\small\item\em Adds citizens to the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a80466a0a348d48e4979267e834bd9855}{add\+Government}} ()
+\begin{DoxyCompactList}\small\item\em Adds a government structure to the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a469c6d51aa7eb85196a181c0a04a566c}{add\+Resources}} ()
+\begin{DoxyCompactList}\small\item\em Adds resources to the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_acb1434b19a3a554c470c046772d17361}{add\+Utilities}} ()
+\begin{DoxyCompactList}\small\item\em Adds utilities to the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a2046aa2ecb3a22af1551f7b5625ee279}{perform\+Government\+Policies}} ()
+\begin{DoxyCompactList}\small\item\em Performs government policies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_af90337e689650623a3ee3cc34702bbab}{perform\+Maintenance}} ()
+\begin{DoxyCompactList}\small\item\em Performs maintenance tasks for the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a52de40cc5c20a187251334a7d6b869c4}{perform\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Performs transport-\/related actions. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aa02c7f0918cf7b0c7ab04bdf5cba5f80}{choose\+Transport\+Mode}} ()
+\begin{DoxyCompactList}\small\item\em Allows the player to choose a mode of transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_ac815e2eaee3ab3529236655a4739bd8f}{choose\+Public\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Allows the player to choose public transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a13e27405a48e7730e9b852ca7e23c68e}{choose\+Private\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Allows the player to choose private transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a438ce6f289feb7270e6671c14f58fb4b}{set\+State}} ()
+\begin{DoxyCompactList}\small\item\em Sets the state of the player or city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a2732c6d09de06381e657e6ee6c584f0a}{test\+Commute\+Time}} ()
+\begin{DoxyCompactList}\small\item\em Tests the commuting time for citizens. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a80a48f4f2ead5cfb5c78764bd8db718d}{check\+Availability}} ()
+\begin{DoxyCompactList}\small\item\em Checks the availability of transport options. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aaba5986d78947d1f27a85cf80f025aeb}{travel\+Citizen}} ()
+\begin{DoxyCompactList}\small\item\em Manages citizen travel within the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a771cc268cd21519c40711ef2e89952d0}{update\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Updates the satisfaction of citizens. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a2ffc52d7d516318955d0d8d48aeacc81}{remove\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Removes a building from the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a18fc4aa83809d5b863bf03e26082cf6c}{increase\+Population}} (int amount)
+\begin{DoxyCompactList}\small\item\em Increases the population of the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_aa7859a35f4d92d3f3bee6e4be7c1d09c}{increase\+Jobs}} (int amount)
+\begin{DoxyCompactList}\small\item\em Increases the number of jobs available in the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlayer_a008854f2055547c5901c81b43cff3a48}{show\+City\+State}} ()
+\begin{DoxyCompactList}\small\item\em Displays the current state of the city. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a player managing a city in the simulation. 
+
+The \mbox{\hyperlink{classPlayer}{Player}} class provides functionality to create and manage a city, including adding buildings, citizens, government, resources, and utilities. The player can also perform various actions related to city management and transport. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}\label{classPlayer_affe0cc3cb714f6deb4e62f0c0d3f1fd8}} 
+\index{Player@{Player}!Player@{Player}}
+\index{Player@{Player}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{Player()}{Player()}}
+{\footnotesize\ttfamily Player\+::\+Player (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classPlayer}{Player}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classPlayer}{Player}} class with an empty city and related components. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlayer_a9756c5b5272e5a10e1dd679b07b034fa}\label{classPlayer_a9756c5b5272e5a10e1dd679b07b034fa}} 
+\index{Player@{Player}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Player\+::add\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds a building to the city. 
+
+Prompts the user to input building details and adds the building to the city. \mbox{\Hypertarget{classPlayer_aadb8cb6145dbd89672910325ec00840f}\label{classPlayer_aadb8cb6145dbd89672910325ec00840f}} 
+\index{Player@{Player}!addCitizens@{addCitizens}}
+\index{addCitizens@{addCitizens}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addCitizens()}{addCitizens()}}
+{\footnotesize\ttfamily void Player\+::add\+Citizens (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds citizens to the city. 
+
+Prompts the user for details and adds the specified number of citizens to the city\textquotesingle{}s population. \mbox{\Hypertarget{classPlayer_a80466a0a348d48e4979267e834bd9855}\label{classPlayer_a80466a0a348d48e4979267e834bd9855}} 
+\index{Player@{Player}!addGovernment@{addGovernment}}
+\index{addGovernment@{addGovernment}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addGovernment()}{addGovernment()}}
+{\footnotesize\ttfamily void Player\+::add\+Government (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds a government structure to the city. 
+
+Initializes and adds government policies and structures to the city. \mbox{\Hypertarget{classPlayer_a469c6d51aa7eb85196a181c0a04a566c}\label{classPlayer_a469c6d51aa7eb85196a181c0a04a566c}} 
+\index{Player@{Player}!addResources@{addResources}}
+\index{addResources@{addResources}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addResources()}{addResources()}}
+{\footnotesize\ttfamily void Player\+::add\+Resources (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds resources to the city. 
+
+Enables the player to allocate and manage various resources within the city. \mbox{\Hypertarget{classPlayer_acb1434b19a3a554c470c046772d17361}\label{classPlayer_acb1434b19a3a554c470c046772d17361}} 
+\index{Player@{Player}!addUtilities@{addUtilities}}
+\index{addUtilities@{addUtilities}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{addUtilities()}{addUtilities()}}
+{\footnotesize\ttfamily void Player\+::add\+Utilities (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Adds utilities to the city. 
+
+Sets up and integrates utilities such as water and electricity into the city’s infrastructure. \mbox{\Hypertarget{classPlayer_a80a48f4f2ead5cfb5c78764bd8db718d}\label{classPlayer_a80a48f4f2ead5cfb5c78764bd8db718d}} 
+\index{Player@{Player}!checkAvailability@{checkAvailability}}
+\index{checkAvailability@{checkAvailability}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{checkAvailability()}{checkAvailability()}}
+{\footnotesize\ttfamily void Player\+::check\+Availability (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks the availability of transport options. 
+
+Verifies the availability of transport modes for citizens before they travel. \mbox{\Hypertarget{classPlayer_a13e27405a48e7730e9b852ca7e23c68e}\label{classPlayer_a13e27405a48e7730e9b852ca7e23c68e}} 
+\index{Player@{Player}!choosePrivateTransport@{choosePrivateTransport}}
+\index{choosePrivateTransport@{choosePrivateTransport}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{choosePrivateTransport()}{choosePrivateTransport()}}
+{\footnotesize\ttfamily void Player\+::choose\+Private\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows the player to choose private transport. 
+
+Sets up private transport options for citizens within the city. \mbox{\Hypertarget{classPlayer_ac815e2eaee3ab3529236655a4739bd8f}\label{classPlayer_ac815e2eaee3ab3529236655a4739bd8f}} 
+\index{Player@{Player}!choosePublicTransport@{choosePublicTransport}}
+\index{choosePublicTransport@{choosePublicTransport}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{choosePublicTransport()}{choosePublicTransport()}}
+{\footnotesize\ttfamily void Player\+::choose\+Public\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows the player to choose public transport. 
+
+Sets up public transport options for citizens within the city. \mbox{\Hypertarget{classPlayer_aa02c7f0918cf7b0c7ab04bdf5cba5f80}\label{classPlayer_aa02c7f0918cf7b0c7ab04bdf5cba5f80}} 
+\index{Player@{Player}!chooseTransportMode@{chooseTransportMode}}
+\index{chooseTransportMode@{chooseTransportMode}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{chooseTransportMode()}{chooseTransportMode()}}
+{\footnotesize\ttfamily void Player\+::choose\+Transport\+Mode (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Allows the player to choose a mode of transport. 
+
+Prompts the user to select between different transportation options available in the city. \mbox{\Hypertarget{classPlayer_a5ad0a9e5e10dfaf0b5576ccbbafd395f}\label{classPlayer_a5ad0a9e5e10dfaf0b5576ccbbafd395f}} 
+\index{Player@{Player}!createCity@{createCity}}
+\index{createCity@{createCity}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{createCity()}{createCity()}}
+{\footnotesize\ttfamily void Player\+::create\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates a new city. 
+
+Sets up the initial parameters and components of the city, preparing it for further modifications. \mbox{\Hypertarget{classPlayer_aa7859a35f4d92d3f3bee6e4be7c1d09c}\label{classPlayer_aa7859a35f4d92d3f3bee6e4be7c1d09c}} 
+\index{Player@{Player}!increaseJobs@{increaseJobs}}
+\index{increaseJobs@{increaseJobs}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{increaseJobs()}{increaseJobs()}}
+{\footnotesize\ttfamily void Player\+::increase\+Jobs (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Increases the number of jobs available in the city. 
+
+Adds a specified number of jobs to the city, improving employment opportunities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The number of jobs to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a18fc4aa83809d5b863bf03e26082cf6c}\label{classPlayer_a18fc4aa83809d5b863bf03e26082cf6c}} 
+\index{Player@{Player}!increasePopulation@{increasePopulation}}
+\index{increasePopulation@{increasePopulation}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{increasePopulation()}{increasePopulation()}}
+{\footnotesize\ttfamily void Player\+::increase\+Population (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Increases the population of the city. 
+
+Adds a specified number of citizens to the city\textquotesingle{}s population.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The number of citizens to add to the population. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlayer_a2046aa2ecb3a22af1551f7b5625ee279}\label{classPlayer_a2046aa2ecb3a22af1551f7b5625ee279}} 
+\index{Player@{Player}!performGovernmentPolicies@{performGovernmentPolicies}}
+\index{performGovernmentPolicies@{performGovernmentPolicies}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{performGovernmentPolicies()}{performGovernmentPolicies()}}
+{\footnotesize\ttfamily void Player\+::perform\+Government\+Policies (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Performs government policies. 
+
+Executes policies that affect the city based on the current state and needs of the citizens. \mbox{\Hypertarget{classPlayer_af90337e689650623a3ee3cc34702bbab}\label{classPlayer_af90337e689650623a3ee3cc34702bbab}} 
+\index{Player@{Player}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Player\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Performs maintenance tasks for the city. 
+
+Executes necessary maintenance operations for buildings and infrastructure to ensure the city operates smoothly. \mbox{\Hypertarget{classPlayer_a52de40cc5c20a187251334a7d6b869c4}\label{classPlayer_a52de40cc5c20a187251334a7d6b869c4}} 
+\index{Player@{Player}!performTransport@{performTransport}}
+\index{performTransport@{performTransport}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{performTransport()}{performTransport()}}
+{\footnotesize\ttfamily void Player\+::perform\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Performs transport-\/related actions. 
+
+Manages transportation logistics and operations within the city. \mbox{\Hypertarget{classPlayer_a2ffc52d7d516318955d0d8d48aeacc81}\label{classPlayer_a2ffc52d7d516318955d0d8d48aeacc81}} 
+\index{Player@{Player}!removeBuilding@{removeBuilding}}
+\index{removeBuilding@{removeBuilding}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{removeBuilding()}{removeBuilding()}}
+{\footnotesize\ttfamily void Player\+::remove\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Removes a building from the city. 
+
+Prompts the user to specify a building to remove from the city. \mbox{\Hypertarget{classPlayer_a438ce6f289feb7270e6671c14f58fb4b}\label{classPlayer_a438ce6f289feb7270e6671c14f58fb4b}} 
+\index{Player@{Player}!setState@{setState}}
+\index{setState@{setState}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Player\+::set\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Sets the state of the player or city. 
+
+Updates the current state of the player or the city based on the game\textquotesingle{}s progression and actions taken. \mbox{\Hypertarget{classPlayer_a008854f2055547c5901c81b43cff3a48}\label{classPlayer_a008854f2055547c5901c81b43cff3a48}} 
+\index{Player@{Player}!showCityState@{showCityState}}
+\index{showCityState@{showCityState}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{showCityState()}{showCityState()}}
+{\footnotesize\ttfamily void Player\+::show\+City\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the current state of the city. 
+
+Outputs relevant information about the city\textquotesingle{}s status, including population, employment, and resources. \mbox{\Hypertarget{classPlayer_a2732c6d09de06381e657e6ee6c584f0a}\label{classPlayer_a2732c6d09de06381e657e6ee6c584f0a}} 
+\index{Player@{Player}!testCommuteTime@{testCommuteTime}}
+\index{testCommuteTime@{testCommuteTime}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{testCommuteTime()}{testCommuteTime()}}
+{\footnotesize\ttfamily void Player\+::test\+Commute\+Time (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Tests the commuting time for citizens. 
+
+Simulates and calculates the commuting time for citizens within the city based on chosen transport modes and routes. \mbox{\Hypertarget{classPlayer_aaba5986d78947d1f27a85cf80f025aeb}\label{classPlayer_aaba5986d78947d1f27a85cf80f025aeb}} 
+\index{Player@{Player}!travelCitizen@{travelCitizen}}
+\index{travelCitizen@{travelCitizen}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{travelCitizen()}{travelCitizen()}}
+{\footnotesize\ttfamily void Player\+::travel\+Citizen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Manages citizen travel within the city. 
+
+Coordinates travel activities for citizens based on transport selections and availability. \mbox{\Hypertarget{classPlayer_a771cc268cd21519c40711ef2e89952d0}\label{classPlayer_a771cc268cd21519c40711ef2e89952d0}} 
+\index{Player@{Player}!updateSatisfaction@{updateSatisfaction}}
+\index{updateSatisfaction@{updateSatisfaction}!Player@{Player}}
+\doxysubsubsection{\texorpdfstring{updateSatisfaction()}{updateSatisfaction()}}
+{\footnotesize\ttfamily void Player\+::update\+Satisfaction (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Updates the satisfaction of citizens. 
+
+Adjusts citizen satisfaction levels based on city conditions and government actions. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Player.\+h\item 
+Player.\+cpp\end{DoxyCompactItemize}

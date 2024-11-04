@@ -1,0 +1,112 @@
+\hypertarget{classTaxationDepartment}{}\doxysection{Taxation\+Department Class Reference}
+\label{classTaxationDepartment}\index{TaxationDepartment@{TaxationDepartment}}
+
+
+Represents the taxation department responsible for managing tax policies and revenue.  
+
+
+
+
+{\ttfamily \#include $<$departments.\+h$>$}
+
+
+
+Inheritance diagram for Taxation\+Department\+:
+% FIG 0
+
+
+Collaboration diagram for Taxation\+Department\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTaxationDepartment_a20e6e3a2615c8b0ca0db73f306b33fc1}{Taxation\+Department}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} for a specified city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTaxationDepartment_aca76dcfa35f4a824de6c41a79b01a54b}{manage\+City}} ()
+\begin{DoxyCompactList}\small\item\em Manages the city by notifying citizens about tax updates. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTaxationDepartment_ac1a5d78b32a665fd0380e5ddcc5e6cec}{update\+Taxes}} (float new\+Tax\+Rate)
+\begin{DoxyCompactList}\small\item\em Updates the tax rate for the city. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTaxationDepartment_a25ec2c5fc8c3ccc5044bcd1684a6cfcb}{get\+Taxrate}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current tax rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents the taxation department responsible for managing tax policies and revenue. 
+
+Manages taxation and city management within a government framework.
+
+The \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} class is responsible for managing tax rates and handling notifications related to tax updates in a city. It inherits from the \mbox{\hyperlink{classGovernment}{Government}} class, allowing it to interact with the city\textquotesingle{}s governance system. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTaxationDepartment_a20e6e3a2615c8b0ca0db73f306b33fc1}\label{classTaxationDepartment_a20e6e3a2615c8b0ca0db73f306b33fc1}} 
+\index{TaxationDepartment@{TaxationDepartment}!TaxationDepartment@{TaxationDepartment}}
+\index{TaxationDepartment@{TaxationDepartment}!TaxationDepartment@{TaxationDepartment}}
+\doxysubsubsection{\texorpdfstring{TaxationDepartment()}{TaxationDepartment()}}
+{\footnotesize\ttfamily Taxation\+Department\+::\+Taxation\+Department (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} for a specified city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Pointer to the \mbox{\hyperlink{classCity}{City}} this department will manage. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTaxationDepartment_a25ec2c5fc8c3ccc5044bcd1684a6cfcb}\label{classTaxationDepartment_a25ec2c5fc8c3ccc5044bcd1684a6cfcb}} 
+\index{TaxationDepartment@{TaxationDepartment}!getTaxrate@{getTaxrate}}
+\index{getTaxrate@{getTaxrate}!TaxationDepartment@{TaxationDepartment}}
+\doxysubsubsection{\texorpdfstring{getTaxrate()}{getTaxrate()}}
+{\footnotesize\ttfamily float Taxation\+Department\+::get\+Taxrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the current tax rate. 
+
+\begin{DoxyReturn}{Returns}
+The current tax rate as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGovernment_accdbcd9e484eef19bc279c3ff2a729d1}{Government}}.
+
+\mbox{\Hypertarget{classTaxationDepartment_aca76dcfa35f4a824de6c41a79b01a54b}\label{classTaxationDepartment_aca76dcfa35f4a824de6c41a79b01a54b}} 
+\index{TaxationDepartment@{TaxationDepartment}!manageCity@{manageCity}}
+\index{manageCity@{manageCity}!TaxationDepartment@{TaxationDepartment}}
+\doxysubsubsection{\texorpdfstring{manageCity()}{manageCity()}}
+{\footnotesize\ttfamily void Taxation\+Department\+::manage\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Manages the city by notifying citizens about tax updates. 
+
+This method handles the logic to notify citizens when taxes have been updated. The actual notification mechanism can be implemented as needed. 
+
+Reimplemented from \mbox{\hyperlink{classGovernment_a81ecf49c437cd4f0a2276b847c6387f2}{Government}}.
+
+\mbox{\Hypertarget{classTaxationDepartment_ac1a5d78b32a665fd0380e5ddcc5e6cec}\label{classTaxationDepartment_ac1a5d78b32a665fd0380e5ddcc5e6cec}} 
+\index{TaxationDepartment@{TaxationDepartment}!updateTaxes@{updateTaxes}}
+\index{updateTaxes@{updateTaxes}!TaxationDepartment@{TaxationDepartment}}
+\doxysubsubsection{\texorpdfstring{updateTaxes()}{updateTaxes()}}
+{\footnotesize\ttfamily void Taxation\+Department\+::update\+Taxes (\begin{DoxyParamCaption}\item[{float}]{new\+Tax\+Rate }\end{DoxyParamCaption})}
+
+
+
+Updates the tax rate for the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Tax\+Rate} & The new tax rate to be applied. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+departments.\+h\item 
+Taxation\+Department.\+h\item 
+Taxation\+Department.\+cpp\end{DoxyCompactItemize}

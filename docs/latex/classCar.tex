@@ -1,0 +1,109 @@
+\hypertarget{classCar}{}\doxysection{Car Class Reference}
+\label{classCar}\index{Car@{Car}}
+
+
+Represents a private transport vehicle (car) that uses petrol for travel.  
+
+
+
+
+{\ttfamily \#include $<$Car.\+h$>$}
+
+
+
+Inheritance diagram for Car\+:
+% FIG 0
+
+
+Collaboration diagram for Car\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classCar_aa80e77189241d0f81adf25b8e18f6c0a}{Car}} (int cap, float fuel\+Cost, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classCar}{Car}} with the specified capacity, fuel cost, and state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_a6cd110d42feb621c85bab3372d102e6e}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Simulates car travel. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classCar_a6ab57fa75574f44f373fde6cc4a1c79a}{get\+Petrol\+Price}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current petrol price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCar_a9549565110e78640e6afbd85c643e719}{set\+Petrol\+Price}} (float price)
+\begin{DoxyCompactList}\small\item\em Sets a new petrol price. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a private transport vehicle (car) that uses petrol for travel. 
+
+The \mbox{\hyperlink{classCar}{Car}} class extends \mbox{\hyperlink{classPrivateTransport}{Private\+Transport}} and provides a specific implementation for the travel method and petrol-\/related functionality. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCar_aa80e77189241d0f81adf25b8e18f6c0a}\label{classCar_aa80e77189241d0f81adf25b8e18f6c0a}} 
+\index{Car@{Car}!Car@{Car}}
+\index{Car@{Car}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{Car()}{Car()}}
+{\footnotesize\ttfamily Car\+::\+Car (\begin{DoxyParamCaption}\item[{int}]{cap,  }\item[{float}]{fuel\+Cost,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classCar}{Car}} with the specified capacity, fuel cost, and state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The seating capacity of the car. \\
+\hline
+{\em fuel\+Cost} & The cost of petrol per unit. \\
+\hline
+{\em state} & Initial state of the car (optional). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCar_a6ab57fa75574f44f373fde6cc4a1c79a}\label{classCar_a6ab57fa75574f44f373fde6cc4a1c79a}} 
+\index{Car@{Car}!getPetrolPrice@{getPetrolPrice}}
+\index{getPetrolPrice@{getPetrolPrice}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{getPetrolPrice()}{getPetrolPrice()}}
+{\footnotesize\ttfamily float Car\+::get\+Petrol\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current petrol price. 
+
+\begin{DoxyReturn}{Returns}
+The price per unit of petrol. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCar_a9549565110e78640e6afbd85c643e719}\label{classCar_a9549565110e78640e6afbd85c643e719}} 
+\index{Car@{Car}!setPetrolPrice@{setPetrolPrice}}
+\index{setPetrolPrice@{setPetrolPrice}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{setPetrolPrice()}{setPetrolPrice()}}
+{\footnotesize\ttfamily void Car\+::set\+Petrol\+Price (\begin{DoxyParamCaption}\item[{float}]{price }\end{DoxyParamCaption})}
+
+
+
+Sets a new petrol price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em price} & The new price per unit of petrol. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCar_a6cd110d42feb621c85bab3372d102e6e}\label{classCar_a6cd110d42feb621c85bab3372d102e6e}} 
+\index{Car@{Car}!travel@{travel}}
+\index{travel@{travel}!Car@{Car}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Car\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulates car travel. 
+
+Displays travel status and availability message. 
+
+Implements \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{Mode\+Of\+Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Car.\+h\item 
+Car.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,80 @@
+\hypertarget{classDirector}{}\doxysection{Director Class Reference}
+\label{classDirector}\index{Director@{Director}}
+
+
+The \mbox{\hyperlink{classDirector}{Director}} class is responsible for managing the construction process of a city by using a \mbox{\hyperlink{classBuilder}{Builder}}.  
+
+
+
+
+{\ttfamily \#include $<$Director.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classDirector_a82cfb00ed583d21c8b218e916fe45603}{Director}} (\mbox{\hyperlink{classBuilder}{Builder}} $\ast$new\+Builder)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the \mbox{\hyperlink{classDirector}{Director}} with a specified \mbox{\hyperlink{classBuilder}{Builder}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDirector_aa266ee3382d3bb30df71951ba0976ae4}{set\+Builder}} (\mbox{\hyperlink{classBuilder}{Builder}} $\ast$new\+Builder)
+\begin{DoxyCompactList}\small\item\em Sets a new \mbox{\hyperlink{classBuilder}{Builder}} for the \mbox{\hyperlink{classDirector}{Director}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classDirector_a4d81ac1ba12e05fb4e2d9b0f32a10ced}{construct\+City\+Growth}} (int amount)
+\begin{DoxyCompactList}\small\item\em Constructs the growth of the city by executing various building processes. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classDirector}{Director}} class is responsible for managing the construction process of a city by using a \mbox{\hyperlink{classBuilder}{Builder}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classDirector_a82cfb00ed583d21c8b218e916fe45603}\label{classDirector_a82cfb00ed583d21c8b218e916fe45603}} 
+\index{Director@{Director}!Director@{Director}}
+\index{Director@{Director}!Director@{Director}}
+\doxysubsubsection{\texorpdfstring{Director()}{Director()}}
+{\footnotesize\ttfamily Director\+::\+Director (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilder}{Builder}} $\ast$}]{new\+Builder }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the \mbox{\hyperlink{classDirector}{Director}} with a specified \mbox{\hyperlink{classBuilder}{Builder}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Builder} & Pointer to a \mbox{\hyperlink{classBuilder}{Builder}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classDirector_a4d81ac1ba12e05fb4e2d9b0f32a10ced}\label{classDirector_a4d81ac1ba12e05fb4e2d9b0f32a10ced}} 
+\index{Director@{Director}!constructCityGrowth@{constructCityGrowth}}
+\index{constructCityGrowth@{constructCityGrowth}!Director@{Director}}
+\doxysubsubsection{\texorpdfstring{constructCityGrowth()}{constructCityGrowth()}}
+{\footnotesize\ttfamily void Director\+::construct\+City\+Growth (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Constructs the growth of the city by executing various building processes. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of population growth to construct. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classDirector_aa266ee3382d3bb30df71951ba0976ae4}\label{classDirector_aa266ee3382d3bb30df71951ba0976ae4}} 
+\index{Director@{Director}!setBuilder@{setBuilder}}
+\index{setBuilder@{setBuilder}!Director@{Director}}
+\doxysubsubsection{\texorpdfstring{setBuilder()}{setBuilder()}}
+{\footnotesize\ttfamily void Director\+::set\+Builder (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilder}{Builder}} $\ast$}]{new\+Builder }\end{DoxyParamCaption})}
+
+
+
+Sets a new \mbox{\hyperlink{classBuilder}{Builder}} for the \mbox{\hyperlink{classDirector}{Director}}. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Builder} & Pointer to a new \mbox{\hyperlink{classBuilder}{Builder}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Director.\+h\item 
+Director.\+cpp\end{DoxyCompactItemize}

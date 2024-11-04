@@ -1,0 +1,23 @@
+var searchData=
+[
+  ['taxationdepartment_284',['TaxationDepartment',['../classTaxationDepartment.html',1,'TaxationDepartment'],['../classTaxationDepartment.html#a20e6e3a2615c8b0ca0db73f306b33fc1',1,'TaxationDepartment::TaxationDepartment()']]],
+  ['taxcommand_285',['TaxCommand',['../classTaxCommand.html',1,'TaxCommand'],['../classTaxCommand.html#ab6272fc3d397938c8d965ddeeded9593',1,'TaxCommand::TaxCommand()']]],
+  ['taxi_286',['Taxi',['../classTaxi.html',1,'Taxi'],['../classTaxi.html#a42857f36f569983fa56d24cb50b5435d',1,'Taxi::Taxi()']]],
+  ['taxrate_287',['taxRate',['../classBuilding.html#af4176323add75b5a6abac4da4bfc8f11',1,'Building::taxRate()'],['../classGovernment.html#a5457f0975f8365fa52bf65de3072f807',1,'Government::taxRate()']]],
+  ['testcase_288',['TestCase',['../structdoctest_1_1detail_1_1TestCase.html',1,'doctest::detail']]],
+  ['testcasedata_289',['TestCaseData',['../structdoctest_1_1TestCaseData.html',1,'doctest']]],
+  ['testcaseexception_290',['TestCaseException',['../structdoctest_1_1TestCaseException.html',1,'doctest']]],
+  ['testcommutetime_291',['testCommuteTime',['../classPlayer.html#a2732c6d09de06381e657e6ee6c584f0a',1,'Player']]],
+  ['testfailureexception_292',['TestFailureException',['../structdoctest_1_1detail_1_1TestFailureException.html',1,'doctest::detail']]],
+  ['testrunstats_293',['TestRunStats',['../structdoctest_1_1TestRunStats.html',1,'doctest']]],
+  ['testsuite_294',['TestSuite',['../structdoctest_1_1detail_1_1TestSuite.html',1,'doctest::detail']]],
+  ['townhouse_295',['Townhouse',['../classTownhouse.html',1,'Townhouse'],['../classTownhouse.html#ab8d4561373c5b5cf0ed1cbbf8cb411cf',1,'Townhouse::Townhouse()']]],
+  ['tracksatisfaction_296',['trackSatisfaction',['../classCompositeBuilding.html#a26528017753b8de6d30963fee1742674',1,'CompositeBuilding']]],
+  ['train_297',['Train',['../classTrain.html',1,'Train'],['../classTrain.html#af0cd77d91e7bd1927365a1e1215eef23',1,'Train::Train()']]],
+  ['transportationstate_298',['TransportationState',['../classTransportationState.html',1,'']]],
+  ['transportstrategy_299',['TransportStrategy',['../classTransportStrategy.html',1,'']]],
+  ['travel_300',['travel',['../classCar.html#a6cd110d42feb621c85bab3372d102e6e',1,'Car::travel()'],['../classTransportStrategy.html#af0a7ee7ce71877201f5871d04f49c73c',1,'TransportStrategy::travel()'],['../classTrain.html#a253d52130d9bf308c5b513e4c1afecd4',1,'Train::travel()'],['../classTaxi.html#ac5e3901b39759d37db39cb4f19073708',1,'Taxi::travel()'],['../classPublicTransport.html#aea344d5b086fabdb1cb82225c10bae9b',1,'PublicTransport::travel()'],['../classPrivateTransport.html#af9516cc3bcd18605e4612c4ccd6e4cd1',1,'PrivateTransport::travel()'],['../classPlane.html#a7bfcad787c5babe98c796b3adeb8897f',1,'Plane::travel()'],['../classModeOfTransport.html#ad944bab03aee6f1b0bf13dc3e0e7534d',1,'ModeOfTransport::travel()'],['../classCitizen.html#a0db1c3f18023ec9c1c1a517f35108edb',1,'Citizen::travel()'],['../classBus.html#aa5bedace947b50f8d8d9e026b0ed197f',1,'Bus::travel()'],['../classBike.html#ac9e7e933e91c911354c3fafb28f5c01e',1,'Bike::travel()'],['../classWalk.html#a025c3bbd94264ac3c8618e9b43a6c29d',1,'Walk::travel()']]],
+  ['travelcitizen_301',['travelCitizen',['../classPlayer.html#aaba5986d78947d1f27a85cf80f025aeb',1,'Player']]],
+  ['true_5ftype_302',['true_type',['../structdoctest_1_1detail_1_1types_1_1true__type.html',1,'doctest::detail::types']]],
+  ['tuple_303',['tuple',['../classstd_1_1tuple.html',1,'std']]]
+];

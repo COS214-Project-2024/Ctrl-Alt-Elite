@@ -1,0 +1,85 @@
+\hypertarget{classPrivateQuietState}{}\doxysection{Private\+Quiet\+State Class Reference}
+\label{classPrivateQuietState}\index{PrivateQuietState@{PrivateQuietState}}
+
+
+Represents the quiet state of a private transport mode.  
+
+
+
+
+{\ttfamily \#include $<$Private\+Quiet\+State.\+h$>$}
+
+
+
+Inheritance diagram for Private\+Quiet\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Private\+Quiet\+State\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPrivateQuietState_a855cf95749b228e6ad66bd90a3a844e6}\label{classPrivateQuietState_a855cf95749b228e6ad66bd90a3a844e6}} 
+\mbox{\hyperlink{classPrivateQuietState_a855cf95749b228e6ad66bd90a3a844e6}{Private\+Quiet\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPrivateQuietState}{Private\+Quiet\+State}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPrivateQuietState_a4e6a838a8f4d2de8a4d54ea6c860e8bc}{handle}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Handles the current quiet state of the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPrivateQuietState_a70959c2a51b40bd8472efbe4d4900d3e}{change\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Changes the state of the transport from quiet to moderate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the quiet state of a private transport mode. 
+
+The \mbox{\hyperlink{classPrivateQuietState}{Private\+Quiet\+State}} class indicates that the private transport is available for use, signifying that it is in a state where it can accept new requests. It manages behavior specific to the quiet state and facilitates transitions to other states. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPrivateQuietState_a70959c2a51b40bd8472efbe4d4900d3e}\label{classPrivateQuietState_a70959c2a51b40bd8472efbe4d4900d3e}} 
+\index{PrivateQuietState@{PrivateQuietState}!changeState@{changeState}}
+\index{changeState@{changeState}!PrivateQuietState@{PrivateQuietState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Private\+Quiet\+State\+::change\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Changes the state of the transport from quiet to moderate. 
+
+This method transitions the transport to the \mbox{\hyperlink{classPrivateModerateState}{Private\+Moderate\+State}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & Shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} whose state is to be changed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPrivateTransportState_aecf653efbed78ea8f383336a13d61153}{Private\+Transport\+State}}.
+
+\mbox{\Hypertarget{classPrivateQuietState_a4e6a838a8f4d2de8a4d54ea6c860e8bc}\label{classPrivateQuietState_a4e6a838a8f4d2de8a4d54ea6c860e8bc}} 
+\index{PrivateQuietState@{PrivateQuietState}!handle@{handle}}
+\index{handle@{handle}!PrivateQuietState@{PrivateQuietState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Private\+Quiet\+State\+::handle (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles the current quiet state of the transport. 
+
+Displays a message indicating that the private transport is in a quiet state and available for use.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & Shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} currently in this state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPrivateTransportState_a35aae21908d8aff41506c08466f86ccd}{Private\+Transport\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Private\+Quiet\+State.\+h\item 
+Private\+Quiet\+State.\+cpp\end{DoxyCompactItemize}

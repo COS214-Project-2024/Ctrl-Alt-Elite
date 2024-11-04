@@ -1,0 +1,15 @@
+digraph "Utilities"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Utilities",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract base class for utility services in a building."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PowerPlants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPowerPlants.html",tooltip="Represents a utility for generating and supplying electricity to buildings."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="SewageSystems",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classSewageSystems.html",tooltip="Class representing sewage systems within a city building."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="WasteManagement",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWasteManagement.html",tooltip="Manages waste collection and recycling processes in a building."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="WaterSupply",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWaterSupply.html",tooltip="Represents a water supply utility for buildings."];
+}

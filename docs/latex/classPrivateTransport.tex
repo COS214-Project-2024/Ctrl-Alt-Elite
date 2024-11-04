@@ -1,0 +1,158 @@
+\hypertarget{classPrivateTransport}{}\doxysection{Private\+Transport Class Reference}
+\label{classPrivateTransport}\index{PrivateTransport@{PrivateTransport}}
+
+
+Represents a private mode of transport with associated functionalities.  
+
+
+
+
+{\ttfamily \#include $<$Private\+Transport.\+h$>$}
+
+
+
+Inheritance diagram for Private\+Transport\+:
+% FIG 0
+
+
+Collaboration diagram for Private\+Transport\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPrivateTransport_a59453dfb1093a6c70251ed5a77a27080}{Private\+Transport}} (float cost, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPrivateTransport}{Private\+Transport}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPrivateTransport_af9516cc3bcd18605e4612c4ccd6e4cd1}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Simulates traveling with the private transport. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPrivateTransport_a706378590976280b5b8b4ac61d1fce1a}{is\+Available}} () override
+\begin{DoxyCompactList}\small\item\em Checks if the private transport is available for use. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPrivateTransport_a20aa07393c7b0d0668a67a15da344b43}{calculate\+Commute\+Time}} (float distance, float speed, const std\+::string \&mode) override
+\begin{DoxyCompactList}\small\item\em Calculates the estimated commute time based on distance, speed, and mode of transport. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPrivateTransport_a4bc9c0e5d98179d00825a88a5b029c47}{get\+Maintenance\+Cost}} () const
+\begin{DoxyCompactList}\small\item\em Gets the maintenance cost of the private transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPrivateTransport_ade1e996cad6083c729b33211e82f3b60}{set\+Maintenance\+Cost}} (float cost)
+\begin{DoxyCompactList}\small\item\em Sets the maintenance cost of the private transport. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a private mode of transport with associated functionalities. 
+
+The \mbox{\hyperlink{classPrivateTransport}{Private\+Transport}} class extends the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} class, providing implementations for travel, availability checks, and commute time calculations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPrivateTransport_a59453dfb1093a6c70251ed5a77a27080}\label{classPrivateTransport_a59453dfb1093a6c70251ed5a77a27080}} 
+\index{PrivateTransport@{PrivateTransport}!PrivateTransport@{PrivateTransport}}
+\index{PrivateTransport@{PrivateTransport}!PrivateTransport@{PrivateTransport}}
+\doxysubsubsection{\texorpdfstring{PrivateTransport()}{PrivateTransport()}}
+{\footnotesize\ttfamily Private\+Transport\+::\+Private\+Transport (\begin{DoxyParamCaption}\item[{float}]{cost,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPrivateTransport}{Private\+Transport}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & The maintenance cost of the transport. \\
+\hline
+{\em state} & Shared pointer to the initial state of the transport (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPrivateTransport_a20aa07393c7b0d0668a67a15da344b43}\label{classPrivateTransport_a20aa07393c7b0d0668a67a15da344b43}} 
+\index{PrivateTransport@{PrivateTransport}!calculateCommuteTime@{calculateCommuteTime}}
+\index{calculateCommuteTime@{calculateCommuteTime}!PrivateTransport@{PrivateTransport}}
+\doxysubsubsection{\texorpdfstring{calculateCommuteTime()}{calculateCommuteTime()}}
+{\footnotesize\ttfamily float Private\+Transport\+::calculate\+Commute\+Time (\begin{DoxyParamCaption}\item[{float}]{distance,  }\item[{float}]{speed,  }\item[{const std\+::string \&}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the estimated commute time based on distance, speed, and mode of transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & The distance to travel. \\
+\hline
+{\em speed} & The speed of travel (0 or less will use default speeds based on mode). \\
+\hline
+{\em mode} & The mode of transport (e.\+g., \char`\"{}walk\char`\"{}, \char`\"{}bike\char`\"{}, \char`\"{}car\char`\"{}, \char`\"{}train\char`\"{}, \char`\"{}plane\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Estimated time in hours for the commute. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportStrategy_a7297dc96311051b5ba6e5ace84751a35}{Transport\+Strategy}}.
+
+\mbox{\Hypertarget{classPrivateTransport_a4bc9c0e5d98179d00825a88a5b029c47}\label{classPrivateTransport_a4bc9c0e5d98179d00825a88a5b029c47}} 
+\index{PrivateTransport@{PrivateTransport}!getMaintenanceCost@{getMaintenanceCost}}
+\index{getMaintenanceCost@{getMaintenanceCost}!PrivateTransport@{PrivateTransport}}
+\doxysubsubsection{\texorpdfstring{getMaintenanceCost()}{getMaintenanceCost()}}
+{\footnotesize\ttfamily float Private\+Transport\+::get\+Maintenance\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the maintenance cost of the private transport. 
+
+\begin{DoxyReturn}{Returns}
+The maintenance cost. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPrivateTransport_a706378590976280b5b8b4ac61d1fce1a}\label{classPrivateTransport_a706378590976280b5b8b4ac61d1fce1a}} 
+\index{PrivateTransport@{PrivateTransport}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!PrivateTransport@{PrivateTransport}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily bool Private\+Transport\+::is\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the private transport is available for use. 
+
+\begin{DoxyReturn}{Returns}
+true if the transport is available, false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportStrategy_a8131bea2c205e3bc11ffeb9671ca038f}{Transport\+Strategy}}.
+
+\mbox{\Hypertarget{classPrivateTransport_ade1e996cad6083c729b33211e82f3b60}\label{classPrivateTransport_ade1e996cad6083c729b33211e82f3b60}} 
+\index{PrivateTransport@{PrivateTransport}!setMaintenanceCost@{setMaintenanceCost}}
+\index{setMaintenanceCost@{setMaintenanceCost}!PrivateTransport@{PrivateTransport}}
+\doxysubsubsection{\texorpdfstring{setMaintenanceCost()}{setMaintenanceCost()}}
+{\footnotesize\ttfamily void Private\+Transport\+::set\+Maintenance\+Cost (\begin{DoxyParamCaption}\item[{float}]{cost }\end{DoxyParamCaption})}
+
+
+
+Sets the maintenance cost of the private transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & The new maintenance cost to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPrivateTransport_af9516cc3bcd18605e4612c4ccd6e4cd1}\label{classPrivateTransport_af9516cc3bcd18605e4612c4ccd6e4cd1}} 
+\index{PrivateTransport@{PrivateTransport}!travel@{travel}}
+\index{travel@{travel}!PrivateTransport@{PrivateTransport}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Private\+Transport\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulates traveling with the private transport. 
+
+Displays whether the private transport is traveling or unavailable. 
+
+Implements \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{Mode\+Of\+Transport}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classWalk_a025c3bbd94264ac3c8618e9b43a6c29d}{Walk}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Private\+Transport.\+h\item 
+Private\+Transport.\+cpp\end{DoxyCompactItemize}

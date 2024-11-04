@@ -1,0 +1,165 @@
+\hypertarget{classPublicTransportState}{}\doxysection{Public\+Transport\+State Class Reference}
+\label{classPublicTransportState}\index{PublicTransportState@{PublicTransportState}}
+
+
+Represents the state of a public mode of transport.  
+
+
+
+
+{\ttfamily \#include $<$Public\+Transport\+State.\+h$>$}
+
+
+
+Inheritance diagram for Public\+Transport\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Public\+Transport\+State\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPublicTransportState_ab51b43b5611a5507df1f49724999bf74}{Public\+Transport\+State}} (const std\+::string \&initial\+State)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPublicTransportState}{Public\+Transport\+State}} instance with an initial state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPublicTransportState_a6a4f6bc3c7ad67eb1f4b6eddefaf2f70}{handle}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Handles the current state of the given transport. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPublicTransportState_a45a809475c2c076b22b4d94684a64674}{change\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Changes the state of the transport based on its current state. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPublicTransportState_abd07d453cdcab4f0f44615639146631b}{is\+Available}} () const override
+\begin{DoxyCompactList}\small\item\em Checks if the transport is currently available. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classPublicTransportState_ad3b1c21e489c267b909eb03773b17b42}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current state of the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicTransportState_a876bc21d57c944f0f202ab9c6c1937c6}{set\+State}} (const std\+::string \&new\+State)
+\begin{DoxyCompactList}\small\item\em Sets the state of the transport to a new value. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the state of a public mode of transport. 
+
+This class inherits from the \mbox{\hyperlink{classTransportationState}{Transportation\+State}} class and manages the state of public transport, including handling state transitions and availability checks. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPublicTransportState_ab51b43b5611a5507df1f49724999bf74}\label{classPublicTransportState_ab51b43b5611a5507df1f49724999bf74}} 
+\index{PublicTransportState@{PublicTransportState}!PublicTransportState@{PublicTransportState}}
+\index{PublicTransportState@{PublicTransportState}!PublicTransportState@{PublicTransportState}}
+\doxysubsubsection{\texorpdfstring{PublicTransportState()}{PublicTransportState()}}
+{\footnotesize\ttfamily Public\+Transport\+State\+::\+Public\+Transport\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{initial\+State }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPublicTransportState}{Public\+Transport\+State}} instance with an initial state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em initial\+State} & The initial state of the public transport. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPublicTransportState_a45a809475c2c076b22b4d94684a64674}\label{classPublicTransportState_a45a809475c2c076b22b4d94684a64674}} 
+\index{PublicTransportState@{PublicTransportState}!changeState@{changeState}}
+\index{changeState@{changeState}!PublicTransportState@{PublicTransportState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Public\+Transport\+State\+::change\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Changes the state of the transport based on its current state. 
+
+This method transitions the transport state among Busy, Quiet, and Moderate states.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} whose state is to be changed. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransportationState_a2b9b19f88d7c2d2874c8d569aca3e049}{Transportation\+State}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classQuietState_a8f841a575f191b395c3aca40d7dbf1fe}{Quiet\+State}}, \mbox{\hyperlink{classModerateState_aee05441172170c19d08a729a6771b9a5}{Moderate\+State}}, and \mbox{\hyperlink{classBusyState_a2f925ce8cf11125a3513383ee1969ead}{Busy\+State}}.
+
+\mbox{\Hypertarget{classPublicTransportState_ad3b1c21e489c267b909eb03773b17b42}\label{classPublicTransportState_ad3b1c21e489c267b909eb03773b17b42}} 
+\index{PublicTransportState@{PublicTransportState}!getState@{getState}}
+\index{getState@{getState}!PublicTransportState@{PublicTransportState}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily std\+::string Public\+Transport\+State\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the current state of the transport. 
+
+\begin{DoxyReturn}{Returns}
+The current state as a string. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportationState_aa7d27dc3c6c1ae8d6984e87835482e3f}{Transportation\+State}}.
+
+\mbox{\Hypertarget{classPublicTransportState_a6a4f6bc3c7ad67eb1f4b6eddefaf2f70}\label{classPublicTransportState_a6a4f6bc3c7ad67eb1f4b6eddefaf2f70}} 
+\index{PublicTransportState@{PublicTransportState}!handle@{handle}}
+\index{handle@{handle}!PublicTransportState@{PublicTransportState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Public\+Transport\+State\+::handle (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles the current state of the given transport. 
+
+This method performs actions based on the current state of the transport.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} being handled. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransportationState_a4715b5dab8321eead235e3a766c9b6a8}{Transportation\+State}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classQuietState_afd6a1ae1b35672b7bf1431b9c9d51cd2}{Quiet\+State}}, \mbox{\hyperlink{classModerateState_a003a56bb88d3f122515c10cfdebb1843}{Moderate\+State}}, and \mbox{\hyperlink{classBusyState_ade9a61e3ed57bde5c749c69c63a662da}{Busy\+State}}.
+
+\mbox{\Hypertarget{classPublicTransportState_abd07d453cdcab4f0f44615639146631b}\label{classPublicTransportState_abd07d453cdcab4f0f44615639146631b}} 
+\index{PublicTransportState@{PublicTransportState}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!PublicTransportState@{PublicTransportState}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily bool Public\+Transport\+State\+::is\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if the transport is currently available. 
+
+\begin{DoxyReturn}{Returns}
+True if the transport is available (not Busy); otherwise, false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportationState_a060fd1afb5fa44d094e29d7edc0d821b}{Transportation\+State}}.
+
+\mbox{\Hypertarget{classPublicTransportState_a876bc21d57c944f0f202ab9c6c1937c6}\label{classPublicTransportState_a876bc21d57c944f0f202ab9c6c1937c6}} 
+\index{PublicTransportState@{PublicTransportState}!setState@{setState}}
+\index{setState@{setState}!PublicTransportState@{PublicTransportState}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Public\+Transport\+State\+::set\+State (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{new\+State }\end{DoxyParamCaption})}
+
+
+
+Sets the state of the transport to a new value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+State} & The new state to be set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public\+Transport\+State.\+h\item 
+Public\+Transport\+State.\+cpp\end{DoxyCompactItemize}

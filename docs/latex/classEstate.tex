@@ -1,0 +1,109 @@
+\hypertarget{classEstate}{}\doxysection{Estate Class Reference}
+\label{classEstate}\index{Estate@{Estate}}
+
+
+The \mbox{\hyperlink{classEstate}{Estate}} class represents a residential estate, inheriting from the \mbox{\hyperlink{classResidential}{Residential}} class.  
+
+
+
+
+{\ttfamily \#include $<$Estate.\+h$>$}
+
+
+
+Inheritance diagram for Estate\+:
+% FIG 0
+
+
+Collaboration diagram for Estate\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEstate_a33a6c7073dee5af09737f467ed4064bb}{Estate}} (int \mbox{\hyperlink{classResidential_ae3f1b02f4a1fb8ff6530b358c7c62320}{num\+Residents}}=0, int \mbox{\hyperlink{classResidential_a61e4322faed588c65bd22af5f58e719b}{available\+Units}}=1)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the \mbox{\hyperlink{classEstate}{Estate}} with the number of residents and available units. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEstate_a3042b5da85800a8ef60ffec609829f40}\label{classEstate_a3042b5da85800a8ef60ffec609829f40}} 
+\mbox{\hyperlink{classEstate_a3042b5da85800a8ef60ffec609829f40}{$\sim$\+Estate}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classEstate}{Estate}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEstate_a10fc4550f6713f59c87ddc1c6fc22615}\label{classEstate_a10fc4550f6713f59c87ddc1c6fc22615}} 
+void \mbox{\hyperlink{classEstate_a10fc4550f6713f59c87ddc1c6fc22615}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about the estate, including occupancy rate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEstate_a47829a0710b0a9d66394362e7a776ed4}\label{classEstate_a47829a0710b0a9d66394362e7a776ed4}} 
+void \mbox{\hyperlink{classEstate_a47829a0710b0a9d66394362e7a776ed4}{calculate\+Occupancy\+Rate}} () override
+\begin{DoxyCompactList}\small\item\em Calculates the occupancy rate of the estate. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEstate_a51031e4b805e5ff2c42c4223e292ace3}{get\+Num\+Residents}} () override
+\begin{DoxyCompactList}\small\item\em Gets the current number of residents in the estate. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classEstate_a283ca37743d23de0fad0b8ad276cd873}\label{classEstate_a283ca37743d23de0fad0b8ad276cd873}} 
+void \mbox{\hyperlink{classEstate_a283ca37743d23de0fad0b8ad276cd873}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance tasks for the estate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEstate_a71fc02b34b7b4aae9f2dc703b3d8d20c}{set\+Num\+Resident}} (int num) override
+\begin{DoxyCompactList}\small\item\em Sets the number of residents in the estate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classEstate}{Estate}} class represents a residential estate, inheriting from the \mbox{\hyperlink{classResidential}{Residential}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEstate_a33a6c7073dee5af09737f467ed4064bb}\label{classEstate_a33a6c7073dee5af09737f467ed4064bb}} 
+\index{Estate@{Estate}!Estate@{Estate}}
+\index{Estate@{Estate}!Estate@{Estate}}
+\doxysubsubsection{\texorpdfstring{Estate()}{Estate()}}
+{\footnotesize\ttfamily Estate\+::\+Estate (\begin{DoxyParamCaption}\item[{int}]{num\+Residents = {\ttfamily 0},  }\item[{int}]{available\+Units = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the \mbox{\hyperlink{classEstate}{Estate}} with the number of residents and available units. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Residents} & The initial number of residents (default is 0). \\
+\hline
+{\em available\+Units} & The number of available units in the estate (default is 1). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEstate_a51031e4b805e5ff2c42c4223e292ace3}\label{classEstate_a51031e4b805e5ff2c42c4223e292ace3}} 
+\index{Estate@{Estate}!getNumResidents@{getNumResidents}}
+\index{getNumResidents@{getNumResidents}!Estate@{Estate}}
+\doxysubsubsection{\texorpdfstring{getNumResidents()}{getNumResidents()}}
+{\footnotesize\ttfamily int Estate\+::get\+Num\+Residents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current number of residents in the estate. 
+
+\begin{DoxyReturn}{Returns}
+The number of residents. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classResidential_a7de18ccb58ca0414955c75fb33e9ac4e}{Residential}}.
+
+\mbox{\Hypertarget{classEstate_a71fc02b34b7b4aae9f2dc703b3d8d20c}\label{classEstate_a71fc02b34b7b4aae9f2dc703b3d8d20c}} 
+\index{Estate@{Estate}!setNumResident@{setNumResident}}
+\index{setNumResident@{setNumResident}!Estate@{Estate}}
+\doxysubsubsection{\texorpdfstring{setNumResident()}{setNumResident()}}
+{\footnotesize\ttfamily void Estate\+::set\+Num\+Resident (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the number of residents in the estate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The new number of residents. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classResidential_ab3876323491703717637c50d67693ab4}{Residential}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Estate.\+h\item 
+Estate.\+cpp\end{DoxyCompactItemize}

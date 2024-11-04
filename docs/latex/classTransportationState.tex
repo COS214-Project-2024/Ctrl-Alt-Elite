@@ -1,0 +1,111 @@
+\hypertarget{classTransportationState}{}\doxysection{Transportation\+State Class Reference}
+\label{classTransportationState}\index{TransportationState@{TransportationState}}
+
+
+Abstract base class representing the state of a mode of transport.  
+
+
+
+
+{\ttfamily \#include $<$Transportation\+State.\+h$>$}
+
+
+
+Inheritance diagram for Transportation\+State\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classTransportationState_a4715b5dab8321eead235e3a766c9b6a8}{handle}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport)=0
+\begin{DoxyCompactList}\small\item\em Handles the mode of transport in the current state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classTransportationState_a2b9b19f88d7c2d2874c8d569aca3e049}{change\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport)=0
+\begin{DoxyCompactList}\small\item\em Changes the state of the given mode of transport. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classTransportationState_a060fd1afb5fa44d094e29d7edc0d821b}{is\+Available}} () const =0
+\begin{DoxyCompactList}\small\item\em Checks if the mode of transport is available in the current state. \end{DoxyCompactList}\item 
+virtual std\+::string \mbox{\hyperlink{classTransportationState_aa7d27dc3c6c1ae8d6984e87835482e3f}{get\+State}} () const =0
+\begin{DoxyCompactList}\small\item\em Gets a string representation of the current state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing the state of a mode of transport. 
+
+This class provides an interface for managing the state of different modes of transportation, allowing for state transitions and availability checks. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTransportationState_a2b9b19f88d7c2d2874c8d569aca3e049}\label{classTransportationState_a2b9b19f88d7c2d2874c8d569aca3e049}} 
+\index{TransportationState@{TransportationState}!changeState@{changeState}}
+\index{changeState@{changeState}!TransportationState@{TransportationState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily virtual void Transportation\+State\+::change\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Changes the state of the given mode of transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the mode of transport whose state is to be changed. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classQuietState_a8f841a575f191b395c3aca40d7dbf1fe}{Quiet\+State}}, \mbox{\hyperlink{classPublicTransportState_a45a809475c2c076b22b4d94684a64674}{Public\+Transport\+State}}, \mbox{\hyperlink{classPrivateTransportState_aecf653efbed78ea8f383336a13d61153}{Private\+Transport\+State}}, \mbox{\hyperlink{classPrivateQuietState_a70959c2a51b40bd8472efbe4d4900d3e}{Private\+Quiet\+State}}, \mbox{\hyperlink{classPrivateModerateState_aaee5edbb9dfccacda0ea1b8290248981}{Private\+Moderate\+State}}, \mbox{\hyperlink{classPrivateBusyState_a91c3e17307d2e15bf192ba5d1eed692e}{Private\+Busy\+State}}, \mbox{\hyperlink{classModerateState_aee05441172170c19d08a729a6771b9a5}{Moderate\+State}}, and \mbox{\hyperlink{classBusyState_a2f925ce8cf11125a3513383ee1969ead}{Busy\+State}}.
+
+\mbox{\Hypertarget{classTransportationState_aa7d27dc3c6c1ae8d6984e87835482e3f}\label{classTransportationState_aa7d27dc3c6c1ae8d6984e87835482e3f}} 
+\index{TransportationState@{TransportationState}!getState@{getState}}
+\index{getState@{getState}!TransportationState@{TransportationState}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily virtual std\+::string Transportation\+State\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Gets a string representation of the current state. 
+
+\begin{DoxyReturn}{Returns}
+A string describing the current state. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPublicTransportState_ad3b1c21e489c267b909eb03773b17b42}{Public\+Transport\+State}}, and \mbox{\hyperlink{classPrivateTransportState_ad3b73b30795c4b9362103c1e59508622}{Private\+Transport\+State}}.
+
+\mbox{\Hypertarget{classTransportationState_a4715b5dab8321eead235e3a766c9b6a8}\label{classTransportationState_a4715b5dab8321eead235e3a766c9b6a8}} 
+\index{TransportationState@{TransportationState}!handle@{handle}}
+\index{handle@{handle}!TransportationState@{TransportationState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily virtual void Transportation\+State\+::handle (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Handles the mode of transport in the current state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the mode of transport that is being handled. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classQuietState_afd6a1ae1b35672b7bf1431b9c9d51cd2}{Quiet\+State}}, \mbox{\hyperlink{classPublicTransportState_a6a4f6bc3c7ad67eb1f4b6eddefaf2f70}{Public\+Transport\+State}}, \mbox{\hyperlink{classPrivateTransportState_a35aae21908d8aff41506c08466f86ccd}{Private\+Transport\+State}}, \mbox{\hyperlink{classPrivateQuietState_a4e6a838a8f4d2de8a4d54ea6c860e8bc}{Private\+Quiet\+State}}, \mbox{\hyperlink{classPrivateModerateState_a8225dc6a5456a0ebd6d1571fd0ac338a}{Private\+Moderate\+State}}, \mbox{\hyperlink{classPrivateBusyState_a9f3f5a3a20be48874ac1a40af0c211ab}{Private\+Busy\+State}}, \mbox{\hyperlink{classModerateState_a003a56bb88d3f122515c10cfdebb1843}{Moderate\+State}}, and \mbox{\hyperlink{classBusyState_ade9a61e3ed57bde5c749c69c63a662da}{Busy\+State}}.
+
+\mbox{\Hypertarget{classTransportationState_a060fd1afb5fa44d094e29d7edc0d821b}\label{classTransportationState_a060fd1afb5fa44d094e29d7edc0d821b}} 
+\index{TransportationState@{TransportationState}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!TransportationState@{TransportationState}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily virtual bool Transportation\+State\+::is\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if the mode of transport is available in the current state. 
+
+\begin{DoxyReturn}{Returns}
+True if the transport is available, false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classPublicTransportState_abd07d453cdcab4f0f44615639146631b}{Public\+Transport\+State}}, and \mbox{\hyperlink{classPrivateTransportState_a702d28fe2e44c03bb5d086fcc347df82}{Private\+Transport\+State}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Transportation\+State.\+h\end{DoxyCompactItemize}

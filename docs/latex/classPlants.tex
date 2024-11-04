@@ -1,0 +1,128 @@
+\hypertarget{classPlants}{}\doxysection{Plants Class Reference}
+\label{classPlants}\index{Plants@{Plants}}
+
+
+Represents a plant as a type of industrial facility.  
+
+
+
+
+{\ttfamily \#include $<$Plants.\+h$>$}
+
+
+
+Inheritance diagram for Plants\+:
+% FIG 0
+
+
+Collaboration diagram for Plants\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlants_a65468b6b1f556bf1e0c3952faef632e0}{Plants}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classPlants}{Plants}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPlants_a6856642f5513062a0e0b02c562d7beb4}{$\sim$\+Plants}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classPlants}{Plants}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlants_a1a5595656ab0b1d694b4a325d468fcce}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about the plant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlants_a23b296ce983e55ba718c5ed77fa5edb1}{update\+Employment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Updates the employment rating of the plant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlants_a0b83d0925792aa0cb0a1612dc16bbea2}{update\+Pollution\+Level}} () override
+\begin{DoxyCompactList}\small\item\em Updates the pollution level of the plant. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlants_a3a299a53e1aeb213212ab79777b62965}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance tasks for the plant. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a plant as a type of industrial facility. 
+
+The \mbox{\hyperlink{classPlants}{Plants}} class extends the \mbox{\hyperlink{classIndustrial}{Industrial}} class, encapsulating the properties and functionalities associated with industrial plants, including employment ratings and pollution levels. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlants_a65468b6b1f556bf1e0c3952faef632e0}\label{classPlants_a65468b6b1f556bf1e0c3952faef632e0}} 
+\index{Plants@{Plants}!Plants@{Plants}}
+\index{Plants@{Plants}!Plants@{Plants}}
+\doxysubsubsection{\texorpdfstring{Plants()}{Plants()}}
+{\footnotesize\ttfamily Plants\+::\+Plants (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classPlants}{Plants}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classPlants}{Plants}} class. \mbox{\Hypertarget{classPlants_a6856642f5513062a0e0b02c562d7beb4}\label{classPlants_a6856642f5513062a0e0b02c562d7beb4}} 
+\index{Plants@{Plants}!````~Plants@{$\sim$Plants}}
+\index{````~Plants@{$\sim$Plants}!Plants@{Plants}}
+\doxysubsubsection{\texorpdfstring{$\sim$Plants()}{~Plants()}}
+{\footnotesize\ttfamily Plants\+::$\sim$\+Plants (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classPlants}{Plants}} class. 
+
+Cleans up resources used by the \mbox{\hyperlink{classPlants}{Plants}} instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlants_a1a5595656ab0b1d694b4a325d468fcce}\label{classPlants_a1a5595656ab0b1d694b4a325d468fcce}} 
+\index{Plants@{Plants}!display@{display}}
+\index{display@{display}!Plants@{Plants}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Plants\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays information about the plant. 
+
+Outputs the current employment rating and pollution level of the plant to the console. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a4ac52cc9fae3395f28dd33c9e86a0cd0}{Industrial}}.
+
+\mbox{\Hypertarget{classPlants_a3a299a53e1aeb213212ab79777b62965}\label{classPlants_a3a299a53e1aeb213212ab79777b62965}} 
+\index{Plants@{Plants}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Plants@{Plants}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Plants\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs maintenance tasks for the plant. 
+
+Executes necessary maintenance operations, including process checks and waste management activities. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a5fce77e4bb5d75ef4d554a7ca7f24566}{Industrial}}.
+
+\mbox{\Hypertarget{classPlants_a23b296ce983e55ba718c5ed77fa5edb1}\label{classPlants_a23b296ce983e55ba718c5ed77fa5edb1}} 
+\index{Plants@{Plants}!updateEmploymentRating@{updateEmploymentRating}}
+\index{updateEmploymentRating@{updateEmploymentRating}!Plants@{Plants}}
+\doxysubsubsection{\texorpdfstring{updateEmploymentRating()}{updateEmploymentRating()}}
+{\footnotesize\ttfamily void Plants\+::update\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the employment rating of the plant. 
+
+Increases the employment rating by a fixed amount, reflecting changes in employment levels within the plant. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a4eca4e9da2ea18d60e0cbbe5503acaca}{Industrial}}.
+
+\mbox{\Hypertarget{classPlants_a0b83d0925792aa0cb0a1612dc16bbea2}\label{classPlants_a0b83d0925792aa0cb0a1612dc16bbea2}} 
+\index{Plants@{Plants}!updatePollutionLevel@{updatePollutionLevel}}
+\index{updatePollutionLevel@{updatePollutionLevel}!Plants@{Plants}}
+\doxysubsubsection{\texorpdfstring{updatePollutionLevel()}{updatePollutionLevel()}}
+{\footnotesize\ttfamily void Plants\+::update\+Pollution\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the pollution level of the plant. 
+
+Increases the pollution level by a fixed amount, reflecting the environmental impact of the plant\textquotesingle{}s operations. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a3ded78dd378ebcb6415315c57cc7a37b}{Industrial}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Plants.\+h\item 
+Plants.\+cpp\end{DoxyCompactItemize}

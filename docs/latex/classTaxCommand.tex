@@ -1,0 +1,74 @@
+\hypertarget{classTaxCommand}{}\doxysection{Tax\+Command Class Reference}
+\label{classTaxCommand}\index{TaxCommand@{TaxCommand}}
+
+
+\mbox{\hyperlink{classCommand}{Command}} class to handle tax updates in the city.  
+
+
+
+
+{\ttfamily \#include $<$tax\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for Tax\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for Tax\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTaxCommand_ab6272fc3d397938c8d965ddeeded9593}{Tax\+Command}} (\mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} $\ast$dept, float rate)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTaxCommand}{Tax\+Command}} with a specified \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} and tax rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTaxCommand_ac07f6d9739004e85e9a6d0b495528770}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the tax update command. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCommand}{Command}} class to handle tax updates in the city. 
+
+This class encapsulates the command to update the tax rate within the \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}}. It allows for the execution of tax-\/related operations in the city management system. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTaxCommand_ab6272fc3d397938c8d965ddeeded9593}\label{classTaxCommand_ab6272fc3d397938c8d965ddeeded9593}} 
+\index{TaxCommand@{TaxCommand}!TaxCommand@{TaxCommand}}
+\index{TaxCommand@{TaxCommand}!TaxCommand@{TaxCommand}}
+\doxysubsubsection{\texorpdfstring{TaxCommand()}{TaxCommand()}}
+{\footnotesize\ttfamily Tax\+Command\+::\+Tax\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} $\ast$}]{dept,  }\item[{float}]{rate }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classTaxCommand}{Tax\+Command}} with a specified \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} and tax rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dept} & Pointer to the \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} that this command will operate on. \\
+\hline
+{\em rate} & The new tax rate to be set. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTaxCommand_ac07f6d9739004e85e9a6d0b495528770}\label{classTaxCommand_ac07f6d9739004e85e9a6d0b495528770}} 
+\index{TaxCommand@{TaxCommand}!execute@{execute}}
+\index{execute@{execute}!TaxCommand@{TaxCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Tax\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the tax update command. 
+
+This method updates the tax rate in the \mbox{\hyperlink{classTaxationDepartment}{Taxation\+Department}} and manages the city according to the new tax settings. 
+
+Implements \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+tax\+\_\+command.\+h\item 
+tax\+\_\+command.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,160 @@
+\hypertarget{classMall}{}\doxysection{Mall Class Reference}
+\label{classMall}\index{Mall@{Mall}}
+
+
+Represents a mall that provides commercial services.  
+
+
+
+
+{\ttfamily \#include $<$Mall.\+h$>$}
+
+
+
+Inheritance diagram for Mall\+:
+% FIG 0
+
+
+Collaboration diagram for Mall\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMall_a818e30c1d89eff65d1f93f81d3e03614}{Mall}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classMall}{Mall}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMall_abb6b286581fff14795613f847a2d2631}{$\sim$\+Mall}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classMall}{Mall}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMall_a1f75b1b1ba3075a3a2906e6516144ba9}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about the mall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMall_a1bffe4d9a324e3660c2a5402eab73aef}{Inc\+Employment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Increases the employment rating of the mall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMall_a1956c6f3d665e9ef844feb57252af775}{Dec\+Employment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the employment rating of the mall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMall_a30bd78a93140f6bd71f5184867e6a000}{Inc\+Entertainment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Increases the entertainment rating of the mall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMall_a9fbcbfbf283a53becea3e4b3c5458e9a}{Dec\+Entertainment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Decreases the entertainment rating of the mall. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMall_a09d525b0a3f001b80d0457e64b1a10e9}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance tasks for the mall. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a mall that provides commercial services. 
+
+This class extends the \mbox{\hyperlink{classCommercial}{Commercial}} class and manages the entertainment and employment ratings specific to a mall. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMall_a818e30c1d89eff65d1f93f81d3e03614}\label{classMall_a818e30c1d89eff65d1f93f81d3e03614}} 
+\index{Mall@{Mall}!Mall@{Mall}}
+\index{Mall@{Mall}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{Mall()}{Mall()}}
+{\footnotesize\ttfamily Mall\+::\+Mall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classMall}{Mall}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classMall}{Mall}}. \mbox{\Hypertarget{classMall_abb6b286581fff14795613f847a2d2631}\label{classMall_abb6b286581fff14795613f847a2d2631}} 
+\index{Mall@{Mall}!````~Mall@{$\sim$Mall}}
+\index{````~Mall@{$\sim$Mall}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{$\sim$Mall()}{~Mall()}}
+{\footnotesize\ttfamily Mall\+::$\sim$\+Mall (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classMall}{Mall}} class. 
+
+Cleans up any resources used by the \mbox{\hyperlink{classMall}{Mall}} instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMall_a1956c6f3d665e9ef844feb57252af775}\label{classMall_a1956c6f3d665e9ef844feb57252af775}} 
+\index{Mall@{Mall}!DecEmploymentRating@{DecEmploymentRating}}
+\index{DecEmploymentRating@{DecEmploymentRating}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{DecEmploymentRating()}{DecEmploymentRating()}}
+{\footnotesize\ttfamily void Mall\+::\+Dec\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the employment rating of the mall. 
+
+This method decrements the employment rating by a predefined amount. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a61771c67fc0307a96511bb8e61d322a8}{Commercial}}.
+
+\mbox{\Hypertarget{classMall_a9fbcbfbf283a53becea3e4b3c5458e9a}\label{classMall_a9fbcbfbf283a53becea3e4b3c5458e9a}} 
+\index{Mall@{Mall}!DecEntertainmentRating@{DecEntertainmentRating}}
+\index{DecEntertainmentRating@{DecEntertainmentRating}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{DecEntertainmentRating()}{DecEntertainmentRating()}}
+{\footnotesize\ttfamily void Mall\+::\+Dec\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Decreases the entertainment rating of the mall. 
+
+This method decrements the entertainment rating by a predefined amount. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_ab9c0418b2859001ad01c7bcc965c40ce}{Commercial}}.
+
+\mbox{\Hypertarget{classMall_a1f75b1b1ba3075a3a2906e6516144ba9}\label{classMall_a1f75b1b1ba3075a3a2906e6516144ba9}} 
+\index{Mall@{Mall}!display@{display}}
+\index{display@{display}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Mall\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays information about the mall. 
+
+Outputs the entertainment and employment ratings of the mall. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a5c908f178fbfca8d7b32b40013ea5e1c}{Commercial}}.
+
+\mbox{\Hypertarget{classMall_a1bffe4d9a324e3660c2a5402eab73aef}\label{classMall_a1bffe4d9a324e3660c2a5402eab73aef}} 
+\index{Mall@{Mall}!IncEmploymentRating@{IncEmploymentRating}}
+\index{IncEmploymentRating@{IncEmploymentRating}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{IncEmploymentRating()}{IncEmploymentRating()}}
+{\footnotesize\ttfamily void Mall\+::\+Inc\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the employment rating of the mall. 
+
+This method increments the employment rating by a predefined amount. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_afd5c0db279e48cd7d58f66e553299f0c}{Commercial}}.
+
+\mbox{\Hypertarget{classMall_a30bd78a93140f6bd71f5184867e6a000}\label{classMall_a30bd78a93140f6bd71f5184867e6a000}} 
+\index{Mall@{Mall}!IncEntertainmentRating@{IncEntertainmentRating}}
+\index{IncEntertainmentRating@{IncEntertainmentRating}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{IncEntertainmentRating()}{IncEntertainmentRating()}}
+{\footnotesize\ttfamily void Mall\+::\+Inc\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Increases the entertainment rating of the mall. 
+
+This method increments the entertainment rating by a predefined amount. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a50826ec4d712ffa75fef0d3552a07c01}{Commercial}}.
+
+\mbox{\Hypertarget{classMall_a09d525b0a3f001b80d0457e64b1a10e9}\label{classMall_a09d525b0a3f001b80d0457e64b1a10e9}} 
+\index{Mall@{Mall}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Mall@{Mall}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Mall\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs maintenance tasks for the mall. 
+
+This method checks various aspects of the mall to ensure proper functioning, including lighting, restocking, and cleaning. 
+
+Reimplemented from \mbox{\hyperlink{classCommercial_a9fb97fce02c9d6d7315869dbdd03685c}{Commercial}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Mall.\+h\item 
+Mall.\+cpp\end{DoxyCompactItemize}

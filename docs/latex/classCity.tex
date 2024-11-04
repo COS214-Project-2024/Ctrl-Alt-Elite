@@ -1,0 +1,182 @@
+\hypertarget{classCity}{}\doxysection{City Class Reference}
+\label{classCity}\index{City@{City}}
+
+
+Manages various aspects of a city, including buildings, utilities, resources, and citizen services.  
+
+
+
+
+{\ttfamily \#include $<$City.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCity_a1b1f549430f0a7ecd0ec7b1605415193}\label{classCity_a1b1f549430f0a7ecd0ec7b1605415193}} 
+\mbox{\hyperlink{classCity_a1b1f549430f0a7ecd0ec7b1605415193}{City}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classCity}{City}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCity_ae10f86730018256f7a80c78d85229db2}{City}} (const std\+::string \&name, int pop, float budget)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classCity}{City}} object with specified name, population, and budget. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_ae95feee8a1d4e1f14ea41ec89b47304f}\label{classCity_ae95feee8a1d4e1f14ea41ec89b47304f}} 
+\mbox{\hyperlink{classCity_ae95feee8a1d4e1f14ea41ec89b47304f}{$\sim$\+City}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classCity}{City}}, releasing allocated resources. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_aad7d20d97872357ab2d0ca297019f087}\label{classCity_aad7d20d97872357ab2d0ca297019f087}} 
+void \mbox{\hyperlink{classCity_aad7d20d97872357ab2d0ca297019f087}{collect\+Taxes}} ()
+\begin{DoxyCompactList}\small\item\em Collects taxes from citizens and businesses within the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_a15d828c35323ca2b7335310557491760}{allocate\+Budget}} (const std\+::string \&department, double amount)
+\begin{DoxyCompactList}\small\item\em Allocates a specified amount of budget to a given department. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_acafd3a7c03d8a2e4e183c03319294c02}{enforce\+Policy}} (const std\+::string \&policy)
+\begin{DoxyCompactList}\small\item\em Enforces a specific policy within the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_ae629455feaa55d8a64cfaffd9154805e}{provide\+Public\+Service}} (const std\+::string \&service)
+\begin{DoxyCompactList}\small\item\em Provides a public service within the city, such as healthcare or education. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_a3e2f0738ac1698da2388649b47554edc}\label{classCity_a3e2f0738ac1698da2388649b47554edc}} 
+void \mbox{\hyperlink{classCity_a3e2f0738ac1698da2388649b47554edc}{update\+Infrastructure}} ()
+\begin{DoxyCompactList}\small\item\em Updates the city\textquotesingle{}s infrastructure to support population growth. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_a2b3ca2e6e5a111c4c75e0f365c9394db}{manage\+Resources}} (const std\+::string \&resource\+Type, double amount)
+\begin{DoxyCompactList}\small\item\em Manages city resources by allocating a specified amount of a particular resource type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_afba42be6fe7b4d4f0c598ae03c3f461e}\label{classCity_afba42be6fe7b4d4f0c598ae03c3f461e}} 
+void \mbox{\hyperlink{classCity_afba42be6fe7b4d4f0c598ae03c3f461e}{report\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Reports the status of city operations, resources, and budget allocation. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_ab9f0371e127f24bf2ef7f54fe52d21ac}{add\+Building}} (\mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Adds a new building to the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCity_a0bee14e20fc88dfe60445b6d313b0368}{allocate\+Resources}} (const std\+::string \&resource\+Type)
+\begin{DoxyCompactList}\small\item\em Allocates resources for city operations based on the specified resource type. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_afd4011fa55818f2f878a2750934723e1}\label{classCity_afd4011fa55818f2f878a2750934723e1}} 
+void \mbox{\hyperlink{classCity_afd4011fa55818f2f878a2750934723e1}{update\+Citizen\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Updates citizen satisfaction based on current city conditions. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_a5575a1485889a25c99c33554e92dca8c}\label{classCity_a5575a1485889a25c99c33554e92dca8c}} 
+void \mbox{\hyperlink{classCity_a5575a1485889a25c99c33554e92dca8c}{simulate\+Growth}} ()
+\begin{DoxyCompactList}\small\item\em Simulates the growth of the city, affecting population and infrastructure. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCity_a46e4a4a4b7a0c2f57665849540067592}\label{classCity_a46e4a4a4b7a0c2f57665849540067592}} 
+void \mbox{\hyperlink{classCity_a46e4a4a4b7a0c2f57665849540067592}{display\+City\+Information}} () const
+\begin{DoxyCompactList}\small\item\em Displays an overview of the city\textquotesingle{}s current state, including name, population, and budget. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Manages various aspects of a city, including buildings, utilities, resources, and citizen services. 
+
+The \mbox{\hyperlink{classCity}{City}} class is responsible for handling the population, budget, resources, and infrastructure within a city. It provides methods for collecting taxes, allocating budgets, enforcing policies, and providing public services, alongside managing resources and city growth. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCity_ae10f86730018256f7a80c78d85229db2}\label{classCity_ae10f86730018256f7a80c78d85229db2}} 
+\index{City@{City}!City@{City}}
+\index{City@{City}!City@{City}}
+\doxysubsubsection{\texorpdfstring{City()}{City()}}
+{\footnotesize\ttfamily City\+::\+City (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{name,  }\item[{int}]{pop,  }\item[{float}]{budget }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classCity}{City}} object with specified name, population, and budget. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of the city. \\
+\hline
+{\em pop} & Initial population of the city. \\
+\hline
+{\em budget} & Initial budget allocated to the city. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCity_ab9f0371e127f24bf2ef7f54fe52d21ac}\label{classCity_ab9f0371e127f24bf2ef7f54fe52d21ac}} 
+\index{City@{City}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!City@{City}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void City\+::add\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} $\ast$}]{building }\end{DoxyParamCaption})}
+
+
+
+Adds a new building to the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} object to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_a15d828c35323ca2b7335310557491760}\label{classCity_a15d828c35323ca2b7335310557491760}} 
+\index{City@{City}!allocateBudget@{allocateBudget}}
+\index{allocateBudget@{allocateBudget}!City@{City}}
+\doxysubsubsection{\texorpdfstring{allocateBudget()}{allocateBudget()}}
+{\footnotesize\ttfamily void City\+::allocate\+Budget (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{department,  }\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Allocates a specified amount of budget to a given department. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em department} & Name of the department receiving the allocation. \\
+\hline
+{\em amount} & Amount of budget to be allocated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_a0bee14e20fc88dfe60445b6d313b0368}\label{classCity_a0bee14e20fc88dfe60445b6d313b0368}} 
+\index{City@{City}!allocateResources@{allocateResources}}
+\index{allocateResources@{allocateResources}!City@{City}}
+\doxysubsubsection{\texorpdfstring{allocateResources()}{allocateResources()}}
+{\footnotesize\ttfamily void City\+::allocate\+Resources (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Type }\end{DoxyParamCaption})}
+
+
+
+Allocates resources for city operations based on the specified resource type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Type} & Type of resource to allocate (e.\+g., water, energy). \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_acafd3a7c03d8a2e4e183c03319294c02}\label{classCity_acafd3a7c03d8a2e4e183c03319294c02}} 
+\index{City@{City}!enforcePolicy@{enforcePolicy}}
+\index{enforcePolicy@{enforcePolicy}!City@{City}}
+\doxysubsubsection{\texorpdfstring{enforcePolicy()}{enforcePolicy()}}
+{\footnotesize\ttfamily void City\+::enforce\+Policy (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{policy }\end{DoxyParamCaption})}
+
+
+
+Enforces a specific policy within the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em policy} & Description of the policy to enforce. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_a2b3ca2e6e5a111c4c75e0f365c9394db}\label{classCity_a2b3ca2e6e5a111c4c75e0f365c9394db}} 
+\index{City@{City}!manageResources@{manageResources}}
+\index{manageResources@{manageResources}!City@{City}}
+\doxysubsubsection{\texorpdfstring{manageResources()}{manageResources()}}
+{\footnotesize\ttfamily void City\+::manage\+Resources (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Type,  }\item[{double}]{amount }\end{DoxyParamCaption})}
+
+
+
+Manages city resources by allocating a specified amount of a particular resource type. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Type} & Type of resource to manage. \\
+\hline
+{\em amount} & Amount of the resource to allocate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCity_ae629455feaa55d8a64cfaffd9154805e}\label{classCity_ae629455feaa55d8a64cfaffd9154805e}} 
+\index{City@{City}!providePublicService@{providePublicService}}
+\index{providePublicService@{providePublicService}!City@{City}}
+\doxysubsubsection{\texorpdfstring{providePublicService()}{providePublicService()}}
+{\footnotesize\ttfamily void City\+::provide\+Public\+Service (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{service }\end{DoxyParamCaption})}
+
+
+
+Provides a public service within the city, such as healthcare or education. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em service} & Type of public service to provide. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+City.\+h\item 
+City.\+cpp\end{DoxyCompactItemize}

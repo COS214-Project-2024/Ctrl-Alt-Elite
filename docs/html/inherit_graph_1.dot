@@ -1,0 +1,44 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Building",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBuilding.html",tooltip="Abstract base class representing a building with facilities, citizens, and utilities."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="Commercial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCommercial.html",tooltip="Represents a commercial building, with attributes for entertainment and employment ratings."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Mall",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMall.html",tooltip="Represents a mall that provides commercial services."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Office",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classOffice.html",tooltip="Represents an office building, which is a type of commercial property."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Shop",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classShop.html",tooltip="Represents a shop in the city, derived from the Commercial class."];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="CompositeBuilding",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCompositeBuilding.html",tooltip="Represents a composite building that can contain multiple buildings."];
+  Node0 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Industrial",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classIndustrial.html",tooltip="The Industrial class represents an industrial building in a city."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Factories",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classFactories.html",tooltip="The Factories class represents industrial factories, inheriting from the Industrial class."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Plants",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPlants.html",tooltip="Represents a plant as a type of industrial facility."];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Warehouses",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWarehouses.html",tooltip="Represents a warehouse in an industrial setting."];
+  Node0 -> Node10 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node10 [label="Landmarks",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLandmarks.html",tooltip="Represents a landmark building with entertainment features."];
+  Node10 -> Node11 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node11 [label="CulturalCenter",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCulturalCenter.html",tooltip="Represents a cultural center landmark."];
+  Node10 -> Node12 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node12 [label="Monument",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classMonument.html",tooltip="Represents a monument, which is a specific type of landmark."];
+  Node10 -> Node13 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node13 [label="Park",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPark.html",tooltip="Represents a park, which is a type of landmark."];
+  Node0 -> Node14 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node14 [label="Residential",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classResidential.html",tooltip="Represents a residential building with occupancy management."];
+  Node14 -> Node15 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node15 [label="Apartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classApartment.html",tooltip="Represents an apartment building in the city simulation."];
+  Node14 -> Node16 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node16 [label="Estate",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEstate.html",tooltip="The Estate class represents a residential estate, inheriting from the Residential class."];
+  Node14 -> Node17 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node17 [label="House",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHouse.html",tooltip="The House class represents a residential structure within a city."];
+  Node14 -> Node18 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node18 [label="Townhouse",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTownhouse.html",tooltip="Represents a townhouse, inheriting from the Residential class."];
+}

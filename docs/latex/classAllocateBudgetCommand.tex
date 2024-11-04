@@ -1,0 +1,80 @@
+\hypertarget{classAllocateBudgetCommand}{}\doxysection{Allocate\+Budget\+Command Class Reference}
+\label{classAllocateBudgetCommand}\index{AllocateBudgetCommand@{AllocateBudgetCommand}}
+
+
+A command to allocate a specified budget amount via the \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}}.  
+
+
+
+
+{\ttfamily \#include $<$allocate\+\_\+budget\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for Allocate\+Budget\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for Allocate\+Budget\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAllocateBudgetCommand_aac70d90e981b8dc93b0e47e5dc0564f2}{Allocate\+Budget\+Command}} (\mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} $\ast$dept, float amt)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classAllocateBudgetCommand}{Allocate\+Budget\+Command}} with a specified department and amount. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAllocateBudgetCommand_a64deb7819fcad9c90338645d340fbd55}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the budget allocation by invoking the appropriate methods in \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+A command to allocate a specified budget amount via the \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}}. 
+
+This class is responsible for executing a budget allocation command, delegating the allocation to the \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}}, and triggering city management operations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAllocateBudgetCommand_aac70d90e981b8dc93b0e47e5dc0564f2}\label{classAllocateBudgetCommand_aac70d90e981b8dc93b0e47e5dc0564f2}} 
+\index{AllocateBudgetCommand@{AllocateBudgetCommand}!AllocateBudgetCommand@{AllocateBudgetCommand}}
+\index{AllocateBudgetCommand@{AllocateBudgetCommand}!AllocateBudgetCommand@{AllocateBudgetCommand}}
+\doxysubsubsection{\texorpdfstring{AllocateBudgetCommand()}{AllocateBudgetCommand()}}
+{\footnotesize\ttfamily Allocate\+Budget\+Command\+::\+Allocate\+Budget\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} $\ast$}]{dept,  }\item[{float}]{amt }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classAllocateBudgetCommand}{Allocate\+Budget\+Command}} with a specified department and amount. 
+
+Constructor initializing the \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} and amount to allocate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em dept} & Pointer to the \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} responsible for allocation. \\
+\hline
+{\em amt} & The amount to be allocated to the budget.\\
+\hline
+{\em dept} & Pointer to the \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} responsible for handling the budget allocation. \\
+\hline
+{\em amt} & Amount to allocate. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAllocateBudgetCommand_a64deb7819fcad9c90338645d340fbd55}\label{classAllocateBudgetCommand_a64deb7819fcad9c90338645d340fbd55}} 
+\index{AllocateBudgetCommand@{AllocateBudgetCommand}!execute@{execute}}
+\index{execute@{execute}!AllocateBudgetCommand@{AllocateBudgetCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Allocate\+Budget\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the budget allocation by invoking the appropriate methods in \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}}. 
+
+Executes the allocation command by delegating budget allocation and management tasks to \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}}. 
+
+Implements \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+allocate\+\_\+budget\+\_\+command.\+h\item 
+allocate\+\_\+budget\+\_\+command.\+cpp\end{DoxyCompactItemize}

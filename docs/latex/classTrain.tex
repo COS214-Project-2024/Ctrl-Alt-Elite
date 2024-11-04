@@ -1,0 +1,113 @@
+\hypertarget{classTrain}{}\doxysection{Train Class Reference}
+\label{classTrain}\index{Train@{Train}}
+
+
+Represents a train, inheriting from the \mbox{\hyperlink{classPublicTransport}{Public\+Transport}} class.  
+
+
+
+
+{\ttfamily \#include $<$Train.\+h$>$}
+
+
+
+Inheritance diagram for Train\+:
+% FIG 0
+
+
+Collaboration diagram for Train\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTrain_af0cd77d91e7bd1927365a1e1215eef23}{Train}} (int cap, int routes, float price, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTrain}{Train}} with specified capacity, routes, and ticket price. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrain_a253d52130d9bf308c5b513e4c1afecd4}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classTrain}{Train}} object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTrain_a9f19f21bf2453b9231305b8ff14ef3b0}{get\+Ticket\+Price}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current ticket price for the train. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTrain_a54c25b90de8508267d1254e05b782f8a}{set\+Ticket\+Price}} (float new\+Price)
+\begin{DoxyCompactList}\small\item\em Sets a new ticket price for the train. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a train, inheriting from the \mbox{\hyperlink{classPublicTransport}{Public\+Transport}} class. 
+
+The \mbox{\hyperlink{classTrain}{Train}} class models a train for public transportation, including functionality for travel, ticket pricing, and state management. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTrain_af0cd77d91e7bd1927365a1e1215eef23}\label{classTrain_af0cd77d91e7bd1927365a1e1215eef23}} 
+\index{Train@{Train}!Train@{Train}}
+\index{Train@{Train}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{Train()}{Train()}}
+{\footnotesize\ttfamily Train\+::\+Train (\begin{DoxyParamCaption}\item[{int}]{cap,  }\item[{int}]{routes,  }\item[{float}]{price,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classTrain}{Train}} with specified capacity, routes, and ticket price. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The capacity of the train. \\
+\hline
+{\em routes} & The number of routes the train operates on. \\
+\hline
+{\em price} & The ticket price for the train. \\
+\hline
+{\em state} & A shared pointer to the transportation state (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTrain_a9f19f21bf2453b9231305b8ff14ef3b0}\label{classTrain_a9f19f21bf2453b9231305b8ff14ef3b0}} 
+\index{Train@{Train}!getTicketPrice@{getTicketPrice}}
+\index{getTicketPrice@{getTicketPrice}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{getTicketPrice()}{getTicketPrice()}}
+{\footnotesize\ttfamily float Train\+::get\+Ticket\+Price (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current ticket price for the train. 
+
+\begin{DoxyReturn}{Returns}
+The ticket price. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTrain_a54c25b90de8508267d1254e05b782f8a}\label{classTrain_a54c25b90de8508267d1254e05b782f8a}} 
+\index{Train@{Train}!setTicketPrice@{setTicketPrice}}
+\index{setTicketPrice@{setTicketPrice}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{setTicketPrice()}{setTicketPrice()}}
+{\footnotesize\ttfamily void Train\+::set\+Ticket\+Price (\begin{DoxyParamCaption}\item[{float}]{new\+Price }\end{DoxyParamCaption})}
+
+
+
+Sets a new ticket price for the train. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Price} & The new ticket price to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTrain_a253d52130d9bf308c5b513e4c1afecd4}\label{classTrain_a253d52130d9bf308c5b513e4c1afecd4}} 
+\index{Train@{Train}!travel@{travel}}
+\index{travel@{travel}!Train@{Train}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Train\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Destroys the \mbox{\hyperlink{classTrain}{Train}} object. 
+
+Travels to the next station, displaying the travel status.
+
+This function checks if the train is available and, if so, prints the travel status and ticket price, followed by a visual representation of the train. 
+
+Reimplemented from \mbox{\hyperlink{classPublicTransport_aea344d5b086fabdb1cb82225c10bae9b}{Public\+Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Train.\+h\item 
+Train.\+cpp\end{DoxyCompactItemize}

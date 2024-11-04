@@ -1,0 +1,119 @@
+\hypertarget{classWarehouses}{}\doxysection{Warehouses Class Reference}
+\label{classWarehouses}\index{Warehouses@{Warehouses}}
+
+
+Represents a warehouse in an industrial setting.  
+
+
+
+
+{\ttfamily \#include $<$Warehouses.\+h$>$}
+
+
+
+Inheritance diagram for Warehouses\+:
+% FIG 0
+
+
+Collaboration diagram for Warehouses\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWarehouses_ab43a15d21dfe66d6f298fd53e16583fb}{Warehouses}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classWarehouses}{Warehouses}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classWarehouses_ac1b49c2f79ccf5447e164f640f563d16}\label{classWarehouses_ac1b49c2f79ccf5447e164f640f563d16}} 
+\mbox{\hyperlink{classWarehouses_ac1b49c2f79ccf5447e164f640f563d16}{$\sim$\+Warehouses}} () override
+\begin{DoxyCompactList}\small\item\em Destroys the \mbox{\hyperlink{classWarehouses}{Warehouses}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWarehouses_aa5c0c17850f7e5c1ff31fce660304d69}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the current state of the warehouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWarehouses_a5417885758f45f521cbc9b99b84a2e68}{update\+Employment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Updates the employment rating of the warehouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWarehouses_a3182068816b5a50bb0eae1aa9ac1ff4a}{update\+Pollution\+Level}} () override
+\begin{DoxyCompactList}\small\item\em Updates the pollution level of the warehouse. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWarehouses_aad7d4ccaf410ed365381c76eebac9f7d}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance tasks for the warehouse. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a warehouse in an industrial setting. 
+
+The \mbox{\hyperlink{classWarehouses}{Warehouses}} class inherits from the \mbox{\hyperlink{classIndustrial}{Industrial}} class and provides specific functionalities for managing warehouse operations, including displaying information, updating employment ratings, and pollution levels. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWarehouses_ab43a15d21dfe66d6f298fd53e16583fb}\label{classWarehouses_ab43a15d21dfe66d6f298fd53e16583fb}} 
+\index{Warehouses@{Warehouses}!Warehouses@{Warehouses}}
+\index{Warehouses@{Warehouses}!Warehouses@{Warehouses}}
+\doxysubsubsection{\texorpdfstring{Warehouses()}{Warehouses()}}
+{\footnotesize\ttfamily Warehouses\+::\+Warehouses (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classWarehouses}{Warehouses}} object. 
+
+Initializes the warehouse with default values. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWarehouses_aa5c0c17850f7e5c1ff31fce660304d69}\label{classWarehouses_aa5c0c17850f7e5c1ff31fce660304d69}} 
+\index{Warehouses@{Warehouses}!display@{display}}
+\index{display@{display}!Warehouses@{Warehouses}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Warehouses\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the current state of the warehouse. 
+
+Outputs the employment rating and pollution level to the console. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a4ac52cc9fae3395f28dd33c9e86a0cd0}{Industrial}}.
+
+\mbox{\Hypertarget{classWarehouses_aad7d4ccaf410ed365381c76eebac9f7d}\label{classWarehouses_aad7d4ccaf410ed365381c76eebac9f7d}} 
+\index{Warehouses@{Warehouses}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Warehouses@{Warehouses}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Warehouses\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs maintenance tasks for the warehouse. 
+
+Outputs a message indicating the maintenance tasks being performed. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a5fce77e4bb5d75ef4d554a7ca7f24566}{Industrial}}.
+
+\mbox{\Hypertarget{classWarehouses_a5417885758f45f521cbc9b99b84a2e68}\label{classWarehouses_a5417885758f45f521cbc9b99b84a2e68}} 
+\index{Warehouses@{Warehouses}!updateEmploymentRating@{updateEmploymentRating}}
+\index{updateEmploymentRating@{updateEmploymentRating}!Warehouses@{Warehouses}}
+\doxysubsubsection{\texorpdfstring{updateEmploymentRating()}{updateEmploymentRating()}}
+{\footnotesize\ttfamily void Warehouses\+::update\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the employment rating of the warehouse. 
+
+Increases the employment rating by a fixed amount. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a4eca4e9da2ea18d60e0cbbe5503acaca}{Industrial}}.
+
+\mbox{\Hypertarget{classWarehouses_a3182068816b5a50bb0eae1aa9ac1ff4a}\label{classWarehouses_a3182068816b5a50bb0eae1aa9ac1ff4a}} 
+\index{Warehouses@{Warehouses}!updatePollutionLevel@{updatePollutionLevel}}
+\index{updatePollutionLevel@{updatePollutionLevel}!Warehouses@{Warehouses}}
+\doxysubsubsection{\texorpdfstring{updatePollutionLevel()}{updatePollutionLevel()}}
+{\footnotesize\ttfamily void Warehouses\+::update\+Pollution\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the pollution level of the warehouse. 
+
+Increases the pollution level by a fixed amount. 
+
+Reimplemented from \mbox{\hyperlink{classIndustrial_a3ded78dd378ebcb6415315c57cc7a37b}{Industrial}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Warehouses.\+h\item 
+Warehouses.\+cpp\end{DoxyCompactItemize}
