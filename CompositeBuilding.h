@@ -54,7 +54,7 @@ public:
      * @brief Retrieves the list of buildings contained in the composite building.
      * @return A vector of pointers to Building objects.
      */
-    std::vector<Building*> getbuildings();
+    vector<Building*> getbuildings();
 
     /**
      * @brief Displays information about all buildings in the composite building.
