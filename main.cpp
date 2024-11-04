@@ -13,7 +13,7 @@ int main() {
         std::cout << "4. Add Government\n";
         std::cout << "5. Add Resources\n";
         std::cout << "6. Add Utilities\n";
-        std::cout << "7. Perform Government Policies\n";
+        std::cout << "7. Request a public service\n";
         std::cout << "8. Perform Maintenance\n";
         std::cout << "9. Perform Transportation\n";
         std::cout << "10. Display City \n";

@@ -311,6 +311,7 @@ void Player::addGovernment() {
         }
         default:
                 std::cout << "Invalid choice. Please try again.\n";
+                choice = 4;
                 break;
     }
     }
@@ -319,8 +320,25 @@ void Player::addGovernment() {
 }
 
 void Player::performGovernmentPolicies() {
-    std::cout << "Performing government policies.\n";
-    // Logic for implementing policies
+    if(publicDepartment){
+        std::cout<<"Availible Public Services:";
+	int count=0,choice=-1;
+	for(std::string service:publicDepartment->getAvailableServices())
+	{
+
+		std::cout<<" \t"<<std::to_string(count++)<<"."<<service<<std::endl;
+		std::cout<<"                          ";
+	}
+    std::cin>>choice;
+    lawEnforement->setNextHandler(education);
+    healthCare->setNextHandler(lawEnforement);
+    publicDepartment->setNextHandler(healthCare);
+    publicDepartment->handleRequest(choice);
+
+    }
+    else{
+        std::cout<<"No public service available. Please ensure that you have added government to city\n";
+    }
 }
 
 void Player::addResources() {
