@@ -1,8 +1,9 @@
 #ifndef TRANSPORTATIONSTATE_H
 #define TRANSPORTATIONSTATE_H
 
-#include "ModeOfTransport.h"
+#include "ModeOfTransport.h"  // Ensure this header file exists and is correctly named
 #include <memory>
+#include <string> // Include this for std::string
 
 /**
  * @class TransportationState
@@ -11,6 +12,9 @@
  * This class provides an interface for managing the state of different modes
  * of transportation, allowing for state transitions and availability checks.
  */
+
+class ModeOfTransport;
+
 class TransportationState {
 public:
     /**

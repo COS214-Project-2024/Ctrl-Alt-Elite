@@ -24,7 +24,7 @@ public:
      * @param price The ticket price for the train.
      * @param state A shared pointer to the transportation state (default is nullptr).
      */
-    Train(int cap, int routes, float price, std::shared_ptr<TransportationState> state = nullptr);
+    Train(int cap, int routes, float price, std::shared_ptr<TransportationState> state);
 
     /**
      * @brief Destroys the Train object.

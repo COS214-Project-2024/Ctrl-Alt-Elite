@@ -24,7 +24,7 @@ public:
      * @param fare The fare per kilometer.
      * @param state Shared pointer to the transportation state (default is nullptr).
      */
-    Taxi(int cap, int routes, float fare, std::shared_ptr<TransportationState> state = nullptr);
+    Taxi(int cap, int routes, float fare, std::shared_ptr<TransportationState> state);
 
     /**
      * @brief Executes the travel action of the taxi.
