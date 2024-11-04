@@ -453,12 +453,27 @@ void testCityUtilitiesIntegration() {
 
     std::cout << "\nCity-Utilities Integration Test Completed." << std::endl;
 
-    // Clean up dynamically allocated resources
-    delete residentialBuilding;
-    delete commercialBuilding;
-    delete industrialBuilding;
-    delete landmarkBuilding;
-    delete factory;
+    // Clean up dynamically allocated resources with null checks
+    if (residentialBuilding) {
+        delete residentialBuilding;
+        residentialBuilding = nullptr;
+    }
+    if (commercialBuilding) {
+        delete commercialBuilding;
+        commercialBuilding = nullptr;
+    }
+    if (industrialBuilding) {
+        delete industrialBuilding;
+        industrialBuilding = nullptr;
+    }
+    if (landmarkBuilding) {
+        delete landmarkBuilding;
+        landmarkBuilding = nullptr;
+    }
+    if (factory) {
+        delete factory;
+        factory = nullptr;
+    }
  
 }
 
