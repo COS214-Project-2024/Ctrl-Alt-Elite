@@ -1,52 +1,85 @@
 #ifndef GOVERNMENT_H
 #define GOVERNMENT_H
-//#include "Citizen.h"
-//#include "Command.h"
-//#include "City.h"
+
 #include <vector>
 #include <string>
 #include <algorithm> 
 #include <iostream>
-using namespace std;
+
 class Citizen;
 class City;
-//class PublicServicesDepartment;
-class Government {
 
+/**
+ * @class Government
+ * @brief The Government class manages the city's administration, including policies, tax rates, and public services.
+ */
+class Government {
 private:
-	std::vector<Citizen*> citizen;
-	City* city;
-	//std::vector<Command*> commandList;
+    std::vector<Citizen*> citizen; ///< List of citizens observing the government.
+    City* city; ///< Pointer to the city managed by the government.
 
 protected:
-	std::string currentPolicy;
-	float taxRate;
-	float allocatedBudget;
-	std::vector<std::string> availableServices;
+    std::string currentPolicy; ///< The current policy being implemented by the government.
+    float taxRate; ///< The current tax rate applied in the city.
+    float allocatedBudget; ///< The budget allocated for public services.
+    std::vector<std::string> availableServices; ///< List of available public services.
+
 public:
-	Government();
+    /**
+     * @brief Default constructor for the Government class.
+     */
+    Government();
 
-	Government(City* city);
+    /**
+     * @brief Parameterized constructor for the Government class.
+     * @param city Pointer to the city managed by the government.
+     */
+    Government(City* city);
 
-	void Report();
+    /**
+     * @brief Generates a report of the government's status, including tax rate, budget, services, and policy.
+     */
+    void Report();
 
-	void addObserver(Citizen* observer);
+    /**
+     * @brief Adds a citizen as an observer to the government.
+     * @param observer Pointer to the citizen to be added.
+     */
+    void addObserver(Citizen* observer);
 
-	void removeObserver(Citizen* observer);
+    /**
+     * @brief Removes a citizen from the list of observers.
+     * @param observer Pointer to the citizen to be removed.
+     */
+    void removeObserver(Citizen* observer);
 
-	void notifyObservers();
+    /**
+     * @brief Notifies all registered observers (citizens) of updates.
+     */
+    void notifyObservers();
 
-	//void addCommand(Command* command);
+    /**
+     * @brief Manages city operations. Can be overridden by derived classes.
+     */
+    virtual void manageCity() { return; }
 
-	//void executeCommands();
+    /**
+     * @brief Gets the current tax rate.
+     * @return The current tax rate.
+     */
+    virtual float getTaxrate() { return 0; }
 
-	virtual void manageCity() { return;};
+    /**
+     * @brief Gets the current policy of the government.
+     * @return The current policy as a string.
+     */
+    std::string getCurrentPolicy();
 
-	virtual float getTaxrate() { return 0;};
-
-	std::string getCurrentPolicy();
-
-	std::vector<std::string> getAvailableServices();
+    /**
+     * @brief Gets the available public services.
+     * @return A vector of available services.
+     */
+    std::vector<std::string> getAvailableServices();
 };
 
-#endif
+#endif // GOVERNMENT_H
