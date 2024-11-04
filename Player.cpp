@@ -363,43 +363,66 @@ void Player::addResources() {
 }
 
 void Player::addUtilities() {
+    if (!compositeBuilding) {
+        std::cout << "No composite building found. Please create a city first.\n";
+        return;
+    }
+
     std::cout << "Adding utilities to the city.\n";
     
     // Get the list of buildings in the composite building
     std::vector<Building*> buildings = compositeBuilding->getbuildings();
-    
+
+    if (buildings.empty()) {
+        std::cout << "No buildings available in the city to add utilities.\n";
+        return;
+    }
+
     // Loop through each building and apply the appropriate utility
     for (Building* building : buildings) {
-        
-        // Check if the building is Residential and apply WasteManagement
-        if (Residential* residentialBuilding = dynamic_cast<Residential*>(building)) {
-            WasteManagement wasteManagement(residentialBuilding, 10000.0f, /* factory */ nullptr, 500);
-            wasteManagement.applyUtility(residentialBuilding);
-            std::cout << "Applied Waste Management to Residential Building.\n";
+        if (!building) {
+            std::cout << "Encountered a null building entry. Skipping.\n";
+            continue;
         }
         
-        // Check if the building is Commercial and apply WaterSupply
-        else if (Commercial* commercialBuilding = dynamic_cast<Commercial*>(building)) {
-            WaterSupply waterSupply(commercialBuilding, /* factory */ nullptr, 20000.0f);
-            waterSupply.applyUtility(commercialBuilding);
-            std::cout << "Applied Water Supply to Commercial Building.\n";
-        }
-        
-        // Check if the building is Industrial and apply SewageSystems
-        else if (Industrial* industrialBuilding = dynamic_cast<Industrial*>(building)) {
-            SewageSystems sewageSystem(industrialBuilding, 15000.0f, /* factory */ nullptr, 400);
-            sewageSystem.applyUtility(industrialBuilding);
-            std::cout << "Applied Sewage System to Industrial Building.\n";
-        }
-        
-        // Check if the building is a Landmark and apply PowerPlant
-        else if (Landmarks* landmarkBuilding = dynamic_cast<Landmarks*>(building)) {
-            PowerPlants powerPlant(landmarkBuilding, /* factory */ nullptr, 300.0f);
-            powerPlant.applyUtility(landmarkBuilding);
-            std::cout << "Applied Power Plant to Landmark Building.\n";
+        try {
+            // Check if the building is Residential and apply WasteManagement
+            if (Residential* residentialBuilding = dynamic_cast<Residential*>(building)) {
+                WasteManagement wasteManagement(residentialBuilding, 10000.0f, nullptr, 500);
+                wasteManagement.applyUtility(residentialBuilding);
+                std::cout << "Applied Waste Management to Residential Building.\n";
+            }
+            
+            // Check if the building is Commercial and apply WaterSupply
+            else if (Commercial* commercialBuilding = dynamic_cast<Commercial*>(building)) {
+                std::cout << " here \n";
+                WaterSupply waterSupply(commercialBuilding, nullptr, 20000.0f);
+                waterSupply.applyUtility(commercialBuilding);
+                std::cout << "Applied Water Supply to Commercial Building.\n";
+            }
+            
+            // Check if the building is Industrial and apply SewageSystems
+            else if (Industrial* industrialBuilding = dynamic_cast<Industrial*>(building)) {
+                SewageSystems sewageSystem(industrialBuilding, 15000.0f, nullptr, 400);
+                sewageSystem.applyUtility(industrialBuilding);
+                std::cout << "Applied Sewage System to Industrial Building.\n";
+            }
+            
+            // Check if the building is a Landmark and apply PowerPlant
+            else if (Landmarks* landmarkBuilding = dynamic_cast<Landmarks*>(building)) {
+                PowerPlants powerPlant(landmarkBuilding, nullptr, 300.0f);
+                powerPlant.applyUtility(landmarkBuilding);
+                std::cout << "Applied Power Plant to Landmark Building.\n";
+            } else {
+                std::cout << "Building type is unrecognized. No utility applied.\n";
+            }
+        } catch (const std::exception& e) {
+            std::cout << "An error occurred while applying utilities: " << e.what() << "\n";
         }
     }
 }
+
+
 
 
 void Player::performMaintenance() {
