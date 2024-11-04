@@ -56,6 +56,7 @@
 #include "tax_command.h"
 #include "policy_command.h"
 #include "allocate_budget_command.h"
+#include "ResourceFactory.h"
 
 /**
  * @class Player
@@ -263,6 +264,7 @@ private:
     HealthCare* healthCare ;
     Education* education ;
     LawEnforcment* lawEnforement;
+    ResourceFactory* factory;
 };
 
 #endif

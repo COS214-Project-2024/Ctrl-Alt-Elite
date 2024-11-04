@@ -357,8 +357,8 @@ void Player::addResources() {
     std::cin>> budgetAmount;
 
    
-    ResourceFactory* factory = new ResourceFactory(energyAmount, waterAmount,materialsAmount,budgetAmount);
-    factory->displayResourceStatus();
+    this->factory = new ResourceFactory(energyAmount, waterAmount,materialsAmount,budgetAmount);
+    this->factory->displayResourceStatus();
     
 }
 
@@ -386,9 +386,11 @@ void Player::addUtilities() {
         }
         
         try {
+
+            factory->displayResourceStatus();
             // Check if the building is Residential and apply WasteManagement
             if (Residential* residentialBuilding = dynamic_cast<Residential*>(building)) {
-                WasteManagement wasteManagement(residentialBuilding, 10000.0f, nullptr, 500);
+                WasteManagement wasteManagement(residentialBuilding, 200, factory, 100);
                 wasteManagement.applyUtility(residentialBuilding);
                 std::cout << "Applied Waste Management to Residential Building.\n";
             }
@@ -396,21 +398,21 @@ void Player::addUtilities() {
             // Check if the building is Commercial and apply WaterSupply
             else if (Commercial* commercialBuilding = dynamic_cast<Commercial*>(building)) {
                 std::cout << " here \n";
-                WaterSupply waterSupply(commercialBuilding, nullptr, 20000.0f);
+                WaterSupply waterSupply(commercialBuilding, factory, 200, 100);
                 waterSupply.applyUtility(commercialBuilding);
                 std::cout << "Applied Water Supply to Commercial Building.\n";
             }
             
             // Check if the building is Industrial and apply SewageSystems
             else if (Industrial* industrialBuilding = dynamic_cast<Industrial*>(building)) {
-                SewageSystems sewageSystem(industrialBuilding, 15000.0f, nullptr, 400);
+                SewageSystems sewageSystem(industrialBuilding, 200, factory, 100);
                 sewageSystem.applyUtility(industrialBuilding);
                 std::cout << "Applied Sewage System to Industrial Building.\n";
             }
             
             // Check if the building is a Landmark and apply PowerPlant
             else if (Landmarks* landmarkBuilding = dynamic_cast<Landmarks*>(building)) {
-                PowerPlants powerPlant(landmarkBuilding, nullptr, 300.0f);
+                PowerPlants powerPlant(landmarkBuilding, factory, 200, 100);
                 powerPlant.applyUtility(landmarkBuilding);
                 std::cout << "Applied Power Plant to Landmark Building.\n";
             } else {
