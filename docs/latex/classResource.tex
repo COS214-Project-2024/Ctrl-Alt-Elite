@@ -1,0 +1,154 @@
+\hypertarget{classResource}{}\doxysection{Resource Class Reference}
+\label{classResource}\index{Resource@{Resource}}
+
+
+Abstract base class representing a resource.  
+
+
+
+
+{\ttfamily \#include $<$Resource.\+h$>$}
+
+
+
+Inheritance diagram for Resource\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResource_af1fbb3fe1c5ac7b050623b33aa699dfe}{Resource}} (float cost)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classResource}{Resource}} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classResource_a8c2e5de50dc887e6a15ef1b344fef1ae}{$\sim$\+Resource}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classResource}{Resource}} class. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classResource_aa54b7fb57467a4ad6b3eef325253ff58}{get\+Capacity}} () const =0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to get the capacity of the resource. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classResource_af173631c9b94c8601999974e1ab04a7e}{consume}} (int amount)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to consume a specified amount of the resource. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classResource_aabf3eed794d33daaceb5e688b005e3ba}{replenish}} (int amount)=0
+\begin{DoxyCompactList}\small\item\em Pure virtual method to replenish a specified amount of the resource. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classResource_a8456bded377f88ec04fb47568d1dac42}{get\+Cost}} () const
+\begin{DoxyCompactList}\small\item\em Gets the base cost of the resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classResource_a64bab00c1e8aecddb3c9c7b675c04d1d}\label{classResource_a64bab00c1e8aecddb3c9c7b675c04d1d}} 
+float \mbox{\hyperlink{classResource_a64bab00c1e8aecddb3c9c7b675c04d1d}{base\+Cost}}
+\begin{DoxyCompactList}\small\item\em Base cost of the resource. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a resource. 
+
+The \mbox{\hyperlink{classResource}{Resource}} class serves as an abstract base for different types of resources such as \mbox{\hyperlink{classWater}{Water}}, \mbox{\hyperlink{classEnergy}{Energy}}, and \mbox{\hyperlink{classMaterials}{Materials}}. It defines common properties and methods that all resources must implement, such as capacity management and cost retrieval. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResource_af1fbb3fe1c5ac7b050623b33aa699dfe}\label{classResource_af1fbb3fe1c5ac7b050623b33aa699dfe}} 
+\index{Resource@{Resource}!Resource@{Resource}}
+\index{Resource@{Resource}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{Resource()}{Resource()}}
+{\footnotesize\ttfamily Resource\+::\+Resource (\begin{DoxyParamCaption}\item[{float}]{cost }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classResource}{Resource}} class. 
+
+Initializes a \mbox{\hyperlink{classResource}{Resource}} object with a specified base cost.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cost} & The base cost of the resource. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classResource_a8c2e5de50dc887e6a15ef1b344fef1ae}\label{classResource_a8c2e5de50dc887e6a15ef1b344fef1ae}} 
+\index{Resource@{Resource}!````~Resource@{$\sim$Resource}}
+\index{````~Resource@{$\sim$Resource}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{$\sim$Resource()}{~Resource()}}
+{\footnotesize\ttfamily virtual Resource\+::$\sim$\+Resource (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor for the \mbox{\hyperlink{classResource}{Resource}} class. 
+
+Ensures proper cleanup of derived resources. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResource_af173631c9b94c8601999974e1ab04a7e}\label{classResource_af173631c9b94c8601999974e1ab04a7e}} 
+\index{Resource@{Resource}!consume@{consume}}
+\index{consume@{consume}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily virtual void Resource\+::consume (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to consume a specified amount of the resource. 
+
+Derived classes must implement this method to define how resources are consumed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of the resource to consume. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWater_a12f97f2ab951924fff10f6fc6f2ce50d}{Water}}, \mbox{\hyperlink{classMaterials_a91b3ca42781418cad0644292ac1d1bcc}{Materials}}, \mbox{\hyperlink{classEnergy_a6979268de9cfba3f67eb284a1515e77f}{Energy}}, and \mbox{\hyperlink{classBudget_a0f4d54918204f14c4db7fbf8a61bfc27}{Budget}}.
+
+\mbox{\Hypertarget{classResource_aa54b7fb57467a4ad6b3eef325253ff58}\label{classResource_aa54b7fb57467a4ad6b3eef325253ff58}} 
+\index{Resource@{Resource}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily virtual int Resource\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to get the capacity of the resource. 
+
+Derived classes must implement this method to provide the capacity.
+
+\begin{DoxyReturn}{Returns}
+The capacity of the resource. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classWater_a4ec64ed40cf8bbf9fdf1e4be95841c65}{Water}}, \mbox{\hyperlink{classMaterials_a7ffa01788aae94080e948ad702a1b336}{Materials}}, \mbox{\hyperlink{classEnergy_a7880b0f024f33d28c96f1a869107bce5}{Energy}}, and \mbox{\hyperlink{classBudget_a44eb974d69f95155ea8c69f986ad3ac8}{Budget}}.
+
+\mbox{\Hypertarget{classResource_a8456bded377f88ec04fb47568d1dac42}\label{classResource_a8456bded377f88ec04fb47568d1dac42}} 
+\index{Resource@{Resource}!getCost@{getCost}}
+\index{getCost@{getCost}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{getCost()}{getCost()}}
+{\footnotesize\ttfamily float Resource\+::get\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the base cost of the resource. 
+
+\begin{DoxyReturn}{Returns}
+The base cost of the resource. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResource_aabf3eed794d33daaceb5e688b005e3ba}\label{classResource_aabf3eed794d33daaceb5e688b005e3ba}} 
+\index{Resource@{Resource}!replenish@{replenish}}
+\index{replenish@{replenish}!Resource@{Resource}}
+\doxysubsubsection{\texorpdfstring{replenish()}{replenish()}}
+{\footnotesize\ttfamily virtual void Resource\+::replenish (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual method to replenish a specified amount of the resource. 
+
+Derived classes must implement this method to define how resources are replenished.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of the resource to replenish. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classWater_ab04cb77fab2f2d7e4a852f37ab08591a}{Water}}, \mbox{\hyperlink{classMaterials_a505a8d1146537e7a12801423728ec8de}{Materials}}, \mbox{\hyperlink{classEnergy_a863cc77716519d0e71d52cdbad1c9ddf}{Energy}}, and \mbox{\hyperlink{classBudget_a36da8818feada024fb72a8576500857d}{Budget}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Resource.\+h\item 
+Resource.\+cpp\end{DoxyCompactItemize}

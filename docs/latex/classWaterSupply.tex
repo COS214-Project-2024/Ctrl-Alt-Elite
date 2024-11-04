@@ -1,0 +1,148 @@
+\hypertarget{classWaterSupply}{}\doxysection{Water\+Supply Class Reference}
+\label{classWaterSupply}\index{WaterSupply@{WaterSupply}}
+
+
+Represents a water supply utility for buildings.  
+
+
+
+
+{\ttfamily \#include $<$Water\+Supply.\+h$>$}
+
+
+
+Inheritance diagram for Water\+Supply\+:
+% FIG 0
+
+
+Collaboration diagram for Water\+Supply\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWaterSupply_aca1439b374f8358c0547ea34352a42f2}{Water\+Supply}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$bld, \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} $\ast$rf, float cost)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} utility with specified building, resource factory, and cost. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_a790078a601c649f73e5b415bcf962b01}{apply\+Utility}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$\mbox{\hyperlink{classUtilities_addc2dd317865131c7e11a040d61ffe12}{building}}) override
+\begin{DoxyCompactList}\small\item\em Applies the water supply utility to a specified building. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWaterSupply_ae0afa74151643e42a703a946970ee7ea}{check\+Water\+Supply}} () const
+\begin{DoxyCompactList}\small\item\em Checks if there is sufficient water supply available. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWaterSupply_a8cb3474ec25258ce9c5c10d9ed2be365}{update\+Water\+Consumption}} (int new\+Usage)
+\begin{DoxyCompactList}\small\item\em Updates the water consumption amount for the utility. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaterSupply_abdcec254a9b405895637b6d410ab5332}{get\+Water\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the total water capacity available. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWaterSupply_afb25081699c213e7531681e12817316b}{get\+Water\+Consumed}} () const
+\begin{DoxyCompactList}\small\item\em Gets the amount of water currently consumed. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a water supply utility for buildings. 
+
+The \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} class manages the provision of water to a building, checking for available water resources and consuming them as needed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWaterSupply_aca1439b374f8358c0547ea34352a42f2}\label{classWaterSupply_aca1439b374f8358c0547ea34352a42f2}} 
+\index{WaterSupply@{WaterSupply}!WaterSupply@{WaterSupply}}
+\index{WaterSupply@{WaterSupply}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{WaterSupply()}{WaterSupply()}}
+{\footnotesize\ttfamily Water\+Supply\+::\+Water\+Supply (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{bld,  }\item[{\mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} $\ast$}]{rf,  }\item[{float}]{cost }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classWaterSupply}{Water\+Supply}} utility with specified building, resource factory, and cost. 
+
+Initializes the water supply utility and checks if there are sufficient resources in the factory for construction.
+
+
+\begin{DoxyParams}{Parameters}
+{\em bld} & Pointer to the associated \mbox{\hyperlink{classBuilding}{Building}} object. \\
+\hline
+{\em rf} & Pointer to the \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} object managing resources. \\
+\hline
+{\em cost} & The cost required for constructing the water supply utility. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWaterSupply_a790078a601c649f73e5b415bcf962b01}\label{classWaterSupply_a790078a601c649f73e5b415bcf962b01}} 
+\index{WaterSupply@{WaterSupply}!applyUtility@{applyUtility}}
+\index{applyUtility@{applyUtility}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{applyUtility()}{applyUtility()}}
+{\footnotesize\ttfamily void Water\+Supply\+::apply\+Utility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{building }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies the water supply utility to a specified building. 
+
+Supplies water to the building if there is sufficient capacity and water available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the \mbox{\hyperlink{classBuilding}{Building}} object to which water is supplied. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classUtilities_a0006cd2905d4222e3e9077a4a88a6ad1}{Utilities}}.
+
+\mbox{\Hypertarget{classWaterSupply_ae0afa74151643e42a703a946970ee7ea}\label{classWaterSupply_ae0afa74151643e42a703a946970ee7ea}} 
+\index{WaterSupply@{WaterSupply}!checkWaterSupply@{checkWaterSupply}}
+\index{checkWaterSupply@{checkWaterSupply}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{checkWaterSupply()}{checkWaterSupply()}}
+{\footnotesize\ttfamily bool Water\+Supply\+::check\+Water\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Checks if there is sufficient water supply available. 
+
+\begin{DoxyReturn}{Returns}
+true if there is enough water to supply; false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterSupply_abdcec254a9b405895637b6d410ab5332}\label{classWaterSupply_abdcec254a9b405895637b6d410ab5332}} 
+\index{WaterSupply@{WaterSupply}!getWaterCapacity@{getWaterCapacity}}
+\index{getWaterCapacity@{getWaterCapacity}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{getWaterCapacity()}{getWaterCapacity()}}
+{\footnotesize\ttfamily int Water\+Supply\+::get\+Water\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the total water capacity available. 
+
+\begin{DoxyReturn}{Returns}
+The total water capacity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterSupply_afb25081699c213e7531681e12817316b}\label{classWaterSupply_afb25081699c213e7531681e12817316b}} 
+\index{WaterSupply@{WaterSupply}!getWaterConsumed@{getWaterConsumed}}
+\index{getWaterConsumed@{getWaterConsumed}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{getWaterConsumed()}{getWaterConsumed()}}
+{\footnotesize\ttfamily int Water\+Supply\+::get\+Water\+Consumed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the amount of water currently consumed. 
+
+\begin{DoxyReturn}{Returns}
+The amount of water consumed. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWaterSupply_a8cb3474ec25258ce9c5c10d9ed2be365}\label{classWaterSupply_a8cb3474ec25258ce9c5c10d9ed2be365}} 
+\index{WaterSupply@{WaterSupply}!updateWaterConsumption@{updateWaterConsumption}}
+\index{updateWaterConsumption@{updateWaterConsumption}!WaterSupply@{WaterSupply}}
+\doxysubsubsection{\texorpdfstring{updateWaterConsumption()}{updateWaterConsumption()}}
+{\footnotesize\ttfamily void Water\+Supply\+::update\+Water\+Consumption (\begin{DoxyParamCaption}\item[{int}]{new\+Usage }\end{DoxyParamCaption})}
+
+
+
+Updates the water consumption amount for the utility. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Usage} & The new water usage amount to set. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Water\+Supply.\+h\item 
+Water\+Supply.\+cpp\end{DoxyCompactItemize}

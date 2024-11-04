@@ -1,0 +1,80 @@
+\hypertarget{classHealthCare}{}\doxysection{Health\+Care Class Reference}
+\label{classHealthCare}\index{HealthCare@{HealthCare}}
+
+
+The \mbox{\hyperlink{classHealthCare}{Health\+Care}} class represents the healthcare services department in a city.  
+
+
+
+
+{\ttfamily \#include $<$Health\+Care.\+h$>$}
+
+
+
+Inheritance diagram for Health\+Care\+:
+% FIG 0
+
+
+Collaboration diagram for Health\+Care\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHealthCare_ae6bb6f5b44f8406315b450c91ab4e2e1}{Health\+Care}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classHealthCare}{Health\+Care}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classHealthCare_aafa60a3325fc2c8bec9daee32c66be57}{handle\+Request}} (int request\+Type) override
+\begin{DoxyCompactList}\small\item\em Handles incoming requests related to health services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classHealthCare}{Health\+Care}} class represents the healthcare services department in a city. 
+
+This class inherits from the \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} and handles health-\/related requests from citizens. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHealthCare_ae6bb6f5b44f8406315b450c91ab4e2e1}\label{classHealthCare_ae6bb6f5b44f8406315b450c91ab4e2e1}} 
+\index{HealthCare@{HealthCare}!HealthCare@{HealthCare}}
+\index{HealthCare@{HealthCare}!HealthCare@{HealthCare}}
+\doxysubsubsection{\texorpdfstring{HealthCare()}{HealthCare()}}
+{\footnotesize\ttfamily Health\+Care\+::\+Health\+Care (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classHealthCare}{Health\+Care}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Pointer to the city associated with this healthcare department. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHealthCare_aafa60a3325fc2c8bec9daee32c66be57}\label{classHealthCare_aafa60a3325fc2c8bec9daee32c66be57}} 
+\index{HealthCare@{HealthCare}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!HealthCare@{HealthCare}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Health\+Care\+::handle\+Request (\begin{DoxyParamCaption}\item[{int}]{request\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles incoming requests related to health services. 
+
+This method checks the request type and determines if it matches the health services offered. If the service is available, it processes the request; otherwise, it calls the base class method to handle unrecognized requests.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Type} & The type of the request being handled. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicServicesDepartment_a38ec60eb90980d0907794909e0cc242e}{Public\+Services\+Department}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Health\+Care.\+h\item 
+Health\+Care.\+cpp\end{DoxyCompactItemize}

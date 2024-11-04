@@ -1,0 +1,22 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node0 [label="Government",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGovernment.html",tooltip="The Government class manages the city's administration, including policies, tax rates,..."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="BudgetDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBudgetDepartment.html",tooltip="Handles budget allocation and financial management within the city government."];
+  Node0 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="PoliciesDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPoliciesDepartment.html",tooltip="Represents the policies department responsible for developing and enforcing public policies."];
+  Node0 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="PublicServicesDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicServicesDepartment.html",tooltip="Represents the public services department responsible for managing community services and infrastruct..."];
+  Node3 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Education",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classEducation.html",tooltip="The Education class represents the education services department within a city, inheriting from the P..."];
+  Node3 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="HealthCare",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classHealthCare.html",tooltip="The HealthCare class represents the healthcare services department in a city."];
+  Node3 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="LawEnforcment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classLawEnforcment.html",tooltip=" "];
+  Node0 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="TaxationDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTaxationDepartment.html",tooltip="Represents the taxation department responsible for managing tax policies and revenue."];
+}

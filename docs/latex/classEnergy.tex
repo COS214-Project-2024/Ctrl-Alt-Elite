@@ -1,0 +1,116 @@
+\hypertarget{classEnergy}{}\doxysection{Energy Class Reference}
+\label{classEnergy}\index{Energy@{Energy}}
+
+
+The \mbox{\hyperlink{classEnergy}{Energy}} class represents an energy resource, inheriting from the \mbox{\hyperlink{classResource}{Resource}} base class.  
+
+
+
+
+{\ttfamily \#include $<$Energy.\+h$>$}
+
+
+
+Inheritance diagram for Energy\+:
+% FIG 0
+
+
+Collaboration diagram for Energy\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEnergy_aa076a460c67c2477b0ab5421a9671790}{Energy}} (int cap)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the \mbox{\hyperlink{classEnergy}{Energy}} resource with a specified capacity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classEnergy_a7880b0f024f33d28c96f1a869107bce5}{get\+Capacity}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the current capacity of the energy resource. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnergy_a6979268de9cfba3f67eb284a1515e77f}{consume}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Consumes a specified amount of energy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classEnergy_a863cc77716519d0e71d52cdbad1c9ddf}{replenish}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Replenishes the energy resource by a specified amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classEnergy}{Energy}} class represents an energy resource, inheriting from the \mbox{\hyperlink{classResource}{Resource}} base class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEnergy_aa076a460c67c2477b0ab5421a9671790}\label{classEnergy_aa076a460c67c2477b0ab5421a9671790}} 
+\index{Energy@{Energy}!Energy@{Energy}}
+\index{Energy@{Energy}!Energy@{Energy}}
+\doxysubsubsection{\texorpdfstring{Energy()}{Energy()}}
+{\footnotesize\ttfamily Energy\+::\+Energy (\begin{DoxyParamCaption}\item[{int}]{cap }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the \mbox{\hyperlink{classEnergy}{Energy}} resource with a specified capacity. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The initial capacity in kilowatts. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEnergy_a6979268de9cfba3f67eb284a1515e77f}\label{classEnergy_a6979268de9cfba3f67eb284a1515e77f}} 
+\index{Energy@{Energy}!consume@{consume}}
+\index{consume@{consume}!Energy@{Energy}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily void Energy\+::consume (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Consumes a specified amount of energy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of energy to consume. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResource_af173631c9b94c8601999974e1ab04a7e}{Resource}}.
+
+\mbox{\Hypertarget{classEnergy_a7880b0f024f33d28c96f1a869107bce5}\label{classEnergy_a7880b0f024f33d28c96f1a869107bce5}} 
+\index{Energy@{Energy}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Energy@{Energy}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Energy\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current capacity of the energy resource. 
+
+\begin{DoxyReturn}{Returns}
+The current capacity in kilowatts. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResource_aa54b7fb57467a4ad6b3eef325253ff58}{Resource}}.
+
+\mbox{\Hypertarget{classEnergy_a863cc77716519d0e71d52cdbad1c9ddf}\label{classEnergy_a863cc77716519d0e71d52cdbad1c9ddf}} 
+\index{Energy@{Energy}!replenish@{replenish}}
+\index{replenish@{replenish}!Energy@{Energy}}
+\doxysubsubsection{\texorpdfstring{replenish()}{replenish()}}
+{\footnotesize\ttfamily void Energy\+::replenish (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Replenishes the energy resource by a specified amount. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of energy to replenish. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResource_aabf3eed794d33daaceb5e688b005e3ba}{Resource}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Energy.\+h\item 
+Energy.\+cpp\end{DoxyCompactItemize}

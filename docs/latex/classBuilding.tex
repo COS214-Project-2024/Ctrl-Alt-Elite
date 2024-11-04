@@ -1,0 +1,356 @@
+\hypertarget{classBuilding}{}\doxysection{Building Class Reference}
+\label{classBuilding}\index{Building@{Building}}
+
+
+Abstract base class representing a building with facilities, citizens, and utilities.  
+
+
+
+
+{\ttfamily \#include $<$Building.\+h$>$}
+
+
+
+Inheritance diagram for Building\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBuilding_a620073e5358cc07370e6994101446b42}\label{classBuilding_a620073e5358cc07370e6994101446b42}} 
+virtual void \mbox{\hyperlink{classBuilding_a620073e5358cc07370e6994101446b42}{display}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays information about the building. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classBuilding}{Building}} $\ast$ \mbox{\hyperlink{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}{clone}} () const =0
+\begin{DoxyCompactList}\small\item\em Clones the building, returning a new instance. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_a5c664351fd7a8a53745b15cecb4e9356}\label{classBuilding_a5c664351fd7a8a53745b15cecb4e9356}} 
+virtual void \mbox{\hyperlink{classBuilding_a5c664351fd7a8a53745b15cecb4e9356}{perform\+Maintenance}} ()=0
+\begin{DoxyCompactList}\small\item\em Performs maintenance tasks on the building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a2b3df9def9f87622c19f30161c036e7c}{allocate\+Resources}} (\mbox{\hyperlink{classResource}{Resource}} $\ast$resource)
+\begin{DoxyCompactList}\small\item\em Allocates resources to the building. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuilding_a456dc271e52aa0c4f9e7ca5285ed4230}{get\+Has\+Electricity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the electricity availability status. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuilding_ab835578ae93ba17891cb08c2dbf26b65}{get\+Has\+Water\+Supply}} () const
+\begin{DoxyCompactList}\small\item\em Gets the water supply availability status. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuilding_aef2f5fc36a80e32fa320b48480c5601d}{get\+Waste\+Collected}} () const
+\begin{DoxyCompactList}\small\item\em Gets the waste collection status. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuilding_a18536ed0db038df260594647ab5c2d51}{get\+Sewage\+Managed}} () const
+\begin{DoxyCompactList}\small\item\em Gets the sewage management status. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBuilding_a58dd386d17bc92568eaff9974cd6a88e}{get\+Value}} () const
+\begin{DoxyCompactList}\small\item\em Gets the building\textquotesingle{}s property value. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBuilding_a1361a630ea5811b1915a5f04b081371d}{get\+Tax\+Rate}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current tax rate applied to the building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a217da6b657209987acfc5157bf7f2f3e}{set\+Has\+Electricity}} (bool status)
+\begin{DoxyCompactList}\small\item\em Sets the electricity availability status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a4b2bd324f78fc678f9c05da2dd6d2262}{set\+Has\+Water\+Supply}} (bool status)
+\begin{DoxyCompactList}\small\item\em Sets the water supply availability status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a0576a0d8b2090cac352a377f10232ca7}{set\+Waste\+Collected}} (bool status)
+\begin{DoxyCompactList}\small\item\em Sets the waste collection status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a002dfcd462c7d2793afeea8286bcba70}{set\+Sewage\+Managed}} (bool status)
+\begin{DoxyCompactList}\small\item\em Sets the sewage management status. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a37d1c8b22685fb2b6947c589b4a60cdd}{set\+Value}} (float new\+Value)
+\begin{DoxyCompactList}\small\item\em Sets the building\textquotesingle{}s property value. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a718c23a7cef0c90cc35aef801273470c}{set\+Tax\+Rate}} (float new\+Rate)
+\begin{DoxyCompactList}\small\item\em Sets a new tax rate for the building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a6b9701fe16ce622d349a14120ee5fad6}{pay\+Property\+Tax}} (float amount)
+\begin{DoxyCompactList}\small\item\em Calculates and pays property tax based on the building\textquotesingle{}s value and tax rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBuilding_a3cbd6def7772b0a6f3314a4843c7cce4}{update\+Building\+Tax\+Rate}} (float new\+Rate)
+\begin{DoxyCompactList}\small\item\em Updates the building\textquotesingle{}s tax rate. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBuilding_ab2b11eea8ed297623aec3af1ba7d928c}\label{classBuilding_ab2b11eea8ed297623aec3af1ba7d928c}} 
+std\+::vector$<$ \mbox{\hyperlink{classCitizen}{Citizen}} $\ast$ $>$ \mbox{\hyperlink{classBuilding_ab2b11eea8ed297623aec3af1ba7d928c}{citizens}}
+\begin{DoxyCompactList}\small\item\em List of citizens associated with the building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_ae3b2af1d6f82e7e48479345cf692fce1}\label{classBuilding_ae3b2af1d6f82e7e48479345cf692fce1}} 
+std\+::vector$<$ \mbox{\hyperlink{classUtilities}{Utilities}} $\ast$ $>$ \mbox{\hyperlink{classBuilding_ae3b2af1d6f82e7e48479345cf692fce1}{utilities}}
+\begin{DoxyCompactList}\small\item\em \mbox{\hyperlink{classUtilities}{Utilities}} associated with the building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_aa3c9ed73250671097cc7816f4d74c169}\label{classBuilding_aa3c9ed73250671097cc7816f4d74c169}} 
+bool \mbox{\hyperlink{classBuilding_aa3c9ed73250671097cc7816f4d74c169}{has\+Electricity}}
+\begin{DoxyCompactList}\small\item\em Indicates electricity availability. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_a0265b771547813e2c02c698d26122026}\label{classBuilding_a0265b771547813e2c02c698d26122026}} 
+bool \mbox{\hyperlink{classBuilding_a0265b771547813e2c02c698d26122026}{has\+Water\+Supply}}
+\begin{DoxyCompactList}\small\item\em Indicates water supply availability. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_ae58617532f041bd9c9ab09b03008221a}\label{classBuilding_ae58617532f041bd9c9ab09b03008221a}} 
+bool \mbox{\hyperlink{classBuilding_ae58617532f041bd9c9ab09b03008221a}{waste\+Collected}}
+\begin{DoxyCompactList}\small\item\em Indicates waste collection status. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_a4237d13b9c2128e1859212035bb40223}\label{classBuilding_a4237d13b9c2128e1859212035bb40223}} 
+bool \mbox{\hyperlink{classBuilding_a4237d13b9c2128e1859212035bb40223}{sewage\+Managed}}
+\begin{DoxyCompactList}\small\item\em Indicates sewage management status. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_a51c9dbe343bca23278627456a9ea1b1a}\label{classBuilding_a51c9dbe343bca23278627456a9ea1b1a}} 
+bool \mbox{\hyperlink{classBuilding_a51c9dbe343bca23278627456a9ea1b1a}{under\+Construction}}
+\begin{DoxyCompactList}\small\item\em Indicates if the building is under construction. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_afa9355b1c62a987ec8ff8ed33c84ff65}\label{classBuilding_afa9355b1c62a987ec8ff8ed33c84ff65}} 
+bool \mbox{\hyperlink{classBuilding_afa9355b1c62a987ec8ff8ed33c84ff65}{available}}
+\begin{DoxyCompactList}\small\item\em Indicates if the building is available for use. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_a21eb2373e2ef24b51f85a1f6cf8c734f}\label{classBuilding_a21eb2373e2ef24b51f85a1f6cf8c734f}} 
+float \mbox{\hyperlink{classBuilding_a21eb2373e2ef24b51f85a1f6cf8c734f}{value}}
+\begin{DoxyCompactList}\small\item\em Property value for tax calculations. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilding_af4176323add75b5a6abac4da4bfc8f11}\label{classBuilding_af4176323add75b5a6abac4da4bfc8f11}} 
+float \mbox{\hyperlink{classBuilding_af4176323add75b5a6abac4da4bfc8f11}{tax\+Rate}}
+\begin{DoxyCompactList}\small\item\em Current tax rate for the building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract base class representing a building with facilities, citizens, and utilities. 
+
+Provides essential methods for managing resources, maintenance, and tax-\/related operations. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBuilding_a2b3df9def9f87622c19f30161c036e7c}\label{classBuilding_a2b3df9def9f87622c19f30161c036e7c}} 
+\index{Building@{Building}!allocateResources@{allocateResources}}
+\index{allocateResources@{allocateResources}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{allocateResources()}{allocateResources()}}
+{\footnotesize\ttfamily void Building\+::allocate\+Resources (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classResource}{Resource}} $\ast$}]{resource }\end{DoxyParamCaption})}
+
+
+
+Allocates resources to the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & Pointer to the \mbox{\hyperlink{classResource}{Resource}} to allocate.\\
+\hline
+\end{DoxyParams}
+This function is intended to manage the allocation of a specified resource to the building. Implementation should include logic to determine how resources are distributed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource} & Pointer to the \mbox{\hyperlink{classResource}{Resource}} to be allocated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}\label{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}} 
+\index{Building@{Building}!clone@{clone}}
+\index{clone@{clone}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classBuilding}{Building}}$\ast$ Building\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Clones the building, returning a new instance. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a cloned \mbox{\hyperlink{classBuilding}{Building}} object. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classResidential_a458bd3ee98693e0cf3f385b7526224b7}{Residential}}, \mbox{\hyperlink{classLandmarks_afc677216fadd9ffe4fb208fce0fd6bed}{Landmarks}}, \mbox{\hyperlink{classIndustrial_a6f31eb1b6c88135114a2cdbcb135236f}{Industrial}}, \mbox{\hyperlink{classCompositeBuilding_a6696b6b38a2dafd9811cc5b826ae8ad2}{Composite\+Building}}, and \mbox{\hyperlink{classCommercial_aa0a1e804aa4af3b0021c0e927d9daf83}{Commercial}}.
+
+\mbox{\Hypertarget{classBuilding_a456dc271e52aa0c4f9e7ca5285ed4230}\label{classBuilding_a456dc271e52aa0c4f9e7ca5285ed4230}} 
+\index{Building@{Building}!getHasElectricity@{getHasElectricity}}
+\index{getHasElectricity@{getHasElectricity}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getHasElectricity()}{getHasElectricity()}}
+{\footnotesize\ttfamily bool Building\+::get\+Has\+Electricity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the electricity availability status. 
+
+\begin{DoxyReturn}{Returns}
+True if electricity is available, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_ab835578ae93ba17891cb08c2dbf26b65}\label{classBuilding_ab835578ae93ba17891cb08c2dbf26b65}} 
+\index{Building@{Building}!getHasWaterSupply@{getHasWaterSupply}}
+\index{getHasWaterSupply@{getHasWaterSupply}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getHasWaterSupply()}{getHasWaterSupply()}}
+{\footnotesize\ttfamily bool Building\+::get\+Has\+Water\+Supply (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the water supply availability status. 
+
+\begin{DoxyReturn}{Returns}
+True if water supply is available, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_a18536ed0db038df260594647ab5c2d51}\label{classBuilding_a18536ed0db038df260594647ab5c2d51}} 
+\index{Building@{Building}!getSewageManaged@{getSewageManaged}}
+\index{getSewageManaged@{getSewageManaged}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getSewageManaged()}{getSewageManaged()}}
+{\footnotesize\ttfamily bool Building\+::get\+Sewage\+Managed (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the sewage management status. 
+
+\begin{DoxyReturn}{Returns}
+True if sewage is managed, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_a1361a630ea5811b1915a5f04b081371d}\label{classBuilding_a1361a630ea5811b1915a5f04b081371d}} 
+\index{Building@{Building}!getTaxRate@{getTaxRate}}
+\index{getTaxRate@{getTaxRate}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getTaxRate()}{getTaxRate()}}
+{\footnotesize\ttfamily float Building\+::get\+Tax\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current tax rate applied to the building. 
+
+\begin{DoxyReturn}{Returns}
+The tax rate of the building. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_a58dd386d17bc92568eaff9974cd6a88e}\label{classBuilding_a58dd386d17bc92568eaff9974cd6a88e}} 
+\index{Building@{Building}!getValue@{getValue}}
+\index{getValue@{getValue}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getValue()}{getValue()}}
+{\footnotesize\ttfamily float Building\+::get\+Value (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the building\textquotesingle{}s property value. 
+
+\begin{DoxyReturn}{Returns}
+The value of the building.
+
+The current value of the building. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_aef2f5fc36a80e32fa320b48480c5601d}\label{classBuilding_aef2f5fc36a80e32fa320b48480c5601d}} 
+\index{Building@{Building}!getWasteCollected@{getWasteCollected}}
+\index{getWasteCollected@{getWasteCollected}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{getWasteCollected()}{getWasteCollected()}}
+{\footnotesize\ttfamily bool Building\+::get\+Waste\+Collected (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the waste collection status. 
+
+\begin{DoxyReturn}{Returns}
+True if waste collection is handled, false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBuilding_a6b9701fe16ce622d349a14120ee5fad6}\label{classBuilding_a6b9701fe16ce622d349a14120ee5fad6}} 
+\index{Building@{Building}!payPropertyTax@{payPropertyTax}}
+\index{payPropertyTax@{payPropertyTax}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{payPropertyTax()}{payPropertyTax()}}
+{\footnotesize\ttfamily void Building\+::pay\+Property\+Tax (\begin{DoxyParamCaption}\item[{float}]{amount }\end{DoxyParamCaption})}
+
+
+
+Calculates and pays property tax based on the building\textquotesingle{}s value and tax rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The tax amount to pay.\\
+\hline
+\end{DoxyParams}
+This function computes the tax amount using the building\textquotesingle{}s current value and tax rate, and executes the payment process. Additional logic should be included to adjust the budget or resources accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The tax amount to pay. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a217da6b657209987acfc5157bf7f2f3e}\label{classBuilding_a217da6b657209987acfc5157bf7f2f3e}} 
+\index{Building@{Building}!setHasElectricity@{setHasElectricity}}
+\index{setHasElectricity@{setHasElectricity}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{setHasElectricity()}{setHasElectricity()}}
+{\footnotesize\ttfamily void Building\+::set\+Has\+Electricity (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the electricity availability status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The new electricity availability status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a4b2bd324f78fc678f9c05da2dd6d2262}\label{classBuilding_a4b2bd324f78fc678f9c05da2dd6d2262}} 
+\index{Building@{Building}!setHasWaterSupply@{setHasWaterSupply}}
+\index{setHasWaterSupply@{setHasWaterSupply}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{setHasWaterSupply()}{setHasWaterSupply()}}
+{\footnotesize\ttfamily void Building\+::set\+Has\+Water\+Supply (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the water supply availability status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The new water supply availability status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a002dfcd462c7d2793afeea8286bcba70}\label{classBuilding_a002dfcd462c7d2793afeea8286bcba70}} 
+\index{Building@{Building}!setSewageManaged@{setSewageManaged}}
+\index{setSewageManaged@{setSewageManaged}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{setSewageManaged()}{setSewageManaged()}}
+{\footnotesize\ttfamily void Building\+::set\+Sewage\+Managed (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the sewage management status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The new sewage management status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a718c23a7cef0c90cc35aef801273470c}\label{classBuilding_a718c23a7cef0c90cc35aef801273470c}} 
+\index{Building@{Building}!setTaxRate@{setTaxRate}}
+\index{setTaxRate@{setTaxRate}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{setTaxRate()}{setTaxRate()}}
+{\footnotesize\ttfamily void Building\+::set\+Tax\+Rate (\begin{DoxyParamCaption}\item[{float}]{new\+Rate }\end{DoxyParamCaption})}
+
+
+
+Sets a new tax rate for the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rate} & The new tax rate. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a37d1c8b22685fb2b6947c589b4a60cdd}\label{classBuilding_a37d1c8b22685fb2b6947c589b4a60cdd}} 
+\index{Building@{Building}!setValue@{setValue}}
+\index{setValue@{setValue}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{setValue()}{setValue()}}
+{\footnotesize\ttfamily void Building\+::set\+Value (\begin{DoxyParamCaption}\item[{float}]{new\+Value }\end{DoxyParamCaption})}
+
+
+
+Sets the building\textquotesingle{}s property value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Value} & The new property value. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a0576a0d8b2090cac352a377f10232ca7}\label{classBuilding_a0576a0d8b2090cac352a377f10232ca7}} 
+\index{Building@{Building}!setWasteCollected@{setWasteCollected}}
+\index{setWasteCollected@{setWasteCollected}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{setWasteCollected()}{setWasteCollected()}}
+{\footnotesize\ttfamily void Building\+::set\+Waste\+Collected (\begin{DoxyParamCaption}\item[{bool}]{status }\end{DoxyParamCaption})}
+
+
+
+Sets the waste collection status. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em status} & The new waste collection status. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBuilding_a3cbd6def7772b0a6f3314a4843c7cce4}\label{classBuilding_a3cbd6def7772b0a6f3314a4843c7cce4}} 
+\index{Building@{Building}!updateBuildingTaxRate@{updateBuildingTaxRate}}
+\index{updateBuildingTaxRate@{updateBuildingTaxRate}!Building@{Building}}
+\doxysubsubsection{\texorpdfstring{updateBuildingTaxRate()}{updateBuildingTaxRate()}}
+{\footnotesize\ttfamily void Building\+::update\+Building\+Tax\+Rate (\begin{DoxyParamCaption}\item[{float}]{new\+Rate }\end{DoxyParamCaption})}
+
+
+
+Updates the building\textquotesingle{}s tax rate. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rate} & The new tax rate.\\
+\hline
+\end{DoxyParams}
+This function sets a new tax rate for the building. The new rate can affect future property tax calculations.
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Rate} & The new tax rate. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Building.\+h\item 
+Building.\+cpp\end{DoxyCompactItemize}

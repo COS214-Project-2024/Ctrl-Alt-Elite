@@ -1,0 +1,83 @@
+\hypertarget{classBike}{}\doxysection{Bike Class Reference}
+\label{classBike}\index{Bike@{Bike}}
+
+
+Represents a bike in the transportation system.  
+
+
+
+
+{\ttfamily \#include $<$Bike.\+h$>$}
+
+
+
+Inheritance diagram for Bike\+:
+% FIG 0
+
+
+Collaboration diagram for Bike\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBike_ac9635191beb28fde3a91cc22a62a4d71}{Bike}} (int cap, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classBike}{Bike}} with specified capacity and optional initial state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBike_ac9e7e933e91c911354c3fafb28f5c01e}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Simulates the bike being used for travel, displaying a bike ASCII graphic. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a bike in the transportation system. 
+
+The \mbox{\hyperlink{classBike}{Bike}} class inherits from \mbox{\hyperlink{classPrivateTransport}{Private\+Transport}}, allowing it to represent a personal transportation option in the simulation. It supports a state of availability and can be used for travel when available. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBike_ac9635191beb28fde3a91cc22a62a4d71}\label{classBike_ac9635191beb28fde3a91cc22a62a4d71}} 
+\index{Bike@{Bike}!Bike@{Bike}}
+\index{Bike@{Bike}!Bike@{Bike}}
+\doxysubsubsection{\texorpdfstring{Bike()}{Bike()}}
+{\footnotesize\ttfamily Bike\+::\+Bike (\begin{DoxyParamCaption}\item[{int}]{cap,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classBike}{Bike}} with specified capacity and optional initial state. 
+
+Constructs a \mbox{\hyperlink{classBike}{Bike}} with a given capacity and optional state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & Capacity or load limit of the bike. \\
+\hline
+{\em state} & Optional initial state of the bike (e.\+g., available or in use).\\
+\hline
+{\em cap} & Capacity or load limit of the bike. \\
+\hline
+{\em state} & Optional initial state, representing availability. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBike_ac9e7e933e91c911354c3fafb28f5c01e}\label{classBike_ac9e7e933e91c911354c3fafb28f5c01e}} 
+\index{Bike@{Bike}!travel@{travel}}
+\index{travel@{travel}!Bike@{Bike}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Bike\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Simulates the bike being used for travel, displaying a bike ASCII graphic. 
+
+Simulates a travel action for the bike, displaying an ASCII graphic.
+
+If the bike is available, it displays an ASCII representation and confirms usage. Otherwise, it informs the user that the bike is unavailable. 
+
+Implements \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{Mode\+Of\+Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bike.\+h\item 
+Bike.\+cpp\end{DoxyCompactItemize}

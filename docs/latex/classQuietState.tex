@@ -1,0 +1,97 @@
+\hypertarget{classQuietState}{}\doxysection{Quiet\+State Class Reference}
+\label{classQuietState}\index{QuietState@{QuietState}}
+
+
+Represents a state where public transport operates quietly.  
+
+
+
+
+{\ttfamily \#include $<$Quiet\+State.\+h$>$}
+
+
+
+Inheritance diagram for Quiet\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Quiet\+State\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classQuietState_a3db509aa1beac95177424a89f0d9e51d}{Quiet\+State}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classQuietState}{Quiet\+State}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classQuietState_afd6a1ae1b35672b7bf1431b9c9d51cd2}{handle}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Handles the behavior of public transport in the Quiet state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classQuietState_a8f841a575f191b395c3aca40d7dbf1fe}{change\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Changes the state of the transport from Quiet to another state. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a state where public transport operates quietly. 
+
+The \mbox{\hyperlink{classQuietState}{Quiet\+State}} class is a concrete implementation of the \mbox{\hyperlink{classPublicTransportState}{Public\+Transport\+State}}, indicating that the mode of transport is operating in a quiet manner. It provides functionality to handle the quiet state behavior and transition to other states. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classQuietState_a3db509aa1beac95177424a89f0d9e51d}\label{classQuietState_a3db509aa1beac95177424a89f0d9e51d}} 
+\index{QuietState@{QuietState}!QuietState@{QuietState}}
+\index{QuietState@{QuietState}!QuietState@{QuietState}}
+\doxysubsubsection{\texorpdfstring{QuietState()}{QuietState()}}
+{\footnotesize\ttfamily Quiet\+State\+::\+Quiet\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classQuietState}{Quiet\+State}} class. 
+
+Initializes a \mbox{\hyperlink{classQuietState}{Quiet\+State}} instance, setting the state name to \char`\"{}\+Quiet\char`\"{}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classQuietState_a8f841a575f191b395c3aca40d7dbf1fe}\label{classQuietState_a8f841a575f191b395c3aca40d7dbf1fe}} 
+\index{QuietState@{QuietState}!changeState@{changeState}}
+\index{changeState@{changeState}!QuietState@{QuietState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Quiet\+State\+::change\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Changes the state of the transport from Quiet to another state. 
+
+This method is responsible for transitioning the transport to a new state. In this implementation, it transitions to the \mbox{\hyperlink{classModerateState}{Moderate\+State}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} whose state will be changed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicTransportState_a45a809475c2c076b22b4d94684a64674}{Public\+Transport\+State}}.
+
+\mbox{\Hypertarget{classQuietState_afd6a1ae1b35672b7bf1431b9c9d51cd2}\label{classQuietState_afd6a1ae1b35672b7bf1431b9c9d51cd2}} 
+\index{QuietState@{QuietState}!handle@{handle}}
+\index{handle@{handle}!QuietState@{QuietState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Quiet\+State\+::handle (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles the behavior of public transport in the Quiet state. 
+
+This method defines what happens when the transport is in the Quiet state, such as performing necessary actions and displaying status messages.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} that is in the Quiet state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicTransportState_a6a4f6bc3c7ad67eb1f4b6eddefaf2f70}{Public\+Transport\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Quiet\+State.\+h\item 
+Quiet\+State.\+cpp\end{DoxyCompactItemize}

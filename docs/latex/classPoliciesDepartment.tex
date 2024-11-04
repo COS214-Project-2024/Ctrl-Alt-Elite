@@ -1,0 +1,112 @@
+\hypertarget{classPoliciesDepartment}{}\doxysection{Policies\+Department Class Reference}
+\label{classPoliciesDepartment}\index{PoliciesDepartment@{PoliciesDepartment}}
+
+
+Represents the policies department responsible for developing and enforcing public policies.  
+
+
+
+
+{\ttfamily \#include $<$departments.\+h$>$}
+
+
+
+Inheritance diagram for Policies\+Department\+:
+% FIG 0
+
+
+Collaboration diagram for Policies\+Department\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPoliciesDepartment_a7293850ae04865609d8885e45b34569a}{Policies\+Department}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} for the specified city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoliciesDepartment_a479c7f212d57f04f7ec6b09cb5e2c300}{manage\+City}} () override
+\begin{DoxyCompactList}\small\item\em Manages the city by implementing government policies. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPoliciesDepartment_a32a5eba1d471c8d8270e256e40abdbca}{implement\+Policy}} (std\+::string policy)
+\begin{DoxyCompactList}\small\item\em Implements a new policy for the city. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPoliciesDepartment_a9ca1b5f9d9fdf448a33cbeaa73b19b99}{get\+Taxrate}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current tax rate of the city. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents the policies department responsible for developing and enforcing public policies. 
+
+Represents the policies management department of a city government.
+
+The \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} class is responsible for managing city policies, implementing new policies, and handling taxation rates within the city. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPoliciesDepartment_a7293850ae04865609d8885e45b34569a}\label{classPoliciesDepartment_a7293850ae04865609d8885e45b34569a}} 
+\index{PoliciesDepartment@{PoliciesDepartment}!PoliciesDepartment@{PoliciesDepartment}}
+\index{PoliciesDepartment@{PoliciesDepartment}!PoliciesDepartment@{PoliciesDepartment}}
+\doxysubsubsection{\texorpdfstring{PoliciesDepartment()}{PoliciesDepartment()}}
+{\footnotesize\ttfamily Policies\+Department\+::\+Policies\+Department (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} for the specified city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Pointer to the city being managed by this department. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPoliciesDepartment_a9ca1b5f9d9fdf448a33cbeaa73b19b99}\label{classPoliciesDepartment_a9ca1b5f9d9fdf448a33cbeaa73b19b99}} 
+\index{PoliciesDepartment@{PoliciesDepartment}!getTaxrate@{getTaxrate}}
+\index{getTaxrate@{getTaxrate}!PoliciesDepartment@{PoliciesDepartment}}
+\doxysubsubsection{\texorpdfstring{getTaxrate()}{getTaxrate()}}
+{\footnotesize\ttfamily float Policies\+Department\+::get\+Taxrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the current tax rate of the city. 
+
+\begin{DoxyReturn}{Returns}
+The current tax rate as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGovernment_accdbcd9e484eef19bc279c3ff2a729d1}{Government}}.
+
+\mbox{\Hypertarget{classPoliciesDepartment_a32a5eba1d471c8d8270e256e40abdbca}\label{classPoliciesDepartment_a32a5eba1d471c8d8270e256e40abdbca}} 
+\index{PoliciesDepartment@{PoliciesDepartment}!implementPolicy@{implementPolicy}}
+\index{implementPolicy@{implementPolicy}!PoliciesDepartment@{PoliciesDepartment}}
+\doxysubsubsection{\texorpdfstring{implementPolicy()}{implementPolicy()}}
+{\footnotesize\ttfamily void Policies\+Department\+::implement\+Policy (\begin{DoxyParamCaption}\item[{std\+::string}]{policy }\end{DoxyParamCaption})}
+
+
+
+Implements a new policy for the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em policy} & The policy to be implemented. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPoliciesDepartment_a479c7f212d57f04f7ec6b09cb5e2c300}\label{classPoliciesDepartment_a479c7f212d57f04f7ec6b09cb5e2c300}} 
+\index{PoliciesDepartment@{PoliciesDepartment}!manageCity@{manageCity}}
+\index{manageCity@{manageCity}!PoliciesDepartment@{PoliciesDepartment}}
+\doxysubsubsection{\texorpdfstring{manageCity()}{manageCity()}}
+{\footnotesize\ttfamily void Policies\+Department\+::manage\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Manages the city by implementing government policies. 
+
+This function will notify citizens of new policies that have been implemented. 
+
+Reimplemented from \mbox{\hyperlink{classGovernment_a81ecf49c437cd4f0a2276b847c6387f2}{Government}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+departments.\+h\item 
+Policies\+Department.\+h\item 
+Policies\+Department.\+cpp\end{DoxyCompactItemize}

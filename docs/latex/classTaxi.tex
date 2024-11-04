@@ -1,0 +1,111 @@
+\hypertarget{classTaxi}{}\doxysection{Taxi Class Reference}
+\label{classTaxi}\index{Taxi@{Taxi}}
+
+
+Represents a taxi service in the public transport system.  
+
+
+
+
+{\ttfamily \#include $<$Taxi.\+h$>$}
+
+
+
+Inheritance diagram for Taxi\+:
+% FIG 0
+
+
+Collaboration diagram for Taxi\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTaxi_a42857f36f569983fa56d24cb50b5435d}{Taxi}} (int cap, int routes, float fare, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classTaxi}{Taxi}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTaxi_ac5e3901b39759d37db39cb4f19073708}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Executes the travel action of the taxi. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classTaxi_a894b058831aef7504063badd63e7e380}{get\+Fare\+Per\+KM}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the fare per kilometer. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classTaxi_aa47e1e5de37ae124ebe389e53ddcd2a0}{set\+Fare\+Per\+KM}} (float new\+Fare)
+\begin{DoxyCompactList}\small\item\em Sets a new fare per kilometer. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a taxi service in the public transport system. 
+
+The \mbox{\hyperlink{classTaxi}{Taxi}} class extends the \mbox{\hyperlink{classPublicTransport}{Public\+Transport}} class to provide functionality specific to taxi services, including fare management and travel logic. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classTaxi_a42857f36f569983fa56d24cb50b5435d}\label{classTaxi_a42857f36f569983fa56d24cb50b5435d}} 
+\index{Taxi@{Taxi}!Taxi@{Taxi}}
+\index{Taxi@{Taxi}!Taxi@{Taxi}}
+\doxysubsubsection{\texorpdfstring{Taxi()}{Taxi()}}
+{\footnotesize\ttfamily Taxi\+::\+Taxi (\begin{DoxyParamCaption}\item[{int}]{cap,  }\item[{int}]{routes,  }\item[{float}]{fare,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classTaxi}{Taxi}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The passenger capacity of the taxi. \\
+\hline
+{\em routes} & The number of routes the taxi can operate on. \\
+\hline
+{\em fare} & The fare per kilometer. \\
+\hline
+{\em state} & Shared pointer to the transportation state (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classTaxi_a894b058831aef7504063badd63e7e380}\label{classTaxi_a894b058831aef7504063badd63e7e380}} 
+\index{Taxi@{Taxi}!getFarePerKM@{getFarePerKM}}
+\index{getFarePerKM@{getFarePerKM}!Taxi@{Taxi}}
+\doxysubsubsection{\texorpdfstring{getFarePerKM()}{getFarePerKM()}}
+{\footnotesize\ttfamily float Taxi\+::get\+Fare\+Per\+KM (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the fare per kilometer. 
+
+\begin{DoxyReturn}{Returns}
+The fare per kilometer as a float. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classTaxi_aa47e1e5de37ae124ebe389e53ddcd2a0}\label{classTaxi_aa47e1e5de37ae124ebe389e53ddcd2a0}} 
+\index{Taxi@{Taxi}!setFarePerKM@{setFarePerKM}}
+\index{setFarePerKM@{setFarePerKM}!Taxi@{Taxi}}
+\doxysubsubsection{\texorpdfstring{setFarePerKM()}{setFarePerKM()}}
+{\footnotesize\ttfamily void Taxi\+::set\+Fare\+Per\+KM (\begin{DoxyParamCaption}\item[{float}]{new\+Fare }\end{DoxyParamCaption})}
+
+
+
+Sets a new fare per kilometer. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Fare} & The new fare to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classTaxi_ac5e3901b39759d37db39cb4f19073708}\label{classTaxi_ac5e3901b39759d37db39cb4f19073708}} 
+\index{Taxi@{Taxi}!travel@{travel}}
+\index{travel@{travel}!Taxi@{Taxi}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Taxi\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the travel action of the taxi. 
+
+This method displays the current fare and taxi image while checking if the taxi is available for travel. 
+
+Reimplemented from \mbox{\hyperlink{classPublicTransport_aea344d5b086fabdb1cb82225c10bae9b}{Public\+Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Taxi.\+h\item 
+Taxi.\+cpp\end{DoxyCompactItemize}

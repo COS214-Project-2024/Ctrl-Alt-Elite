@@ -1,0 +1,122 @@
+\hypertarget{classMaterials}{}\doxysection{Materials Class Reference}
+\label{classMaterials}\index{Materials@{Materials}}
+
+
+Represents materials that can be consumed and replenished.  
+
+
+
+
+{\ttfamily \#include $<$Materials.\+h$>$}
+
+
+
+Inheritance diagram for Materials\+:
+% FIG 0
+
+
+Collaboration diagram for Materials\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMaterials_afc9f56d1ac59083c749077211635c6d2}{Materials}} (int cap)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classMaterials}{Materials}} class. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classMaterials_a7ffa01788aae94080e948ad702a1b336}{get\+Capacity}} () const override
+\begin{DoxyCompactList}\small\item\em Gets the current capacity of the materials. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMaterials_a91b3ca42781418cad0644292ac1d1bcc}{consume}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Consumes a specified amount of materials. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMaterials_a505a8d1146537e7a12801423728ec8de}{replenish}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Replenishes the materials by a specified amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents materials that can be consumed and replenished. 
+
+This class extends the \mbox{\hyperlink{classResource}{Resource}} class and manages the capacity of materials available for consumption and replenishment. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMaterials_afc9f56d1ac59083c749077211635c6d2}\label{classMaterials_afc9f56d1ac59083c749077211635c6d2}} 
+\index{Materials@{Materials}!Materials@{Materials}}
+\index{Materials@{Materials}!Materials@{Materials}}
+\doxysubsubsection{\texorpdfstring{Materials()}{Materials()}}
+{\footnotesize\ttfamily Materials\+::\+Materials (\begin{DoxyParamCaption}\item[{int}]{cap }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classMaterials}{Materials}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The initial capacity of the materials in metric tons. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMaterials_a91b3ca42781418cad0644292ac1d1bcc}\label{classMaterials_a91b3ca42781418cad0644292ac1d1bcc}} 
+\index{Materials@{Materials}!consume@{consume}}
+\index{consume@{consume}!Materials@{Materials}}
+\doxysubsubsection{\texorpdfstring{consume()}{consume()}}
+{\footnotesize\ttfamily void Materials\+::consume (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Consumes a specified amount of materials. 
+
+Reduces the capacity of materials by the given amount. If the amount exceeds the current capacity, an error message is displayed.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of materials to consume in metric tons. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResource_af173631c9b94c8601999974e1ab04a7e}{Resource}}.
+
+\mbox{\Hypertarget{classMaterials_a7ffa01788aae94080e948ad702a1b336}\label{classMaterials_a7ffa01788aae94080e948ad702a1b336}} 
+\index{Materials@{Materials}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!Materials@{Materials}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Materials\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current capacity of the materials. 
+
+\begin{DoxyReturn}{Returns}
+The current capacity of the materials in metric tons. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classResource_aa54b7fb57467a4ad6b3eef325253ff58}{Resource}}.
+
+\mbox{\Hypertarget{classMaterials_a505a8d1146537e7a12801423728ec8de}\label{classMaterials_a505a8d1146537e7a12801423728ec8de}} 
+\index{Materials@{Materials}!replenish@{replenish}}
+\index{replenish@{replenish}!Materials@{Materials}}
+\doxysubsubsection{\texorpdfstring{replenish()}{replenish()}}
+{\footnotesize\ttfamily void Materials\+::replenish (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Replenishes the materials by a specified amount. 
+
+Increases the capacity of materials by the given amount.
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount of materials to add in metric tons. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classResource_aabf3eed794d33daaceb5e688b005e3ba}{Resource}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Materials.\+h\item 
+Materials.\+cpp\end{DoxyCompactItemize}

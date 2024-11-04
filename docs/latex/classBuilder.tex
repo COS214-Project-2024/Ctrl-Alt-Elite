@@ -1,0 +1,65 @@
+\hypertarget{classBuilder}{}\doxysection{Builder Class Reference}
+\label{classBuilder}\index{Builder@{Builder}}
+
+
+Abstract builder class for constructing components of a composite building.  
+
+
+
+
+{\ttfamily \#include $<$Builder.\+h$>$}
+
+
+
+Inheritance diagram for Builder\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classBuilder_a5dbd5fbc482dd379d1e6ef216eb65675}\label{classBuilder_a5dbd5fbc482dd379d1e6ef216eb65675}} 
+virtual void {\bfseries build\+Population\+Growth} (int amount)=0
+\item 
+\mbox{\Hypertarget{classBuilder_ab18f7a304544f1e0580c9b6a1e45af7e}\label{classBuilder_ab18f7a304544f1e0580c9b6a1e45af7e}} 
+virtual void {\bfseries build\+Job\+Growth} (int amount)=0
+\item 
+\mbox{\Hypertarget{classBuilder_aa94a60d6ac8d5592d0c4bd7eb92119a8}\label{classBuilder_aa94a60d6ac8d5592d0c4bd7eb92119a8}} 
+virtual void {\bfseries build\+Housing\+Expansion} ()=0
+\item 
+\mbox{\Hypertarget{classBuilder_a6d09307f3679118ba990da386147d320}\label{classBuilder_a6d09307f3679118ba990da386147d320}} 
+virtual void \mbox{\hyperlink{classBuilder_a6d09307f3679118ba990da386147d320}{build\+Economic\+Development}} ()=0
+\begin{DoxyCompactList}\small\item\em Develops the city\textquotesingle{}s economic structures and support facilities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classBuilder_ab869295a62644237c1dd463981245be8}\label{classBuilder_ab869295a62644237c1dd463981245be8}} 
+virtual void \mbox{\hyperlink{classBuilder_ab869295a62644237c1dd463981245be8}{build\+Infrastructure\+Expansion}} ()=0
+\begin{DoxyCompactList}\small\item\em Expands infrastructure, including utilities and public services. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} $\ast$ \mbox{\hyperlink{classBuilder_a902aef10062067d8c5731a913b0799ac}{get\+Composite\+Building}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the final composite building after construction. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract builder class for constructing components of a composite building. 
+
+Defines the interface for building different aspects of a city’s infrastructure, such as population growth, housing, economic development, and infrastructure. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBuilder_a902aef10062067d8c5731a913b0799ac}\label{classBuilder_a902aef10062067d8c5731a913b0799ac}} 
+\index{Builder@{Builder}!getCompositeBuilding@{getCompositeBuilding}}
+\index{getCompositeBuilding@{getCompositeBuilding}!Builder@{Builder}}
+\doxysubsubsection{\texorpdfstring{getCompositeBuilding()}{getCompositeBuilding()}}
+{\footnotesize\ttfamily virtual \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}$\ast$ Builder\+::get\+Composite\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the final composite building after construction. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} instance. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classCityBuilder_adda4bae0c41874408b666c8f2232f54c}{City\+Builder}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Builder.\+h\end{DoxyCompactItemize}

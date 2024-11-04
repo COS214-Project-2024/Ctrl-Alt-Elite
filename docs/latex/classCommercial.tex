@@ -1,0 +1,103 @@
+\hypertarget{classCommercial}{}\doxysection{Commercial Class Reference}
+\label{classCommercial}\index{Commercial@{Commercial}}
+
+
+Represents a commercial building, with attributes for entertainment and employment ratings.  
+
+
+
+
+{\ttfamily \#include $<$Commercial.\+h$>$}
+
+
+
+Inheritance diagram for Commercial\+:
+% FIG 0
+
+
+Collaboration diagram for Commercial\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommercial_a8495c897abf8678d91238f14db426be9}\label{classCommercial_a8495c897abf8678d91238f14db426be9}} 
+\mbox{\hyperlink{classCommercial_a8495c897abf8678d91238f14db426be9}{Commercial}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classCommercial}{Commercial}} building with default ratings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_aa74c5649dd0210d0edfd6f5ab8ea7cf0}\label{classCommercial_aa74c5649dd0210d0edfd6f5ab8ea7cf0}} 
+virtual \mbox{\hyperlink{classCommercial_aa74c5649dd0210d0edfd6f5ab8ea7cf0}{$\sim$\+Commercial}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classCommercial}{Commercial}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_a5c908f178fbfca8d7b32b40013ea5e1c}\label{classCommercial_a5c908f178fbfca8d7b32b40013ea5e1c}} 
+virtual void \mbox{\hyperlink{classCommercial_a5c908f178fbfca8d7b32b40013ea5e1c}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about the commercial building, including ratings. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_afd5c0db279e48cd7d58f66e553299f0c}\label{classCommercial_afd5c0db279e48cd7d58f66e553299f0c}} 
+virtual void \mbox{\hyperlink{classCommercial_afd5c0db279e48cd7d58f66e553299f0c}{Inc\+Employment\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Increases the employment rating by one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_a61771c67fc0307a96511bb8e61d322a8}\label{classCommercial_a61771c67fc0307a96511bb8e61d322a8}} 
+virtual void \mbox{\hyperlink{classCommercial_a61771c67fc0307a96511bb8e61d322a8}{Dec\+Employment\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Decreases the employment rating by one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_a50826ec4d712ffa75fef0d3552a07c01}\label{classCommercial_a50826ec4d712ffa75fef0d3552a07c01}} 
+virtual void \mbox{\hyperlink{classCommercial_a50826ec4d712ffa75fef0d3552a07c01}{Inc\+Entertainment\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Increases the entertainment rating by one. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_ab9c0418b2859001ad01c7bcc965c40ce}\label{classCommercial_ab9c0418b2859001ad01c7bcc965c40ce}} 
+virtual void \mbox{\hyperlink{classCommercial_ab9c0418b2859001ad01c7bcc965c40ce}{Dec\+Entertainment\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Decreases the entertainment rating by one. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classCommercial_a85d7ebf3aa4ac62fe0e663427d066d60}{get\+Employment\+Rating}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current employment rating of the building. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuilding}{Building}} $\ast$ \mbox{\hyperlink{classCommercial_aa0a1e804aa4af3b0021c0e927d9daf83}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Creates a copy of the current \mbox{\hyperlink{classCommercial}{Commercial}} building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_a9fb97fce02c9d6d7315869dbdd03685c}\label{classCommercial_a9fb97fce02c9d6d7315869dbdd03685c}} 
+virtual void \mbox{\hyperlink{classCommercial_a9fb97fce02c9d6d7315869dbdd03685c}{perform\+Maintenance}} ()
+\begin{DoxyCompactList}\small\item\em Performs general maintenance for the commercial building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCommercial_ad80725111f66a460ba44950c1708af78}\label{classCommercial_ad80725111f66a460ba44950c1708af78}} 
+int \mbox{\hyperlink{classCommercial_ad80725111f66a460ba44950c1708af78}{entertainment\+Rating}}
+\begin{DoxyCompactList}\small\item\em Rating reflecting the entertainment value provided by the building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCommercial_aff527b3ecc0243b7a17ea15526d6ef07}\label{classCommercial_aff527b3ecc0243b7a17ea15526d6ef07}} 
+int \mbox{\hyperlink{classCommercial_aff527b3ecc0243b7a17ea15526d6ef07}{employment\+Rating}}
+\begin{DoxyCompactList}\small\item\em Rating reflecting the employment opportunities provided by the building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a commercial building, with attributes for entertainment and employment ratings. 
+
+The \mbox{\hyperlink{classCommercial}{Commercial}} class inherits from \mbox{\hyperlink{classBuilding}{Building}} and introduces specific features such as ratings for entertainment and employment, to reflect the role of commercial buildings in the city\textquotesingle{}s economy. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommercial_aa0a1e804aa4af3b0021c0e927d9daf83}\label{classCommercial_aa0a1e804aa4af3b0021c0e927d9daf83}} 
+\index{Commercial@{Commercial}!clone@{clone}}
+\index{clone@{clone}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuilding}{Building}} $\ast$ Commercial\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Creates a copy of the current \mbox{\hyperlink{classCommercial}{Commercial}} building. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new \mbox{\hyperlink{classCommercial}{Commercial}} object with the same values. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}{Building}}.
+
+\mbox{\Hypertarget{classCommercial_a85d7ebf3aa4ac62fe0e663427d066d60}\label{classCommercial_a85d7ebf3aa4ac62fe0e663427d066d60}} 
+\index{Commercial@{Commercial}!getEmploymentRating@{getEmploymentRating}}
+\index{getEmploymentRating@{getEmploymentRating}!Commercial@{Commercial}}
+\doxysubsubsection{\texorpdfstring{getEmploymentRating()}{getEmploymentRating()}}
+{\footnotesize\ttfamily int Commercial\+::get\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the current employment rating of the building. 
+
+\begin{DoxyReturn}{Returns}
+The employment rating. 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Commercial.\+h\item 
+Commercial.\+cpp\end{DoxyCompactItemize}

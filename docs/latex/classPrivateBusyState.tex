@@ -1,0 +1,85 @@
+\hypertarget{classPrivateBusyState}{}\doxysection{Private\+Busy\+State Class Reference}
+\label{classPrivateBusyState}\index{PrivateBusyState@{PrivateBusyState}}
+
+
+Represents the busy state of a private transport mode.  
+
+
+
+
+{\ttfamily \#include $<$Private\+Busy\+State.\+h$>$}
+
+
+
+Inheritance diagram for Private\+Busy\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Private\+Busy\+State\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPrivateBusyState_a40228c01af806b1fd3b11fefa94c20fd}\label{classPrivateBusyState_a40228c01af806b1fd3b11fefa94c20fd}} 
+\mbox{\hyperlink{classPrivateBusyState_a40228c01af806b1fd3b11fefa94c20fd}{Private\+Busy\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPrivateBusyState}{Private\+Busy\+State}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPrivateBusyState_a9f3f5a3a20be48874ac1a40af0c211ab}{handle}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Handles the current busy state of the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPrivateBusyState_a91c3e17307d2e15bf192ba5d1eed692e}{change\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Changes the state of the transport from busy to quiet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the busy state of a private transport mode. 
+
+The \mbox{\hyperlink{classPrivateBusyState}{Private\+Busy\+State}} class indicates that the private transport is currently in use and unable to accept new requests. It handles state transitions and manages behavior specific to the busy state. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPrivateBusyState_a91c3e17307d2e15bf192ba5d1eed692e}\label{classPrivateBusyState_a91c3e17307d2e15bf192ba5d1eed692e}} 
+\index{PrivateBusyState@{PrivateBusyState}!changeState@{changeState}}
+\index{changeState@{changeState}!PrivateBusyState@{PrivateBusyState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Private\+Busy\+State\+::change\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Changes the state of the transport from busy to quiet. 
+
+This method transitions the transport to the \mbox{\hyperlink{classPrivateQuietState}{Private\+Quiet\+State}}.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & Shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} whose state is to be changed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPrivateTransportState_aecf653efbed78ea8f383336a13d61153}{Private\+Transport\+State}}.
+
+\mbox{\Hypertarget{classPrivateBusyState_a9f3f5a3a20be48874ac1a40af0c211ab}\label{classPrivateBusyState_a9f3f5a3a20be48874ac1a40af0c211ab}} 
+\index{PrivateBusyState@{PrivateBusyState}!handle@{handle}}
+\index{handle@{handle}!PrivateBusyState@{PrivateBusyState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Private\+Busy\+State\+::handle (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles the current busy state of the transport. 
+
+Displays a message indicating that the private transport is busy.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & Shared pointer to the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} currently in this state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPrivateTransportState_a35aae21908d8aff41506c08466f86ccd}{Private\+Transport\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Private\+Busy\+State.\+h\item 
+Private\+Busy\+State.\+cpp\end{DoxyCompactItemize}

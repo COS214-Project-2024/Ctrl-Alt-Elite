@@ -1,0 +1,145 @@
+\hypertarget{classWasteManagement}{}\doxysection{Waste\+Management Class Reference}
+\label{classWasteManagement}\index{WasteManagement@{WasteManagement}}
+
+
+Manages waste collection and recycling processes in a building.  
+
+
+
+
+{\ttfamily \#include $<$Waste\+Management.\+h$>$}
+
+
+
+Inheritance diagram for Waste\+Management\+:
+% FIG 0
+
+
+Collaboration diagram for Waste\+Management\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classWasteManagement_a707e4ad6be102bf4146ad40006788c60}{Waste\+Management}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$\mbox{\hyperlink{classUtilities_addc2dd317865131c7e11a040d61ffe12}{building}}, float cost, \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} $\ast$factory, int capacity)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_a997f1637b20d269a951b0d776523205d}{apply\+Utility}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$\mbox{\hyperlink{classUtilities_addc2dd317865131c7e11a040d61ffe12}{building}}) override
+\begin{DoxyCompactList}\small\item\em Applies the waste management utility to a building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classWasteManagement_a95623b539edbd171666dd452d800c63c}{increase\+Recycling\+Rate}} (float rate)
+\begin{DoxyCompactList}\small\item\em Increases the recycling rate. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classWasteManagement_a8171caa9bb73e83192695aa045d82cf8}{check\+Waste\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Checks if waste capacity is sufficient. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWasteManagement_aa42a3741cca2fbf2671399620ff89733}{get\+Waste\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the waste capacity. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classWasteManagement_a4034b4c2d75100be9532e6d513e851be}{get\+Waste\+Generated}} () const
+\begin{DoxyCompactList}\small\item\em Gets the amount of waste generated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Manages waste collection and recycling processes in a building. 
+
+The \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} class inherits from the \mbox{\hyperlink{classUtilities}{Utilities}} class and provides functionality to handle waste management tasks, including applying utility to buildings, checking waste capacity, and increasing recycling rates. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWasteManagement_a707e4ad6be102bf4146ad40006788c60}\label{classWasteManagement_a707e4ad6be102bf4146ad40006788c60}} 
+\index{WasteManagement@{WasteManagement}!WasteManagement@{WasteManagement}}
+\index{WasteManagement@{WasteManagement}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{WasteManagement()}{WasteManagement()}}
+{\footnotesize\ttfamily Waste\+Management\+::\+Waste\+Management (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{building,  }\item[{float}]{cost,  }\item[{\mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} $\ast$}]{factory,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classWasteManagement}{Waste\+Management}} object. 
+
+Initializes the waste management system with specified parameters. This constructor also checks if sufficient budget and materials are available.
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the associated \mbox{\hyperlink{classBuilding}{Building}} object. \\
+\hline
+{\em cost} & Cost of constructing the waste management system. \\
+\hline
+{\em factory} & Pointer to the \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} for resource management. \\
+\hline
+{\em capacity} & Maximum waste capacity for the system. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWasteManagement_a997f1637b20d269a951b0d776523205d}\label{classWasteManagement_a997f1637b20d269a951b0d776523205d}} 
+\index{WasteManagement@{WasteManagement}!applyUtility@{applyUtility}}
+\index{applyUtility@{applyUtility}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{applyUtility()}{applyUtility()}}
+{\footnotesize\ttfamily void Waste\+Management\+::apply\+Utility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{building }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies the waste management utility to a building. 
+
+Checks waste capacity and sets the building\textquotesingle{}s waste collected status. 
+
+Implements \mbox{\hyperlink{classUtilities_a0006cd2905d4222e3e9077a4a88a6ad1}{Utilities}}.
+
+\mbox{\Hypertarget{classWasteManagement_a8171caa9bb73e83192695aa045d82cf8}\label{classWasteManagement_a8171caa9bb73e83192695aa045d82cf8}} 
+\index{WasteManagement@{WasteManagement}!checkWasteCapacity@{checkWasteCapacity}}
+\index{checkWasteCapacity@{checkWasteCapacity}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{checkWasteCapacity()}{checkWasteCapacity()}}
+{\footnotesize\ttfamily bool Waste\+Management\+::check\+Waste\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if waste capacity is sufficient. 
+
+\begin{DoxyReturn}{Returns}
+True if the waste capacity is greater than or equal to the waste generated, otherwise false. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWasteManagement_aa42a3741cca2fbf2671399620ff89733}\label{classWasteManagement_aa42a3741cca2fbf2671399620ff89733}} 
+\index{WasteManagement@{WasteManagement}!getWasteCapacity@{getWasteCapacity}}
+\index{getWasteCapacity@{getWasteCapacity}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{getWasteCapacity()}{getWasteCapacity()}}
+{\footnotesize\ttfamily int Waste\+Management\+::get\+Waste\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the waste capacity. 
+
+\begin{DoxyReturn}{Returns}
+The maximum waste capacity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWasteManagement_a4034b4c2d75100be9532e6d513e851be}\label{classWasteManagement_a4034b4c2d75100be9532e6d513e851be}} 
+\index{WasteManagement@{WasteManagement}!getWasteGenerated@{getWasteGenerated}}
+\index{getWasteGenerated@{getWasteGenerated}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{getWasteGenerated()}{getWasteGenerated()}}
+{\footnotesize\ttfamily int Waste\+Management\+::get\+Waste\+Generated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the amount of waste generated. 
+
+\begin{DoxyReturn}{Returns}
+The current amount of waste generated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classWasteManagement_a95623b539edbd171666dd452d800c63c}\label{classWasteManagement_a95623b539edbd171666dd452d800c63c}} 
+\index{WasteManagement@{WasteManagement}!increaseRecyclingRate@{increaseRecyclingRate}}
+\index{increaseRecyclingRate@{increaseRecyclingRate}!WasteManagement@{WasteManagement}}
+\doxysubsubsection{\texorpdfstring{increaseRecyclingRate()}{increaseRecyclingRate()}}
+{\footnotesize\ttfamily void Waste\+Management\+::increase\+Recycling\+Rate (\begin{DoxyParamCaption}\item[{float}]{rate }\end{DoxyParamCaption})}
+
+
+
+Increases the recycling rate. 
+
+Increases the waste capacity based on the specified recycling rate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em rate} & The rate at which the recycling capacity is increased. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Waste\+Management.\+h\item 
+Waste\+Management.\+cpp\end{DoxyCompactItemize}

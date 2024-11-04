@@ -1,0 +1,73 @@
+\hypertarget{classWalk}{}\doxysection{Walk Class Reference}
+\label{classWalk}\index{Walk@{Walk}}
+
+
+Represents a walking mode of private transportation.  
+
+
+
+
+{\ttfamily \#include $<$Walk.\+h$>$}
+
+
+
+Inheritance diagram for Walk\+:
+% FIG 0
+
+
+Collaboration diagram for Walk\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classWalk_a025c3bbd94264ac3c8618e9b43a6c29d}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Initiates the walking journey to the destination. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classWalk_ae818b2929c15bfedb96c2dc76e5618b4}{Walk}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classWalk}{Walk}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a walking mode of private transportation. 
+
+This class inherits from the \mbox{\hyperlink{classPrivateTransport}{Private\+Transport}} class and implements the travel method specific to walking. It handles the behavior when a user chooses to walk to a destination. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classWalk_ae818b2929c15bfedb96c2dc76e5618b4}\label{classWalk_ae818b2929c15bfedb96c2dc76e5618b4}} 
+\index{Walk@{Walk}!Walk@{Walk}}
+\index{Walk@{Walk}!Walk@{Walk}}
+\doxysubsubsection{\texorpdfstring{Walk()}{Walk()}}
+{\footnotesize\ttfamily Walk\+::\+Walk (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classWalk}{Walk}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & A shared pointer to the \mbox{\hyperlink{classTransportationState}{Transportation\+State}} that represents the current state of transportation. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classWalk_a025c3bbd94264ac3c8618e9b43a6c29d}\label{classWalk_a025c3bbd94264ac3c8618e9b43a6c29d}} 
+\index{Walk@{Walk}!travel@{travel}}
+\index{travel@{travel}!Walk@{Walk}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Walk\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initiates the walking journey to the destination. 
+
+This method checks the availability of the walking path and outputs the appropriate message indicating whether the user can walk to the destination. 
+
+Reimplemented from \mbox{\hyperlink{classPrivateTransport_af9516cc3bcd18605e4612c4ccd6e4cd1}{Private\+Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Walk.\+h\item 
+Walk.\+cpp\end{DoxyCompactItemize}

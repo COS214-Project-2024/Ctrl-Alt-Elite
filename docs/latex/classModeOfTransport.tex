@@ -1,0 +1,132 @@
+\hypertarget{classModeOfTransport}{}\doxysection{Mode\+Of\+Transport Class Reference}
+\label{classModeOfTransport}\index{ModeOfTransport@{ModeOfTransport}}
+
+
+Abstract class representing a mode of transport.  
+
+
+
+
+{\ttfamily \#include $<$Mode\+Of\+Transport.\+h$>$}
+
+
+
+Inheritance diagram for Mode\+Of\+Transport\+:
+% FIG 0
+
+
+Collaboration diagram for Mode\+Of\+Transport\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classModeOfTransport_a7ddf62301c648784960820683ef67a5b}{Mode\+Of\+Transport}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} class. \end{DoxyCompactList}\item 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ \mbox{\hyperlink{classModeOfTransport_ad687496456baaa60d30d4efdd3762d29}{get\+State}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current transportation state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModeOfTransport_a440802b5b2cfcb4643e74f1a1087eda7}{set\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state) override
+\begin{DoxyCompactList}\small\item\em Sets the current transportation state. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classModeOfTransport_a7f65dacf342647cd3027813df842cb5f}{handle\+Transport}} ()
+\begin{DoxyCompactList}\small\item\em Handles the transport process based on the current state. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{travel}} ()=0
+\begin{DoxyCompactList}\small\item\em Pure virtual function for traveling. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classModeOfTransport_ad9f6640491471681e5f6321ef6419827}\label{classModeOfTransport_ad9f6640491471681e5f6321ef6419827}} 
+std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ \mbox{\hyperlink{classModeOfTransport_ad9f6640491471681e5f6321ef6419827}{current\+State}}
+\begin{DoxyCompactList}\small\item\em The current state of the transportation. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Abstract class representing a mode of transport. 
+
+This class extends the \mbox{\hyperlink{classTransportStrategy}{Transport\+Strategy}} interface and manages the current state of transportation. It utilizes the State design pattern to handle various transportation modes. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classModeOfTransport_a7ddf62301c648784960820683ef67a5b}\label{classModeOfTransport_a7ddf62301c648784960820683ef67a5b}} 
+\index{ModeOfTransport@{ModeOfTransport}!ModeOfTransport@{ModeOfTransport}}
+\index{ModeOfTransport@{ModeOfTransport}!ModeOfTransport@{ModeOfTransport}}
+\doxysubsubsection{\texorpdfstring{ModeOfTransport()}{ModeOfTransport()}}
+{\footnotesize\ttfamily Mode\+Of\+Transport\+::\+Mode\+Of\+Transport (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} class. 
+
+Initializes the mode of transport with a given transportation state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & A shared pointer to the initial transportation state (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classModeOfTransport_ad687496456baaa60d30d4efdd3762d29}\label{classModeOfTransport_ad687496456baaa60d30d4efdd3762d29}} 
+\index{ModeOfTransport@{ModeOfTransport}!getState@{getState}}
+\index{getState@{getState}!ModeOfTransport@{ModeOfTransport}}
+\doxysubsubsection{\texorpdfstring{getState()}{getState()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ Mode\+Of\+Transport\+::get\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current transportation state. 
+
+\begin{DoxyReturn}{Returns}
+A shared pointer to the current transportation state. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classModeOfTransport_a7f65dacf342647cd3027813df842cb5f}\label{classModeOfTransport_a7f65dacf342647cd3027813df842cb5f}} 
+\index{ModeOfTransport@{ModeOfTransport}!handleTransport@{handleTransport}}
+\index{handleTransport@{handleTransport}!ModeOfTransport@{ModeOfTransport}}
+\doxysubsubsection{\texorpdfstring{handleTransport()}{handleTransport()}}
+{\footnotesize\ttfamily void Mode\+Of\+Transport\+::handle\+Transport (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Handles the transport process based on the current state. 
+
+Invokes the handle method of the current state to execute the transportation logic. \mbox{\Hypertarget{classModeOfTransport_a440802b5b2cfcb4643e74f1a1087eda7}\label{classModeOfTransport_a440802b5b2cfcb4643e74f1a1087eda7}} 
+\index{ModeOfTransport@{ModeOfTransport}!setState@{setState}}
+\index{setState@{setState}!ModeOfTransport@{ModeOfTransport}}
+\doxysubsubsection{\texorpdfstring{setState()}{setState()}}
+{\footnotesize\ttfamily void Mode\+Of\+Transport\+::set\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the current transportation state. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em state} & A shared pointer to the new transportation state. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classTransportStrategy_a039981f9e58674e71b830348ee96d812}{Transport\+Strategy}}.
+
+\mbox{\Hypertarget{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}\label{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}} 
+\index{ModeOfTransport@{ModeOfTransport}!travel@{travel}}
+\index{travel@{travel}!ModeOfTransport@{ModeOfTransport}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily virtual void Mode\+Of\+Transport\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Pure virtual function for traveling. 
+
+Derived classes must implement this method to define the specific travel behavior. 
+
+Implements \mbox{\hyperlink{classTransportStrategy_af0a7ee7ce71877201f5871d04f49c73c}{Transport\+Strategy}}.
+
+
+
+Implemented in \mbox{\hyperlink{classWalk_a025c3bbd94264ac3c8618e9b43a6c29d}{Walk}}, \mbox{\hyperlink{classTrain_a253d52130d9bf308c5b513e4c1afecd4}{Train}}, \mbox{\hyperlink{classTaxi_ac5e3901b39759d37db39cb4f19073708}{Taxi}}, \mbox{\hyperlink{classPublicTransport_aea344d5b086fabdb1cb82225c10bae9b}{Public\+Transport}}, \mbox{\hyperlink{classPrivateTransport_af9516cc3bcd18605e4612c4ccd6e4cd1}{Private\+Transport}}, \mbox{\hyperlink{classPlane_a7bfcad787c5babe98c796b3adeb8897f}{Plane}}, \mbox{\hyperlink{classCar_a6cd110d42feb621c85bab3372d102e6e}{Car}}, \mbox{\hyperlink{classBus_aa5bedace947b50f8d8d9e026b0ed197f}{Bus}}, and \mbox{\hyperlink{classBike_ac9e7e933e91c911354c3fafb28f5c01e}{Bike}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Mode\+Of\+Transport.\+h\item 
+Mode\+Of\+Transport.\+cpp\end{DoxyCompactItemize}

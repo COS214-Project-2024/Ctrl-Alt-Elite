@@ -1,0 +1,98 @@
+\hypertarget{classIterator}{}\doxysection{Iterator$<$ T $>$ Class Template Reference}
+\label{classIterator}\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+
+
+Abstract base class for creating an iterator for a collection.  
+
+
+
+
+{\ttfamily \#include $<$Iterator.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classIterator_ace58b658db7a3023dd07ffc5e66d992f}{$\sim$\+Iterator}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classIterator}{Iterator}} class. \end{DoxyCompactList}\item 
+virtual bool \mbox{\hyperlink{classIterator_ac739493f5b0ef3333abf23c551e416f0}{has\+Next}} ()=0
+\begin{DoxyCompactList}\small\item\em Checks if there are more elements in the collection. \end{DoxyCompactList}\item 
+virtual T \mbox{\hyperlink{classIterator_a312531d070e7e2abc84043c6ecd21ed4}{next}} ()=0
+\begin{DoxyCompactList}\small\item\em Retrieves the next element in the collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$\newline
+class Iterator$<$ T $>$}
+
+Abstract base class for creating an iterator for a collection. 
+
+This class defines the interface for an iterator that allows traversing elements of a collection. The iterator must provide methods to check for the presence of more elements and to retrieve the next element.
+
+
+\begin{DoxyTemplParams}{Template Parameters}
+{\em T} & The type of elements that the iterator will traverse. \\
+\hline
+\end{DoxyTemplParams}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIterator_ace58b658db7a3023dd07ffc5e66d992f}\label{classIterator_ace58b658db7a3023dd07ffc5e66d992f}} 
+\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}!````~Iterator@{$\sim$Iterator}}
+\index{````~Iterator@{$\sim$Iterator}!Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{$\sim$Iterator()}{~Iterator()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual \mbox{\hyperlink{classIterator}{Iterator}}$<$ T $>$\+::$\sim$\mbox{\hyperlink{classIterator}{Iterator}} (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor for the \mbox{\hyperlink{classIterator}{Iterator}} class. 
+
+Ensures proper cleanup of derived classes when deleted through a base class pointer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIterator_ac739493f5b0ef3333abf23c551e416f0}\label{classIterator_ac739493f5b0ef3333abf23c551e416f0}} 
+\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual bool \mbox{\hyperlink{classIterator}{Iterator}}$<$ T $>$\+::has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Checks if there are more elements in the collection. 
+
+\begin{DoxyReturn}{Returns}
+true if there are more elements; false otherwise. 
+\end{DoxyReturn}
+
+
+Implemented in \mbox{\hyperlink{classBuildingIterator_aafb241a8df2507e05816c8413ce42fdc}{Building\+Iterator}}.
+
+\mbox{\Hypertarget{classIterator_a312531d070e7e2abc84043c6ecd21ed4}\label{classIterator_a312531d070e7e2abc84043c6ecd21ed4}} 
+\index{Iterator$<$ T $>$@{Iterator$<$ T $>$}!next@{next}}
+\index{next@{next}!Iterator$<$ T $>$@{Iterator$<$ T $>$}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily template$<$typename T $>$ \\
+virtual T \mbox{\hyperlink{classIterator}{Iterator}}$<$ T $>$\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Retrieves the next element in the collection. 
+
+\begin{DoxyReturn}{Returns}
+The next element of type T in the collection.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & if there are no more elements to return. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implemented in \mbox{\hyperlink{classBuildingIterator_abf0c6d41b4ee207f7cc447e1c06107ef}{Building\+Iterator}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+Iterator.\+h\end{DoxyCompactItemize}

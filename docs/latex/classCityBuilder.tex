@@ -1,0 +1,112 @@
+\hypertarget{classCityBuilder}{}\doxysection{City\+Builder Class Reference}
+\label{classCityBuilder}\index{CityBuilder@{CityBuilder}}
+
+
+Implements the \mbox{\hyperlink{classBuilder}{Builder}} interface to construct complex city buildings for population, economic, and infrastructure expansion.  
+
+
+
+
+{\ttfamily \#include $<$City\+Builder.\+h$>$}
+
+
+
+Inheritance diagram for City\+Builder\+:
+% FIG 0
+
+
+Collaboration diagram for City\+Builder\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCityBuilder_a7137b3001a73c97945f4e817b8045b7d}\label{classCityBuilder_a7137b3001a73c97945f4e817b8045b7d}} 
+\mbox{\hyperlink{classCityBuilder_a7137b3001a73c97945f4e817b8045b7d}{City\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classCityBuilder}{City\+Builder}} object and initializes an empty \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCityBuilder_af7a55a7b83d784fd9143464ace9aeab0}\label{classCityBuilder_af7a55a7b83d784fd9143464ace9aeab0}} 
+\mbox{\hyperlink{classCityBuilder_af7a55a7b83d784fd9143464ace9aeab0}{$\sim$\+City\+Builder}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classCityBuilder}{City\+Builder}}, responsible for cleaning up the allocated \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCityBuilder_a77ba5db822cb61ea6af87e556f3c9618}{build\+Population\+Growth}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Builds residential structures to support population growth in the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCityBuilder_adac27a63290b64682051417668ea042b}{build\+Job\+Growth}} (int amount) override
+\begin{DoxyCompactList}\small\item\em Adds structures or modifies existing ones to create job opportunities. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCityBuilder_ae8764492728b4d1db3c05c2d0f0a4092}\label{classCityBuilder_ae8764492728b4d1db3c05c2d0f0a4092}} 
+void \mbox{\hyperlink{classCityBuilder_ae8764492728b4d1db3c05c2d0f0a4092}{build\+Housing\+Expansion}} () override
+\begin{DoxyCompactList}\small\item\em Expands housing by adding diverse residential buildings such as estates and townhouses. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCityBuilder_a290f063bc1ab546d799e1ffc98f67122}\label{classCityBuilder_a290f063bc1ab546d799e1ffc98f67122}} 
+void \mbox{\hyperlink{classCityBuilder_a290f063bc1ab546d799e1ffc98f67122}{build\+Economic\+Development}} () override
+\begin{DoxyCompactList}\small\item\em Develops commercial areas to boost economic growth and increase city revenue. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCityBuilder_a4abd947f710d0230b3ec5aee74c2e1d0}\label{classCityBuilder_a4abd947f710d0230b3ec5aee74c2e1d0}} 
+void \mbox{\hyperlink{classCityBuilder_a4abd947f710d0230b3ec5aee74c2e1d0}{build\+Infrastructure\+Expansion}} () override
+\begin{DoxyCompactList}\small\item\em Expands infrastructure by constructing industrial buildings that support city utilities and employment. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} $\ast$ \mbox{\hyperlink{classCityBuilder_adda4bae0c41874408b666c8f2232f54c}{get\+Composite\+Building}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the composite building structure containing all the constructed components. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Implements the \mbox{\hyperlink{classBuilder}{Builder}} interface to construct complex city buildings for population, economic, and infrastructure expansion. 
+
+\mbox{\hyperlink{classCityBuilder}{City\+Builder}} provides specific methods to support different aspects of city development, including population growth, job growth, housing expansion, economic development, and infrastructure expansion. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCityBuilder_adac27a63290b64682051417668ea042b}\label{classCityBuilder_adac27a63290b64682051417668ea042b}} 
+\index{CityBuilder@{CityBuilder}!buildJobGrowth@{buildJobGrowth}}
+\index{buildJobGrowth@{buildJobGrowth}!CityBuilder@{CityBuilder}}
+\doxysubsubsection{\texorpdfstring{buildJobGrowth()}{buildJobGrowth()}}
+{\footnotesize\ttfamily void City\+Builder\+::build\+Job\+Growth (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Adds structures or modifies existing ones to create job opportunities. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The number of jobs to generate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBuilder}{Builder}}.
+
+\mbox{\Hypertarget{classCityBuilder_a77ba5db822cb61ea6af87e556f3c9618}\label{classCityBuilder_a77ba5db822cb61ea6af87e556f3c9618}} 
+\index{CityBuilder@{CityBuilder}!buildPopulationGrowth@{buildPopulationGrowth}}
+\index{buildPopulationGrowth@{buildPopulationGrowth}!CityBuilder@{CityBuilder}}
+\doxysubsubsection{\texorpdfstring{buildPopulationGrowth()}{buildPopulationGrowth()}}
+{\footnotesize\ttfamily void City\+Builder\+::build\+Population\+Growth (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Builds residential structures to support population growth in the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The target number of residents to accommodate. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBuilder}{Builder}}.
+
+\mbox{\Hypertarget{classCityBuilder_adda4bae0c41874408b666c8f2232f54c}\label{classCityBuilder_adda4bae0c41874408b666c8f2232f54c}} 
+\index{CityBuilder@{CityBuilder}!getCompositeBuilding@{getCompositeBuilding}}
+\index{getCompositeBuilding@{getCompositeBuilding}!CityBuilder@{CityBuilder}}
+\doxysubsubsection{\texorpdfstring{getCompositeBuilding()}{getCompositeBuilding()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} $\ast$ City\+Builder\+::get\+Composite\+Building (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the composite building structure containing all the constructed components. 
+
+\begin{DoxyReturn}{Returns}
+Pointer to the composite building structure. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuilder_a902aef10062067d8c5731a913b0799ac}{Builder}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+City\+Builder.\+h\item 
+City\+Builder.\+cpp\end{DoxyCompactItemize}

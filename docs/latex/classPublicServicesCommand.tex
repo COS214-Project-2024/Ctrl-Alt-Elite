@@ -1,0 +1,74 @@
+\hypertarget{classPublicServicesCommand}{}\doxysection{Public\+Services\+Command Class Reference}
+\label{classPublicServicesCommand}\index{PublicServicesCommand@{PublicServicesCommand}}
+
+
+\mbox{\hyperlink{classCommand}{Command}} class for managing public services within a city.  
+
+
+
+
+{\ttfamily \#include $<$public\+\_\+services\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for Public\+Services\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for Public\+Services\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPublicServicesCommand_a43005eeb86e5b2eea030bc9521f2953a}{Public\+Services\+Command}} (\mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} $\ast$dept, const std\+::vector$<$ std\+::string $>$ \&svc)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPublicServicesCommand}{Public\+Services\+Command}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicServicesCommand_a72c9607405ff55def0b5a50fe8cb1f52}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to update public services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classCommand}{Command}} class for managing public services within a city. 
+
+This class encapsulates the command to update and manage public services provided by the \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}}. It holds the necessary data to execute the command and interacts with the public services department. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPublicServicesCommand_a43005eeb86e5b2eea030bc9521f2953a}\label{classPublicServicesCommand_a43005eeb86e5b2eea030bc9521f2953a}} 
+\index{PublicServicesCommand@{PublicServicesCommand}!PublicServicesCommand@{PublicServicesCommand}}
+\index{PublicServicesCommand@{PublicServicesCommand}!PublicServicesCommand@{PublicServicesCommand}}
+\doxysubsubsection{\texorpdfstring{PublicServicesCommand()}{PublicServicesCommand()}}
+{\footnotesize\ttfamily Public\+Services\+Command\+::\+Public\+Services\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} $\ast$}]{dept,  }\item[{const std\+::vector$<$ std\+::string $>$ \&}]{svc }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPublicServicesCommand}{Public\+Services\+Command}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dept} & Pointer to the \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} to be managed. \\
+\hline
+{\em svc} & Vector containing the names of the services to be updated. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPublicServicesCommand_a72c9607405ff55def0b5a50fe8cb1f52}\label{classPublicServicesCommand_a72c9607405ff55def0b5a50fe8cb1f52}} 
+\index{PublicServicesCommand@{PublicServicesCommand}!execute@{execute}}
+\index{execute@{execute}!PublicServicesCommand@{PublicServicesCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Public\+Services\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to update public services. 
+
+This method updates the services in the \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} and manages the city services accordingly. 
+
+Implements \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+public\+\_\+services\+\_\+command.\+h\item 
+public\+\_\+services\+\_\+command.\+cpp\end{DoxyCompactItemize}

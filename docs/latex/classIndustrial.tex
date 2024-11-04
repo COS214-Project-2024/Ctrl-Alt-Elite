@@ -1,0 +1,169 @@
+\hypertarget{classIndustrial}{}\doxysection{Industrial Class Reference}
+\label{classIndustrial}\index{Industrial@{Industrial}}
+
+
+The \mbox{\hyperlink{classIndustrial}{Industrial}} class represents an industrial building in a city.  
+
+
+
+
+{\ttfamily \#include $<$Industrial.\+h$>$}
+
+
+
+Inheritance diagram for Industrial\+:
+% FIG 0
+
+
+Collaboration diagram for Industrial\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classIndustrial_aeaab81e4d03418eba2af7d97fc266777}{Industrial}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classIndustrial}{Industrial}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIndustrial_a674bfff9beaf30289bc58adf2d81c3df}\label{classIndustrial_a674bfff9beaf30289bc58adf2d81c3df}} 
+virtual \mbox{\hyperlink{classIndustrial_a674bfff9beaf30289bc58adf2d81c3df}{$\sim$\+Industrial}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classIndustrial}{Industrial}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIndustrial_a4ac52cc9fae3395f28dd33c9e86a0cd0}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the details of the industrial building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIndustrial_a4eca4e9da2ea18d60e0cbbe5503acaca}{update\+Employment\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Updates the employment rating of the industrial building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIndustrial_a3ded78dd378ebcb6415315c57cc7a37b}{update\+Pollution\+Level}} ()
+\begin{DoxyCompactList}\small\item\em Updates the pollution level of the industrial building. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classIndustrial_adecd989a85eef511595f241ebf9525cb}{get\+Employment\+Rating}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current employment rating of the industrial building. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuilding}{Building}} $\ast$ \mbox{\hyperlink{classIndustrial_a6f31eb1b6c88135114a2cdbcb135236f}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Clones the current \mbox{\hyperlink{classIndustrial}{Industrial}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classIndustrial_a5fce77e4bb5d75ef4d554a7ca7f24566}{perform\+Maintenance}} ()
+\begin{DoxyCompactList}\small\item\em Performs maintenance activities for the industrial building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classIndustrial_ae654cc83e2537fd3020c5d569d972cc2}\label{classIndustrial_ae654cc83e2537fd3020c5d569d972cc2}} 
+int \mbox{\hyperlink{classIndustrial_ae654cc83e2537fd3020c5d569d972cc2}{employment\+Rating}}
+\begin{DoxyCompactList}\small\item\em The employment rating of the industrial building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classIndustrial_a4323b808290fde08b18b81e0bea81a86}\label{classIndustrial_a4323b808290fde08b18b81e0bea81a86}} 
+float \mbox{\hyperlink{classIndustrial_a4323b808290fde08b18b81e0bea81a86}{pollution\+Level}}
+\begin{DoxyCompactList}\small\item\em The pollution level of the industrial building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classIndustrial}{Industrial}} class represents an industrial building in a city. 
+
+This class inherits from the \mbox{\hyperlink{classBuilding}{Building}} class and includes specific attributes and methods for managing employment ratings and pollution levels associated with industrial buildings. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classIndustrial_aeaab81e4d03418eba2af7d97fc266777}\label{classIndustrial_aeaab81e4d03418eba2af7d97fc266777}} 
+\index{Industrial@{Industrial}!Industrial@{Industrial}}
+\index{Industrial@{Industrial}!Industrial@{Industrial}}
+\doxysubsubsection{\texorpdfstring{Industrial()}{Industrial()}}
+{\footnotesize\ttfamily Industrial\+::\+Industrial (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classIndustrial}{Industrial}} class. 
+
+Initializes an \mbox{\hyperlink{classIndustrial}{Industrial}} object with default employment rating and pollution level. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classIndustrial_a6f31eb1b6c88135114a2cdbcb135236f}\label{classIndustrial_a6f31eb1b6c88135114a2cdbcb135236f}} 
+\index{Industrial@{Industrial}!clone@{clone}}
+\index{clone@{clone}!Industrial@{Industrial}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuilding}{Building}} $\ast$ Industrial\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the current \mbox{\hyperlink{classIndustrial}{Industrial}} object. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new \mbox{\hyperlink{classIndustrial}{Industrial}} object that is a copy of this one. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}{Building}}.
+
+\mbox{\Hypertarget{classIndustrial_a4ac52cc9fae3395f28dd33c9e86a0cd0}\label{classIndustrial_a4ac52cc9fae3395f28dd33c9e86a0cd0}} 
+\index{Industrial@{Industrial}!display@{display}}
+\index{display@{display}!Industrial@{Industrial}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Industrial\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the details of the industrial building. 
+
+This method outputs the current employment rating and pollution level, along with a simple ASCII representation of the building. 
+
+Implements \mbox{\hyperlink{classBuilding_a620073e5358cc07370e6994101446b42}{Building}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classWarehouses_aa5c0c17850f7e5c1ff31fce660304d69}{Warehouses}}, \mbox{\hyperlink{classPlants_a1a5595656ab0b1d694b4a325d468fcce}{Plants}}, and \mbox{\hyperlink{classFactories_a4b29257ca4fce0052d8ab2071ed6ef3e}{Factories}}.
+
+\mbox{\Hypertarget{classIndustrial_adecd989a85eef511595f241ebf9525cb}\label{classIndustrial_adecd989a85eef511595f241ebf9525cb}} 
+\index{Industrial@{Industrial}!getEmploymentRating@{getEmploymentRating}}
+\index{getEmploymentRating@{getEmploymentRating}!Industrial@{Industrial}}
+\doxysubsubsection{\texorpdfstring{getEmploymentRating()}{getEmploymentRating()}}
+{\footnotesize\ttfamily int Industrial\+::get\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current employment rating of the industrial building. 
+
+\begin{DoxyReturn}{Returns}
+The current employment rating. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classIndustrial_a5fce77e4bb5d75ef4d554a7ca7f24566}\label{classIndustrial_a5fce77e4bb5d75ef4d554a7ca7f24566}} 
+\index{Industrial@{Industrial}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Industrial@{Industrial}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Industrial\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Performs maintenance activities for the industrial building. 
+
+This method includes general maintenance tasks and updates the pollution level as part of the maintenance process. 
+
+Implements \mbox{\hyperlink{classBuilding_a5c664351fd7a8a53745b15cecb4e9356}{Building}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classWarehouses_aad7d4ccaf410ed365381c76eebac9f7d}{Warehouses}}, \mbox{\hyperlink{classPlants_a3a299a53e1aeb213212ab79777b62965}{Plants}}, and \mbox{\hyperlink{classFactories_a137570dfb41cba7a210e641ca74b73de}{Factories}}.
+
+\mbox{\Hypertarget{classIndustrial_a4eca4e9da2ea18d60e0cbbe5503acaca}\label{classIndustrial_a4eca4e9da2ea18d60e0cbbe5503acaca}} 
+\index{Industrial@{Industrial}!updateEmploymentRating@{updateEmploymentRating}}
+\index{updateEmploymentRating@{updateEmploymentRating}!Industrial@{Industrial}}
+\doxysubsubsection{\texorpdfstring{updateEmploymentRating()}{updateEmploymentRating()}}
+{\footnotesize\ttfamily void Industrial\+::update\+Employment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the employment rating of the industrial building. 
+
+This method increments the employment rating by 1. 
+
+Reimplemented in \mbox{\hyperlink{classWarehouses_a5417885758f45f521cbc9b99b84a2e68}{Warehouses}}, \mbox{\hyperlink{classPlants_a23b296ce983e55ba718c5ed77fa5edb1}{Plants}}, and \mbox{\hyperlink{classFactories_a3f5d63ffba67b37d75e7054c8fbf3459}{Factories}}.
+
+\mbox{\Hypertarget{classIndustrial_a3ded78dd378ebcb6415315c57cc7a37b}\label{classIndustrial_a3ded78dd378ebcb6415315c57cc7a37b}} 
+\index{Industrial@{Industrial}!updatePollutionLevel@{updatePollutionLevel}}
+\index{updatePollutionLevel@{updatePollutionLevel}!Industrial@{Industrial}}
+\doxysubsubsection{\texorpdfstring{updatePollutionLevel()}{updatePollutionLevel()}}
+{\footnotesize\ttfamily void Industrial\+::update\+Pollution\+Level (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the pollution level of the industrial building. 
+
+This method increments the pollution level by 0.\+5. 
+
+Reimplemented in \mbox{\hyperlink{classWarehouses_a3182068816b5a50bb0eae1aa9ac1ff4a}{Warehouses}}, \mbox{\hyperlink{classPlants_a0b83d0925792aa0cb0a1612dc16bbea2}{Plants}}, and \mbox{\hyperlink{classFactories_af511fcfb0ceda160127a5276f38331f5}{Factories}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Industrial.\+h\item 
+Industrial.\+cpp\end{DoxyCompactItemize}
