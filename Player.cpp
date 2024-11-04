@@ -51,6 +51,13 @@
 
 Player::Player()  {
     std::cout << "Welcome, Mayor! You are now in control of the city.\n";
+    government = nullptr;
+    policyDepartment = nullptr;
+    budgetDepartment = nullptr;
+    publicDepartment = nullptr;
+    healthCare = nullptr;
+    education = nullptr;
+    lawEnforement = nullptr;
 }
 
 void Player::createCity() {
@@ -75,6 +82,7 @@ void Player::createCity() {
             std::cin >> population;
     
             City* city = new City(name, population, 0.0);
+            city->displayCityInformation();
         }
     }
     
@@ -250,14 +258,63 @@ void Player::addCitizens() {
 
 void Player::addGovernment() {
     std::cout << "Establishing government for the city.\n";
-    Government* government = new Government(this->city);
-    TaxationDepartment* taxDepartment = new TaxationDepartment(this->city);
-    PoliciesDepartment* policyDepartment = new PoliciesDepartment(this->city);
-    BudgetDepartment* budgetDepartment = new BudgetDepartment(this->city);
-    PublicServicesDepartment* publicDepartment = new PublicServicesDepartment(this->city);
-    HealthCare* healthCare = new HealthCare(this->city);
-    Education* education = new Education(this->city);
-    LawEnforcment* lawEnforement = new LawEnforcment(this->city);
+    government = new Government(this->city);
+    taxDepartment = new TaxationDepartment(this->city);
+    policyDepartment = new PoliciesDepartment(this->city);
+    budgetDepartment = new BudgetDepartment(this->city);
+    publicDepartment = new PublicServicesDepartment(this->city);
+    healthCare = new HealthCare(this->city);
+    education = new Education(this->city);
+    lawEnforement = new LawEnforcment(this->city);
+
+    
+    int choice = -1;
+    while(choice!=4)
+    {
+    std::cout << "Make updates to:\n";
+    std::cout << "1. Tax rate\n";
+    std::cout << "2. Budget\n";
+    std::cout << "3. Policy\n";
+    std::cout << "4. Return to menu\n";
+    std::cin>>choice;
+    switch(choice){
+        case 1: {
+            std::cout<<"Enter tax rate (1-50%):\n";
+            float taxRate;
+            std::cin>>taxRate;
+            TaxCommand taxCommand(taxDepartment, taxRate);
+            taxCommand.execute();
+            taxDepartment->Report();
+            break;
+        };
+        case 2:{
+            std::cout<<"Enter budget:\n";
+            float budget;
+            std::cin>>budget;
+            AllocateBudgetCommand budgetCommand(budgetDepartment, budget);
+            budgetCommand.execute();
+            budgetDepartment->Report();
+            break;
+        }
+        case 3:{
+            std::cout<<"Enter policy:\n";
+            std::string policy;
+            std::cin>>policy;
+            PolicyCommand policyCommand(policyDepartment, policy);
+            policyCommand.execute();
+            policyDepartment->Report();
+            break;
+        }
+        case 4:{
+            choice=4;
+            break;
+        }
+        default:
+                std::cout << "Invalid choice. Please try again.\n";
+                break;
+    }
+    }
+
     
 }
 
@@ -283,6 +340,7 @@ void Player::addResources() {
 
    
     ResourceFactory* factory = new ResourceFactory(energyAmount, waterAmount,materialsAmount,budgetAmount);
+    factory->displayResourceStatus();
     
 }
 
@@ -668,3 +726,4 @@ void Player::showCityState() {
     std::cout << "Displaying the current state of the city.\n";
     this->compositeBuilding->display();
 }
+//end
