@@ -22,12 +22,12 @@ private:
     Building* buildings;         // Pointer to buildings in the city
     Utilities* utilities;        // Utilities associated with the city
     std::vector<Resource*> resources; // Vector to store allocated resources
-    ResourceFactory* resourceFactory; // Factory for creating resources
+    //ResourceFactory* resourceFactory; // Factory for creating resources
 
 public:
     // Constructors
     City(); // Default constructor
-    City(const std::string& name, int pop, float budget, ResourceFactory* factory);
+    City(const std::string& name, int pop, float budget);
     ~City();
 
     // Methods for handling various city-related commands

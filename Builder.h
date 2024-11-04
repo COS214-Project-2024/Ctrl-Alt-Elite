@@ -13,15 +13,8 @@
 class Builder {
 public:
     virtual ~Builder() = default;
-
-    /**
-     * @brief Builds and manages population growth features in the city.
-     */
-    virtual void buildPopulationGrowth() = 0;
-
-    /**
-     * @brief Constructs new housing or expands existing housing facilities.
-     */
+    virtual void buildPopulationGrowth(int amount) = 0;
+    virtual void buildJobGrowth(int amount) = 0; 
     virtual void buildHousingExpansion() = 0;
 
     /**

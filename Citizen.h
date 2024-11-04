@@ -32,6 +32,8 @@ private:
 	int requestType;
 
 public:
+   
+    Citizen();
 
 	Citizen(const std::string& citizenName, std::shared_ptr<TransportationState> state= nullptr, std::shared_ptr<PublicServicesDepartment> services = nullptr);
 

@@ -40,9 +40,9 @@ public:
 
 	//void executeCommands();
 
-	virtual void manageCity() = 0;
+	virtual void manageCity() { return;};
 
-	virtual float getTaxrate() = 0;
+	virtual float getTaxrate() { return 0;};
 
 	std::string getCurrentPolicy();
 

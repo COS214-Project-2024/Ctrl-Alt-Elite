@@ -78,7 +78,7 @@ void TestingComposite() {
 
     // Step 1: Construct the city with population growth, housing, economic development, and infrastructure
     std::cout << "Constructing city...\n";
-    cityDirector.constructCityGrowth();
+    cityDirector.constructCityGrowth(100);
     CompositeBuilding* city = cityBuilder.getCompositeBuilding();
 
     // Step 2: Add various types of buildings to the city
@@ -299,7 +299,7 @@ void testCityUtilitiesIntegration() {
     ResourceFactory* factory = new ResourceFactory(1000000.0f, 2500000.0f,340000.0f,5000000.0f);
     std::cout << "\nInitial Resource Capacities:" << std::endl;
     factory->displayResourceStatus();
-    City testCity("TestCity", 1000, 500000, factory);
+   // City testCity("TestCity", 1000, 500000, factory);
 
     Building* residentialBuilding = new Residential();
     Building* commercialBuilding = new Commercial();
@@ -578,11 +578,11 @@ int main() {
 
     TestingResourcesAndUtilities();
     TestingComposite();
-    //TestingCommand();
-    //TestingStrategyAndState();
+    TestingCommand();
+    TestingStrategyAndState();
     // TestingAdapter();
     // TestingObserver();
-    // testTemplate();
+    testTemplate();
     // testChain();
     
     

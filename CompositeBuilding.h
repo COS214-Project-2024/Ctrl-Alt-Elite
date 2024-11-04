@@ -19,6 +19,8 @@ public:
     void addBuilding(Building* building) ;
     void removeBuilding(Building* building) ;
 
+    vector<Building*> getbuildings();
+
     void display()  override;
     Building* clone() const override;
 
@@ -34,6 +36,7 @@ public:
 	double calculateTaxRevenue() const;
     void maintainBuildings();
     void trackSatisfaction();
+
 
     BuildingIterator createIterator();
 };

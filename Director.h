@@ -10,7 +10,7 @@ private:
 public:
     Director(Builder* newBuilder);
     void setBuilder(Builder* newBuilder);
-    void constructCityGrowth();
+    void constructCityGrowth(int amount);
 };
 
 #endif // DIRECTOR_H
