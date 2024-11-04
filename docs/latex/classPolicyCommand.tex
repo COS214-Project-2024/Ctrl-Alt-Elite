@@ -1,0 +1,74 @@
+\hypertarget{classPolicyCommand}{}\doxysection{Policy\+Command Class Reference}
+\label{classPolicyCommand}\index{PolicyCommand@{PolicyCommand}}
+
+
+Represents a command to implement a policy in the Policies Department.  
+
+
+
+
+{\ttfamily \#include $<$policy\+\_\+command.\+h$>$}
+
+
+
+Inheritance diagram for Policy\+Command\+:
+% FIG 0
+
+
+Collaboration diagram for Policy\+Command\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPolicyCommand_af821a807248602c11cd938f9a852befa}{Policy\+Command}} (\mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} $\ast$dept, const std\+::string \&policy)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPolicyCommand}{Policy\+Command}} with the specified \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} and policy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPolicyCommand_a439d6d2a675975d0ecc6ff2c7134c0da}{execute}} () override
+\begin{DoxyCompactList}\small\item\em Executes the command to implement the policy in the Policies Department. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a command to implement a policy in the Policies Department. 
+
+The \mbox{\hyperlink{classPolicyCommand}{Policy\+Command}} class encapsulates the details necessary to implement a specific policy through the \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}}, following the command pattern. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPolicyCommand_af821a807248602c11cd938f9a852befa}\label{classPolicyCommand_af821a807248602c11cd938f9a852befa}} 
+\index{PolicyCommand@{PolicyCommand}!PolicyCommand@{PolicyCommand}}
+\index{PolicyCommand@{PolicyCommand}!PolicyCommand@{PolicyCommand}}
+\doxysubsubsection{\texorpdfstring{PolicyCommand()}{PolicyCommand()}}
+{\footnotesize\ttfamily Policy\+Command\+::\+Policy\+Command (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} $\ast$}]{dept,  }\item[{const std\+::string \&}]{policy }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPolicyCommand}{Policy\+Command}} with the specified \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} and policy. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em dept} & Pointer to the \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} where the policy will be implemented. \\
+\hline
+{\em policy} & The policy string that needs to be implemented. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPolicyCommand_a439d6d2a675975d0ecc6ff2c7134c0da}\label{classPolicyCommand_a439d6d2a675975d0ecc6ff2c7134c0da}} 
+\index{PolicyCommand@{PolicyCommand}!execute@{execute}}
+\index{execute@{execute}!PolicyCommand@{PolicyCommand}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily void Policy\+Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Executes the command to implement the policy in the Policies Department. 
+
+This method calls the implement\+Policy method on the associated \mbox{\hyperlink{classPoliciesDepartment}{Policies\+Department}} and manages the city according to the new policy. 
+
+Implements \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{Command}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+policy\+\_\+command.\+h\item 
+policy\+\_\+command.\+cpp\end{DoxyCompactItemize}

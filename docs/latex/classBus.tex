@@ -1,0 +1,111 @@
+\hypertarget{classBus}{}\doxysection{Bus Class Reference}
+\label{classBus}\index{Bus@{Bus}}
+
+
+Represents a bus for public transport.  
+
+
+
+
+{\ttfamily \#include $<$Bus.\+h$>$}
+
+
+
+Inheritance diagram for Bus\+:
+% FIG 0
+
+
+Collaboration diagram for Bus\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classBus_aa5bedace947b50f8d8d9e026b0ed197f}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Travels with the bus if it is available. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBus_a5999e5de56abe496492798ebf0d566da}{Bus}} (int cap, int routes, float bus\+Fare, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classBus}{Bus}} object. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBus_aaa8a4e49bbb01a4729ca9ce90c2f3c40}{get\+Fare}} () const
+\begin{DoxyCompactList}\small\item\em Gets the fare for traveling on the bus. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBus_a0f243745110d3184d36a0d2ba7332e3b}{set\+Fare}} (float new\+Fare)
+\begin{DoxyCompactList}\small\item\em Sets a new fare for traveling on the bus. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a bus for public transport. 
+
+The \mbox{\hyperlink{classBus}{Bus}} class inherits from \mbox{\hyperlink{classPublicTransport}{Public\+Transport}} and encapsulates the attributes and behaviors of a bus, including its fare and travel methods. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBus_a5999e5de56abe496492798ebf0d566da}\label{classBus_a5999e5de56abe496492798ebf0d566da}} 
+\index{Bus@{Bus}!Bus@{Bus}}
+\index{Bus@{Bus}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{Bus()}{Bus()}}
+{\footnotesize\ttfamily Bus\+::\+Bus (\begin{DoxyParamCaption}\item[{int}]{cap,  }\item[{int}]{routes,  }\item[{float}]{bus\+Fare,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classBus}{Bus}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The capacity of the bus. \\
+\hline
+{\em routes} & The number of routes the bus serves. \\
+\hline
+{\em bus\+Fare} & The fare for traveling on the bus. \\
+\hline
+{\em state} & A shared pointer to the \mbox{\hyperlink{classTransportationState}{Transportation\+State}} (default is nullptr). \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBus_aaa8a4e49bbb01a4729ca9ce90c2f3c40}\label{classBus_aaa8a4e49bbb01a4729ca9ce90c2f3c40}} 
+\index{Bus@{Bus}!getFare@{getFare}}
+\index{getFare@{getFare}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{getFare()}{getFare()}}
+{\footnotesize\ttfamily float Bus\+::get\+Fare (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the fare for traveling on the bus. 
+
+\begin{DoxyReturn}{Returns}
+The current fare of the bus. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classBus_a0f243745110d3184d36a0d2ba7332e3b}\label{classBus_a0f243745110d3184d36a0d2ba7332e3b}} 
+\index{Bus@{Bus}!setFare@{setFare}}
+\index{setFare@{setFare}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{setFare()}{setFare()}}
+{\footnotesize\ttfamily void Bus\+::set\+Fare (\begin{DoxyParamCaption}\item[{float}]{new\+Fare }\end{DoxyParamCaption})}
+
+
+
+Sets a new fare for traveling on the bus. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Fare} & The new fare to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBus_aa5bedace947b50f8d8d9e026b0ed197f}\label{classBus_aa5bedace947b50f8d8d9e026b0ed197f}} 
+\index{Bus@{Bus}!travel@{travel}}
+\index{travel@{travel}!Bus@{Bus}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Bus\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Travels with the bus if it is available. 
+
+This method outputs a message indicating that the bus is traveling, along with its fare, and calls the stop\+At\+Station method. 
+
+Implements \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{Mode\+Of\+Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Bus.\+h\item 
+Bus.\+cpp\end{DoxyCompactItemize}

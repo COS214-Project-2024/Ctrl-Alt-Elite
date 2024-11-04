@@ -1,0 +1,175 @@
+\hypertarget{classLandmarks}{}\doxysection{Landmarks Class Reference}
+\label{classLandmarks}\index{Landmarks@{Landmarks}}
+
+
+Represents a landmark building with entertainment features.  
+
+
+
+
+{\ttfamily \#include $<$Landmarks.\+h$>$}
+
+
+
+Inheritance diagram for Landmarks\+:
+% FIG 0
+
+
+Collaboration diagram for Landmarks\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLandmarks_a72c99389819319640779f889c3736ec3}{Landmarks}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classLandmarks}{Landmarks}} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classLandmarks_a16b17d5e0521779117723eea73269acb}{$\sim$\+Landmarks}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classLandmarks}{Landmarks}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classLandmarks_ad0aa3364ecf42d787d091d7559246060}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about the landmark. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLandmarks_a58a69f429670f3ca454e4df2f9dab614}{update\+Entertainment\+Rating}} ()
+\begin{DoxyCompactList}\small\item\em Updates the entertainment rating of the landmark. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classLandmarks_a3b8a1ff8bd26c7a738183098b27bcf23}{get\+Entertainment\+Rating}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current entertainment rating. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuilding}{Building}} $\ast$ \mbox{\hyperlink{classLandmarks_afc677216fadd9ffe4fb208fce0fd6bed}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Clones the current \mbox{\hyperlink{classLandmarks}{Landmarks}} object. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLandmarks_a38569739bfce571fa0501c0c80a6fcd2}{perform\+Maintenance}} ()
+\begin{DoxyCompactList}\small\item\em Performs maintenance on the landmark. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \mbox{\hyperlink{classLandmarks_a9eda607e34b0dd97c48cf293c999385b}{entertainment\+Rating}}
+\item 
+float \mbox{\hyperlink{classLandmarks_a8456e31d8c1337c1293ddf72c17ca648}{maintenance\+Cost}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a landmark building with entertainment features. 
+
+This class extends the \mbox{\hyperlink{classBuilding}{Building}} class and adds functionality specific to landmarks, such as maintaining an entertainment rating and tracking maintenance costs. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLandmarks_a72c99389819319640779f889c3736ec3}\label{classLandmarks_a72c99389819319640779f889c3736ec3}} 
+\index{Landmarks@{Landmarks}!Landmarks@{Landmarks}}
+\index{Landmarks@{Landmarks}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{Landmarks()}{Landmarks()}}
+{\footnotesize\ttfamily Landmarks\+::\+Landmarks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classLandmarks}{Landmarks}} class. 
+
+Initializes entertainment\+Rating and maintenance\+Cost to default values. \mbox{\Hypertarget{classLandmarks_a16b17d5e0521779117723eea73269acb}\label{classLandmarks_a16b17d5e0521779117723eea73269acb}} 
+\index{Landmarks@{Landmarks}!````~Landmarks@{$\sim$Landmarks}}
+\index{````~Landmarks@{$\sim$Landmarks}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{$\sim$Landmarks()}{~Landmarks()}}
+{\footnotesize\ttfamily Landmarks\+::$\sim$\+Landmarks (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual destructor for the \mbox{\hyperlink{classLandmarks}{Landmarks}} class. 
+
+Ensures proper cleanup of derived classes when deleted through a base class pointer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLandmarks_afc677216fadd9ffe4fb208fce0fd6bed}\label{classLandmarks_afc677216fadd9ffe4fb208fce0fd6bed}} 
+\index{Landmarks@{Landmarks}!clone@{clone}}
+\index{clone@{clone}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuilding}{Building}} $\ast$ Landmarks\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the current \mbox{\hyperlink{classLandmarks}{Landmarks}} object. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new instance of \mbox{\hyperlink{classLandmarks}{Landmarks}} that is a copy of this object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}{Building}}.
+
+\mbox{\Hypertarget{classLandmarks_ad0aa3364ecf42d787d091d7559246060}\label{classLandmarks_ad0aa3364ecf42d787d091d7559246060}} 
+\index{Landmarks@{Landmarks}!display@{display}}
+\index{display@{display}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Landmarks\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays information about the landmark. 
+
+This method outputs the entertainment rating and maintenance cost of the landmark to the console. 
+
+Implements \mbox{\hyperlink{classBuilding_a620073e5358cc07370e6994101446b42}{Building}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPark_a2a0f2d52d84fc2f707cef56b147c8459}{Park}}, and \mbox{\hyperlink{classMonument_ad6710664411c69c3ca72edc87b13f236}{Monument}}.
+
+\mbox{\Hypertarget{classLandmarks_a3b8a1ff8bd26c7a738183098b27bcf23}\label{classLandmarks_a3b8a1ff8bd26c7a738183098b27bcf23}} 
+\index{Landmarks@{Landmarks}!getEntertainmentRating@{getEntertainmentRating}}
+\index{getEntertainmentRating@{getEntertainmentRating}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{getEntertainmentRating()}{getEntertainmentRating()}}
+{\footnotesize\ttfamily int Landmarks\+::get\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Retrieves the current entertainment rating. 
+
+\begin{DoxyReturn}{Returns}
+The current entertainment rating of the landmark. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classLandmarks_a38569739bfce571fa0501c0c80a6fcd2}\label{classLandmarks_a38569739bfce571fa0501c0c80a6fcd2}} 
+\index{Landmarks@{Landmarks}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Landmarks\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Performs maintenance on the landmark. 
+
+This method outputs maintenance actions for the landmark to the console. 
+
+Implements \mbox{\hyperlink{classBuilding_a5c664351fd7a8a53745b15cecb4e9356}{Building}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classPark_aff47c5d83f3da9bd5090e22a66cbdb31}{Park}}, \mbox{\hyperlink{classMonument_aa3693bc1a5f1efe8401490709ac1ba74}{Monument}}, and \mbox{\hyperlink{classCulturalCenter_a55265c3ec0a9b12ef563cc77b9882d37}{Cultural\+Center}}.
+
+\mbox{\Hypertarget{classLandmarks_a58a69f429670f3ca454e4df2f9dab614}\label{classLandmarks_a58a69f429670f3ca454e4df2f9dab614}} 
+\index{Landmarks@{Landmarks}!updateEntertainmentRating@{updateEntertainmentRating}}
+\index{updateEntertainmentRating@{updateEntertainmentRating}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{updateEntertainmentRating()}{updateEntertainmentRating()}}
+{\footnotesize\ttfamily void Landmarks\+::update\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Updates the entertainment rating of the landmark. 
+
+Increases the entertainment rating by a predefined value. 
+
+Reimplemented in \mbox{\hyperlink{classPark_aa0db51e79ff4bac3c31f71b770a8c4e3}{Park}}, \mbox{\hyperlink{classMonument_a49b87b77dd6eec41991e8fb802b08251}{Monument}}, and \mbox{\hyperlink{classCulturalCenter_a09e42aaae2d5de9b92af8b342ad93c4c}{Cultural\+Center}}.
+
+
+
+\doxysubsection{Member Data Documentation}
+\mbox{\Hypertarget{classLandmarks_a9eda607e34b0dd97c48cf293c999385b}\label{classLandmarks_a9eda607e34b0dd97c48cf293c999385b}} 
+\index{Landmarks@{Landmarks}!entertainmentRating@{entertainmentRating}}
+\index{entertainmentRating@{entertainmentRating}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{entertainmentRating}{entertainmentRating}}
+{\footnotesize\ttfamily int Landmarks\+::entertainment\+Rating\hspace{0.3cm}{\ttfamily [protected]}}
+
+Rating indicating the entertainment value of the landmark. \mbox{\Hypertarget{classLandmarks_a8456e31d8c1337c1293ddf72c17ca648}\label{classLandmarks_a8456e31d8c1337c1293ddf72c17ca648}} 
+\index{Landmarks@{Landmarks}!maintenanceCost@{maintenanceCost}}
+\index{maintenanceCost@{maintenanceCost}!Landmarks@{Landmarks}}
+\doxysubsubsection{\texorpdfstring{maintenanceCost}{maintenanceCost}}
+{\footnotesize\ttfamily float Landmarks\+::maintenance\+Cost\hspace{0.3cm}{\ttfamily [protected]}}
+
+Cost associated with maintaining the landmark. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Landmarks.\+h\item 
+Landmarks.\+cpp\end{DoxyCompactItemize}

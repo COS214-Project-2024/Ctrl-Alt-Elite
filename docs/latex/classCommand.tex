@@ -1,0 +1,62 @@
+\hypertarget{classCommand}{}\doxysection{Command Class Reference}
+\label{classCommand}\index{Command@{Command}}
+
+
+Interface for command pattern, representing an executable action.  
+
+
+
+
+{\ttfamily \#include $<$command.\+h$>$}
+
+
+
+Inheritance diagram for Command\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual void \mbox{\hyperlink{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}{execute}} ()=0
+\begin{DoxyCompactList}\small\item\em Executes the command action. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classCommand_aa545a53d35818f9efb936daf3fa16c61}{$\sim$\+Command}} ()=default
+\begin{DoxyCompactList}\small\item\em Virtual destructor for the \mbox{\hyperlink{classCommand}{Command}} interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for command pattern, representing an executable action. 
+
+The \mbox{\hyperlink{classCommand}{Command}} interface defines a standard structure for encapsulating actions as objects, enabling parameterization of clients with queues, requests, and operations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCommand_aa545a53d35818f9efb936daf3fa16c61}\label{classCommand_aa545a53d35818f9efb936daf3fa16c61}} 
+\index{Command@{Command}!````~Command@{$\sim$Command}}
+\index{````~Command@{$\sim$Command}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{$\sim$Command()}{~Command()}}
+{\footnotesize\ttfamily virtual Command\+::$\sim$\+Command (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}, {\ttfamily [default]}}
+
+
+
+Virtual destructor for the \mbox{\hyperlink{classCommand}{Command}} interface. 
+
+Ensures derived classes can clean up resources appropriately when deleted through a base class pointer. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}\label{classCommand_a6fd7d9bd8df8bfc881e4d6c7cd1878b7}} 
+\index{Command@{Command}!execute@{execute}}
+\index{execute@{execute}!Command@{Command}}
+\doxysubsubsection{\texorpdfstring{execute()}{execute()}}
+{\footnotesize\ttfamily virtual void Command\+::execute (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Executes the command action. 
+
+This is a pure virtual function, intended to be implemented by concrete command classes to perform specific actions. 
+
+Implemented in \mbox{\hyperlink{classTaxCommand_ac07f6d9739004e85e9a6d0b495528770}{Tax\+Command}}, \mbox{\hyperlink{classPublicServicesCommand_a72c9607405ff55def0b5a50fe8cb1f52}{Public\+Services\+Command}}, \mbox{\hyperlink{classPolicyCommand_a439d6d2a675975d0ecc6ff2c7134c0da}{Policy\+Command}}, and \mbox{\hyperlink{classAllocateBudgetCommand_a64deb7819fcad9c90338645d340fbd55}{Allocate\+Budget\+Command}}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+command.\+h\end{DoxyCompactItemize}

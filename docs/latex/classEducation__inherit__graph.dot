@@ -1,0 +1,11 @@
+digraph "Education"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Education",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="The Education class represents the education services department within a city, inheriting from the P..."];
+  Node2 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PublicServicesDepartment",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicServicesDepartment.html",tooltip="Represents the public services department responsible for managing community services and infrastruct..."];
+  Node3 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="Government",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classGovernment.html",tooltip="The Government class manages the city's administration, including policies, tax rates,..."];
+}

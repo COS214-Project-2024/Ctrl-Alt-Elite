@@ -1,0 +1,123 @@
+\hypertarget{classResourceFactory}{}\doxysection{Resource\+Factory Class Reference}
+\label{classResourceFactory}\index{ResourceFactory@{ResourceFactory}}
+
+
+Factory class for managing and providing resources.  
+
+
+
+
+{\ttfamily \#include $<$Resource\+Factory.\+h$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResourceFactory_a916067fcf47454cfcfb3b58b8d5c8e47}{Resource\+Factory}} (float energy\+Amount, float water\+Amount, float materials\+Amount, float budget\+Amount)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} with specified initial resource amounts. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResourceFactory_a2284c1c16a00252a4eb4942a2b0bdbe9}{$\sim$\+Resource\+Factory}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}}. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResource}{Resource}} $\ast$ \mbox{\hyperlink{classResourceFactory_aba8b97b4b05a2d2cf71ab57e84c200ce}{get\+Resource}} (const std\+::string \&resource\+Type)
+\begin{DoxyCompactList}\small\item\em Retrieves a resource of the specified type. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResourceFactory_a0758dca095a59e6ca177a16b8a51da71}{display\+Resource\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Displays the status of all resources in the pool. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classResourceFactory_adb0583100c6aea4b5ecc80ba50019700}{replenish\+Resource}} (const std\+::string \&resource\+Type, int amount)
+\begin{DoxyCompactList}\small\item\em Replenishes the specified resource by a given amount. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Factory class for managing and providing resources. 
+
+The \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} class creates and maintains a pool of resources such as \mbox{\hyperlink{classEnergy}{Energy}}, \mbox{\hyperlink{classWater}{Water}}, \mbox{\hyperlink{classMaterials}{Materials}}, and \mbox{\hyperlink{classBudget}{Budget}}. It provides methods for resource retrieval, status display, and replenishment. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResourceFactory_a916067fcf47454cfcfb3b58b8d5c8e47}\label{classResourceFactory_a916067fcf47454cfcfb3b58b8d5c8e47}} 
+\index{ResourceFactory@{ResourceFactory}!ResourceFactory@{ResourceFactory}}
+\index{ResourceFactory@{ResourceFactory}!ResourceFactory@{ResourceFactory}}
+\doxysubsubsection{\texorpdfstring{ResourceFactory()}{ResourceFactory()}}
+{\footnotesize\ttfamily Resource\+Factory\+::\+Resource\+Factory (\begin{DoxyParamCaption}\item[{float}]{energy\+Amount,  }\item[{float}]{water\+Amount,  }\item[{float}]{materials\+Amount,  }\item[{float}]{budget\+Amount }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} with specified initial resource amounts. 
+
+Initializes the resource pool with the given amounts for \mbox{\hyperlink{classEnergy}{Energy}}, \mbox{\hyperlink{classWater}{Water}}, \mbox{\hyperlink{classMaterials}{Materials}}, and \mbox{\hyperlink{classBudget}{Budget}} resources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em energy\+Amount} & Initial amount of energy. \\
+\hline
+{\em water\+Amount} & Initial amount of water. \\
+\hline
+{\em materials\+Amount} & Initial amount of materials. \\
+\hline
+{\em budget\+Amount} & Initial budget amount. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classResourceFactory_a2284c1c16a00252a4eb4942a2b0bdbe9}\label{classResourceFactory_a2284c1c16a00252a4eb4942a2b0bdbe9}} 
+\index{ResourceFactory@{ResourceFactory}!````~ResourceFactory@{$\sim$ResourceFactory}}
+\index{````~ResourceFactory@{$\sim$ResourceFactory}!ResourceFactory@{ResourceFactory}}
+\doxysubsubsection{\texorpdfstring{$\sim$ResourceFactory()}{~ResourceFactory()}}
+{\footnotesize\ttfamily Resource\+Factory\+::$\sim$\+Resource\+Factory (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Destructor for \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}}. 
+
+Cleans up the dynamically allocated resources in the resource pool. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResourceFactory_a0758dca095a59e6ca177a16b8a51da71}\label{classResourceFactory_a0758dca095a59e6ca177a16b8a51da71}} 
+\index{ResourceFactory@{ResourceFactory}!displayResourceStatus@{displayResourceStatus}}
+\index{displayResourceStatus@{displayResourceStatus}!ResourceFactory@{ResourceFactory}}
+\doxysubsubsection{\texorpdfstring{displayResourceStatus()}{displayResourceStatus()}}
+{\footnotesize\ttfamily void Resource\+Factory\+::display\+Resource\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Displays the status of all resources in the pool. 
+
+Outputs the current capacities of \mbox{\hyperlink{classEnergy}{Energy}}, \mbox{\hyperlink{classWater}{Water}}, \mbox{\hyperlink{classMaterials}{Materials}}, and \mbox{\hyperlink{classBudget}{Budget}}. \mbox{\Hypertarget{classResourceFactory_aba8b97b4b05a2d2cf71ab57e84c200ce}\label{classResourceFactory_aba8b97b4b05a2d2cf71ab57e84c200ce}} 
+\index{ResourceFactory@{ResourceFactory}!getResource@{getResource}}
+\index{getResource@{getResource}!ResourceFactory@{ResourceFactory}}
+\doxysubsubsection{\texorpdfstring{getResource()}{getResource()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classResource}{Resource}} $\ast$ Resource\+Factory\+::get\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Type }\end{DoxyParamCaption})}
+
+
+
+Retrieves a resource of the specified type. 
+
+If the resource type does not exist in the pool, it attempts to create a new instance, checking for sufficient budget to do so.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Type} & The type of resource to retrieve (e.\+g., \char`\"{}\+Energy\char`\"{}). \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to the requested \mbox{\hyperlink{classResource}{Resource}} object, or nullptr if unavailable. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResourceFactory_adb0583100c6aea4b5ecc80ba50019700}\label{classResourceFactory_adb0583100c6aea4b5ecc80ba50019700}} 
+\index{ResourceFactory@{ResourceFactory}!replenishResource@{replenishResource}}
+\index{replenishResource@{replenishResource}!ResourceFactory@{ResourceFactory}}
+\doxysubsubsection{\texorpdfstring{replenishResource()}{replenishResource()}}
+{\footnotesize\ttfamily void Resource\+Factory\+::replenish\+Resource (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{resource\+Type,  }\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Replenishes the specified resource by a given amount. 
+
+Deducts the cost of replenishing the resource from the budget, if applicable.
+
+
+\begin{DoxyParams}{Parameters}
+{\em resource\+Type} & The type of resource to replenish (e.\+g., \char`\"{}\+Water\char`\"{}). \\
+\hline
+{\em amount} & The amount to replenish. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Resource\+Factory.\+h\item 
+Resource\+Factory.\+cpp\end{DoxyCompactItemize}

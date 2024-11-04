@@ -6,6 +6,56 @@
 #include "City.h"
 #include <iostream>
 #include <vector>
+#include "Residential.h"
+#include "Commercial.h"
+#include "Industrial.h"
+#include "Landmarks.h"
+#include "CulturalCenter.h"
+#include "Monument.h"
+#include "Park.h"
+#include "Factories.h"
+#include "Plants.h"
+#include "Warehouses.h"
+#include "Shop.h"
+#include "Mall.h"
+#include "Office.h"
+#include "Townhouse.h"
+#include "House.h"
+#include "Apartment.h"
+#include "Estate.h"
+#include "Government.h"
+#include "TaxationDepartment.h"
+#include "PoliciesDepartment.h"
+#include "BudgetDepartment.h"
+#include "PublicServicesDepartment.h"
+#include "HealthCare.h"
+#include "Education.h"
+#include "LawEnforcment.h"
+#include "WasteManagement.h"
+#include "SewageSystems.h"
+#include "WaterSupply.h"
+#include "PowerPlants.h"
+#include "Bus.h"
+#include "Train.h"
+#include "Taxi.h"
+#include "Plane.h"
+#include "Car.h"
+#include "Bike.h"
+#include "Walk.h"
+#include "BusyState.h"
+#include "QuietState.h"
+#include "ModerateState.h"
+#include "PrivateBusyState.h"
+#include "PrivateQuietState.h"
+#include "PrivateModerateState.h"
+#include "CityBuilder.h"
+#include "Citizen.h"
+#include "BusyState.h"
+#include "QuietState.h"
+#include "ModerateState.h"
+#include "tax_command.h"
+#include "policy_command.h"
+#include "allocate_budget_command.h"
 
 /**
  * @class Player
@@ -205,6 +255,14 @@ private:
     std::vector<Citizen*> citizens;           ///< Vector of citizens residing in the city.
     std::shared_ptr<TransportStrategy> selectedTransport; ///< Selected transport strategy for the player.
     std::shared_ptr<TransportationState> currentState;    ///< Current transport state for the player.
+    Government* government ;
+    TaxationDepartment* taxDepartment ;
+    PoliciesDepartment* policyDepartment ;
+    BudgetDepartment* budgetDepartment;
+    PublicServicesDepartment* publicDepartment ;
+    HealthCare* healthCare ;
+    Education* education ;
+    LawEnforcment* lawEnforement;
 };
 
 #endif

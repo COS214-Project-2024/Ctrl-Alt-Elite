@@ -1,0 +1,148 @@
+\hypertarget{classSewageSystems}{}\doxysection{Sewage\+Systems Class Reference}
+\label{classSewageSystems}\index{SewageSystems@{SewageSystems}}
+
+
+Class representing sewage systems within a city building.  
+
+
+
+
+{\ttfamily \#include $<$Sewage\+Systems.\+h$>$}
+
+
+
+Inheritance diagram for Sewage\+Systems\+:
+% FIG 0
+
+
+Collaboration diagram for Sewage\+Systems\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classSewageSystems_aeacd443df7ae5a84747bc3057ed08f6f}{Sewage\+Systems}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$\mbox{\hyperlink{classUtilities_addc2dd317865131c7e11a040d61ffe12}{building}}, float cost, \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} $\ast$factory, int capacity)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_af96799b4e449ad00c6fa553849f88a18}{apply\+Utility}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$\mbox{\hyperlink{classUtilities_addc2dd317865131c7e11a040d61ffe12}{building}}) override
+\begin{DoxyCompactList}\small\item\em Applies the sewage utility to the specified building. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classSewageSystems_a626504c48e195705eb5027a451708fcb}{check\+Sewage\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Checks if there is sufficient capacity for more sewage. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classSewageSystems_a90efb60d061b818ec27d3da4b20c821a}{update\+Sewage\+Capacity}} (int new\+Capacity)
+\begin{DoxyCompactList}\small\item\em Updates the capacity of the sewage system. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSewageSystems_ac53dc9cc202b7bf11918b803fb48d0c3}{get\+Sewage\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the maximum capacity of the sewage system. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classSewageSystems_a82fd04b3d9f56a0a7b640be565fe39fa}{get\+Sewage\+Generated}} () const
+\begin{DoxyCompactList}\small\item\em Gets the amount of sewage generated. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Class representing sewage systems within a city building. 
+
+The \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} class manages the sewage generation and capacity for a specific building. It is derived from the \mbox{\hyperlink{classUtilities}{Utilities}} class. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classSewageSystems_aeacd443df7ae5a84747bc3057ed08f6f}\label{classSewageSystems_aeacd443df7ae5a84747bc3057ed08f6f}} 
+\index{SewageSystems@{SewageSystems}!SewageSystems@{SewageSystems}}
+\index{SewageSystems@{SewageSystems}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{SewageSystems()}{SewageSystems()}}
+{\footnotesize\ttfamily Sewage\+Systems\+::\+Sewage\+Systems (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{building,  }\item[{float}]{cost,  }\item[{\mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} $\ast$}]{factory,  }\item[{int}]{capacity }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classSewageSystems}{Sewage\+Systems}} object. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the building associated with the sewage system. \\
+\hline
+{\em cost} & The cost to construct the sewage system. \\
+\hline
+{\em factory} & Pointer to the \mbox{\hyperlink{classResourceFactory}{Resource\+Factory}} for managing resources. \\
+\hline
+{\em capacity} & The maximum capacity of the sewage system. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classSewageSystems_af96799b4e449ad00c6fa553849f88a18}\label{classSewageSystems_af96799b4e449ad00c6fa553849f88a18}} 
+\index{SewageSystems@{SewageSystems}!applyUtility@{applyUtility}}
+\index{applyUtility@{applyUtility}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{applyUtility()}{applyUtility()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::apply\+Utility (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{building }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Applies the sewage utility to the specified building. 
+
+This method checks if the sewage capacity allows for more sewage generation and updates the building\textquotesingle{}s sewage management status.
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the building to which the utility is applied. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classUtilities_a0006cd2905d4222e3e9077a4a88a6ad1}{Utilities}}.
+
+\mbox{\Hypertarget{classSewageSystems_a626504c48e195705eb5027a451708fcb}\label{classSewageSystems_a626504c48e195705eb5027a451708fcb}} 
+\index{SewageSystems@{SewageSystems}!checkSewageCapacity@{checkSewageCapacity}}
+\index{checkSewageCapacity@{checkSewageCapacity}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{checkSewageCapacity()}{checkSewageCapacity()}}
+{\footnotesize\ttfamily bool Sewage\+Systems\+::check\+Sewage\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Checks if there is sufficient capacity for more sewage. 
+
+\begin{DoxyReturn}{Returns}
+true if there is capacity for more sewage; false otherwise. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSewageSystems_ac53dc9cc202b7bf11918b803fb48d0c3}\label{classSewageSystems_ac53dc9cc202b7bf11918b803fb48d0c3}} 
+\index{SewageSystems@{SewageSystems}!getSewageCapacity@{getSewageCapacity}}
+\index{getSewageCapacity@{getSewageCapacity}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{getSewageCapacity()}{getSewageCapacity()}}
+{\footnotesize\ttfamily int Sewage\+Systems\+::get\+Sewage\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the maximum capacity of the sewage system. 
+
+\begin{DoxyReturn}{Returns}
+The current sewage capacity. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSewageSystems_a82fd04b3d9f56a0a7b640be565fe39fa}\label{classSewageSystems_a82fd04b3d9f56a0a7b640be565fe39fa}} 
+\index{SewageSystems@{SewageSystems}!getSewageGenerated@{getSewageGenerated}}
+\index{getSewageGenerated@{getSewageGenerated}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{getSewageGenerated()}{getSewageGenerated()}}
+{\footnotesize\ttfamily int Sewage\+Systems\+::get\+Sewage\+Generated (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Gets the amount of sewage generated. 
+
+\begin{DoxyReturn}{Returns}
+The amount of sewage currently generated. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classSewageSystems_a90efb60d061b818ec27d3da4b20c821a}\label{classSewageSystems_a90efb60d061b818ec27d3da4b20c821a}} 
+\index{SewageSystems@{SewageSystems}!updateSewageCapacity@{updateSewageCapacity}}
+\index{updateSewageCapacity@{updateSewageCapacity}!SewageSystems@{SewageSystems}}
+\doxysubsubsection{\texorpdfstring{updateSewageCapacity()}{updateSewageCapacity()}}
+{\footnotesize\ttfamily void Sewage\+Systems\+::update\+Sewage\+Capacity (\begin{DoxyParamCaption}\item[{int}]{new\+Capacity }\end{DoxyParamCaption})}
+
+
+
+Updates the capacity of the sewage system. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Capacity} & The amount to add to the current sewage capacity. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Sewage\+Systems.\+h\item 
+Sewage\+Systems.\+cpp\end{DoxyCompactItemize}

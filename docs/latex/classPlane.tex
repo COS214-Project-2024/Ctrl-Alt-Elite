@@ -1,0 +1,113 @@
+\hypertarget{classPlane}{}\doxysection{Plane Class Reference}
+\label{classPlane}\index{Plane@{Plane}}
+
+
+Represents a plane as a mode of public transport.  
+
+
+
+
+{\ttfamily \#include $<$Plane.\+h$>$}
+
+
+
+Inheritance diagram for Plane\+:
+% FIG 0
+
+
+Collaboration diagram for Plane\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPlane_a165a1520f2c910df6671120d49248b0e}{Plane}} (int cap, int routes, float cost, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr)
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classPlane}{Plane}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_a7bfcad787c5babe98c796b3adeb8897f}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Travels using the plane. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPlane_a180734d9838415f9f1649e703a1177db}{get\+Ticket\+Cost}} () const
+\begin{DoxyCompactList}\small\item\em Gets the ticket cost for the plane. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPlane_a465394a1253c95b949f0c11cc491b4db}{set\+Ticket\+Cost}} (float new\+Cost)
+\begin{DoxyCompactList}\small\item\em Sets a new ticket cost for the plane. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a plane as a mode of public transport. 
+
+The \mbox{\hyperlink{classPlane}{Plane}} class extends the \mbox{\hyperlink{classPublicTransport}{Public\+Transport}} class, encapsulating the functionalities and properties associated with air travel, including ticket costs and the ability to travel. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPlane_a165a1520f2c910df6671120d49248b0e}\label{classPlane_a165a1520f2c910df6671120d49248b0e}} 
+\index{Plane@{Plane}!Plane@{Plane}}
+\index{Plane@{Plane}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{Plane()}{Plane()}}
+{\footnotesize\ttfamily Plane\+::\+Plane (\begin{DoxyParamCaption}\item[{int}]{cap,  }\item[{int}]{routes,  }\item[{float}]{cost,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classPlane}{Plane}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classPlane}{Plane}} class with the specified capacity, routes, ticket cost, and an optional transportation state.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The capacity of the plane. \\
+\hline
+{\em routes} & The number of routes the plane services. \\
+\hline
+{\em cost} & The cost of a ticket for the plane. \\
+\hline
+{\em state} & Optional shared pointer to a \mbox{\hyperlink{classTransportationState}{Transportation\+State}}. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPlane_a180734d9838415f9f1649e703a1177db}\label{classPlane_a180734d9838415f9f1649e703a1177db}} 
+\index{Plane@{Plane}!getTicketCost@{getTicketCost}}
+\index{getTicketCost@{getTicketCost}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{getTicketCost()}{getTicketCost()}}
+{\footnotesize\ttfamily float Plane\+::get\+Ticket\+Cost (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the ticket cost for the plane. 
+
+\begin{DoxyReturn}{Returns}
+The ticket cost. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPlane_a465394a1253c95b949f0c11cc491b4db}\label{classPlane_a465394a1253c95b949f0c11cc491b4db}} 
+\index{Plane@{Plane}!setTicketCost@{setTicketCost}}
+\index{setTicketCost@{setTicketCost}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{setTicketCost()}{setTicketCost()}}
+{\footnotesize\ttfamily void Plane\+::set\+Ticket\+Cost (\begin{DoxyParamCaption}\item[{float}]{new\+Cost }\end{DoxyParamCaption})}
+
+
+
+Sets a new ticket cost for the plane. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Cost} & The new ticket cost to set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPlane_a7bfcad787c5babe98c796b3adeb8897f}\label{classPlane_a7bfcad787c5babe98c796b3adeb8897f}} 
+\index{Plane@{Plane}!travel@{travel}}
+\index{travel@{travel}!Plane@{Plane}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Plane\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Travels using the plane. 
+
+Displays information about the plane\textquotesingle{}s flight status and ticket cost, or informs if the plane is unavailable. 
+
+Implements \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{Mode\+Of\+Transport}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Plane.\+h\item 
+Plane.\+cpp\end{DoxyCompactItemize}

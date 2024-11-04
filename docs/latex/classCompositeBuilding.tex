@@ -1,0 +1,221 @@
+\hypertarget{classCompositeBuilding}{}\doxysection{Composite\+Building Class Reference}
+\label{classCompositeBuilding}\index{CompositeBuilding@{CompositeBuilding}}
+
+
+Represents a composite building that can contain multiple buildings.  
+
+
+
+
+{\ttfamily \#include $<$Composite\+Building.\+h$>$}
+
+
+
+Inheritance diagram for Composite\+Building\+:
+% FIG 0
+
+
+Collaboration diagram for Composite\+Building\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classCompositeBuilding_a985382350decbb489f48cfd3d0418add}\label{classCompositeBuilding_a985382350decbb489f48cfd3d0418add}} 
+\mbox{\hyperlink{classCompositeBuilding_a985382350decbb489f48cfd3d0418add}{Composite\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor that initializes a composite building with zero population and jobs. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classCompositeBuilding_ad7ca53c51d6070c5f29fc369967e0b1a}{Composite\+Building}} (int population, int jobs)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} with a specified population and jobs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_a467533f7d78390e128a9dd5bf642bef9}\label{classCompositeBuilding_a467533f7d78390e128a9dd5bf642bef9}} 
+\mbox{\hyperlink{classCompositeBuilding_a467533f7d78390e128a9dd5bf642bef9}{$\sim$\+Composite\+Building}} ()
+\begin{DoxyCompactList}\small\item\em Destructor that cleans up allocated buildings. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompositeBuilding_aa856adab26bc72ed729c871ac6f9e520}{add\+Building}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Adds a building to the composite building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompositeBuilding_a496ab9b221ab96bed1685b4bac1aac1d}{remove\+Building}} (\mbox{\hyperlink{classBuilding}{Building}} $\ast$building)
+\begin{DoxyCompactList}\small\item\em Removes a specified building from the composite building. \end{DoxyCompactList}\item 
+std\+::vector$<$ \mbox{\hyperlink{classBuilding}{Building}} $\ast$ $>$ \mbox{\hyperlink{classCompositeBuilding_afc03e9dcdacd8f32232b6ef67994c991}{getbuildings}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the list of buildings contained in the composite building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_acf47a732747698d8f93dbb375b5ed080}\label{classCompositeBuilding_acf47a732747698d8f93dbb375b5ed080}} 
+void \mbox{\hyperlink{classCompositeBuilding_acf47a732747698d8f93dbb375b5ed080}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays information about all buildings in the composite building. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuilding}{Building}} $\ast$ \mbox{\hyperlink{classCompositeBuilding_a6696b6b38a2dafd9811cc5b826ae8ad2}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Clones the current \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} object. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_a927304011a5e5c1d19aa4227cee1ee69}\label{classCompositeBuilding_a927304011a5e5c1d19aa4227cee1ee69}} 
+void \mbox{\hyperlink{classCompositeBuilding_a927304011a5e5c1d19aa4227cee1ee69}{perform\+Maintenance}} ()
+\begin{DoxyCompactList}\small\item\em Performs maintenance on all buildings in the composite building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompositeBuilding_ae5d011ac63402af0bd2ca37ed48c9d98}{increase\+Population}} (int amount)
+\begin{DoxyCompactList}\small\item\em Increases the total population of the composite building. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classCompositeBuilding_ac6b980236c9ac45582695691b71919a9}{increase\+Jobs}} (int amount)
+\begin{DoxyCompactList}\small\item\em Increases the total jobs of the composite building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_af090c9f8bfd1f23fe6e424a45edb36fe}\label{classCompositeBuilding_af090c9f8bfd1f23fe6e424a45edb36fe}} 
+void \mbox{\hyperlink{classCompositeBuilding_af090c9f8bfd1f23fe6e424a45edb36fe}{expand\+Utilities}} ()
+\begin{DoxyCompactList}\small\item\em Expands utilities for the composite building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_a2e86457376b6f40903863c6405378298}\label{classCompositeBuilding_a2e86457376b6f40903863c6405378298}} 
+void \mbox{\hyperlink{classCompositeBuilding_a2e86457376b6f40903863c6405378298}{display\+City\+State}} ()
+\begin{DoxyCompactList}\small\item\em Displays the overall state of the city, including population and jobs. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_a72b8247a34163cf7564622046558bb85}\label{classCompositeBuilding_a72b8247a34163cf7564622046558bb85}} 
+void \mbox{\hyperlink{classCompositeBuilding_a72b8247a34163cf7564622046558bb85}{manage\+Capacity}} ()
+\begin{DoxyCompactList}\small\item\em Manages capacity for each building in the composite building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_aa179b8fff73b12a5a797a05006fcc147}\label{classCompositeBuilding_aa179b8fff73b12a5a797a05006fcc147}} 
+void \mbox{\hyperlink{classCompositeBuilding_aa179b8fff73b12a5a797a05006fcc147}{integrate\+Utilities}} ()
+\begin{DoxyCompactList}\small\item\em Integrates utilities across all buildings. \end{DoxyCompactList}\item 
+double \mbox{\hyperlink{classCompositeBuilding_acfb174bf44bd0183cf1ceaa3cb835aaf}{calculate\+Tax\+Revenue}} () const
+\begin{DoxyCompactList}\small\item\em Calculates the total tax revenue generated by the composite building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_a995822bbee6c1227156f9bbcf01aab81}\label{classCompositeBuilding_a995822bbee6c1227156f9bbcf01aab81}} 
+void \mbox{\hyperlink{classCompositeBuilding_a995822bbee6c1227156f9bbcf01aab81}{maintain\+Buildings}} ()
+\begin{DoxyCompactList}\small\item\em Performs maintenance on each building in the composite building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classCompositeBuilding_a26528017753b8de6d30963fee1742674}\label{classCompositeBuilding_a26528017753b8de6d30963fee1742674}} 
+void \mbox{\hyperlink{classCompositeBuilding_a26528017753b8de6d30963fee1742674}{track\+Satisfaction}} ()
+\begin{DoxyCompactList}\small\item\em Tracks satisfaction levels across all buildings in the composite building. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuildingIterator}{Building\+Iterator}} \mbox{\hyperlink{classCompositeBuilding_a88d410dae5c33a7b89db6b9712305e5d}{create\+Iterator}} ()
+\begin{DoxyCompactList}\small\item\em Creates an iterator for the composite building. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a composite building that can contain multiple buildings. 
+
+The \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} class aggregates multiple \mbox{\hyperlink{classBuilding}{Building}} objects and manages overall attributes like population and jobs. It provides functionalities for adding, removing, and displaying individual buildings, as well as managing city-\/wide metrics. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classCompositeBuilding_ad7ca53c51d6070c5f29fc369967e0b1a}\label{classCompositeBuilding_ad7ca53c51d6070c5f29fc369967e0b1a}} 
+\index{CompositeBuilding@{CompositeBuilding}!CompositeBuilding@{CompositeBuilding}}
+\index{CompositeBuilding@{CompositeBuilding}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{CompositeBuilding()}{CompositeBuilding()}}
+{\footnotesize\ttfamily Composite\+Building\+::\+Composite\+Building (\begin{DoxyParamCaption}\item[{int}]{population,  }\item[{int}]{jobs }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} with a specified population and jobs. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em population} & Initial population. \\
+\hline
+{\em jobs} & Initial jobs. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classCompositeBuilding_aa856adab26bc72ed729c871ac6f9e520}\label{classCompositeBuilding_aa856adab26bc72ed729c871ac6f9e520}} 
+\index{CompositeBuilding@{CompositeBuilding}!addBuilding@{addBuilding}}
+\index{addBuilding@{addBuilding}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{addBuilding()}{addBuilding()}}
+{\footnotesize\ttfamily void Composite\+Building\+::add\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{building }\end{DoxyParamCaption})}
+
+
+
+Adds a building to the composite building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the \mbox{\hyperlink{classBuilding}{Building}} object to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCompositeBuilding_acfb174bf44bd0183cf1ceaa3cb835aaf}\label{classCompositeBuilding_acfb174bf44bd0183cf1ceaa3cb835aaf}} 
+\index{CompositeBuilding@{CompositeBuilding}!calculateTaxRevenue@{calculateTaxRevenue}}
+\index{calculateTaxRevenue@{calculateTaxRevenue}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{calculateTaxRevenue()}{calculateTaxRevenue()}}
+{\footnotesize\ttfamily double Composite\+Building\+::calculate\+Tax\+Revenue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Calculates the total tax revenue generated by the composite building. 
+
+\begin{DoxyReturn}{Returns}
+The calculated tax revenue. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCompositeBuilding_a6696b6b38a2dafd9811cc5b826ae8ad2}\label{classCompositeBuilding_a6696b6b38a2dafd9811cc5b826ae8ad2}} 
+\index{CompositeBuilding@{CompositeBuilding}!clone@{clone}}
+\index{clone@{clone}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuilding}{Building}} $\ast$ Composite\+Building\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the current \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} object. 
+
+\begin{DoxyReturn}{Returns}
+A pointer to a new \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}{Building}}.
+
+\mbox{\Hypertarget{classCompositeBuilding_a88d410dae5c33a7b89db6b9712305e5d}\label{classCompositeBuilding_a88d410dae5c33a7b89db6b9712305e5d}} 
+\index{CompositeBuilding@{CompositeBuilding}!createIterator@{createIterator}}
+\index{createIterator@{createIterator}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{createIterator()}{createIterator()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuildingIterator}{Building\+Iterator}} Composite\+Building\+::create\+Iterator (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Creates an iterator for the composite building. 
+
+\begin{DoxyReturn}{Returns}
+A \mbox{\hyperlink{classBuildingIterator}{Building\+Iterator}} for iterating over the buildings. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCompositeBuilding_afc03e9dcdacd8f32232b6ef67994c991}\label{classCompositeBuilding_afc03e9dcdacd8f32232b6ef67994c991}} 
+\index{CompositeBuilding@{CompositeBuilding}!getbuildings@{getbuildings}}
+\index{getbuildings@{getbuildings}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{getbuildings()}{getbuildings()}}
+{\footnotesize\ttfamily std\+::vector$<$ \mbox{\hyperlink{classBuilding}{Building}} $\ast$ $>$ Composite\+Building\+::getbuildings (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Retrieves the list of buildings contained in the composite building. 
+
+\begin{DoxyReturn}{Returns}
+A vector of pointers to \mbox{\hyperlink{classBuilding}{Building}} objects. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classCompositeBuilding_ac6b980236c9ac45582695691b71919a9}\label{classCompositeBuilding_ac6b980236c9ac45582695691b71919a9}} 
+\index{CompositeBuilding@{CompositeBuilding}!increaseJobs@{increaseJobs}}
+\index{increaseJobs@{increaseJobs}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{increaseJobs()}{increaseJobs()}}
+{\footnotesize\ttfamily void Composite\+Building\+::increase\+Jobs (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Increases the total jobs of the composite building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to increase the jobs by. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCompositeBuilding_ae5d011ac63402af0bd2ca37ed48c9d98}\label{classCompositeBuilding_ae5d011ac63402af0bd2ca37ed48c9d98}} 
+\index{CompositeBuilding@{CompositeBuilding}!increasePopulation@{increasePopulation}}
+\index{increasePopulation@{increasePopulation}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{increasePopulation()}{increasePopulation()}}
+{\footnotesize\ttfamily void Composite\+Building\+::increase\+Population (\begin{DoxyParamCaption}\item[{int}]{amount }\end{DoxyParamCaption})}
+
+
+
+Increases the total population of the composite building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em amount} & The amount to increase the population by. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classCompositeBuilding_a496ab9b221ab96bed1685b4bac1aac1d}\label{classCompositeBuilding_a496ab9b221ab96bed1685b4bac1aac1d}} 
+\index{CompositeBuilding@{CompositeBuilding}!removeBuilding@{removeBuilding}}
+\index{removeBuilding@{removeBuilding}!CompositeBuilding@{CompositeBuilding}}
+\doxysubsubsection{\texorpdfstring{removeBuilding()}{removeBuilding()}}
+{\footnotesize\ttfamily void Composite\+Building\+::remove\+Building (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classBuilding}{Building}} $\ast$}]{building }\end{DoxyParamCaption})}
+
+
+
+Removes a specified building from the composite building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em building} & Pointer to the \mbox{\hyperlink{classBuilding}{Building}} object to remove. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Composite\+Building.\+h\item 
+Composite\+Building.\+cpp\end{DoxyCompactItemize}

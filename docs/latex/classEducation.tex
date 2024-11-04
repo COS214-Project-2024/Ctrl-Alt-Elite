@@ -1,0 +1,76 @@
+\hypertarget{classEducation}{}\doxysection{Education Class Reference}
+\label{classEducation}\index{Education@{Education}}
+
+
+The \mbox{\hyperlink{classEducation}{Education}} class represents the education services department within a city, inheriting from the \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}}.  
+
+
+
+
+{\ttfamily \#include $<$Education.\+h$>$}
+
+
+
+Inheritance diagram for Education\+:
+% FIG 0
+
+
+Collaboration diagram for Education\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classEducation_a54b3b058243156c03ee31961dd77ecdc}{Education}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Constructor that initializes the \mbox{\hyperlink{classEducation}{Education}} department with a reference to the city. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classEducation_ab099ef2d4a67f0c398daf25e3065d434}{handle\+Request}} (int request\+Type) override
+\begin{DoxyCompactList}\small\item\em Handles requests related to education services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classEducation}{Education}} class represents the education services department within a city, inheriting from the \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classEducation_a54b3b058243156c03ee31961dd77ecdc}\label{classEducation_a54b3b058243156c03ee31961dd77ecdc}} 
+\index{Education@{Education}!Education@{Education}}
+\index{Education@{Education}!Education@{Education}}
+\doxysubsubsection{\texorpdfstring{Education()}{Education()}}
+{\footnotesize\ttfamily Education\+::\+Education (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructor that initializes the \mbox{\hyperlink{classEducation}{Education}} department with a reference to the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Pointer to the \mbox{\hyperlink{classCity}{City}} instance that this department serves. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classEducation_ab099ef2d4a67f0c398daf25e3065d434}\label{classEducation_ab099ef2d4a67f0c398daf25e3065d434}} 
+\index{Education@{Education}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!Education@{Education}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Education\+::handle\+Request (\begin{DoxyParamCaption}\item[{int}]{request\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles requests related to education services. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Type} & The type of request being made, used to determine if the service can be provided. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicServicesDepartment_a38ec60eb90980d0907794909e0cc242e}{Public\+Services\+Department}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Education.\+h\item 
+Education.\+cpp\end{DoxyCompactItemize}

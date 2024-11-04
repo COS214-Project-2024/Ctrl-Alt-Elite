@@ -1,0 +1,160 @@
+\hypertarget{classGovernment}{}\doxysection{Government Class Reference}
+\label{classGovernment}\index{Government@{Government}}
+
+
+The \mbox{\hyperlink{classGovernment}{Government}} class manages the city\textquotesingle{}s administration, including policies, tax rates, and public services.  
+
+
+
+
+{\ttfamily \#include $<$Government.\+h$>$}
+
+
+
+Inheritance diagram for Government\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGovernment_ad06c951e706c3a9e43e18b11c75d8888}\label{classGovernment_ad06c951e706c3a9e43e18b11c75d8888}} 
+\mbox{\hyperlink{classGovernment_ad06c951e706c3a9e43e18b11c75d8888}{Government}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classGovernment}{Government}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classGovernment_a7549453278c227c118c011a41afd59fe}{Government}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the \mbox{\hyperlink{classGovernment}{Government}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_a414d98097519dd0d9a3c3274b204344e}\label{classGovernment_a414d98097519dd0d9a3c3274b204344e}} 
+void \mbox{\hyperlink{classGovernment_a414d98097519dd0d9a3c3274b204344e}{Report}} ()
+\begin{DoxyCompactList}\small\item\em Generates a report of the government\textquotesingle{}s status, including tax rate, budget, services, and policy. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_ae6ba346f9c35ed2aab31a4f8776aa9c4}{add\+Observer}} (\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Adds a citizen as an observer to the government. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classGovernment_a81d635e85d9aacf362b9791eafaf76a5}{remove\+Observer}} (\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$observer)
+\begin{DoxyCompactList}\small\item\em Removes a citizen from the list of observers. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_a05816b4132101580e30789d1b59657e9}\label{classGovernment_a05816b4132101580e30789d1b59657e9}} 
+void \mbox{\hyperlink{classGovernment_a05816b4132101580e30789d1b59657e9}{notify\+Observers}} ()
+\begin{DoxyCompactList}\small\item\em Notifies all registered observers (citizens) of updates. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_a81ecf49c437cd4f0a2276b847c6387f2}\label{classGovernment_a81ecf49c437cd4f0a2276b847c6387f2}} 
+virtual void \mbox{\hyperlink{classGovernment_a81ecf49c437cd4f0a2276b847c6387f2}{manage\+City}} ()
+\begin{DoxyCompactList}\small\item\em Manages city operations. Can be overridden by derived classes. \end{DoxyCompactList}\item 
+virtual float \mbox{\hyperlink{classGovernment_accdbcd9e484eef19bc279c3ff2a729d1}{get\+Taxrate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current tax rate. \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{classGovernment_aae3dce87698a19976f191046f046ea13}{get\+Current\+Policy}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current policy of the government. \end{DoxyCompactList}\item 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGovernment_a2bbadc39f1b577003d73505f47e4bc31}{get\+Available\+Services}} ()
+\begin{DoxyCompactList}\small\item\em Gets the available public services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classGovernment_a4430c9a47f92a27342743e8a33015f3f}\label{classGovernment_a4430c9a47f92a27342743e8a33015f3f}} 
+std\+::string \mbox{\hyperlink{classGovernment_a4430c9a47f92a27342743e8a33015f3f}{current\+Policy}}
+\begin{DoxyCompactList}\small\item\em The current policy being implemented by the government. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_a5457f0975f8365fa52bf65de3072f807}\label{classGovernment_a5457f0975f8365fa52bf65de3072f807}} 
+float \mbox{\hyperlink{classGovernment_a5457f0975f8365fa52bf65de3072f807}{tax\+Rate}}
+\begin{DoxyCompactList}\small\item\em The current tax rate applied in the city. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_a9678bc1ca8c7d065fb05167087fcba67}\label{classGovernment_a9678bc1ca8c7d065fb05167087fcba67}} 
+float \mbox{\hyperlink{classGovernment_a9678bc1ca8c7d065fb05167087fcba67}{allocated\+Budget}}
+\begin{DoxyCompactList}\small\item\em The budget allocated for public services. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classGovernment_af2eca3aa3d8a814f4e01f9375811d1ad}\label{classGovernment_af2eca3aa3d8a814f4e01f9375811d1ad}} 
+std\+::vector$<$ std\+::string $>$ \mbox{\hyperlink{classGovernment_af2eca3aa3d8a814f4e01f9375811d1ad}{available\+Services}}
+\begin{DoxyCompactList}\small\item\em List of available public services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classGovernment}{Government}} class manages the city\textquotesingle{}s administration, including policies, tax rates, and public services. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGovernment_a7549453278c227c118c011a41afd59fe}\label{classGovernment_a7549453278c227c118c011a41afd59fe}} 
+\index{Government@{Government}!Government@{Government}}
+\index{Government@{Government}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{Government()}{Government()}}
+{\footnotesize\ttfamily Government\+::\+Government (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for the \mbox{\hyperlink{classGovernment}{Government}} class. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Pointer to the city managed by the government. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGovernment_ae6ba346f9c35ed2aab31a4f8776aa9c4}\label{classGovernment_ae6ba346f9c35ed2aab31a4f8776aa9c4}} 
+\index{Government@{Government}!addObserver@{addObserver}}
+\index{addObserver@{addObserver}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{addObserver()}{addObserver()}}
+{\footnotesize\ttfamily void Government\+::add\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+
+
+Adds a citizen as an observer to the government. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Pointer to the citizen to be added. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classGovernment_a2bbadc39f1b577003d73505f47e4bc31}\label{classGovernment_a2bbadc39f1b577003d73505f47e4bc31}} 
+\index{Government@{Government}!getAvailableServices@{getAvailableServices}}
+\index{getAvailableServices@{getAvailableServices}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{getAvailableServices()}{getAvailableServices()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::string $>$ Government\+::get\+Available\+Services (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the available public services. 
+
+\begin{DoxyReturn}{Returns}
+A vector of available services. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_aae3dce87698a19976f191046f046ea13}\label{classGovernment_aae3dce87698a19976f191046f046ea13}} 
+\index{Government@{Government}!getCurrentPolicy@{getCurrentPolicy}}
+\index{getCurrentPolicy@{getCurrentPolicy}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{getCurrentPolicy()}{getCurrentPolicy()}}
+{\footnotesize\ttfamily std\+::string Government\+::get\+Current\+Policy (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Gets the current policy of the government. 
+
+\begin{DoxyReturn}{Returns}
+The current policy as a string. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classGovernment_accdbcd9e484eef19bc279c3ff2a729d1}\label{classGovernment_accdbcd9e484eef19bc279c3ff2a729d1}} 
+\index{Government@{Government}!getTaxrate@{getTaxrate}}
+\index{getTaxrate@{getTaxrate}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{getTaxrate()}{getTaxrate()}}
+{\footnotesize\ttfamily virtual float Government\+::get\+Taxrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}
+
+
+
+Gets the current tax rate. 
+
+\begin{DoxyReturn}{Returns}
+The current tax rate. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classTaxationDepartment_a25ec2c5fc8c3ccc5044bcd1684a6cfcb}{Taxation\+Department}}, \mbox{\hyperlink{classPublicServicesDepartment_a14bb005424130b758110025a514673f6}{Public\+Services\+Department}}, \mbox{\hyperlink{classPoliciesDepartment_a9ca1b5f9d9fdf448a33cbeaa73b19b99}{Policies\+Department}}, and \mbox{\hyperlink{classBudgetDepartment_a3d103acb0bc1ecb2b8e442ed0c863e52}{Budget\+Department}}.
+
+\mbox{\Hypertarget{classGovernment_a81d635e85d9aacf362b9791eafaf76a5}\label{classGovernment_a81d635e85d9aacf362b9791eafaf76a5}} 
+\index{Government@{Government}!removeObserver@{removeObserver}}
+\index{removeObserver@{removeObserver}!Government@{Government}}
+\doxysubsubsection{\texorpdfstring{removeObserver()}{removeObserver()}}
+{\footnotesize\ttfamily void Government\+::remove\+Observer (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCitizen}{Citizen}} $\ast$}]{observer }\end{DoxyParamCaption})}
+
+
+
+Removes a citizen from the list of observers. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em observer} & Pointer to the citizen to be removed. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Government.\+h\item 
+Government.\+cpp\end{DoxyCompactItemize}

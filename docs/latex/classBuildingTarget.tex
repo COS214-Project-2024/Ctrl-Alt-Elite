@@ -1,0 +1,126 @@
+\hypertarget{classBuildingTarget}{}\doxysection{Building\+Target Class Reference}
+\label{classBuildingTarget}\index{BuildingTarget@{BuildingTarget}}
+
+
+Interface for building target management.  
+
+
+
+
+{\ttfamily \#include $<$Building\+Target.\+h$>$}
+
+
+
+Inheritance diagram for Building\+Target\+:
+% FIG 0
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+virtual \mbox{\hyperlink{classBuildingTarget_a242ade807c0ae64a0f4aab890bc1efad}{$\sim$\+Building\+Target}} ()
+\begin{DoxyCompactList}\small\item\em Virtual destructor for \mbox{\hyperlink{classBuildingTarget}{Building\+Target}}. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildingTarget_ac234742f58a6bbb63b6268ef62707034}{add\+Residential\+Units}} (int units)=0
+\begin{DoxyCompactList}\small\item\em Adds residential units to the building target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildingTarget_aedef43b6069af9a9e8dbed241509477b}{add\+Commercial\+Units}} (int units)=0
+\begin{DoxyCompactList}\small\item\em Adds commercial units to the building target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildingTarget_a1c4a8bca3be5b4b9764737ae82f955f0}{add\+Industrial\+Units}} (int units)=0
+\begin{DoxyCompactList}\small\item\em Adds industrial units to the building target. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classBuildingTarget_a0c2334d618e10a042bc081b8a9fc3e04}{display\+City\+Status}} ()=0
+\begin{DoxyCompactList}\small\item\em Displays the current status of the city. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Interface for building target management. 
+
+This interface defines the methods for managing different types of building units (residential, commercial, industrial) and displaying the overall city status. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBuildingTarget_a242ade807c0ae64a0f4aab890bc1efad}\label{classBuildingTarget_a242ade807c0ae64a0f4aab890bc1efad}} 
+\index{BuildingTarget@{BuildingTarget}!````~BuildingTarget@{$\sim$BuildingTarget}}
+\index{````~BuildingTarget@{$\sim$BuildingTarget}!BuildingTarget@{BuildingTarget}}
+\doxysubsubsection{\texorpdfstring{$\sim$BuildingTarget()}{~BuildingTarget()}}
+{\footnotesize\ttfamily Building\+Target\+::$\sim$\+Building\+Target (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Virtual destructor for \mbox{\hyperlink{classBuildingTarget}{Building\+Target}}. 
+
+Ensures proper cleanup of derived classes. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBuildingTarget_aedef43b6069af9a9e8dbed241509477b}\label{classBuildingTarget_aedef43b6069af9a9e8dbed241509477b}} 
+\index{BuildingTarget@{BuildingTarget}!addCommercialUnits@{addCommercialUnits}}
+\index{addCommercialUnits@{addCommercialUnits}!BuildingTarget@{BuildingTarget}}
+\doxysubsubsection{\texorpdfstring{addCommercialUnits()}{addCommercialUnits()}}
+{\footnotesize\ttfamily virtual void Building\+Target\+::add\+Commercial\+Units (\begin{DoxyParamCaption}\item[{int}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds commercial units to the building target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & The number of commercial units to add. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classAdapter_a9b5d4c55df74cdabf8eb9c8178fac748}{Adapter}}.
+
+\mbox{\Hypertarget{classBuildingTarget_a1c4a8bca3be5b4b9764737ae82f955f0}\label{classBuildingTarget_a1c4a8bca3be5b4b9764737ae82f955f0}} 
+\index{BuildingTarget@{BuildingTarget}!addIndustrialUnits@{addIndustrialUnits}}
+\index{addIndustrialUnits@{addIndustrialUnits}!BuildingTarget@{BuildingTarget}}
+\doxysubsubsection{\texorpdfstring{addIndustrialUnits()}{addIndustrialUnits()}}
+{\footnotesize\ttfamily virtual void Building\+Target\+::add\+Industrial\+Units (\begin{DoxyParamCaption}\item[{int}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds industrial units to the building target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & The number of industrial units to add. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classAdapter_a52e47c91fee0c9877f9bc993fe76cb78}{Adapter}}.
+
+\mbox{\Hypertarget{classBuildingTarget_ac234742f58a6bbb63b6268ef62707034}\label{classBuildingTarget_ac234742f58a6bbb63b6268ef62707034}} 
+\index{BuildingTarget@{BuildingTarget}!addResidentialUnits@{addResidentialUnits}}
+\index{addResidentialUnits@{addResidentialUnits}!BuildingTarget@{BuildingTarget}}
+\doxysubsubsection{\texorpdfstring{addResidentialUnits()}{addResidentialUnits()}}
+{\footnotesize\ttfamily virtual void Building\+Target\+::add\+Residential\+Units (\begin{DoxyParamCaption}\item[{int}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Adds residential units to the building target. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & The number of residential units to add. \\
+\hline
+\end{DoxyParams}
+
+
+Implemented in \mbox{\hyperlink{classAdapter_a7bfb1bc182490eaaee00cfee8c3850f9}{Adapter}}.
+
+\mbox{\Hypertarget{classBuildingTarget_a0c2334d618e10a042bc081b8a9fc3e04}\label{classBuildingTarget_a0c2334d618e10a042bc081b8a9fc3e04}} 
+\index{BuildingTarget@{BuildingTarget}!displayCityStatus@{displayCityStatus}}
+\index{displayCityStatus@{displayCityStatus}!BuildingTarget@{BuildingTarget}}
+\doxysubsubsection{\texorpdfstring{displayCityStatus()}{displayCityStatus()}}
+{\footnotesize\ttfamily virtual void Building\+Target\+::display\+City\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [pure virtual]}}
+
+
+
+Displays the current status of the city. 
+
+This method provides an overview of the city\textquotesingle{}s current building status, including the number of residential, commercial, and industrial units. 
+
+Implemented in \mbox{\hyperlink{classAdapter_aac62a3d6506425cb04cf1299dbb176f8}{Adapter}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Building\+Target.\+h\item 
+Building\+Target.\+cpp\end{DoxyCompactItemize}

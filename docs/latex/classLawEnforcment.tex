@@ -1,0 +1,68 @@
+\hypertarget{classLawEnforcment}{}\doxysection{Law\+Enforcment Class Reference}
+\label{classLawEnforcment}\index{LawEnforcment@{LawEnforcment}}
+
+
+Inheritance diagram for Law\+Enforcment\+:
+% FIG 0
+
+
+Collaboration diagram for Law\+Enforcment\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classLawEnforcment_ab63448cabdaf24d869a2e44682de16f1}{Law\+Enforcment}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classLawEnforcement}{Law\+Enforcement}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classLawEnforcment_a18177f208c1b22010986253dcedd7309}{handle\+Request}} (int request\+Type) override
+\begin{DoxyCompactList}\small\item\em Handles a request for law enforcement services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classLawEnforcment_ab63448cabdaf24d869a2e44682de16f1}\label{classLawEnforcment_ab63448cabdaf24d869a2e44682de16f1}} 
+\index{LawEnforcment@{LawEnforcment}!LawEnforcment@{LawEnforcment}}
+\index{LawEnforcment@{LawEnforcment}!LawEnforcment@{LawEnforcment}}
+\doxysubsubsection{\texorpdfstring{LawEnforcment()}{LawEnforcment()}}
+{\footnotesize\ttfamily Law\+Enforcment\+::\+Law\+Enforcment (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classLawEnforcement}{Law\+Enforcement}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classLawEnforcement}{Law\+Enforcement}} service department associated with the specified city.
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & A pointer to the \mbox{\hyperlink{classCity}{City}} object this department will serve. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classLawEnforcment_a18177f208c1b22010986253dcedd7309}\label{classLawEnforcment_a18177f208c1b22010986253dcedd7309}} 
+\index{LawEnforcment@{LawEnforcment}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!LawEnforcment@{LawEnforcment}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Law\+Enforcment\+::handle\+Request (\begin{DoxyParamCaption}\item[{int}]{request\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles a request for law enforcement services. 
+
+This method checks the request type and processes it accordingly. If the request matches law enforcement services, it will be handled; otherwise, it will defer to the base class for handling.
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Type} & An integer representing the type of request. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicServicesDepartment_a38ec60eb90980d0907794909e0cc242e}{Public\+Services\+Department}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Law\+Enforcment.\+h\item 
+Law\+Enforcment.\+cpp\end{DoxyCompactItemize}

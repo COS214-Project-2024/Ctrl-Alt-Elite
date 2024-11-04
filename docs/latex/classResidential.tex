@@ -1,0 +1,228 @@
+\hypertarget{classResidential}{}\doxysection{Residential Class Reference}
+\label{classResidential}\index{Residential@{Residential}}
+
+
+Represents a residential building with occupancy management.  
+
+
+
+
+{\ttfamily \#include $<$Residential.\+h$>$}
+
+
+
+Inheritance diagram for Residential\+:
+% FIG 0
+
+
+Collaboration diagram for Residential\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classResidential_acafe060bb4aefaf5117de6038872b7dc}{Residential}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classResidential}{Residential}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classResidential_a0732036bf786fb2ce8ddac1e5ac1d5ee}{Residential}} (int \mbox{\hyperlink{classResidential_ae3f1b02f4a1fb8ff6530b358c7c62320}{num\+Residents}}, int \mbox{\hyperlink{classResidential_a61e4322faed588c65bd22af5f58e719b}{available\+Units}})
+\begin{DoxyCompactList}\small\item\em Parameterized constructor for the \mbox{\hyperlink{classResidential}{Residential}} class. \end{DoxyCompactList}\item 
+virtual \mbox{\hyperlink{classResidential_a2cf7b39235e5ee8fd104e97868e388ef}{$\sim$\+Residential}} ()
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classResidential}{Residential}} class. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classResidential_af21efcf4c624752f4831d39692acfebf}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the information about the residential building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classResidential_ad11f3a1d23d6591b7734ced03d5cad3e}{calculate\+Occupancy\+Rate}} ()
+\begin{DoxyCompactList}\small\item\em Calculates the occupancy rate based on current residents and available units. \end{DoxyCompactList}\item 
+virtual double \mbox{\hyperlink{classResidential_ac5f0f0c0c6cfa9106ff0b2c7163f3188}{get\+Occupancy\+Rate}} () const
+\begin{DoxyCompactList}\small\item\em Retrieves the current occupancy rate. \end{DoxyCompactList}\item 
+virtual int \mbox{\hyperlink{classResidential_a7de18ccb58ca0414955c75fb33e9ac4e}{get\+Num\+Residents}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the number of residents in the building. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classResidential_a589b76bb10b0bed6d2c9491c43002627}{perform\+Maintenance}} ()
+\begin{DoxyCompactList}\small\item\em Performs maintenance tasks specific to residential buildings. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classResidential_ab3876323491703717637c50d67693ab4}{set\+Num\+Resident}} (int num)
+\begin{DoxyCompactList}\small\item\em Sets the number of residents in the building. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuilding}{Building}} $\ast$ \mbox{\hyperlink{classResidential_a458bd3ee98693e0cf3f385b7526224b7}{clone}} () const override
+\begin{DoxyCompactList}\small\item\em Clones the current \mbox{\hyperlink{classResidential}{Residential}} object. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classResidential_ae3f1b02f4a1fb8ff6530b358c7c62320}\label{classResidential_ae3f1b02f4a1fb8ff6530b358c7c62320}} 
+int \mbox{\hyperlink{classResidential_ae3f1b02f4a1fb8ff6530b358c7c62320}{num\+Residents}}
+\begin{DoxyCompactList}\small\item\em Number of residents in the building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classResidential_a61e4322faed588c65bd22af5f58e719b}\label{classResidential_a61e4322faed588c65bd22af5f58e719b}} 
+int \mbox{\hyperlink{classResidential_a61e4322faed588c65bd22af5f58e719b}{available\+Units}}
+\begin{DoxyCompactList}\small\item\em Number of available units in the building. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classResidential_a62cc247c70d522735f7857fc1e679672}\label{classResidential_a62cc247c70d522735f7857fc1e679672}} 
+double \mbox{\hyperlink{classResidential_a62cc247c70d522735f7857fc1e679672}{occupancy\+Rate}}
+\begin{DoxyCompactList}\small\item\em Current occupancy rate as a percentage. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents a residential building with occupancy management. 
+
+The \mbox{\hyperlink{classResidential}{Residential}} class is derived from the \mbox{\hyperlink{classBuilding}{Building}} class and includes functionality to manage the number of residents, available units, and occupancy rates within a residential building. It provides methods for displaying information, calculating occupancy, and performing maintenance. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classResidential_acafe060bb4aefaf5117de6038872b7dc}\label{classResidential_acafe060bb4aefaf5117de6038872b7dc}} 
+\index{Residential@{Residential}!Residential@{Residential}}
+\index{Residential@{Residential}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{Residential()}{Residential()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Residential\+::\+Residential (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classResidential}{Residential}} class. 
+
+Initializes a \mbox{\hyperlink{classResidential}{Residential}} object with default values for residents, available units, and occupancy rate. \mbox{\Hypertarget{classResidential_a0732036bf786fb2ce8ddac1e5ac1d5ee}\label{classResidential_a0732036bf786fb2ce8ddac1e5ac1d5ee}} 
+\index{Residential@{Residential}!Residential@{Residential}}
+\index{Residential@{Residential}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{Residential()}{Residential()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Residential\+::\+Residential (\begin{DoxyParamCaption}\item[{int}]{num\+Residents,  }\item[{int}]{available\+Units }\end{DoxyParamCaption})}
+
+
+
+Parameterized constructor for the \mbox{\hyperlink{classResidential}{Residential}} class. 
+
+Initializes a \mbox{\hyperlink{classResidential}{Residential}} object with specified number of residents and available units, and calculates the occupancy rate.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Residents} & The initial number of residents. \\
+\hline
+{\em available\+Units} & The number of available units. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classResidential_a2cf7b39235e5ee8fd104e97868e388ef}\label{classResidential_a2cf7b39235e5ee8fd104e97868e388ef}} 
+\index{Residential@{Residential}!````~Residential@{$\sim$Residential}}
+\index{````~Residential@{$\sim$Residential}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{$\sim$Residential()}{~Residential()}}
+{\footnotesize\ttfamily Residential\+::$\sim$\+Residential (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classResidential}{Residential}} class. 
+
+Cleans up resources used by the \mbox{\hyperlink{classResidential}{Residential}} object. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classResidential_ad11f3a1d23d6591b7734ced03d5cad3e}\label{classResidential_ad11f3a1d23d6591b7734ced03d5cad3e}} 
+\index{Residential@{Residential}!calculateOccupancyRate@{calculateOccupancyRate}}
+\index{calculateOccupancyRate@{calculateOccupancyRate}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{calculateOccupancyRate()}{calculateOccupancyRate()}}
+{\footnotesize\ttfamily void Residential\+::calculate\+Occupancy\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Calculates the occupancy rate based on current residents and available units. 
+
+This method computes the occupancy rate as a percentage and updates the occupancy\+Rate member variable. 
+
+Reimplemented in \mbox{\hyperlink{classTownhouse_abf6bacea6a44d7097a8af9757f1aa972}{Townhouse}}, \mbox{\hyperlink{classHouse_ad519c213b83a17622d00098f86e17ac6}{House}}, \mbox{\hyperlink{classEstate_a47829a0710b0a9d66394362e7a776ed4}{Estate}}, and \mbox{\hyperlink{classApartment_a10a52e6a1fa7d59a2fbb6fbcbf3f6492}{Apartment}}.
+
+\mbox{\Hypertarget{classResidential_a458bd3ee98693e0cf3f385b7526224b7}\label{classResidential_a458bd3ee98693e0cf3f385b7526224b7}} 
+\index{Residential@{Residential}!clone@{clone}}
+\index{clone@{clone}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{clone()}{clone()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuilding}{Building}} $\ast$ Residential\+::clone (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Clones the current \mbox{\hyperlink{classResidential}{Residential}} object. 
+
+This method creates and returns a new \mbox{\hyperlink{classResidential}{Residential}} object that is a copy of the current object.
+
+\begin{DoxyReturn}{Returns}
+A pointer to the newly created \mbox{\hyperlink{classResidential}{Residential}} object. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classBuilding_a11b46446879cdb42d283e0c9f12a1b15}{Building}}.
+
+\mbox{\Hypertarget{classResidential_af21efcf4c624752f4831d39692acfebf}\label{classResidential_af21efcf4c624752f4831d39692acfebf}} 
+\index{Residential@{Residential}!display@{display}}
+\index{display@{display}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Residential\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the information about the residential building. 
+
+This method overrides the display method from the \mbox{\hyperlink{classBuilding}{Building}} class to provide specific details about the residential building, including its occupancy rate. 
+
+Implements \mbox{\hyperlink{classBuilding_a620073e5358cc07370e6994101446b42}{Building}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classTownhouse_a9c6506bfa8b682255bfa2aac19fcd4bd}{Townhouse}}, \mbox{\hyperlink{classHouse_ace24ad3cc35e6484b9ce4d8809f90d86}{House}}, \mbox{\hyperlink{classEstate_a10fc4550f6713f59c87ddc1c6fc22615}{Estate}}, and \mbox{\hyperlink{classApartment_adcb779a816a4f46e2edc9284e54405b3}{Apartment}}.
+
+\mbox{\Hypertarget{classResidential_a7de18ccb58ca0414955c75fb33e9ac4e}\label{classResidential_a7de18ccb58ca0414955c75fb33e9ac4e}} 
+\index{Residential@{Residential}!getNumResidents@{getNumResidents}}
+\index{getNumResidents@{getNumResidents}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{getNumResidents()}{getNumResidents()}}
+{\footnotesize\ttfamily int Residential\+::get\+Num\+Residents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the number of residents in the building. 
+
+\begin{DoxyReturn}{Returns}
+The current number of residents. 
+\end{DoxyReturn}
+
+
+Reimplemented in \mbox{\hyperlink{classTownhouse_a78aa9c84bd55b7ef961196ca1fe2bc9c}{Townhouse}}, \mbox{\hyperlink{classEstate_a51031e4b805e5ff2c42c4223e292ace3}{Estate}}, \mbox{\hyperlink{classApartment_aea536d16cb138d8c1cfe26e23e3976f4}{Apartment}}, and \mbox{\hyperlink{classHouse_aa4c4fd85ef372692c0023f5e0ad11042}{House}}.
+
+\mbox{\Hypertarget{classResidential_ac5f0f0c0c6cfa9106ff0b2c7163f3188}\label{classResidential_ac5f0f0c0c6cfa9106ff0b2c7163f3188}} 
+\index{Residential@{Residential}!getOccupancyRate@{getOccupancyRate}}
+\index{getOccupancyRate@{getOccupancyRate}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{getOccupancyRate()}{getOccupancyRate()}}
+{\footnotesize\ttfamily double Residential\+::get\+Occupancy\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the current occupancy rate. 
+
+\begin{DoxyReturn}{Returns}
+The occupancy rate as a percentage. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classResidential_a589b76bb10b0bed6d2c9491c43002627}\label{classResidential_a589b76bb10b0bed6d2c9491c43002627}} 
+\index{Residential@{Residential}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Residential\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Performs maintenance tasks specific to residential buildings. 
+
+This method outputs a maintenance message and recalculates the occupancy rate. 
+
+Implements \mbox{\hyperlink{classBuilding_a5c664351fd7a8a53745b15cecb4e9356}{Building}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classTownhouse_a40bf3fbfc3642d56f696d2fac40a681b}{Townhouse}}, \mbox{\hyperlink{classHouse_ac7aa228c5e321f3541518696023f3b9d}{House}}, \mbox{\hyperlink{classEstate_a283ca37743d23de0fad0b8ad276cd873}{Estate}}, and \mbox{\hyperlink{classApartment_a56d1701956aa825ea8ae15d9f4cc605b}{Apartment}}.
+
+\mbox{\Hypertarget{classResidential_ab3876323491703717637c50d67693ab4}\label{classResidential_ab3876323491703717637c50d67693ab4}} 
+\index{Residential@{Residential}!setNumResident@{setNumResident}}
+\index{setNumResident@{setNumResident}!Residential@{Residential}}
+\doxysubsubsection{\texorpdfstring{setNumResident()}{setNumResident()}}
+{\footnotesize\ttfamily void Residential\+::set\+Num\+Resident (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Sets the number of residents in the building. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The new number of residents. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented in \mbox{\hyperlink{classTownhouse_aae4df6bbc6dc70f54fdcf54ff37b5ebf}{Townhouse}}, \mbox{\hyperlink{classHouse_aa6bf837dfb4dca6a9535e834a82653b7}{House}}, \mbox{\hyperlink{classEstate_a71fc02b34b7b4aae9f2dc703b3d8d20c}{Estate}}, and \mbox{\hyperlink{classApartment_a7df0abcbf47e9b4c9d29ce8742954a02}{Apartment}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Residential.\+h\item 
+Residential.\+cpp\end{DoxyCompactItemize}

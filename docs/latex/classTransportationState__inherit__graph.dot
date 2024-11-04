@@ -1,0 +1,24 @@
+digraph "TransportationState"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node1 [label="TransportationState",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Abstract base class representing the state of a mode of transport."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="PrivateTransportState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPrivateTransportState.html",tooltip="Represents the state of private transport, managing state behavior and availability."];
+  Node2 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PrivateBusyState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPrivateBusyState.html",tooltip="Represents the busy state of a private transport mode."];
+  Node2 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PrivateModerateState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPrivateModerateState.html",tooltip="Represents the moderate state of a private transport mode."];
+  Node2 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="PrivateQuietState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPrivateQuietState.html",tooltip="Represents the quiet state of a private transport mode."];
+  Node1 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node6 [label="PublicTransportState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicTransportState.html",tooltip="Represents the state of a public mode of transport."];
+  Node6 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node7 [label="BusyState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBusyState.html",tooltip="Represents the busy state of a public transport mode."];
+  Node6 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node8 [label="ModerateState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModerateState.html",tooltip="Represents a moderate state of public transport."];
+  Node6 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node9 [label="QuietState",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classQuietState.html",tooltip="Represents a state where public transport operates quietly."];
+}

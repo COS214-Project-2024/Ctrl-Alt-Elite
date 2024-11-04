@@ -1,0 +1,15 @@
+digraph "Command"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  Node1 [label="Command",height=0.2,width=0.4,color="black", fillcolor="grey75", style="filled", fontcolor="black",tooltip="Interface for command pattern, representing an executable action."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node2 [label="AllocateBudgetCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classAllocateBudgetCommand.html",tooltip="A command to allocate a specified budget amount via the BudgetDepartment."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node3 [label="PolicyCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPolicyCommand.html",tooltip="Represents a command to implement a policy in the Policies Department."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node4 [label="PublicServicesCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicServicesCommand.html",tooltip="Command class for managing public services within a city."];
+  Node1 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid"];
+  Node5 [label="TaxCommand",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTaxCommand.html",tooltip="Command class to handle tax updates in the city."];
+}

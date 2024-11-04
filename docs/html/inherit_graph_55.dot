@@ -1,0 +1,30 @@
+digraph "Graphical Class Hierarchy"
+{
+ // LATEX_PDF_SIZE
+  edge [fontname="Helvetica",fontsize="10",labelfontname="Helvetica",labelfontsize="10"];
+  node [fontname="Helvetica",fontsize="10",shape=record];
+  rankdir="LR";
+  Node44 [label="std::enable_shared\l_from_this",height=0.2,width=0.4,color="grey75", fillcolor="white", style="filled",tooltip=" "];
+  Node44 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node0 [label="ModeOfTransport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classModeOfTransport.html",tooltip="Abstract class representing a mode of transport."];
+  Node0 -> Node1 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node1 [label="PrivateTransport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPrivateTransport.html",tooltip="Represents a private mode of transport with associated functionalities."];
+  Node1 -> Node2 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node2 [label="Bike",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBike.html",tooltip="Represents a bike in the transportation system."];
+  Node1 -> Node3 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node3 [label="Car",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classCar.html",tooltip="Represents a private transport vehicle (car) that uses petrol for travel."];
+  Node1 -> Node4 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node4 [label="Walk",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classWalk.html",tooltip="Represents a walking mode of private transportation."];
+  Node0 -> Node5 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node5 [label="PublicTransport",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPublicTransport.html",tooltip="Represents a public mode of transportation."];
+  Node5 -> Node6 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node6 [label="Bus",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classBus.html",tooltip="Represents a bus for public transport."];
+  Node5 -> Node7 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node7 [label="Plane",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classPlane.html",tooltip="Represents a plane as a mode of public transport."];
+  Node5 -> Node8 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node8 [label="Taxi",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTaxi.html",tooltip="Represents a taxi service in the public transport system."];
+  Node5 -> Node9 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+  Node9 [label="Train",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTrain.html",tooltip="Represents a train, inheriting from the PublicTransport class."];
+  Node128 [label="TransportStrategy",height=0.2,width=0.4,color="black", fillcolor="white", style="filled",URL="$classTransportStrategy.html",tooltip="Abstract base class for defining transport strategies."];
+  Node128 -> Node0 [dir="back",color="midnightblue",fontsize="10",style="solid",fontname="Helvetica"];
+}

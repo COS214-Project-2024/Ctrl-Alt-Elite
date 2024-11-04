@@ -1,0 +1,169 @@
+\hypertarget{classPublicServicesDepartment}{}\doxysection{Public\+Services\+Department Class Reference}
+\label{classPublicServicesDepartment}\index{PublicServicesDepartment@{PublicServicesDepartment}}
+
+
+Represents the public services department responsible for managing community services and infrastructure.  
+
+
+
+
+{\ttfamily \#include $<$departments.\+h$>$}
+
+
+
+Inheritance diagram for Public\+Services\+Department\+:
+% FIG 0
+
+
+Collaboration diagram for Public\+Services\+Department\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPublicServicesDepartment_a0c46114cd1f78eeaf70abe29f20948d9}{Public\+Services\+Department}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} instance associated with a city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicServicesDepartment_ae3f01f77838dd10ae648984051f6a943}{manage\+City}} ()
+\begin{DoxyCompactList}\small\item\em Manages the city by updating public services and notifying citizens. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicServicesDepartment_aca2e0bee0d811178765eebd00608064f}{update\+Public\+Services}} (std\+::vector$<$ std\+::string $>$ services)
+\begin{DoxyCompactList}\small\item\em Updates the list of public services. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classPublicServicesDepartment_a8eb14a75f693733967c4842d6821f6ad}{Public\+Services\+Department}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicServicesDepartment_a00ab82dd18dcca57f3c858d852a7e6ca}{set\+Next\+Handler}} (\mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} $\ast$\mbox{\hyperlink{classPublicServicesDepartment_a31d6a4a6f1c212f789b77201ab2f1fcf}{handler}})
+\begin{DoxyCompactList}\small\item\em Sets the next handler in the chain of responsibility. \end{DoxyCompactList}\item 
+virtual void \mbox{\hyperlink{classPublicServicesDepartment_a38ec60eb90980d0907794909e0cc242e}{handle\+Request}} (int request\+Type)
+\begin{DoxyCompactList}\small\item\em Handles a service request. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPublicServicesDepartment_a14bb005424130b758110025a514673f6}{get\+Taxrate}} ()
+\begin{DoxyCompactList}\small\item\em Retrieves the current tax rate for public services. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPublicServicesDepartment_a31d6a4a6f1c212f789b77201ab2f1fcf}\label{classPublicServicesDepartment_a31d6a4a6f1c212f789b77201ab2f1fcf}} 
+\mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} $\ast$ \mbox{\hyperlink{classPublicServicesDepartment_a31d6a4a6f1c212f789b77201ab2f1fcf}{handler}}
+\begin{DoxyCompactList}\small\item\em Pointer to the next handler in the chain. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the public services department responsible for managing community services and infrastructure. 
+
+Forward declaration of the \mbox{\hyperlink{classCitizen}{Citizen}} class.
+
+Represents the public services management within a city.
+
+This class inherits from the \mbox{\hyperlink{classGovernment}{Government}} class and is responsible for managing public services in the city. It provides methods to update available services, manage the city, and handle requests related to public services. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPublicServicesDepartment_a0c46114cd1f78eeaf70abe29f20948d9}\label{classPublicServicesDepartment_a0c46114cd1f78eeaf70abe29f20948d9}} 
+\index{PublicServicesDepartment@{PublicServicesDepartment}!PublicServicesDepartment@{PublicServicesDepartment}}
+\index{PublicServicesDepartment@{PublicServicesDepartment}!PublicServicesDepartment@{PublicServicesDepartment}}
+\doxysubsubsection{\texorpdfstring{PublicServicesDepartment()}{PublicServicesDepartment()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily Public\+Services\+Department\+::\+Public\+Services\+Department (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} instance associated with a city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Pointer to the \mbox{\hyperlink{classCity}{City}} that this department manages. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPublicServicesDepartment_a8eb14a75f693733967c4842d6821f6ad}\label{classPublicServicesDepartment_a8eb14a75f693733967c4842d6821f6ad}} 
+\index{PublicServicesDepartment@{PublicServicesDepartment}!PublicServicesDepartment@{PublicServicesDepartment}}
+\index{PublicServicesDepartment@{PublicServicesDepartment}!PublicServicesDepartment@{PublicServicesDepartment}}
+\doxysubsubsection{\texorpdfstring{PublicServicesDepartment()}{PublicServicesDepartment()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily Public\+Services\+Department\+::\+Public\+Services\+Department (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}}. 
+
+This constructor can be used to create an instance without associating it with a specific city. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPublicServicesDepartment_a14bb005424130b758110025a514673f6}\label{classPublicServicesDepartment_a14bb005424130b758110025a514673f6}} 
+\index{PublicServicesDepartment@{PublicServicesDepartment}!getTaxrate@{getTaxrate}}
+\index{getTaxrate@{getTaxrate}!PublicServicesDepartment@{PublicServicesDepartment}}
+\doxysubsubsection{\texorpdfstring{getTaxrate()}{getTaxrate()}}
+{\footnotesize\ttfamily float Public\+Services\+Department\+::get\+Taxrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Retrieves the current tax rate for public services. 
+
+\begin{DoxyReturn}{Returns}
+The current tax rate as a float value. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGovernment_accdbcd9e484eef19bc279c3ff2a729d1}{Government}}.
+
+\mbox{\Hypertarget{classPublicServicesDepartment_a38ec60eb90980d0907794909e0cc242e}\label{classPublicServicesDepartment_a38ec60eb90980d0907794909e0cc242e}} 
+\index{PublicServicesDepartment@{PublicServicesDepartment}!handleRequest@{handleRequest}}
+\index{handleRequest@{handleRequest}!PublicServicesDepartment@{PublicServicesDepartment}}
+\doxysubsubsection{\texorpdfstring{handleRequest()}{handleRequest()}}
+{\footnotesize\ttfamily void Public\+Services\+Department\+::handle\+Request (\begin{DoxyParamCaption}\item[{int}]{request\+Type }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Handles a service request. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em request\+Type} & The type of request to be handled.\\
+\hline
+\end{DoxyParams}
+This method attempts to handle the request, potentially passing it to the next handler if applicable. 
+
+Reimplemented in \mbox{\hyperlink{classLawEnforcment_a18177f208c1b22010986253dcedd7309}{Law\+Enforcment}}, \mbox{\hyperlink{classHealthCare_aafa60a3325fc2c8bec9daee32c66be57}{Health\+Care}}, and \mbox{\hyperlink{classEducation_ab099ef2d4a67f0c398daf25e3065d434}{Education}}.
+
+\mbox{\Hypertarget{classPublicServicesDepartment_ae3f01f77838dd10ae648984051f6a943}\label{classPublicServicesDepartment_ae3f01f77838dd10ae648984051f6a943}} 
+\index{PublicServicesDepartment@{PublicServicesDepartment}!manageCity@{manageCity}}
+\index{manageCity@{manageCity}!PublicServicesDepartment@{PublicServicesDepartment}}
+\doxysubsubsection{\texorpdfstring{manageCity()}{manageCity()}}
+{\footnotesize\ttfamily void Public\+Services\+Department\+::manage\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Manages the city by updating public services and notifying citizens. 
+
+This method is responsible for updating the available public services and notifying citizens about these updates. 
+
+Reimplemented from \mbox{\hyperlink{classGovernment_a81ecf49c437cd4f0a2276b847c6387f2}{Government}}.
+
+\mbox{\Hypertarget{classPublicServicesDepartment_a00ab82dd18dcca57f3c858d852a7e6ca}\label{classPublicServicesDepartment_a00ab82dd18dcca57f3c858d852a7e6ca}} 
+\index{PublicServicesDepartment@{PublicServicesDepartment}!setNextHandler@{setNextHandler}}
+\index{setNextHandler@{setNextHandler}!PublicServicesDepartment@{PublicServicesDepartment}}
+\doxysubsubsection{\texorpdfstring{setNextHandler()}{setNextHandler()}}
+{\footnotesize\ttfamily void Public\+Services\+Department\+::set\+Next\+Handler (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} $\ast$}]{handler }\end{DoxyParamCaption})}
+
+
+
+Sets the next handler in the chain of responsibility. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em handler} & Pointer to the next \mbox{\hyperlink{classPublicServicesDepartment}{Public\+Services\+Department}} handler. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPublicServicesDepartment_aca2e0bee0d811178765eebd00608064f}\label{classPublicServicesDepartment_aca2e0bee0d811178765eebd00608064f}} 
+\index{PublicServicesDepartment@{PublicServicesDepartment}!updatePublicServices@{updatePublicServices}}
+\index{updatePublicServices@{updatePublicServices}!PublicServicesDepartment@{PublicServicesDepartment}}
+\doxysubsubsection{\texorpdfstring{updatePublicServices()}{updatePublicServices()}}
+{\footnotesize\ttfamily void Public\+Services\+Department\+::update\+Public\+Services (\begin{DoxyParamCaption}\item[{std\+::vector$<$ std\+::string $>$}]{services }\end{DoxyParamCaption})}
+
+
+
+Updates the list of public services. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & A vector containing the names of services to be updated. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+departments.\+h\item 
+Public\+Services\+Department.\+h\item 
+Public\+Services\+Department.\+cpp\end{DoxyCompactItemize}

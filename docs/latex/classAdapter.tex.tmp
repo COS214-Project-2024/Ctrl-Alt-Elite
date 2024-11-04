@@ -1,0 +1,168 @@
+\hypertarget{classAdapter}{}\doxysection{Adapter Class Reference}
+\label{classAdapter}\index{Adapter@{Adapter}}
+
+
+The \mbox{\hyperlink{classAdapter}{Adapter}} class adapts the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} interface to the \mbox{\hyperlink{classBuildingTarget}{Building\+Target}} interface, allowing various unit types to be added to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}.  
+
+
+
+
+{\ttfamily \#include $<$Adapter.\+h$>$}
+
+
+
+Inheritance diagram for Adapter\+:
+% FIG 0
+
+
+Collaboration diagram for Adapter\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classAdapter_a26984eabee1afd44cdf7728d1142a9f2}{Adapter}} (\mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} $\ast$cb)
+\begin{DoxyCompactList}\small\item\em Constructs an \mbox{\hyperlink{classAdapter}{Adapter}} with a reference to a \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAdapter_a7bfb1bc182490eaaee00cfee8c3850f9}{add\+Residential\+Units}} (int units)
+\begin{DoxyCompactList}\small\item\em Adds a specified number of residential units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAdapter_a9b5d4c55df74cdabf8eb9c8178fac748}{add\+Commercial\+Units}} (int units)
+\begin{DoxyCompactList}\small\item\em Adds a specified number of commercial units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAdapter_a52e47c91fee0c9877f9bc993fe76cb78}{add\+Industrial\+Units}} (int units)
+\begin{DoxyCompactList}\small\item\em Adds a specified number of industrial units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAdapter_a00d776b7b93ae0d60cc20b274bc70f94}{add\+Landmark\+Units}} (int units)
+\begin{DoxyCompactList}\small\item\em Adds a specified number of landmark units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classAdapter_aac62a3d6506425cb04cf1299dbb176f8}{display\+City\+Status}} ()
+\begin{DoxyCompactList}\small\item\em Displays the current city status, as held within the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classAdapter}{Adapter}} class adapts the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} interface to the \mbox{\hyperlink{classBuildingTarget}{Building\+Target}} interface, allowing various unit types to be added to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classAdapter_a26984eabee1afd44cdf7728d1142a9f2}\label{classAdapter_a26984eabee1afd44cdf7728d1142a9f2}} 
+\index{Adapter@{Adapter}!Adapter@{Adapter}}
+\index{Adapter@{Adapter}!Adapter@{Adapter}}
+\doxysubsubsection{\texorpdfstring{Adapter()}{Adapter()}}
+{\footnotesize\ttfamily Adapter\+::\+Adapter (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} $\ast$}]{cb }\end{DoxyParamCaption})}
+
+
+
+Constructs an \mbox{\hyperlink{classAdapter}{Adapter}} with a reference to a \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} object. 
+
+\mbox{\hyperlink{classAdapter}{Adapter}} constructor initializing with a \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} pointer.
+
+
+\begin{DoxyParams}{Parameters}
+{\em cb} & Pointer to a \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} instance. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classAdapter_a9b5d4c55df74cdabf8eb9c8178fac748}\label{classAdapter_a9b5d4c55df74cdabf8eb9c8178fac748}} 
+\index{Adapter@{Adapter}!addCommercialUnits@{addCommercialUnits}}
+\index{addCommercialUnits@{addCommercialUnits}!Adapter@{Adapter}}
+\doxysubsubsection{\texorpdfstring{addCommercialUnits()}{addCommercialUnits()}}
+{\footnotesize\ttfamily void Adapter\+::add\+Commercial\+Units (\begin{DoxyParamCaption}\item[{int}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a specified number of commercial units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. 
+
+Adds commercial units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} and increases job availability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & The number of commercial units to add.\\
+\hline
+{\em units} & Number of commercial units to add. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBuildingTarget_aedef43b6069af9a9e8dbed241509477b}{Building\+Target}}.
+
+\mbox{\Hypertarget{classAdapter_a52e47c91fee0c9877f9bc993fe76cb78}\label{classAdapter_a52e47c91fee0c9877f9bc993fe76cb78}} 
+\index{Adapter@{Adapter}!addIndustrialUnits@{addIndustrialUnits}}
+\index{addIndustrialUnits@{addIndustrialUnits}!Adapter@{Adapter}}
+\doxysubsubsection{\texorpdfstring{addIndustrialUnits()}{addIndustrialUnits()}}
+{\footnotesize\ttfamily void Adapter\+::add\+Industrial\+Units (\begin{DoxyParamCaption}\item[{int}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a specified number of industrial units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. 
+
+Adds industrial units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} and increases job availability.
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & The number of industrial units to add.\\
+\hline
+{\em units} & Number of industrial units to add. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBuildingTarget_a1c4a8bca3be5b4b9764737ae82f955f0}{Building\+Target}}.
+
+\mbox{\Hypertarget{classAdapter_a00d776b7b93ae0d60cc20b274bc70f94}\label{classAdapter_a00d776b7b93ae0d60cc20b274bc70f94}} 
+\index{Adapter@{Adapter}!addLandmarkUnits@{addLandmarkUnits}}
+\index{addLandmarkUnits@{addLandmarkUnits}!Adapter@{Adapter}}
+\doxysubsubsection{\texorpdfstring{addLandmarkUnits()}{addLandmarkUnits()}}
+{\footnotesize\ttfamily void Adapter\+::add\+Landmark\+Units (\begin{DoxyParamCaption}\item[{int}]{units }\end{DoxyParamCaption})}
+
+
+
+Adds a specified number of landmark units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. 
+
+Adds landmark units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} and expands utilities.
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & The number of landmark units to add.\\
+\hline
+{\em units} & Number of landmark units to add. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classAdapter_a7bfb1bc182490eaaee00cfee8c3850f9}\label{classAdapter_a7bfb1bc182490eaaee00cfee8c3850f9}} 
+\index{Adapter@{Adapter}!addResidentialUnits@{addResidentialUnits}}
+\index{addResidentialUnits@{addResidentialUnits}!Adapter@{Adapter}}
+\doxysubsubsection{\texorpdfstring{addResidentialUnits()}{addResidentialUnits()}}
+{\footnotesize\ttfamily void Adapter\+::add\+Residential\+Units (\begin{DoxyParamCaption}\item[{int}]{units }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Adds a specified number of residential units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. 
+
+Adds residential units to the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}} and increases the population accordingly.
+
+
+\begin{DoxyParams}{Parameters}
+{\em units} & The number of residential units to add.\\
+\hline
+{\em units} & Number of residential units to add. \\
+\hline
+\end{DoxyParams}
+
+
+Implements \mbox{\hyperlink{classBuildingTarget_ac234742f58a6bbb63b6268ef62707034}{Building\+Target}}.
+
+\mbox{\Hypertarget{classAdapter_aac62a3d6506425cb04cf1299dbb176f8}\label{classAdapter_aac62a3d6506425cb04cf1299dbb176f8}} 
+\index{Adapter@{Adapter}!displayCityStatus@{displayCityStatus}}
+\index{displayCityStatus@{displayCityStatus}!Adapter@{Adapter}}
+\doxysubsubsection{\texorpdfstring{displayCityStatus()}{displayCityStatus()}}
+{\footnotesize\ttfamily void Adapter\+::display\+City\+Status (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Displays the current city status, as held within the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}. 
+
+Displays the city status by calling the \mbox{\hyperlink{classCompositeBuilding}{Composite\+Building}}\textquotesingle{}s display function. 
+
+Implements \mbox{\hyperlink{classBuildingTarget_a0c2334d618e10a042bc081b8a9fc3e04}{Building\+Target}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Adapter.\+h\item 
+Adapter.\+cpp\end{DoxyCompactItemize}

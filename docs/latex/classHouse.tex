@@ -1,0 +1,152 @@
+\hypertarget{classHouse}{}\doxysection{House Class Reference}
+\label{classHouse}\index{House@{House}}
+
+
+The \mbox{\hyperlink{classHouse}{House}} class represents a residential structure within a city.  
+
+
+
+
+{\ttfamily \#include $<$House.\+h$>$}
+
+
+
+Inheritance diagram for House\+:
+% FIG 0
+
+
+Collaboration diagram for House\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classHouse_ae399cefb6b162389d8246bb91bebee67}{House}} (int \mbox{\hyperlink{classResidential_ae3f1b02f4a1fb8ff6530b358c7c62320}{num\+Residents}}=0, int \mbox{\hyperlink{classResidential_a61e4322faed588c65bd22af5f58e719b}{available\+Units}}=1)
+\begin{DoxyCompactList}\small\item\em Constructor for the \mbox{\hyperlink{classHouse}{House}} class. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classHouse_ae6080cd4473023c17dbfa94246e709c4}\label{classHouse_ae6080cd4473023c17dbfa94246e709c4}} 
+\mbox{\hyperlink{classHouse_ae6080cd4473023c17dbfa94246e709c4}{$\sim$\+House}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classHouse}{House}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHouse_ace24ad3cc35e6484b9ce4d8809f90d86}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the details of the house, including occupancy rate. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHouse_ad519c213b83a17622d00098f86e17ac6}{calculate\+Occupancy\+Rate}} () override
+\begin{DoxyCompactList}\small\item\em Calculates the occupancy rate of the house. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classHouse_aa4c4fd85ef372692c0023f5e0ad11042}{get\+Num\+Residents}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current number of residents in the house. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHouse_ac7aa228c5e321f3541518696023f3b9d}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance activities for the house. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classHouse_aa6bf837dfb4dca6a9535e834a82653b7}{set\+Num\+Resident}} (int num) override
+\begin{DoxyCompactList}\small\item\em Sets the number of residents in the house. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classHouse}{House}} class represents a residential structure within a city. 
+
+This class inherits from the \mbox{\hyperlink{classResidential}{Residential}} class and provides specific implementations for handling house-\/related operations such as displaying details, calculating occupancy, and managing maintenance. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classHouse_ae399cefb6b162389d8246bb91bebee67}\label{classHouse_ae399cefb6b162389d8246bb91bebee67}} 
+\index{House@{House}!House@{House}}
+\index{House@{House}!House@{House}}
+\doxysubsubsection{\texorpdfstring{House()}{House()}}
+{\footnotesize\ttfamily House\+::\+House (\begin{DoxyParamCaption}\item[{int}]{num\+Residents = {\ttfamily 0},  }\item[{int}]{available\+Units = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+Constructor for the \mbox{\hyperlink{classHouse}{House}} class. 
+
+Initializes a new \mbox{\hyperlink{classHouse}{House}} object with a specified number of residents and available units.
+
+
+\begin{DoxyParams}{Parameters}
+{\em num\+Residents} & The initial number of residents in the house. Defaults to 0. \\
+\hline
+{\em available\+Units} & The number of available units in the house. Defaults to 1. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classHouse_ad519c213b83a17622d00098f86e17ac6}\label{classHouse_ad519c213b83a17622d00098f86e17ac6}} 
+\index{House@{House}!calculateOccupancyRate@{calculateOccupancyRate}}
+\index{calculateOccupancyRate@{calculateOccupancyRate}!House@{House}}
+\doxysubsubsection{\texorpdfstring{calculateOccupancyRate()}{calculateOccupancyRate()}}
+{\footnotesize\ttfamily void House\+::calculate\+Occupancy\+Rate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the occupancy rate of the house. 
+
+This method overrides the base class method to compute the occupancy rate based on the current number of residents and available units. 
+
+Reimplemented from \mbox{\hyperlink{classResidential_ad11f3a1d23d6591b7734ced03d5cad3e}{Residential}}.
+
+\mbox{\Hypertarget{classHouse_ace24ad3cc35e6484b9ce4d8809f90d86}\label{classHouse_ace24ad3cc35e6484b9ce4d8809f90d86}} 
+\index{House@{House}!display@{display}}
+\index{display@{display}!House@{House}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void House\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the details of the house, including occupancy rate. 
+
+This method outputs the current occupancy rate of the house and a simple ASCII representation of the house. 
+
+Reimplemented from \mbox{\hyperlink{classResidential_af21efcf4c624752f4831d39692acfebf}{Residential}}.
+
+\mbox{\Hypertarget{classHouse_aa4c4fd85ef372692c0023f5e0ad11042}\label{classHouse_aa4c4fd85ef372692c0023f5e0ad11042}} 
+\index{House@{House}!getNumResidents@{getNumResidents}}
+\index{getNumResidents@{getNumResidents}!House@{House}}
+\doxysubsubsection{\texorpdfstring{getNumResidents()}{getNumResidents()}}
+{\footnotesize\ttfamily int House\+::get\+Num\+Residents (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the current number of residents in the house. 
+
+\begin{DoxyReturn}{Returns}
+The number of residents currently living in the house. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classResidential_a7de18ccb58ca0414955c75fb33e9ac4e}{Residential}}.
+
+\mbox{\Hypertarget{classHouse_ac7aa228c5e321f3541518696023f3b9d}\label{classHouse_ac7aa228c5e321f3541518696023f3b9d}} 
+\index{House@{House}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!House@{House}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void House\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs maintenance activities for the house. 
+
+This method handles general upkeep tasks and inspections specific to the house. 
+
+Reimplemented from \mbox{\hyperlink{classResidential_a589b76bb10b0bed6d2c9491c43002627}{Residential}}.
+
+\mbox{\Hypertarget{classHouse_aa6bf837dfb4dca6a9535e834a82653b7}\label{classHouse_aa6bf837dfb4dca6a9535e834a82653b7}} 
+\index{House@{House}!setNumResident@{setNumResident}}
+\index{setNumResident@{setNumResident}!House@{House}}
+\doxysubsubsection{\texorpdfstring{setNumResident()}{setNumResident()}}
+{\footnotesize\ttfamily void House\+::set\+Num\+Resident (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Sets the number of residents in the house. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em num} & The new number of residents to be set. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classResidential_ab3876323491703717637c50d67693ab4}{Residential}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+House.\+h\item 
+House.\+cpp\end{DoxyCompactItemize}

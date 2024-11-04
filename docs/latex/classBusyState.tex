@@ -1,0 +1,97 @@
+\hypertarget{classBusyState}{}\doxysection{Busy\+State Class Reference}
+\label{classBusyState}\index{BusyState@{BusyState}}
+
+
+Represents the busy state of a public transport mode.  
+
+
+
+
+{\ttfamily \#include $<$Busy\+State.\+h$>$}
+
+
+
+Inheritance diagram for Busy\+State\+:
+% FIG 0
+
+
+Collaboration diagram for Busy\+State\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBusyState_ace2777fdb7221a228b6c575aa9567a60}{Busy\+State}} ()
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classBusyState}{Busy\+State}} object. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusyState_ade9a61e3ed57bde5c749c69c63a662da}{handle}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Handles the current busy state of the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBusyState_a2f925ce8cf11125a3513383ee1969ead}{change\+State}} (std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$ transport) override
+\begin{DoxyCompactList}\small\item\em Changes the state of the transport to Quiet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents the busy state of a public transport mode. 
+
+The \mbox{\hyperlink{classBusyState}{Busy\+State}} class inherits from \mbox{\hyperlink{classPublicTransportState}{Public\+Transport\+State}} and handles the behavior of a public transport mode when it is busy and cannot accept more passengers. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBusyState_ace2777fdb7221a228b6c575aa9567a60}\label{classBusyState_ace2777fdb7221a228b6c575aa9567a60}} 
+\index{BusyState@{BusyState}!BusyState@{BusyState}}
+\index{BusyState@{BusyState}!BusyState@{BusyState}}
+\doxysubsubsection{\texorpdfstring{BusyState()}{BusyState()}}
+{\footnotesize\ttfamily Busy\+State\+::\+Busy\+State (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classBusyState}{Busy\+State}} object. 
+
+Initializes the \mbox{\hyperlink{classBusyState}{Busy\+State}} with the name \char`\"{}\+Busy\char`\"{} by calling the base class constructor. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBusyState_a2f925ce8cf11125a3513383ee1969ead}\label{classBusyState_a2f925ce8cf11125a3513383ee1969ead}} 
+\index{BusyState@{BusyState}!changeState@{changeState}}
+\index{changeState@{changeState}!BusyState@{BusyState}}
+\doxysubsubsection{\texorpdfstring{changeState()}{changeState()}}
+{\footnotesize\ttfamily void Busy\+State\+::change\+State (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Changes the state of the transport to Quiet. 
+
+Sets the transport\textquotesingle{}s state to a new \mbox{\hyperlink{classQuietState}{Quiet\+State}}, indicating that it is now available for passengers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the mode of transport whose state will be changed. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicTransportState_a45a809475c2c076b22b4d94684a64674}{Public\+Transport\+State}}.
+
+\mbox{\Hypertarget{classBusyState_ade9a61e3ed57bde5c749c69c63a662da}\label{classBusyState_ade9a61e3ed57bde5c749c69c63a662da}} 
+\index{BusyState@{BusyState}!handle@{handle}}
+\index{handle@{handle}!BusyState@{BusyState}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void Busy\+State\+::handle (\begin{DoxyParamCaption}\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} $>$}]{transport }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Handles the current busy state of the transport. 
+
+Outputs a message indicating that the public transport is busy and cannot take more passengers.
+
+
+\begin{DoxyParams}{Parameters}
+{\em transport} & A shared pointer to the mode of transport in this state. \\
+\hline
+\end{DoxyParams}
+
+
+Reimplemented from \mbox{\hyperlink{classPublicTransportState_a6a4f6bc3c7ad67eb1f4b6eddefaf2f70}{Public\+Transport\+State}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Busy\+State.\+h\item 
+Busy\+State.\+cpp\end{DoxyCompactItemize}

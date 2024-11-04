@@ -1,0 +1,26 @@
+var searchData=
+[
+  ['raiseissue_227',['raiseIssue',['../classCitizen.html#ac99b843590af55d8ffda10d8848d78fa',1,'Citizen']]],
+  ['relationalcomparator_228',['RelationalComparator',['../structdoctest_1_1detail_1_1RelationalComparator.html',1,'doctest::detail']]],
+  ['remove_5fconst_229',['remove_const',['../structdoctest_1_1detail_1_1types_1_1remove__const.html',1,'doctest::detail::types']]],
+  ['remove_5fconst_3c_20const_20t_20_3e_230',['remove_const&lt; const T &gt;',['../structdoctest_1_1detail_1_1types_1_1remove__const_3_01const_01T_01_4.html',1,'doctest::detail::types']]],
+  ['remove_5freference_231',['remove_reference',['../structdoctest_1_1detail_1_1types_1_1remove__reference.html',1,'doctest::detail::types']]],
+  ['remove_5freference_3c_20t_20_26_20_3e_232',['remove_reference&lt; T &amp; &gt;',['../structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_01_4.html',1,'doctest::detail::types']]],
+  ['remove_5freference_3c_20t_20_26_26_20_3e_233',['remove_reference&lt; T &amp;&amp; &gt;',['../structdoctest_1_1detail_1_1types_1_1remove__reference_3_01T_01_6_6_01_4.html',1,'doctest::detail::types']]],
+  ['removebuilding_234',['removeBuilding',['../classCompositeBuilding.html#a496ab9b221ab96bed1685b4bac1aac1d',1,'CompositeBuilding::removeBuilding()'],['../classPlayer.html#a2ffc52d7d516318955d0d8d48aeacc81',1,'Player::removeBuilding()']]],
+  ['removeobserver_235',['removeObserver',['../classGovernment.html#a81d635e85d9aacf362b9791eafaf76a5',1,'Government']]],
+  ['replenish_236',['replenish',['../classBudget.html#a36da8818feada024fb72a8576500857d',1,'Budget::replenish()'],['../classWater.html#ab04cb77fab2f2d7e4a852f37ab08591a',1,'Water::replenish()'],['../classResource.html#aabf3eed794d33daaceb5e688b005e3ba',1,'Resource::replenish()'],['../classMaterials.html#a505a8d1146537e7a12801423728ec8de',1,'Materials::replenish()'],['../classEnergy.html#a863cc77716519d0e71d52cdbad1c9ddf',1,'Energy::replenish()']]],
+  ['replenishresource_237',['replenishResource',['../classResourceFactory.html#adb0583100c6aea4b5ecc80ba50019700',1,'ResourceFactory']]],
+  ['report_238',['Report',['../classGovernment.html#a414d98097519dd0d9a3c3274b204344e',1,'Government']]],
+  ['reportstatus_239',['reportStatus',['../classCity.html#afba42be6fe7b4d4f0c598ae03c3f461e',1,'City']]],
+  ['residential_240',['Residential',['../classResidential.html',1,'Residential'],['../classResidential.html#acafe060bb4aefaf5117de6038872b7dc',1,'Residential::Residential()'],['../classResidential.html#a0732036bf786fb2ce8ddac1e5ac1d5ee',1,'Residential::Residential(int numResidents, int availableUnits)']]],
+  ['resource_241',['Resource',['../classResource.html',1,'']]],
+  ['resource_242',['resource',['../classUtilities.html#ae93e13a3801bb4951685d8a447ef4110',1,'Utilities']]],
+  ['resource_243',['Resource',['../classResource.html#af1fbb3fe1c5ac7b050623b33aa699dfe',1,'Resource']]],
+  ['resourcefactory_244',['ResourceFactory',['../classResourceFactory.html',1,'']]],
+  ['resourcefactory_245',['resourceFactory',['../classUtilities.html#a6ccd652ec6488592b82cff244ed48449',1,'Utilities']]],
+  ['resourcefactory_246',['ResourceFactory',['../classResourceFactory.html#a916067fcf47454cfcfb3b58b8d5c8e47',1,'ResourceFactory']]],
+  ['respondtogovernmentchanges_247',['respondToGovernmentChanges',['../classCitizen.html#a693de42a43a6f717dafdb5526bb9147c',1,'Citizen']]],
+  ['result_248',['Result',['../structdoctest_1_1detail_1_1Result.html',1,'doctest::detail']]],
+  ['resultbuilder_249',['ResultBuilder',['../structdoctest_1_1detail_1_1ResultBuilder.html',1,'doctest::detail']]]
+];

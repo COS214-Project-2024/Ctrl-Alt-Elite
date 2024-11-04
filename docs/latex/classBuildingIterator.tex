@@ -1,0 +1,117 @@
+\hypertarget{classBuildingIterator}{}\doxysection{Building\+Iterator Class Reference}
+\label{classBuildingIterator}\index{BuildingIterator@{BuildingIterator}}
+
+
+\mbox{\hyperlink{classIterator}{Iterator}} class for iterating over a collection of \mbox{\hyperlink{classBuilding}{Building}} pointers.  
+
+
+
+
+{\ttfamily \#include $<$Building\+Iterator.\+h$>$}
+
+
+
+Inheritance diagram for Building\+Iterator\+:
+% FIG 0
+
+
+Collaboration diagram for Building\+Iterator\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBuildingIterator_af6b9db2bc3ec3134b0a7f6d94af8671d}{Building\+Iterator}} (std\+::vector$<$ \mbox{\hyperlink{classBuilding}{Building}} $\ast$ $>$\+::iterator start, std\+::vector$<$ \mbox{\hyperlink{classBuilding}{Building}} $\ast$ $>$\+::iterator end)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classBuildingIterator}{Building\+Iterator}}. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classBuildingIterator_aafb241a8df2507e05816c8413ce42fdc}{has\+Next}} () override
+\begin{DoxyCompactList}\small\item\em Checks if there are more elements to iterate over. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classBuilding}{Building}} $\ast$ \mbox{\hyperlink{classBuildingIterator_abf0c6d41b4ee207f7cc447e1c06107ef}{next}} () override
+\begin{DoxyCompactList}\small\item\em Retrieves the next \mbox{\hyperlink{classBuilding}{Building}} object in the collection. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classIterator}{Iterator}} class for iterating over a collection of \mbox{\hyperlink{classBuilding}{Building}} pointers. 
+
+This class implements the \mbox{\hyperlink{classIterator}{Iterator}} pattern to allow traversal through a collection of \mbox{\hyperlink{classBuilding}{Building}} objects in a sequential manner. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBuildingIterator_af6b9db2bc3ec3134b0a7f6d94af8671d}\label{classBuildingIterator_af6b9db2bc3ec3134b0a7f6d94af8671d}} 
+\index{BuildingIterator@{BuildingIterator}!BuildingIterator@{BuildingIterator}}
+\index{BuildingIterator@{BuildingIterator}!BuildingIterator@{BuildingIterator}}
+\doxysubsubsection{\texorpdfstring{BuildingIterator()}{BuildingIterator()}}
+{\footnotesize\ttfamily Building\+Iterator\+::\+Building\+Iterator (\begin{DoxyParamCaption}\item[{std\+::vector$<$ \mbox{\hyperlink{classBuilding}{Building}} $\ast$ $>$\+::iterator}]{start,  }\item[{std\+::vector$<$ \mbox{\hyperlink{classBuilding}{Building}} $\ast$ $>$\+::iterator}]{end }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classBuildingIterator}{Building\+Iterator}}. 
+
+Initializes the \mbox{\hyperlink{classBuildingIterator}{Building\+Iterator}} with the specified start and end iterators.
+
+
+\begin{DoxyParams}{Parameters}
+{\em start} & \mbox{\hyperlink{classIterator}{Iterator}} pointing to the beginning of the \mbox{\hyperlink{classBuilding}{Building}} collection. \\
+\hline
+{\em end} & \mbox{\hyperlink{classIterator}{Iterator}} pointing to the end of the \mbox{\hyperlink{classBuilding}{Building}} collection. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBuildingIterator_aafb241a8df2507e05816c8413ce42fdc}\label{classBuildingIterator_aafb241a8df2507e05816c8413ce42fdc}} 
+\index{BuildingIterator@{BuildingIterator}!hasNext@{hasNext}}
+\index{hasNext@{hasNext}!BuildingIterator@{BuildingIterator}}
+\doxysubsubsection{\texorpdfstring{hasNext()}{hasNext()}}
+{\footnotesize\ttfamily bool Building\+Iterator\+::has\+Next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks if there are more elements to iterate over. 
+
+Checks if there are more \mbox{\hyperlink{classBuilding}{Building}} objects to iterate over.
+
+\begin{DoxyReturn}{Returns}
+True if there are more elements; false otherwise.
+
+True if the current position is not at the end; false otherwise. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classIterator_ac739493f5b0ef3333abf23c551e416f0}{Iterator$<$ Building $\ast$ $>$}}.
+
+\mbox{\Hypertarget{classBuildingIterator_abf0c6d41b4ee207f7cc447e1c06107ef}\label{classBuildingIterator_abf0c6d41b4ee207f7cc447e1c06107ef}} 
+\index{BuildingIterator@{BuildingIterator}!next@{next}}
+\index{next@{next}!BuildingIterator@{BuildingIterator}}
+\doxysubsubsection{\texorpdfstring{next()}{next()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classBuilding}{Building}} $\ast$ Building\+Iterator\+::next (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Retrieves the next \mbox{\hyperlink{classBuilding}{Building}} object in the collection. 
+
+Returns the next \mbox{\hyperlink{classBuilding}{Building}} object in the collection.
+
+\begin{DoxyReturn}{Returns}
+Pointer to the next \mbox{\hyperlink{classBuilding}{Building}} object. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If there are no more elements to iterate over.\\
+\hline
+\end{DoxyExceptions}
+\begin{DoxyReturn}{Returns}
+Pointer to the next \mbox{\hyperlink{classBuilding}{Building}} object. 
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::out\+\_\+of\+\_\+range} & If no more elements are available to iterate. \\
+\hline
+\end{DoxyExceptions}
+
+
+Implements \mbox{\hyperlink{classIterator_a312531d070e7e2abc84043c6ecd21ed4}{Iterator$<$ Building $\ast$ $>$}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Building\+Iterator.\+h\item 
+Building\+Iterator.\+cpp\end{DoxyCompactItemize}

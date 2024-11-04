@@ -1,0 +1,204 @@
+\hypertarget{classPublicTransport}{}\doxysection{Public\+Transport Class Reference}
+\label{classPublicTransport}\index{PublicTransport@{PublicTransport}}
+
+
+Represents a public mode of transportation.  
+
+
+
+
+{\ttfamily \#include $<$Public\+Transport.\+h$>$}
+
+
+
+Inheritance diagram for Public\+Transport\+:
+% FIG 0
+
+
+Collaboration diagram for Public\+Transport\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classPublicTransport_a3f914a899a375a01ffe92e1afd597bfe}{Public\+Transport}} (int cap, int routes, std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$ state=nullptr)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classPublicTransport}{Public\+Transport}} instance. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicTransport_aea344d5b086fabdb1cb82225c10bae9b}{travel}} () override
+\begin{DoxyCompactList}\small\item\em Initiates the travel sequence for the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicTransport_a90773fc14b9d0b702a290e271cd37bd6}{stop\+At\+Station}} ()
+\begin{DoxyCompactList}\small\item\em Stops the transport at a designated station. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{classPublicTransport_a9d7be4f4275a93158377a83f9d8faff4}{is\+Available}} () override
+\begin{DoxyCompactList}\small\item\em Checks the availability of the transport. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classPublicTransport_a4265c82c8cd846ee01da039d7bd102c3}{calculate\+Commute\+Time}} (float distance, float speed, const std\+::string \&mode) override
+\begin{DoxyCompactList}\small\item\em Calculates the estimated commute time based on distance, speed, and mode of transport. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPublicTransport_a80032809257c9d45969a537d083485a7}{get\+Capacity}} () const
+\begin{DoxyCompactList}\small\item\em Gets the current capacity of the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicTransport_aa0379f1f96d0e522a6f11b5d726361f5}{set\+Capacity}} (int cap)
+\begin{DoxyCompactList}\small\item\em Sets the capacity of the transport. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classPublicTransport_a01d4a70d303495d30dffd2063645808e}{get\+Routes\+Available}} () const
+\begin{DoxyCompactList}\small\item\em Gets the number of available routes for the transport. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classPublicTransport_af9bfd20d8f07f21bb004143f79868ebc}{set\+Routes\+Available}} (int routes)
+\begin{DoxyCompactList}\small\item\em Sets the number of available routes for the transport. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a public mode of transportation. 
+
+This class inherits from the \mbox{\hyperlink{classModeOfTransport}{Mode\+Of\+Transport}} class and encapsulates the details of public transport such as capacity, available routes, and functionalities to travel and stop at stations. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classPublicTransport_a3f914a899a375a01ffe92e1afd597bfe}\label{classPublicTransport_a3f914a899a375a01ffe92e1afd597bfe}} 
+\index{PublicTransport@{PublicTransport}!PublicTransport@{PublicTransport}}
+\index{PublicTransport@{PublicTransport}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{PublicTransport()}{PublicTransport()}}
+{\footnotesize\ttfamily Public\+Transport\+::\+Public\+Transport (\begin{DoxyParamCaption}\item[{int}]{cap,  }\item[{int}]{routes,  }\item[{std\+::shared\+\_\+ptr$<$ \mbox{\hyperlink{classTransportationState}{Transportation\+State}} $>$}]{state = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classPublicTransport}{Public\+Transport}} instance. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The maximum capacity of the transport. \\
+\hline
+{\em routes} & The number of available routes for this transport. \\
+\hline
+{\em state} & Optional shared pointer to the current transportation state. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPublicTransport_a4265c82c8cd846ee01da039d7bd102c3}\label{classPublicTransport_a4265c82c8cd846ee01da039d7bd102c3}} 
+\index{PublicTransport@{PublicTransport}!calculateCommuteTime@{calculateCommuteTime}}
+\index{calculateCommuteTime@{calculateCommuteTime}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{calculateCommuteTime()}{calculateCommuteTime()}}
+{\footnotesize\ttfamily float Public\+Transport\+::calculate\+Commute\+Time (\begin{DoxyParamCaption}\item[{float}]{distance,  }\item[{float}]{speed,  }\item[{const std\+::string \&}]{mode }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Calculates the estimated commute time based on distance, speed, and mode of transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em distance} & The distance to be traveled in kilometers. \\
+\hline
+{\em speed} & The speed of the transport in kilometers per hour. \\
+\hline
+{\em mode} & The mode of transport used to determine the speed if it\textquotesingle{}s not provided. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+The estimated commute time in hours as a float. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportStrategy_a7297dc96311051b5ba6e5ace84751a35}{Transport\+Strategy}}.
+
+\mbox{\Hypertarget{classPublicTransport_a80032809257c9d45969a537d083485a7}\label{classPublicTransport_a80032809257c9d45969a537d083485a7}} 
+\index{PublicTransport@{PublicTransport}!getCapacity@{getCapacity}}
+\index{getCapacity@{getCapacity}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{getCapacity()}{getCapacity()}}
+{\footnotesize\ttfamily int Public\+Transport\+::get\+Capacity (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the current capacity of the transport. 
+
+\begin{DoxyReturn}{Returns}
+The capacity of the transport. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPublicTransport_a01d4a70d303495d30dffd2063645808e}\label{classPublicTransport_a01d4a70d303495d30dffd2063645808e}} 
+\index{PublicTransport@{PublicTransport}!getRoutesAvailable@{getRoutesAvailable}}
+\index{getRoutesAvailable@{getRoutesAvailable}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{getRoutesAvailable()}{getRoutesAvailable()}}
+{\footnotesize\ttfamily int Public\+Transport\+::get\+Routes\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Gets the number of available routes for the transport. 
+
+\begin{DoxyReturn}{Returns}
+The number of available routes. 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classPublicTransport_a9d7be4f4275a93158377a83f9d8faff4}\label{classPublicTransport_a9d7be4f4275a93158377a83f9d8faff4}} 
+\index{PublicTransport@{PublicTransport}!isAvailable@{isAvailable}}
+\index{isAvailable@{isAvailable}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{isAvailable()}{isAvailable()}}
+{\footnotesize\ttfamily bool Public\+Transport\+::is\+Available (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Checks the availability of the transport. 
+
+\begin{DoxyReturn}{Returns}
+True if the transport is available; otherwise, false. 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{classTransportStrategy_a8131bea2c205e3bc11ffeb9671ca038f}{Transport\+Strategy}}.
+
+\mbox{\Hypertarget{classPublicTransport_aa0379f1f96d0e522a6f11b5d726361f5}\label{classPublicTransport_aa0379f1f96d0e522a6f11b5d726361f5}} 
+\index{PublicTransport@{PublicTransport}!setCapacity@{setCapacity}}
+\index{setCapacity@{setCapacity}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{setCapacity()}{setCapacity()}}
+{\footnotesize\ttfamily void Public\+Transport\+::set\+Capacity (\begin{DoxyParamCaption}\item[{int}]{cap }\end{DoxyParamCaption})}
+
+
+
+Sets the capacity of the transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cap} & The new capacity to be set. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPublicTransport_af9bfd20d8f07f21bb004143f79868ebc}\label{classPublicTransport_af9bfd20d8f07f21bb004143f79868ebc}} 
+\index{PublicTransport@{PublicTransport}!setRoutesAvailable@{setRoutesAvailable}}
+\index{setRoutesAvailable@{setRoutesAvailable}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{setRoutesAvailable()}{setRoutesAvailable()}}
+{\footnotesize\ttfamily void Public\+Transport\+::set\+Routes\+Available (\begin{DoxyParamCaption}\item[{int}]{routes }\end{DoxyParamCaption})}
+
+
+
+Sets the number of available routes for the transport. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em routes} & The new number of available routes. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classPublicTransport_a90773fc14b9d0b702a290e271cd37bd6}\label{classPublicTransport_a90773fc14b9d0b702a290e271cd37bd6}} 
+\index{PublicTransport@{PublicTransport}!stopAtStation@{stopAtStation}}
+\index{stopAtStation@{stopAtStation}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{stopAtStation()}{stopAtStation()}}
+{\footnotesize\ttfamily void Public\+Transport\+::stop\+At\+Station (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Stops the transport at a designated station. 
+
+This method simulates the action of stopping at a station with a message output. \mbox{\Hypertarget{classPublicTransport_aea344d5b086fabdb1cb82225c10bae9b}\label{classPublicTransport_aea344d5b086fabdb1cb82225c10bae9b}} 
+\index{PublicTransport@{PublicTransport}!travel@{travel}}
+\index{travel@{travel}!PublicTransport@{PublicTransport}}
+\doxysubsubsection{\texorpdfstring{travel()}{travel()}}
+{\footnotesize\ttfamily void Public\+Transport\+::travel (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Initiates the travel sequence for the transport. 
+
+This method checks if the transport is available and, if so, proceeds to stop at a station. 
+
+Implements \mbox{\hyperlink{classModeOfTransport_ad944bab03aee6f1b0bf13dc3e0e7534d}{Mode\+Of\+Transport}}.
+
+
+
+Reimplemented in \mbox{\hyperlink{classTrain_a253d52130d9bf308c5b513e4c1afecd4}{Train}}, and \mbox{\hyperlink{classTaxi_ac5e3901b39759d37db39cb4f19073708}{Taxi}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Public\+Transport.\+h\item 
+Public\+Transport.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,112 @@
+\hypertarget{classMonument}{}\doxysection{Monument Class Reference}
+\label{classMonument}\index{Monument@{Monument}}
+
+
+Represents a monument, which is a specific type of landmark.  
+
+
+
+
+{\ttfamily \#include $<$Monument.\+h$>$}
+
+
+
+Inheritance diagram for Monument\+:
+% FIG 0
+
+
+Collaboration diagram for Monument\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classMonument_ad8b523b4fb0129d974bb5bb090e7b88a}{Monument}} ()
+\begin{DoxyCompactList}\small\item\em Default constructor for the \mbox{\hyperlink{classMonument}{Monument}} class. \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classMonument_a04f5aef949e972b6c1ff700d6919fdbd}{$\sim$\+Monument}} () override
+\begin{DoxyCompactList}\small\item\em Destructor for the \mbox{\hyperlink{classMonument}{Monument}} class. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMonument_ad6710664411c69c3ca72edc87b13f236}{display}} () override
+\begin{DoxyCompactList}\small\item\em Displays the details of the monument. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMonument_a49b87b77dd6eec41991e8fb802b08251}{update\+Entertainment\+Rating}} () override
+\begin{DoxyCompactList}\small\item\em Updates the entertainment rating of the monument. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classMonument_aa3693bc1a5f1efe8401490709ac1ba74}{perform\+Maintenance}} () override
+\begin{DoxyCompactList}\small\item\em Performs maintenance on the monument. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Represents a monument, which is a specific type of landmark. 
+
+The \mbox{\hyperlink{classMonument}{Monument}} class extends the \mbox{\hyperlink{classLandmarks}{Landmarks}} class, providing specific functionality and characteristics associated with monuments, including how they are displayed, how their entertainment rating is updated, and how maintenance is performed. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classMonument_ad8b523b4fb0129d974bb5bb090e7b88a}\label{classMonument_ad8b523b4fb0129d974bb5bb090e7b88a}} 
+\index{Monument@{Monument}!Monument@{Monument}}
+\index{Monument@{Monument}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{Monument()}{Monument()}}
+{\footnotesize\ttfamily Monument\+::\+Monument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Default constructor for the \mbox{\hyperlink{classMonument}{Monument}} class. 
+
+Initializes a new instance of the \mbox{\hyperlink{classMonument}{Monument}} class, setting up its properties as defined in the base \mbox{\hyperlink{classLandmarks}{Landmarks}} class. \mbox{\Hypertarget{classMonument_a04f5aef949e972b6c1ff700d6919fdbd}\label{classMonument_a04f5aef949e972b6c1ff700d6919fdbd}} 
+\index{Monument@{Monument}!````~Monument@{$\sim$Monument}}
+\index{````~Monument@{$\sim$Monument}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{$\sim$Monument()}{~Monument()}}
+{\footnotesize\ttfamily Monument\+::$\sim$\+Monument (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}}
+
+
+
+Destructor for the \mbox{\hyperlink{classMonument}{Monument}} class. 
+
+Cleans up any resources used by the \mbox{\hyperlink{classMonument}{Monument}} instance. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classMonument_ad6710664411c69c3ca72edc87b13f236}\label{classMonument_ad6710664411c69c3ca72edc87b13f236}} 
+\index{Monument@{Monument}!display@{display}}
+\index{display@{display}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{display()}{display()}}
+{\footnotesize\ttfamily void Monument\+::display (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Displays the details of the monument. 
+
+Outputs the entertainment rating and maintenance cost to the console, along with a visual representation of the monument. 
+
+Reimplemented from \mbox{\hyperlink{classLandmarks_ad0aa3364ecf42d787d091d7559246060}{Landmarks}}.
+
+\mbox{\Hypertarget{classMonument_aa3693bc1a5f1efe8401490709ac1ba74}\label{classMonument_aa3693bc1a5f1efe8401490709ac1ba74}} 
+\index{Monument@{Monument}!performMaintenance@{performMaintenance}}
+\index{performMaintenance@{performMaintenance}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{performMaintenance()}{performMaintenance()}}
+{\footnotesize\ttfamily void Monument\+::perform\+Maintenance (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Performs maintenance on the monument. 
+
+Outputs maintenance tasks specific to monuments, such as cleaning and structural inspections. 
+
+Reimplemented from \mbox{\hyperlink{classLandmarks_a38569739bfce571fa0501c0c80a6fcd2}{Landmarks}}.
+
+\mbox{\Hypertarget{classMonument_a49b87b77dd6eec41991e8fb802b08251}\label{classMonument_a49b87b77dd6eec41991e8fb802b08251}} 
+\index{Monument@{Monument}!updateEntertainmentRating@{updateEntertainmentRating}}
+\index{updateEntertainmentRating@{updateEntertainmentRating}!Monument@{Monument}}
+\doxysubsubsection{\texorpdfstring{updateEntertainmentRating()}{updateEntertainmentRating()}}
+{\footnotesize\ttfamily void Monument\+::update\+Entertainment\+Rating (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Updates the entertainment rating of the monument. 
+
+Increases the entertainment rating by a specific amount for monuments, reflecting their cultural or historical significance. 
+
+Reimplemented from \mbox{\hyperlink{classLandmarks_a58a69f429670f3ca454e4df2f9dab614}{Landmarks}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Monument.\+h\item 
+Monument.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,174 @@
+\hypertarget{classBudgetDepartment}{}\doxysection{Budget\+Department Class Reference}
+\label{classBudgetDepartment}\index{BudgetDepartment@{BudgetDepartment}}
+
+
+Handles budget allocation and financial management within the city government.  
+
+
+
+
+{\ttfamily \#include $<$Budget\+Department.\+h$>$}
+
+
+
+Inheritance diagram for Budget\+Department\+:
+% FIG 0
+
+
+Collaboration diagram for Budget\+Department\+:
+% FIG 1
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBudgetDepartment_a557cebb41e09c9f9bc7127a0f2f08a86}{Budget\+Department}} (\mbox{\hyperlink{classCity}{City}} $\ast$city)
+\begin{DoxyCompactList}\small\item\em Constructs a \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} associated with a specific city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudgetDepartment_a8a8fad3a40c8a1ceae2c4adf2757d0a6}{manage\+City}} () override
+\begin{DoxyCompactList}\small\item\em Manages the city by executing budget-\/related tasks. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudgetDepartment_ad1ae533efcf9361d07e10db9e794dd90}{allocate\+Budget}} (float budget)
+\begin{DoxyCompactList}\small\item\em Allocates a specified budget for the city\textquotesingle{}s operations. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudgetDepartment_ab78e030207c333b2d523000df533e4f8}{update\+Taxes}} (float new\+Tax\+Rate)
+\begin{DoxyCompactList}\small\item\em Updates the tax rate for the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudgetDepartment_ab53fd8a138c199a4e00b62ac10c3b521}{implement\+Policy}} (const std\+::string \&policy)
+\begin{DoxyCompactList}\small\item\em Implements a specific policy in the city. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classBudgetDepartment_aa2ca90bf0b4be3c8a5c99f97c0842217}{update\+Public\+Services}} (const std\+::vector$<$ std\+::string $>$ \&services)
+\begin{DoxyCompactList}\small\item\em Updates the list of public services provided by the city. \end{DoxyCompactList}\item 
+float \mbox{\hyperlink{classBudgetDepartment_a3d103acb0bc1ecb2b8e442ed0c863e52}{get\+Taxrate}} ()
+\begin{DoxyCompactList}\small\item\em Gets the current tax rate in the city. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Additional Inherited Members}
+
+
+\doxysubsection{Detailed Description}
+Handles budget allocation and financial management within the city government. 
+
+Represents the budget department responsible for overseeing financial allocations and expenditures.
+
+The \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} is responsible for managing the city\textquotesingle{}s budget, including allocation and other financial adjustments. It extends the \mbox{\hyperlink{classGovernment}{Government}} class and overrides key methods related to budget management. 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBudgetDepartment_a557cebb41e09c9f9bc7127a0f2f08a86}\label{classBudgetDepartment_a557cebb41e09c9f9bc7127a0f2f08a86}} 
+\index{BudgetDepartment@{BudgetDepartment}!BudgetDepartment@{BudgetDepartment}}
+\index{BudgetDepartment@{BudgetDepartment}!BudgetDepartment@{BudgetDepartment}}
+\doxysubsubsection{\texorpdfstring{BudgetDepartment()}{BudgetDepartment()}}
+{\footnotesize\ttfamily Budget\+Department\+::\+Budget\+Department (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classCity}{City}} $\ast$}]{city }\end{DoxyParamCaption})}
+
+
+
+Constructs a \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} associated with a specific city. 
+
+Constructs a \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} and associates it with a city.
+
+
+\begin{DoxyParams}{Parameters}
+{\em city} & Pointer to the city this department is managing.\\
+\hline
+{\em city} & The city that the \mbox{\hyperlink{classBudgetDepartment}{Budget\+Department}} will manage. \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBudgetDepartment_ad1ae533efcf9361d07e10db9e794dd90}\label{classBudgetDepartment_ad1ae533efcf9361d07e10db9e794dd90}} 
+\index{BudgetDepartment@{BudgetDepartment}!allocateBudget@{allocateBudget}}
+\index{allocateBudget@{allocateBudget}!BudgetDepartment@{BudgetDepartment}}
+\doxysubsubsection{\texorpdfstring{allocateBudget()}{allocateBudget()}}
+{\footnotesize\ttfamily void Budget\+Department\+::allocate\+Budget (\begin{DoxyParamCaption}\item[{float}]{budget }\end{DoxyParamCaption})}
+
+
+
+Allocates a specified budget for the city\textquotesingle{}s operations. 
+
+Allocates a specific budget amount to the city\textquotesingle{}s financial resources.
+
+
+\begin{DoxyParams}{Parameters}
+{\em budget} & The amount of budget to allocate.\\
+\hline
+{\em budget} & The amount of money to allocate for city expenditures. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBudgetDepartment_a3d103acb0bc1ecb2b8e442ed0c863e52}\label{classBudgetDepartment_a3d103acb0bc1ecb2b8e442ed0c863e52}} 
+\index{BudgetDepartment@{BudgetDepartment}!getTaxrate@{getTaxrate}}
+\index{getTaxrate@{getTaxrate}!BudgetDepartment@{BudgetDepartment}}
+\doxysubsubsection{\texorpdfstring{getTaxrate()}{getTaxrate()}}
+{\footnotesize\ttfamily float Budget\+Department\+::get\+Taxrate (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Gets the current tax rate in the city. 
+
+Retrieves the current tax rate for the city.
+
+\begin{DoxyReturn}{Returns}
+The current tax rate as a float. 
+\end{DoxyReturn}
+
+
+Reimplemented from \mbox{\hyperlink{classGovernment_accdbcd9e484eef19bc279c3ff2a729d1}{Government}}.
+
+\mbox{\Hypertarget{classBudgetDepartment_ab53fd8a138c199a4e00b62ac10c3b521}\label{classBudgetDepartment_ab53fd8a138c199a4e00b62ac10c3b521}} 
+\index{BudgetDepartment@{BudgetDepartment}!implementPolicy@{implementPolicy}}
+\index{implementPolicy@{implementPolicy}!BudgetDepartment@{BudgetDepartment}}
+\doxysubsubsection{\texorpdfstring{implementPolicy()}{implementPolicy()}}
+{\footnotesize\ttfamily void Budget\+Department\+::implement\+Policy (\begin{DoxyParamCaption}\item[{const std\+::string \&}]{policy }\end{DoxyParamCaption})}
+
+
+
+Implements a specific policy in the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em policy} & A string representing the policy to implement. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBudgetDepartment_a8a8fad3a40c8a1ceae2c4adf2757d0a6}\label{classBudgetDepartment_a8a8fad3a40c8a1ceae2c4adf2757d0a6}} 
+\index{BudgetDepartment@{BudgetDepartment}!manageCity@{manageCity}}
+\index{manageCity@{manageCity}!BudgetDepartment@{BudgetDepartment}}
+\doxysubsubsection{\texorpdfstring{manageCity()}{manageCity()}}
+{\footnotesize\ttfamily void Budget\+Department\+::manage\+City (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Manages the city by executing budget-\/related tasks. 
+
+Manages the city’s budget-\/related tasks, notifying citizens of budget allocation.
+
+This includes notifying citizens and observers when budget allocations are made. 
+
+Reimplemented from \mbox{\hyperlink{classGovernment_a81ecf49c437cd4f0a2276b847c6387f2}{Government}}.
+
+\mbox{\Hypertarget{classBudgetDepartment_aa2ca90bf0b4be3c8a5c99f97c0842217}\label{classBudgetDepartment_aa2ca90bf0b4be3c8a5c99f97c0842217}} 
+\index{BudgetDepartment@{BudgetDepartment}!updatePublicServices@{updatePublicServices}}
+\index{updatePublicServices@{updatePublicServices}!BudgetDepartment@{BudgetDepartment}}
+\doxysubsubsection{\texorpdfstring{updatePublicServices()}{updatePublicServices()}}
+{\footnotesize\ttfamily void Budget\+Department\+::update\+Public\+Services (\begin{DoxyParamCaption}\item[{const std\+::vector$<$ std\+::string $>$ \&}]{services }\end{DoxyParamCaption})}
+
+
+
+Updates the list of public services provided by the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em services} & A list of services to be updated. \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classBudgetDepartment_ab78e030207c333b2d523000df533e4f8}\label{classBudgetDepartment_ab78e030207c333b2d523000df533e4f8}} 
+\index{BudgetDepartment@{BudgetDepartment}!updateTaxes@{updateTaxes}}
+\index{updateTaxes@{updateTaxes}!BudgetDepartment@{BudgetDepartment}}
+\doxysubsubsection{\texorpdfstring{updateTaxes()}{updateTaxes()}}
+{\footnotesize\ttfamily void Budget\+Department\+::update\+Taxes (\begin{DoxyParamCaption}\item[{float}]{new\+Tax\+Rate }\end{DoxyParamCaption})}
+
+
+
+Updates the tax rate for the city. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em new\+Tax\+Rate} & The new tax rate to apply. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Budget\+Department.\+h\item 
+Budget\+Department.\+cpp\end{DoxyCompactItemize}
