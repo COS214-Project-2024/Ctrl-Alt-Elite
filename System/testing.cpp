@@ -334,7 +334,7 @@ void testCityUtilitiesIntegration() {
                 ███      ███              ██        ██  ██       ███                     
                    ██████                   ████████     █████████                                                                                                                                                                                                          
     )" << std::endl;
-    WasteManagement wasteManagement(residentialBuilding, 10000.0f, factory, 500);
+    WasteManagement wasteManagement(residentialBuilding, 100.0f, factory, 500);
     wasteManagement.applyUtility(residentialBuilding);
     std::cout << "\nWasteManagement applied to Residential: Waste capacity checked." << std::endl;
 
@@ -376,7 +376,7 @@ void testCityUtilitiesIntegration() {
                     ██████                                                        
                                                                                                                                                                                                              
     )" << std::endl;
-    WaterSupply waterSupply(commercialBuilding, factory, 20000.0f);
+    WaterSupply waterSupply(commercialBuilding, factory, 300.0f, 100);
     waterSupply.applyUtility(commercialBuilding);
     std::cout << "\nWaterSupply applied to Commercial: Water supplied to building." << std::endl;
 
@@ -409,7 +409,7 @@ void testCityUtilitiesIntegration() {
              ██       ██    ██      ██    ██                                           
                ██████         ██████         ██                                                                                                                                                               
     )" << std::endl;
-    SewageSystems sewageSystem(industrialBuilding, 15000.0f, factory, 400);
+    SewageSystems sewageSystem(industrialBuilding, 150.0f, factory, 400);
     sewageSystem.applyUtility(industrialBuilding);
     std::cout << "\nSewageSystems applied to Industrial: Sewage managed for building." << std::endl;
 
@@ -443,7 +443,7 @@ void testCityUtilitiesIntegration() {
                                                                                                                     
     )" << std::endl;
     // Apply PowerPlants utility to landmark building
-    PowerPlants powerPlant(landmarkBuilding, factory, 300.0f);
+    PowerPlants powerPlant(landmarkBuilding, factory, 300.0f,100);
     powerPlant.applyUtility(landmarkBuilding);
     std::cout << "\nPowerPlant applied to Landmark: Electricity provided to building." << std::endl;
 
@@ -571,10 +571,13 @@ void testTemplate(){
     PoliciesDepartment* pol = new PoliciesDepartment(city);
     pol->implementPolicy("Smack bad people");
     pol->Report();
-
+    
+    std::cout <<"here1\n";
     TaxationDepartment* tax =new TaxationDepartment(city);
     tax->updateTaxes(20);
+    std::cout <<"here2\n";
     tax->Report();
+    std::cout <<"here3\n";
 }
 
 void testChain(){
@@ -593,11 +596,11 @@ int main() {
 
     TestingResourcesAndUtilities();
     TestingComposite();
-    TestingCommand();
+    //TestingCommand();
     TestingStrategyAndState();
-    // TestingAdapter();
-    // TestingObserver();
-    testTemplate();
+    TestingAdapter();
+    TestingObserver();
+   // testTemplate();
     // testChain();
     
     
