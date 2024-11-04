@@ -61,7 +61,7 @@ void CompositeBuilding::removeBuilding(Building* building) {
     }
 }
 
-vector<Building *> CompositeBuilding::getbuildings()
+std::vector<Building *> CompositeBuilding::getbuildings()
 {
     return this->buildings;
 }
